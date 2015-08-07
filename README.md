@@ -11,7 +11,7 @@ very soon. If everything goes as smoothly as planned, the estimated publication 
 
 - [ebook and paperback](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials) at Amazon
 - [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) directly from the publisher
--
+
 
 ## Table of Contents
 
