@@ -5,12 +5,14 @@
 *Python Machine Learning* is in its final stages, and I am going to upload the accompanying code examples here
 very soon. If everything goes as smoothly as planned, the estimated publication date would September 1-3.
 
+![](./images/cover_1.png)
+
 
 Machine learning and predictive analytics are transforming the way businesses and other organizations operate. Being able to understand trends and patterns in complex data is critical to success, becoming one of the key strategies for unlocking growth in a challenging contemporary marketplace. Python can help you deliver key insights into your data – its unique capabilities as a language let you build sophisticated algorithms and statistical models that can reveal new perspectives and answer key questions that are vital for success.
 
 Python Machine Learning gives you access to the world of predictive analytics and demonstrates why Python is one of the world’s leading data science languages. If you want to ask better questions of data, or need to improve and extend the capabilities of your machine learning systems, this practical data science book is invaluable. Covering a wide range of powerful Python libraries, including scikit-learn, Theano, and Pylearn2, and featuring guidance and tips on everything from sentiment analysis to neural networks, you’ll soon be able to answer some of the most important questions facing you and your organization.
 
-![](./images/cover_1.png)
+
 
 ## Links
 
