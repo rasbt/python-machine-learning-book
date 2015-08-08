@@ -3,7 +3,7 @@
 *Python Machine Learning* code repository.
 
 *Python Machine Learning* is in its final stages, and I am going to upload the accompanying code examples here
-very soon. If everything goes as smoothly as planned, the estimated publication date would September 1-3.
+very soon. If everything goes as smoothly as planned, it will be published on September 1st.
 
 ![](./images/cover_1.png)
 
@@ -43,7 +43,7 @@ or consider asking the question on the [Google Groups Email List](https://groups
 
 ## IPython Notebooks
 
-- COMING SOONG
+- COMING SOON
 
 ## FAQ
 
