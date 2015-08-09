@@ -40,6 +40,7 @@ or consider asking the question on the [Google Groups Email List](https://groups
 12. Training Artificial Neural Networks for Image Recognition
 13. Parallelizing Neural Network Training via Theano and PyLearn2
 
+## [Image Gallery](./images/image_gallery/README.md)
 
 ## IPython Notebooks
 
