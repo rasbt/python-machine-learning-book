@@ -48,4 +48,5 @@ or consider asking the question on the [Google Groups Email List](https://groups
 
 ## FAQ
 
-[How is this different from other machine learning books?](./faq/different.md)
+- [How is this different from other machine learning books?](./faq/different.md)
+- [Which version of Python was used in the code examples?](./faq/py2py3.md)
