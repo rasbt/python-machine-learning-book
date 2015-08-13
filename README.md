@@ -50,3 +50,4 @@ or consider asking the question on the [Google Groups Email List](https://groups
 
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
+- [Which technologies and libraries are being used?](./faq/technologies.md)
