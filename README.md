@@ -2,8 +2,9 @@
 
 *Python Machine Learning* code repository.
 
-*Python Machine Learning* is in its final stages, and I am going to upload the accompanying code examples here
-very soon. If everything goes as smoothly as planned, the estimated publication date would September 1-3.
+ What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! What makes this book different from other practical machine learning books is that we will not only *use* the algorithms but also understand how they really *work* -- we won't leave any black box unopened!
+
+Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (hopefully September 1st)!
 
 ![](./images/cover_1.png)
 
