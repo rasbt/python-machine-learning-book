@@ -38,9 +38,10 @@ or consider asking the question on the [Google Groups Email List](https://groups
 10. Predicting Continuous Target Variables with Regression Analysis
 11. Working with Unlabeled Data – Clustering Analysis  
 12. Training Artificial Neural Networks for Image Recognition
-13. Parallelizing Neural Network Training via Theano and PyLearn2
+13. Parallelizing Neural Network Training via Theano
 
 
+## [References & Resources](./docs/references)
 
 ## [Image Gallery](./images/image_gallery/README.md)
 
