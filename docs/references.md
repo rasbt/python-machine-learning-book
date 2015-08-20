@@ -290,11 +290,17 @@ A list of references as they appear throughout the chapters.
 ##### Links
 
 - Flask: http://flask.pocoo.org
+
 - SQLite: http://www.sqlite.org
+
 - SQLite Manager Add-on: https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
+
 - WTForms: https://wtforms.readthedocs.org/en/latest/
+
 - Jinja2: http://jinja.pocoo.org
+
 - Webapp example: http://raschkas.pythonanywhere.com
+
 - pythonanywhere: https://www.pythonanywhere.com
 
 ##### Additional Resources
@@ -455,6 +461,9 @@ A list of references as they appear throughout the chapters.
 
 - SymPy: http://www.sympy.org/en/index.html
 
+
+##### People
+
 - Geoff Hinton http://www.cs.toronto.edu/~hinton/,
 
 - Andrew Ng http://www.andrewng.org
@@ -464,7 +473,6 @@ A list of references as they appear throughout the chapters.
 - Juergen Schmidhuber http://people.idsia.ch/~juergen/
 
 - Yoshua Bengio http://www.iro.umontreal.ca/~bengioy
-
 
 ##### Additional Resources
 
