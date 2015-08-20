@@ -155,12 +155,45 @@ Here is a selection of the image drafts that you will find throughout the chapte
 
 ## Chapter 11
 
-coming soon
+![](./chapter_11/01.png)
+![](./chapter_11/02.png)
+![](./chapter_11/03.png)
+![](./chapter_11/04.png)
+![](./chapter_11/05.png)
+![](./chapter_11/06.png)
+![](./chapter_11/07.png)
+![](./chapter_11/08.png)
+![](./chapter_11/10.png)
+![](./chapter_11/11.png)
+![](./chapter_11/12.png)
+![](./chapter_11/13.png)
+![](./chapter_11/14.png)
+![](./chapter_11/15.png)
+![](./chapter_11/16.png)
 
 ## Chapter 12
 
-coming soon
+![](./chapter_12/01.png)
+![](./chapter_12/02.png)
+![](./chapter_12/03.png)
+![](./chapter_12/04.png)
+![](./chapter_12/05.png)
+![](./chapter_12/06.png)
+![](./chapter_12/07.png)
+![](./chapter_12/08.png)
+![](./chapter_12/10.png)
+![](./chapter_12/11.png)
+![](./chapter_12/12.png)
+![](./chapter_12/13.png)
+![](./chapter_12/14.png)
+![](./chapter_12/15.png)
+![](./chapter_12/16.png)
+![](./chapter_12/17.png)
 
 ## Chapter 13
 
-coming soon
+![](./chapter_13/01.png)
+![](./chapter_13/02.png)
+![](./chapter_13/03.png)
+![](./chapter_13/04.png)
+![](./chapter_13/05.png)
