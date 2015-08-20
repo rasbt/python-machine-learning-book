@@ -4,14 +4,13 @@
 
 What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! What makes this book different from other practical machine learning books is that we will not only *use* the algorithms but also understand how they really *work* -- we won't leave any black box unopened!
 
+
 Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (hopefully September 1st)!
 
 ![](./images/cover_1.png)
 
+This is not yet just another "this is how scikit-learn works" book. I aim to explain how Machine Learning works, tell you everything you need to know in terms of best practices and caveats, and then we will learn how to put those concepts into action using NumPy, scikit-learn, Theano and so on :).
 
-Machine learning and predictive analytics are transforming the way businesses and other organizations operate. Being able to understand trends and patterns in complex data is critical to success, becoming one of the key strategies for unlocking growth in a challenging contemporary marketplace. Python can help you deliver key insights into your data – its unique capabilities as a language let you build sophisticated algorithms and statistical models that can reveal new perspectives and answer key questions that are vital for success.
-
-Python Machine Learning gives you access to the world of predictive analytics and demonstrates why Python is one of the world’s leading data science languages. If you want to ask better questions of data, or need to improve and extend the capabilities of your machine learning systems, this practical data science book is invaluable. Covering a wide range of powerful Python libraries, including scikit-learn, Theano, and Pylearn2, and featuring guidance and tips on everything from sentiment analysis to neural networks, you’ll soon be able to answer some of the most important questions facing you and your organization.
 
 
 ## Links
@@ -54,3 +53,4 @@ or consider asking the question on the [Google Groups Email List](https://groups
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
+- [Which book version/format would you recommend?](./faq/version.md)
