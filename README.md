@@ -41,7 +41,7 @@ or consider asking the question on the [Google Groups Email List](https://groups
 13. Parallelizing Neural Network Training via Theano
 
 
-## [References & Resources](./docs/references)
+## [References & Resources](./docs/references.md)
 
 ## [Image Gallery](./images/image_gallery/README.md)
 
