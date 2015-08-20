@@ -128,12 +128,8 @@ Here is a selection of the image drafts that you will find throughout the chapte
 
 ## Chapter 9
 
-![](./chapter_09/01.png)
-![](./chapter_09/02.png)
-![](./chapter_09/03.png)
 ![](./chapter_09/04.png)
 ![](./chapter_09/05.png)
-![](./chapter_09/06.png)
 ![](./chapter_09/08.png)
 
 ## Chapter 10
