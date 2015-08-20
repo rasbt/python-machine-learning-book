@@ -22,6 +22,7 @@ A list of references as they appear throughout the chapters.
 
 - Anaconda Scientific Python Distribution: https://store.continuum.io/cshop/anaconda/
 
+##### Additional Resources
 
 <br>
 <br>
@@ -35,8 +36,6 @@ A list of references as they appear throughout the chapters.
 - W. S. McCulloch and W. Pitts. [A logical calculus of the ideas immanent in nervous activity](http://link.springer.com/article/10.1007/BF02459570). The bulletin of mathematical biophysics, 5(4):115–133, 1943.
 
 - F. Rosenblatt. The perceptron, a perceiving and recognizing automaton Project Para. Cornell Aeronautical Laboratory, 1957.
-
-- Z. Kolter. [Linear algebra review and reference](http://www.cs.cmu.edu/~zkolter/course/linalg/linalg_notes.pdf), 2008.
 
 - B. Widrow. Adaptive ”Adaline” neuron using chemical ”memistors”. Number Technical Report 1553-2. Stanford Electron. Labs., Stanford, CA, October 1960.
 
@@ -59,6 +58,9 @@ A list of references as they appear throughout the chapters.
 
 - Iris dataset: https://archive.ics.uci.edu/ml/datasets/Iris
 
+##### Additional Resources
+
+- Z. Kolter. [Linear algebra review and reference](http://www.cs.cmu.edu/~zkolter/course/linalg/linalg_notes.pdf), 2008.
 
 <br>
 <br>
