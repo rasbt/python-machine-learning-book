@@ -5,6 +5,8 @@ Python Machine Learning
 
 A list of references as they appear throughout the chapters.
 
+A BibTeX version for your favorite reference manager is available [here](./pymle.bib).
+
 <br>
 <br>
 
