@@ -54,3 +54,4 @@ or consider asking the question on the [Google Groups Email List](https://groups
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
 - [Which book version/format would you recommend?](./faq/version.md)
+- [Why did you choose Python for machine learning?](./faq/why_python.md)
