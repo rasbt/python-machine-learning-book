@@ -24,7 +24,7 @@
 
 Maybe I should start with the short answer. You are welcome to stop reading this article below this paragraph because it really nails it. I am a scientist, I like to get my stuff done. I like to have an environment where I can quickly prototype and jot down my models and ideas. I need to solve very particular problems. I analyze given datasets to draw my conclusions. This is what matters most to me: How can I get the job done most productively? What do I mean by "productively"? Well, I typically run an analysis only once (the testing of different ideas and debugging aside); I don't need to repeatedly run a particular piece of code 24/7, I am not developing software applications or web apps for end users. When I *quantify* "productivity," I literally estimate the sum of (1) the time that it takes to get the idea written down in code, (2) debug it, and (3) execute it. To me, "most productively" means "how long does it take to get the results?" Now, over the years, I figured that Python is for me. Not always, but very often. Like everything else in life, Python is not a "silver bullet," it's not the "best" solution to every problem. However, it comes pretty close if you compare programming languages across the spectrum of common and not-so common problem tasks'; Python is probably the most versatile and capable all-rounder.
 
-![](../Images/the_general_problem.png)
+![](./images/the_general_problem.png)
 (Source: [https://xkcd.com/974/](https://xkcd.com/974/))
 
 Remember: "Premature optimization is the root of all evil" (Donald Knuth). If you are part of the software engineering team that wants to optimize the next game-changing high-frequency trading model from your machine learning and data science division, Python is probably not for you (but maybe it was the language of choice by the data science team, so it may still be useful to learn how to read it). So, my little piece of advice is to evaluate your daily problems tasks and needs when you choose a language. "If all that you have is a hammer, everything starts to look like a nail" -- you are too smart to fall for this trap! However, keep in mind that there is a balance. There are occasions where the hammer may be the best choice even if a screwdriver would probably be the "nicer" solution. Again, it comes down to productivity.
@@ -48,7 +48,7 @@ If you are interested, those are my favorite and most frequently Python "tools,"
 - [scikit-learn](http://scikit-learn.org/stable/): The most convenient API for the daily, more basic machine learning tasks.
 - [matplotlib](http://matplotlib.org): My library of choice when it comes to plotting. Sometimes I also use [seaborn](http://stanford.edu/~mwaskom/software/seaborn/index.html) for particular plots, for example, the heat maps are particularly great!
 
-[](../Images/2015_why_python/heatmap.png)
+[](./images/heatmap.png)
 
 (Source: [http://stanford.edu/~mwaskom/software/seaborn/examples/structured_heatmap.html](http://stanford.edu/~mwaskom/software/seaborn/examples/structured_heatmap.html))
 
@@ -57,7 +57,7 @@ If you are interested, those are my favorite and most frequently Python "tools,"
 - [pandas](http://pandas.pydata.org): Working with relatively small datasets, mostly from CSV files.
 - [sqlite3](https://docs.python.org/2/library/sqlite3.html): Annotating and querying "medium-sized" datasets.
 - [IPython notebooks](http://ipython.org): What can I say, 90% of my research takes place in IPython notebooks. It's just a great environment to have everything in one place: Ideas, code, comments, LaTeX equations, illustrations, plots, outputs, ...  
-![](../Images/2015_why_python/ipython_notebook.png)
+![](./images/ipython_notebook.png)
 
 Note that the IPython Project recently evolved into [Project Jupyter](https://jupyter.org). Now, you can use Jupyter notebook environment not only for Python but R, Julia, and many more.
 
@@ -72,7 +72,7 @@ prototyping after all! Since it was built with linear algebra in mind (MATLAB fo
 However, keep in mind that MATLAB comes with a big
 price tag, and I think it is slowly fading from academia as well as industry. Plus, I am a big fan open-source enthusiast after all ;). In addition, its performance is also not that compelling compared to other "productive" languages looking at the benchmarks below:
 
-![](../Images/2015_why_python/julia_benchmark.png)
+![](./images/julia_benchmark.png)
 
 (Source: [http://julialang.org/benchmarks/](http://julialang.org/benchmarks/))
 
@@ -135,13 +135,13 @@ I just wanted to bring up Theano and computing on GPUs as a big plus for Python,
 To take one of my favorite Python quotes out of its original context: "We are all adults here" -- let's not waste our time with language wars. Choose the tool that "clicks" for you. When it comes to perspectives on the job market: There is no right or wrong here. I don't think a company that wants to hire you as a "data scientist" really bothers about your favorite toolbox -- programming languages are just "tools" after all. The most important skill is to think like a "data scientist," to ask the right questions, to solve a problems. The hard part is the math and machine learning theory, a new programming language can easily be learned. Just think about, you learned how to swing a hammer to drive the nail in, how hard can it possibly be to pick up a hammer from a different manufacturer?
  But if you are still interested, look at the Tiobe Index for example, *one* measure of popularity of programming languages:
 
-![](../Images/2015_why_python/tiobe.png)
+![](./images/tiobe.png)
 
 (Source: [http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html))
 
 However, if we look at the [The 2015 Top Ten Programming Languages](http://spectrum.ieee.org/computing/software/the-2015-top-ten-programming-languages) by Spectrum IEEE, the R language is climbing fast (left column: 2015, right column: 2014).
 
-![](../Images/2015_why_python/spectrum.jpg)
+![](./images/spectrum.jpg)
 
 (Source: [http://spectrum.ieee.org/computing/software/the-2015-top-ten-programming-languages](http://spectrum.ieee.org/computing/software/the–2015-top-ten-programming-languages))
 
@@ -177,6 +177,6 @@ Speaking of hammers and nails again, Python is extremely versatile, the largest 
 
 Well, this is a pretty long answer to a seemingly very simple question. Trust me, I can go on for hours and days. But why complicate things? Let's bring the talks to a conclusion:
 
-![](../Images/2015_why_python/python.png)
+![](./images/python.png)
 
 (Source: [https://xkcd.com/353/](https://xkcd.com/353/))
