@@ -23,6 +23,9 @@ This is not yet just another "this is how scikit-learn works" book. I aim to exp
 I am happy to answer questions! Just write me an [email](mailto:mail@sebastianraschka.com)
 or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
 
+If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
+
+
 ## Table of Contents
 
 1. Machine Learning - Giving Computers the Ability to Learn from Data
