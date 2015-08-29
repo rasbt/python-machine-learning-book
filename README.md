@@ -7,7 +7,7 @@ What you can expect are 400 pages rich in useful material just about everything 
 
 Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (hopefully September 1st)!
 
-![](./images/cover_1.png)
+![](./images/pymle_cover.jpg)
 
 This is not yet just another "this is how scikit-learn works" book. I aim to explain how Machine Learning works, tell you everything you need to know in terms of best practices and caveats, and then we will learn how to put those concepts into action using NumPy, scikit-learn, Theano and so on :).
 
