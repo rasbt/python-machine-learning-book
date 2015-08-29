@@ -28,4 +28,4 @@ Below is the tl;dr summary of the core libraries that you will encounter in this
 - [Flask](http://flask.pocoo.org)
 - [sqlite3](https://docs.python.org/2/library/sqlite3.html)
 - [Theano](http://deeplearning.net/software/theano/)
-- [PyLearn2](http://deeplearning.net/software/pylearn2/)
+- [Keras](http://keras.io)
