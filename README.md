@@ -15,11 +15,11 @@ This is not yet just another "this is how scikit-learn works" book. I aim to exp
 
 ## Links
 
-- ebook and paperback at [Amazon.com]((http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
+- ebook and paperback at [Amazon.com](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
 - [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) directly from the publisher
 - ebook at Google Play Store
 - ebook at Apple iBooks
-- ebook and paperback at Barnes & Noble 
+- ebook and paperback at Barnes & Noble
 
 ## Contact
 
