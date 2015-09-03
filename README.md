@@ -12,6 +12,10 @@ Please stay tuned for the code examples that I am going to upload on the GitHub 
 This is not yet just another "this is how scikit-learn works" book. I aim to explain how Machine Learning works, tell you everything you need to know in terms of best practices and caveats, and then we will learn how to put those concepts into action using NumPy, scikit-learn, Theano and so on :).
 
 
+## Updates
+
+- There was a recent technical problem at Amazon.com that lead to the cancellation of the paperback pre-orders. Sorry for the inconvenience, just heard that the production department of the publisher is currently in discussion with Amazon to resolve the problem. Don't worry, the book wasn't cancelled, and everything else goes as planned :) (just got the Pre-Finals today, Sep 3rd, to give it a final glance)
+
 
 ## Links
 
