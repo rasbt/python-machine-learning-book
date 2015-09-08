@@ -82,6 +82,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - C. J. Burges. [A tutorial on support vector machines for pattern recognition](http://link.springer.com/article/10.1023/A:1009715923555). Data mining and knowledge discovery, 2(2):121–167, 1998.
 
+- J. H. Friedman, J. L. Bentley, and R. A. Finkel. [An algorithm for finding best matches in logarithmic expected time](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.319.4027). ACM Transactions on Mathematical Software (TOMS), 3(3):209–226, 1977.
 
 ##### Links
 
