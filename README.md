@@ -36,8 +36,8 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 ## Table of Contents
 
 1. Machine Learning - Giving Computers the Ability to Learn from Data
-2. Training Simple Machine Learning Algorithms for Classification
-3. A Tour of Advanced Machine Learning Classifiers Using Scikit-Learn
+2. Training Machine Learning Algorithms for Classification
+3. A Tour of Machine Learning Classifiers Using Scikit-Learn
 4. Building Good Training Sets – Data Pre-Processing
 5. Compressing Data via Dimensionality Reduction
 6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization
