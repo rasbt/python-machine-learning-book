@@ -2,14 +2,16 @@
 
 *Python Machine Learning* code repository.
 
-What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! What makes this book different from other practical machine learning books is that we will not only *use* the algorithms but also understand how they really *work* -- we won't leave any black box unopened!
+What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! This is not yet just another "this is how scikit-learn works" book. I aim to explain all the underlying concepts, tell you everything you need to know in terms of best practices and caveats, and 
+we will put those concepts into action mainly using NumPy, scikit-learn, and Theano :).
 
+You are not sure if this book is for you? Please checkout the excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf), or take a look at the [FAQ](#faq) section for further information. 
 
-Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (hopefully September 1st)!
+Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (sometime in September 201.)!
 
 ![](./images/pymle_cover_small.jpg)
 
-This is not yet just another "this is how scikit-learn works" book. I aim to explain how Machine Learning works, tell you everything you need to know in terms of best practices and caveats, and then we will learn how to put those concepts into action using NumPy, scikit-learn, Theano and so on :).
+
 
 
 ## Updates
@@ -35,6 +37,8 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 
 ## Table of Contents
 
+Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf).
+
 1. Machine Learning - Giving Computers the Ability to Learn from Data
 2. Training Machine Learning Algorithms for Classification
 3. A Tour of Machine Learning Classifiers Using Scikit-Learn
@@ -50,7 +54,7 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 13. Parallelizing Neural Network Training via Theano
 
 
-## [References & Resources](./docs/references.md)
+## [Literature References & Further Reading Resources](./docs/references.md)
 
 ## [Image Gallery](./images/image_gallery/README.md)
 
