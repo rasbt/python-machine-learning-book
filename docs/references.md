@@ -24,7 +24,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Anaconda Scientific Python Distribution: https://store.continuum.io/cshop/anaconda/
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 <br>
 <br>
@@ -60,7 +60,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Iris dataset: https://archive.ics.uci.edu/ml/datasets/Iris
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - Z. Kolter. [Linear algebra review and reference](http://www.cs.cmu.edu/~zkolter/course/linalg/linalg_notes.pdf), 2008.
 
@@ -94,7 +94,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Graphviz - Graph Visualization Software: http://www.graphviz.org
 
-##### Further Reading
+##### Additional Resources & Further Reading
 
 - L. Breiman, J. H. Friedman, R. A. Olshen, and C. J. Stone. Classification and regression trees. wadsworth. Belmont, CA, 1984.
 
@@ -124,7 +124,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Wine Data Set: https://archive.ics.uci.edu/ml/datasets/Wine
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - One-hot encoding: https://en.wikipedia.org/wiki/One-hot
 
@@ -160,7 +160,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 ##### Links
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - I. Jolliffe. [Principal component analysis](http://onlinelibrary.wiley.com/doi/10.1002/9781118445112.stat06472/abstract?userIsAuthenticated=false&deniedAccessCustomisedMessage=). Wiley Online Library, 2002.
 
@@ -191,7 +191,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 - Breast Cancer Wisconsin dataset: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - Y. Bengio and Y. Grandvalet. [No unbiased estimator of the variance of k-fold cross-validation](http://dl.acm.org/citation.cfm?id=1044695). The Journal of Machine Learning Research, 5:1089–1105, 2004.
 
@@ -231,9 +231,12 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Netflix Recommendations: Beyond the 5 stars (Part 1): http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - K. M. Ting and I. H. Witten. [Issues in stacked generalization](http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.16.1519). J. Artif. Intell. Res.(JAIR), 10:271–289, 1999.
+
+- J. H. Friedman. [Stochastic gradient boosting](http://www.sciencedirect.com/science/article/pii/S0167947301000652). Computational Statistics & Data Analysis, 38(4):367–378, 2002.
+
 
 
 <br>
@@ -272,7 +275,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Google Word2Vec: https://code.google.com/p/word2vec/
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - A. Aizawa. [An information-theoretic perspective of tf–idf measures](http://www.sciencedirect.com/science/article/pii/S0306457302000213). Information Processing & Manage- ment, 39(1):45–65, 2003.
 
@@ -306,7 +309,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - pythonanywhere: https://www.pythonanywhere.com
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - HTTP Methods: GET vs. POST: http://www.w3schools.com/tags/ref_httpmethods.asp
 
@@ -334,7 +337,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Seaborn: http://stanford.edu/~mwaskom/software/seaborn/
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - J. W. Tukey. [Exploratory data analysis](http://xa.yimg.com/kq/groups/16412409/1159714453/name/exploratorydataanalysis.pdf). 1977.
 
@@ -379,7 +382,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 ##### Links
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - Z. Huang. [Extensions to the k-means algorithm for clustering large data sets with categorical values](http://link.springer.com/article/10.1023/A:1009769707641). Data mining and knowledge discovery, 2(3):283–304, 1998.
 
@@ -435,7 +438,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 - Article about Endianness: https://en.wikipedia.org/wiki/Endianness
 
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - Automatic differentiation: https://en.wikipedia.org/wiki/Automatic_differentiation
 
@@ -477,7 +480,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 - Yoshua Bengio http://www.iro.umontreal.ca/~bengioy
 
-##### Additional Resources
+##### Additional Resources & Further Reading
 
 - Symbolic Computation: https://en.wikipedia.org/wiki/Symbolic_computation
 
