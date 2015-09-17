@@ -2,12 +2,12 @@
 
 *Python Machine Learning* code repository.
 
-What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! This is not yet just another "this is how scikit-learn works" book. I aim to explain all the underlying concepts, tell you everything you need to know in terms of best practices and caveats, and 
+What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! This is not yet just another "this is how scikit-learn works" book. I aim to explain all the underlying concepts, tell you everything you need to know in terms of best practices and caveats, and
 we will put those concepts into action mainly using NumPy, scikit-learn, and Theano :).
 
-You are not sure if this book is for you? Please checkout the excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf), or take a look at the [FAQ](#faq) section for further information. 
+You are not sure if this book is for you? Please checkout the excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf), or take a look at the [FAQ](#faq) section for further information.
 
-Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (sometime in September 201.)!
+Please stay tuned for the code examples that I am going to upload on the GitHub repo once it's published (on September 24th, 2015).!
 
 ![](./images/pymle_cover_small.jpg)
 
@@ -16,7 +16,8 @@ Please stay tuned for the code examples that I am going to upload on the GitHub 
 
 ## Updates
 
-- There was a recent technical problem at Amazon.com that lead to the cancellation of the paperback pre-orders. Sorry for the inconvenience, just heard that the production department of the publisher is currently in discussion with Amazon to resolve the problem. Don't worry, the book wasn't cancelled, and everything else goes as planned :) (just got the Pre-Finals today, Sep 3rd, to give it a final glance)
+- There was a recent technical problem at Amazon.com that lead to the cancellation of the paperback pre-orders. Sorry for the inconvenience, just heard that the production department of the publisher is currently in discussion with Amazon to resolve the problem.
+- The final version is now on the publisher's servers; finally, I got the publication date: September 24th, 2015.
 
 
 ## Links
