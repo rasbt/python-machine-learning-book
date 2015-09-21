@@ -11,7 +11,7 @@ That being said, we will also implement algorithms from scratch ourselves! There
 2. We will gain practice in implementing algorithms, which is a useful skill to have
 3. We will implement algorithms that are not implemented in libraries such as scikit-learn yet but are useful for real-world applications
 
-Scikit-learn is just one of the "many" options to put machine learning into action once you understand the basic concepts and workflows, which are the focus areas of this book. However, you will learn almost everything there is to know about scikit-learn too, so that you can immediately apply your new skills to problem solving.
+Scikit-learn is just one of the "many" options to put machine learning into action once you understand the basic concepts and workflows, which are the focus areas of this book. However, you will learn almost everything there is to know about scikit-learn too so that you can immediately apply your new skills to problem-solving.
 
 Other libraries we will learn about are SciPy, NumPy, matplotlib, pandas, seaborn, Theano, just to name a few! Basically all the essentials for machine learning and "data science" in Python!
 
