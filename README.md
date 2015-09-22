@@ -12,13 +12,6 @@ Please stay tuned for the code examples that I am going to upload on the GitHub 
 ![](./images/pymle_cover_small.jpg)
 
 
-
-
-## Updates
-
-- There was a recent technical problem at Amazon.com that lead to the cancellation of the paperback pre-orders. Sorry for the inconvenience, just heard that the production department of the publisher is currently in discussion with Amazon to resolve the problem.
-- The final version is now on the publisher's servers; finally, I got the publication date: September 24th, 2015.
-
 ## Links
 
 #### Useful Resources
