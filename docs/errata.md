@@ -16,7 +16,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Leaderboard
 
-1. A kind contributor ($0.25)
+1. T.S. Jayram ($0.25)
 2. --
 3. --
 
@@ -24,4 +24,4 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Errata
 
-- p. 22:  *y<sup>(i)</sup>* is set to *1<sup>(i)</sup>*, rather it should be just *1*
+- p. 22:  *y<sup>(i)</sup>* is set to *1<sup>(i)</sup>*, rather it should be just *1* (T.S. Jayram)
