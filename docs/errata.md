@@ -16,7 +16,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Leaderboard
 
-1. T.S. Jayram ($0.25)
+1. T.S. Jayram ($0.50)
 2. --
 3. --
 
@@ -25,3 +25,4 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 ## Errata
 
 - p. 22:  *y<sup>(i)</sup>* is set to *1<sup>(i)</sup>*, rather it should be just *1* (T.S. Jayram)
+- p. 25:  The link to `matplotlib` is misspelled, it should be http://matplotlib.org/users/beginner.html instead of http://matplotlib.org/ussers/beginner.html (T.S. Jayram)
