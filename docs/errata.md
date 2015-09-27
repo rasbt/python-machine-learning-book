@@ -11,7 +11,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $0.25
+- Current amount for the next donation: $0.50
 - Amount donated to charity: $0.00
 
 ## Leaderboard
