@@ -70,3 +70,4 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Which technologies and libraries are being used?](./faq/technologies.md)
 - [Which book version/format would you recommend?](./faq/version.md)
 - [Why did you choose Python for machine learning?](./faq/why_python.md)
+- [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
