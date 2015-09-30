@@ -1,4 +1,4 @@
-# Are There Any Prerequisites and Are There Any Pre-Readings?
+# Are There Any Prerequisites and Recommended Pre-Readings?
 
 
 Sure, book goes a bit deeper into the mathematical foundations of certain learning algorithms than other "practical" Python machine learning books, but it really doesn't require a strong math background. I tried to make this journey as smooth as possible by building on concepts incrementally.
