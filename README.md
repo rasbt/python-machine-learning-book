@@ -65,6 +65,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ## FAQ
 
+- [What do other people think about this book?](./faq/feedback.md)
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
