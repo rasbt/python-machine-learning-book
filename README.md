@@ -40,7 +40,7 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 
 Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf).
 
-1. Machine Learning - Giving Computers the Ability to Learn from Data
+1. Machine Learning - Giving Computers the Ability to Learn from Data [./code/ch01](./code/ch01)
 2. Training Machine Learning Algorithms for Classification
 3. A Tour of Machine Learning Classifiers Using Scikit-Learn
 4. Building Good Training Sets – Data Pre-Processing
