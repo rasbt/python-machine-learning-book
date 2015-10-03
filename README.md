@@ -12,20 +12,12 @@ You are not sure if this book is for you? Please checkout the excerpts from the 
 
 
 
-
-## Updates
-
-- There was a recent technical problem at Amazon.com that lead to the cancellation of the paperback pre-orders. Sorry for the inconvenience, just heard that the production department of the publisher is currently in discussion with Amazon to resolve the problem.
-- The final version is now on the publisher's servers; finally, I got the publication date: September 24th, 2015.
-
-
 ## Links
 
 - ebook and paperback at [Amazon.com](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
-- [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) directly from the publisher
-- ebook at Google Play Store
+- [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) from Packt (the publisher)
+- at other book stores: Google Play Store, O'Reilly, [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble]((http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130)),
 - ebook at Apple iBooks
-- ebook and paperback at Barnes & Noble
 - A [sample chapter](http://www.slideshare.net/Products123/python-machine-learning-sample-chapter)
 
 ## Contact
@@ -40,7 +32,7 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 
 Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf).
 
-1. Machine Learning - Giving Computers the Ability to Learn from Data [./code/ch01](./code/ch01)
+1. Machine Learning - Giving Computers the Ability to Learn from Data [[./code/ch01](./code/ch01)] [[ipynb](./code/ch01.ipynb)]
 2. Training Machine Learning Algorithms for Classification
 3. A Tour of Machine Learning Classifiers Using Scikit-Learn
 4. Building Good Training Sets – Data Pre-Processing
@@ -50,18 +42,16 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 8. Applying Machine Learning to Sentiment Analysis
 9. Embedding a Machine Learning Model into a Web Application
 10. Predicting Continuous Target Variables with Regression Analysis
-11. Working with Unlabeled Data – Clustering Analysis  
+11. Working with Unlabeled Data – Clustering Analysis
 12. Training Artificial Neural Networks for Image Recognition
 13. Parallelizing Neural Network Training via Theano
 
 
-## [Literature References & Further Reading Resources](./docs/references.md)
+### [Literature References & Further Reading Resources](./docs/references.md)
 
-## [Image Gallery](./images/image_gallery/README.md)
+### [Image Gallery](./images/image_gallery/README.md)
 
-## IPython Notebooks
-
-- COMING SOON
+### [Errata](./docs/errata.md)
 
 ## FAQ
 
