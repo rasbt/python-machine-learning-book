@@ -26,7 +26,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ##### Technical Notes
 
-- p. 20: Since we brought $\theta$ to the left, it should be "1 if $z \ge 0$" and not  "1 if $z \ge \theta$" anymore; my apologies, this looks like a copy & paste error that occurred during the layouting.
+- p. 20: Since we brought &theta; to the left, it should be "1 if z &#8805; 0" and not  "1 if z &#8805; &theta;" anymore; my apologies, this looks like a copy & paste error that occurred during the layouting.
 - p. 22:  *y<sup>(i)</sup>* is set to *1<sup>(i)</sup>*, rather it should be just *1* (T.S. Jayram)
 - p. 25:  The link to `matplotlib` is misspelled, it should be http://matplotlib.org/users/beginner.html instead of http://matplotlib.org/ussers/beginner.html (T.S. Jayram)
 
