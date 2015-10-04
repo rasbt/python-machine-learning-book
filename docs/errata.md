@@ -11,12 +11,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $1.50
+- Current amount for the next donation: $1.75
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Kind contributor ($1.00)
+1. Kind contributor ($1.25)
 2. T.S. Jayram ($0.50)
 3. --
 
@@ -37,6 +37,10 @@ I am really sorry about you seeing many typos up in the equations so far. Unfort
 - p. 25:  The link to `matplotlib` is misspelled, it should be http://matplotlib.org/users/beginner.html instead of http://matplotlib.org/ussers/beginner.html (T.S. Jayram)
 - p. 35:  In the context "... update the weights by taking a step away from the gradient &nabla; J(w) ... weight change  &Delta;w defined as the negative gradient multiplied by the earning rate &eta; : &Delta; w = −&eta;&Delta;J(w)."  --> "&Delta;w = −&eta;&Delta;J(w)" should be "&Delta;w = −&eta;&nabla;J(w)"
 
+**Chapter 3**
+
+- p. 60: There is a missing product operator that defines the *likelihood* *L(**w**)* = ...=&prod;<sup>n</sup><sub>i=1</sub> (&phi;(z)<sup>(i)</sup>)<sup>y<sup>(i)</sup></sup> ...
+ 
 ### Language
 
 **Preface**
