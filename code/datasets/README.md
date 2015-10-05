@@ -9,5 +9,5 @@ Sebastian Raschka, 2015
 
 ### wine.data
 
-- used in chapters 4
+- used in chapters 4, 5
 - source: [https://archive.ics.uci.edu/ml/datasets/Wine](https://archive.ics.uci.edu/ml/datasets/Wine)

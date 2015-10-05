@@ -1,8 +1,16 @@
 Sebastian Raschka, 2015
 
-# Python Machine Learning - Chapter 1 Code
+# Python Machine Learning 
+
+# Chapter 1 Code Examples
+
+## Giving Computers the Ability to Learn from Data
+
+<hr>
 
 **Chapter 1 does not contain any code examples.**
+
+<hr>
 
 ## Installing Python packages
 
