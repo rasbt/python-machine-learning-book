@@ -38,3 +38,14 @@ I realize the experience levels described above are subjective. They are present
 
 > I just purchased your book/e-book and wanted to thank you for writing a book at this level that combines the theory with the very practical aspects of machine learning [...]. I hope to use it also as a teaching aide for some of my colleagues who work in other areas.   
 -- T.S. Jayram, Researcher at the IBM Almaden CS theory group
+
+<hr>
+
+> This semester, I was assigned to teach a Pattern Recognition course,
+your book is the best for me to use as a textbook.
+-- Renyuan Lyu, Associate Professor at Chang Gung University
+
+<hr>
+
+> I am a big fan of Sebastian Raschka's machine learning tutorials on his personal website, and have found him to be an excellent teacher for complex concepts in ML, so I've been looking forward to reading this book. I found the book similarly well-written and the explanations clear. It is heavy on examples (in Python 3! well done), so it's a good hands-on resource.  
+-- Carlos Faham, Security Data Scientist at LinkedIn
