@@ -38,7 +38,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 4. Building Good Training Sets – Data Pre-Processing [[./code/ch04](./code/ch04)] [[ipynb](./code/ch04/ch04.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch04/ch04.ipynb)]
 5. Compressing Data via Dimensionality Reduction [[./code/ch05](./code/ch05)] [[ipynb](./code/ch05/ch05.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch05/ch05.ipynb)] 
 6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization [[./code/ch06](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
-7. Combining Different Models for Ensemble Learning
+7. Combining Different Models for Ensemble Learning [[./code/ch07](./code/ch07)] [[ipynb](./code/ch07/ch07.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch07/ch07.ipynb)]
 8. Applying Machine Learning to Sentiment Analysis
 9. Embedding a Machine Learning Model into a Web Application
 10. Predicting Continuous Target Variables with Regression Analysis
