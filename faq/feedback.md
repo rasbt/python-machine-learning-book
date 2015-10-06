@@ -19,6 +19,12 @@ The fundamental concepts I've learned have opened the door to an enormous amount
 
 <hr>
 
+> Sebastian Raschka's new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it's just as I expected - really great! It's well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.  
+-- Lon Riesberg, [Data Elixir Newsletter](http://dataelixir.com/issues/55#start)
+
+
+<hr>
+
 > I've purchased and read (virtually) every Machine Learning book that aims to teach the reader the basics of ML using the Scikit-learn library as the main focus. I've found them to be...less than satisfactory. The examples in other books often use ML techniques in contexts for which they are not intended to be used and/or contexts they are not used in out in the real world (among other issues I have found within them).
 In stark contrast, Python Machine Learning by Sebastian Raschka is stunningly-impressive, not only for the breadth and depth of coverage, but also in the manner the information is presented to the reader. [...] One of the underlying (though understated) themes in the book is the importance of using visual aids where appropriate to gauge the performance of the algorithms you’re using as well as to understand exactly what is going on behind the scenes, so-to-speak. [...] TL;DR (SUMMARY):
 I realize the experience levels described above are subjective. They are present merely to serve as reference points for the readers and to underscore my belief that Python Machine Learning has something for virtually every skill level. I cannot recommend this book more highly!   
