@@ -31,8 +31,9 @@ If you are interested in keeping in touch, I have quite a lively twitter stream 
 ## Table of Contents
 
 
-
-You can view the code examples as IPython Notebooks by clicking `ipynb`. Until GitHub-rendered IPyNb support internal document links, I recommend to use the alternative `nbviewer` links. **Please note that these are just the code examples accompanying the book that I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**
+Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version). 
+**Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
+ 
 
 Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf)
   
