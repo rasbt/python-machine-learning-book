@@ -27,3 +27,8 @@ Sebastian Raschka, 2015
 
 - used in chapter 10
 - source: [https://archive.ics.uci.edu/ml/datasets/Housing](https://archive.ics.uci.edu/ml/datasets/Housing)
+
+### mnist
+
+- used in chapter 12, 13
+- source: [http://yann.lecun.com/exdb/mnist/]
