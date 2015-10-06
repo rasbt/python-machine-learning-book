@@ -1,0 +1,6 @@
+Learning with ensembles
+Implementing a simple majority vote classifier
+  Combining different algorithms for classification with majority vote
+Evaluating and tuning the ensemble classifierBagging – building an ensemble of classifiers from bootstrap samples
+Leveraging weak learners via adaptive boosting
+Summary
