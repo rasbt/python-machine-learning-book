@@ -1,5 +1,6 @@
 .ipynb_checkpoints
 .DS_Store
+code/datasets/movie/aclImdb_v1.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
