@@ -42,7 +42,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 8. Applying Machine Learning to Sentiment Analysis [[dir](./code/ch08)] [[ipynb](./code/ch08/ch08.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch08/ch08.ipynb)]
 9. Embedding a Machine Learning Model into a Web Application [[dir](./code/ch09)] [[ipynb](./code/ch09/ch09.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch09/ch09.ipynb)]
 10. Predicting Continuous Target Variables with Regression Analysis [[dir](./code/ch10)] [[ipynb](./code/ch10/ch10.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb)]
-11. Working with Unlabeled Data – Clustering Analysis
+11. Working with Unlabeled Data – Clustering Analysis [[dir](./code/ch11)] [[ipynb](./code/ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
 12. Training Artificial Neural Networks for Image Recognition
 13. Parallelizing Neural Network Training via Theano
 
