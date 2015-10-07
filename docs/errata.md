@@ -11,15 +11,17 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $1.75
+- Current amount for the next donation: $2.25
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Joseph Gordon, SoftLayer/IBM ($0.75)
-2. T.S. Jayram, IBM Almaden Research Center ($0.50)
-3. Ryan S. ($0.25)
-4. Elias R. ($0.25)
+1. Joseph Gordon ($0.75)
+2. T.S. Jayram ($0.50)
+3. S.R. ($0.50)
+4. Ryan S. ($0.25)
+5. Elias R. ($0.25)
+
 
 ...
 
@@ -42,6 +44,10 @@ I am really sorry about you seeing many typos up in the equations so far. Unfort
 
 - p. 60: There is a missing product operator that defines the *likelihood* *L(**w**)* = ...=&prod;<sup>n</sup><sub>i=1</sub> (&phi;(z)<sup>(i)</sup>)<sup>y<sup>(i)</sup></sup> ... (Elias R.)
 
+**Chapter 5**
+
+- p.144: I wrote in the Linear Discrimnant section that "Those who are a little more familiar with linear algebra may know that the rank of the d×d-dimensional covariance matrix can be at most *d − 1* ..." Sorry, this is a little bit out of context. First of all, this is only true if *d >> N* (where *d* is the number of dimensions and *N* is the number of samples), and this should have been in the Principal Component Analysis section. Secondly, in context of the Linear Discriminant Analysis, the number of linear discriminants is at most <em>c-1</em> where <em>c</em> is the number of class labels; the in-between class scatter matrix <em>S<sub>B</sub></em> is the sum of <em>c</em> matrices with rank 1 or less.</strong> (S.R.)
+
 ### Language
 
 **Preface**
@@ -51,3 +57,7 @@ I am really sorry about you seeing many typos up in the equations so far. Unfort
 **Chapter 2**
 
 - p. 19: there should be a period between "otherwise" and "in" (this is towards the end of the page) (Joseph Gordon)
+
+**Chapter 3**
+
+- p. 89: The *petal with* near the bottom of this page should of course be *petal width* (S.R.)
