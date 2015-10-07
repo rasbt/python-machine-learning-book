@@ -16,7 +16,7 @@ Paperback: 454 pages<br>
 Publisher: Packt Publishing<br>  
 Language: English<br>
 ISBN-10: 1783555130<br>  
-ISBN-13: 978-1783555130<br> 
+ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br></div>
 
 ## Links
@@ -35,7 +35,14 @@ or consider asking the question on the [Google Groups Email List](https://groups
 If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
 
 
-## Table of Contents
+### [Literature References & Further Reading Resources](./docs/references.md)
+
+### [Image Gallery](./images/image_gallery/README.md)
+
+### [Errata](./docs/errata.md)
+
+
+## Table of Contents and Code Notebooks
 
 
 Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version).
@@ -59,11 +66,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
 
-### [Literature References & Further Reading Resources](./docs/references.md)
 
-### [Image Gallery](./images/image_gallery/README.md)
-
-### [Errata](./docs/errata.md)
 
 ## FAQ
 

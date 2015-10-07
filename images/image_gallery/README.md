@@ -1,6 +1,6 @@
 # Image Gallery
 
-Here is a selection of the image drafts that you will find throughout the chapters.
+A selection of plots and figures as they appear in the book (higher-resolution images can be found in the IPython notebooks).
 
 ## Chapter 1
 
