@@ -18,7 +18,7 @@ I must honestly say that I was truly relieved and very happy about all the feedb
 
 <hr>
 
-![](./images/boris_tweet.png)
+[![](./images/boris_tweet.png)](https://twitter.com/BorisAdryan/status/648590265620525056)
 
 <hr>
 
@@ -28,7 +28,7 @@ The fundamental concepts I've learned have opened the door to an enormous amount
 
 <hr>
 
-![](./images/claus_tweet.png)
+[![](./images/claus_tweet.png)](https://twitter.com/augustlights/status/651721745783783424)
 
 <hr>
 
@@ -46,7 +46,7 @@ I realize the experience levels described above are subjective. They are present
 
 <hr>
 
-![](./images/matteo_tweet.png)
+[![](./images/matteo_tweet.png)](https://twitter.com/matteo_brainnet/status/652027189018402816)
 
 <hr>
 
@@ -64,4 +64,4 @@ your book is the best for me to use as a textbook.
 > I am a big fan of Sebastian Raschka's machine learning tutorials on his personal website, and have found him to be an excellent teacher for complex concepts in ML, so I've been looking forward to reading this book. I found the book similarly well-written and the explanations clear. It is heavy on examples (in Python 3! well done), so it's a good hands-on resource.   
 -- Carlos Faham, Security Data Scientist at LinkedIn
 
-![](./images/jason_tweet.png)
+[![](./images/jason_tweet.png)](https://twitter.com/jmwoloso/status/649288217364049920)
