@@ -13,15 +13,29 @@ I must honestly say that I was truly relieved and very happy about all the feedb
 
 <hr>
 
+> Fantastic! Both the book and this wonderfully informative blog post! I picked up kindle and print versions of the book last week, downloaded the code from the Packt site, and started going thru it. Superb job! Thus far, for me it seems to have hit the right balance of theory and practice...math and code! [...]     
+-- Brian Thomas via [Disqus](http://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
+
+<hr>
+
+![](./images/boris_tweet.png)
+
+<hr>
+
 > Technical, but not too much. Let's face it, machine learning algorithms are technical in nature. However, this book allows you to gloss over the actual technical details if you don't really need to understand them right away and view the implementation of the logic in the code snippets. Though, I must say, the presentation of the technical subjects are explained clearly and with supporting graphs and images to help visualize the concepts. It was a wonderful experience to understand the code, even though the theory was also given. This allows most people to jump right in and start writing in python. For the mathematicians out there, you can take the equations and verify them if need be. [...]
 The fundamental concepts I've learned have opened the door to an enormous amount of possibilities I could not have even thought of doing had I not read this book. I used to think that true machine learning was only for super geniuses. But now I feel like I have another set of tools I can use to perform nearly superhero tasks. Python Machine Learning will be a reference book I use for many years to come.   
 --  Perry Nally on [Amazon](http://www.amazon.com/gp/product/1783555130/ref=s9_simh_gw_p14_d0_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1&pf_rd_r=0QKDZ9QNCW8269FMDSQG&pf_rd_t=36701&pf_rd_p=2079475242&pf_rd_i=desktop)
 
 <hr>
 
+![](./images/claus_tweet.png)
+
+<hr>
+
 > Sebastian Raschka's new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it's just as I expected - really great! It's well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.  
 -- Lon Riesberg, [Data Elixir Newsletter](http://dataelixir.com/issues/55#start)
 
+[![](./images/dataelixir.png)](http://dataelixir.com)
 
 <hr>
 
@@ -32,7 +46,7 @@ I realize the experience levels described above are subjective. They are present
 
 <hr>
 
-![](./images/feedback_1.png)
+![](./images/matteo_tweet.png)
 
 <hr>
 
@@ -42,10 +56,12 @@ I realize the experience levels described above are subjective. They are present
 <hr>
 
 > This semester, I was assigned to teach a Pattern Recognition course,
-your book is the best for me to use as a textbook.
+your book is the best for me to use as a textbook.  
 -- Renyuan Lyu, Associate Professor at Chang Gung University
 
 <hr>
 
-> I am a big fan of Sebastian Raschka's machine learning tutorials on his personal website, and have found him to be an excellent teacher for complex concepts in ML, so I've been looking forward to reading this book. I found the book similarly well-written and the explanations clear. It is heavy on examples (in Python 3! well done), so it's a good hands-on resource.  
+> I am a big fan of Sebastian Raschka's machine learning tutorials on his personal website, and have found him to be an excellent teacher for complex concepts in ML, so I've been looking forward to reading this book. I found the book similarly well-written and the explanations clear. It is heavy on examples (in Python 3! well done), so it's a good hands-on resource.   
 -- Carlos Faham, Security Data Scientist at LinkedIn
+
+![](./images/jason_tweet.png)

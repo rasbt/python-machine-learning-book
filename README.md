@@ -19,20 +19,16 @@ ISBN-10: 1783555130<br>
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br></div>
 
+### [Feedback & Reviews](./docs/feedback.md)
+
 ## Links
 
 - ebook and paperback at [Amazon.com](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
 - [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) from Packt (the publisher)
-- at other book stores: Google Play Store, O'Reilly, [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble]((http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130)),
-- ebook at Apple iBooks
-- A [sample chapter](http://www.slideshare.net/Products123/python-machine-learning-sample-chapter)
+- at other book stores: [O'Reilly](http://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble]((http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130)), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
+- free [sample chapter](http://www.slideshare.net/Products123/python-machine-learning-sample-chapter)
 
-## Contact
 
-I am happy to answer questions! Just write me an [email](mailto:mail@sebastianraschka.com)
-or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
-
-If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
 
 
 ### [Literature References & Further Reading Resources](./docs/references.md)
@@ -66,11 +62,8 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
 
-
-
 ## FAQ
 
-- [What do other people think about this book?](./faq/feedback.md)
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
@@ -78,3 +71,11 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Why did you choose Python for machine learning?](./faq/why_python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
 - [Are There Any Prerequisites and Recommended Pre-Readings?](./faq/prerequisites.md)
+
+
+## Contact
+
+I am happy to answer questions! Just write me an [email](mailto:mail@sebastianraschka.com)
+or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
+
+If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
