@@ -11,7 +11,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $2.25
+- Current amount for the next donation: $3.50
 - Amount donated to charity: $0.00
 
 ## Leaderboard
@@ -19,8 +19,9 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 1. Joseph Gordon ($0.75)
 2. T.S. Jayram ($0.50)
 3. S.R. ($0.50)
-4. Ryan S. ($0.25)
+4. Ryan S. ($1.25)
 5. Elias R. ($0.25)
+6. Haitham H. Saleh ($0.25)
 
 
 ...
@@ -48,11 +49,32 @@ I am really sorry about you seeing many typos up in the equations so far. Unfort
 
 - p.144: I wrote in the Linear Discrimnant section that "Those who are a little more familiar with linear algebra may know that the rank of the d×d-dimensional covariance matrix can be at most *d − 1* ..." Sorry, this is a little bit out of context. First of all, this is only true if *d >> N* (where *d* is the number of dimensions and *N* is the number of samples), and this should have been in the Principal Component Analysis section. Secondly, in context of the Linear Discriminant Analysis, the number of linear discriminants is at most <em>c-1</em> where <em>c</em> is the number of class labels; the in-between class scatter matrix <em>S<sub>B</sub></em> is the sum of <em>c</em> matrices with rank 1 or less.</strong> (S.R.)
 
+**Chapter 12**
+
+- p. 347: In the section "Introducing the multi-layer neural network architecture" it says "where *h* is the number of hidden units and *m + 1* is the number of hidden units plus bias unit." It should be "the number of **input** units plus bias unit." (Ryan S.)
+
+- p. 348: In the section "Activating a neural network via forward propagation", I wrote "... which passes the origin at z = 0.5, as shown in the following graph:"  
+To be correct, *passing through the origin* means passing through the point(0, 0). So, I probably meant to say "which cuts the y-axis at z=0" (Ryan S.)
+
+- p. 366: In the section "Computing the logistic cost function, the generalized cost function (without the regularization term) is written as:
+"J(**w**) = - &sum;<sup>n</sup><sub>i=1</sub> &sum;<sup>t</sup><sub>k=1</sub> ... "  
+Here, the inner &sum;<sup>t</sup><sub>k=1</sub> should be &sum;<sup>t</sup><sub>j=1</sub> (Ryan S.)
+
+
+- p. 369: In the section "Training neural networks via backpropagation" there is another duplication error. The second
+      "**&delta;**<sup>(2)</sup>" in   
+      "**&delta;**<sup>(2)</sup> = (**W**<sup>(2)</sup>)<sup>T</sup> **&delta;**<sup>(2)</sup> * [ &part; &phi;(z<sup>(2)</sup>)/  &part; z<sup>(2)</sup>]"  
+      should be "**&delta;**<sup>(3)</sup>"  so that   
+      "**&delta;**<sup>(2)</sup> = (**W**<sup>(2)</sup>)<sup>T</sup> **&delta;**<sup>(3)</sup> * [ &part; &phi;(z<sup>(2)</sup>)/  &part; z<sup>(2)</sup>]" (Ryan S.)
+
 ### Language
 
 **Preface**
 
+- p. viii: At the bottom of this page ("Chapter 3, A Tour of Machine Learning Classifirs Using Scikit-learn") it should be "Classifiers" not "classifirs" (Hamit H. Saleh)
+
 - p. x: the phrase "--whether you want start from..." should be  "--whether you want to start from..." (Joseph Gordon)
+
 
 **Chapter 2**
 
