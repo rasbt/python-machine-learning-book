@@ -22,10 +22,10 @@ Kindle ASIN: B00YSILNL0<br></div>
 
 ---
 > *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
-– Lon Riesberg, at [Data Elixir](http://dataelixir.com)
+– Lon Riesberg at [Data Elixir](http://dataelixir.com/issues/55#start)
 
 > *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*   
-– Brian Thomas
+– [Brian Thomas](http://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
 
 ### [Feedback & Reviews](./docs/feedback.md)
 
