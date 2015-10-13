@@ -7,6 +7,7 @@ we will put those concepts into action mainly using NumPy, scikit-learn, and The
 
 You are not sure if this book is for you? Please checkout the excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf), or take a look at the [FAQ](#faq) section for further information.
 
+---
 
 ![](./images/pymle_cover_small.jpg)
 
@@ -18,6 +19,13 @@ Language: English<br>
 ISBN-10: 1783555130<br>  
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br></div>
+
+---
+> *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
+– Lon Riesberg, at [Data Elixir](http://dataelixir.com)
+
+> *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*   
+– Brian Thomas
 
 ### [Feedback & Reviews](./docs/feedback.md)
 

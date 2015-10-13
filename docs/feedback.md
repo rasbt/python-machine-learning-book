@@ -55,6 +55,12 @@ I realize the experience levels described above are subjective. They are present
 
 <hr>
 
+[![](./images/jonathon_m_tweet.png)](https://twitter.com/jonathonmorgan/status/653587935367856128)
+
+
+<hr>
+
+
 > This semester, I was assigned to teach a Pattern Recognition course,
 your book is the best for me to use as a textbook.  
 -- Renyuan Lyu, Associate Professor at Chang Gung University
