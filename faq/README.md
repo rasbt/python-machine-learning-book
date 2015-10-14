@@ -17,8 +17,11 @@ Sebastian
 
 ## FAQ
 
-- [How is this different from other machine learning books?](./faq/different.md)
-- [Which version of Python was used in the code examples?](./faq/py2py3.md)
-- [Which technologies and libraries are being used?](./faq/technologies.md)
-- [Which book version/format would you recommend?](./faq/version.md)
-- [Why did you choose Python for machine learning?](./faq/why_python.md)
+- [Can I use paragraphs and images from the book in presentations or my blog?](./copyright.md)
+- [How is this different from other machine learning books?](./different.md)
+- [Which version of Python was used in the code examples?](./py2py3.md)
+- [Which technologies and libraries are being used?](./technologies.md)
+- [Which book version/format would you recommend?](./version.md)
+- [Why did you choose Python for machine learning?](./why_python.md)
+- [Why do you use so many leading and trailing underscores in the code examples?](./underscore_convention.md)
+- [Are There Any Prerequisites and Recommended Pre-Readings?](./prerequisites.md)
