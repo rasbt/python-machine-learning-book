@@ -72,6 +72,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ## FAQ
 
+- [Can I use paragraphs and images from the book in presentations or my blog?](./faq/copyright.md)
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
