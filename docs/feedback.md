@@ -71,3 +71,11 @@ your book is the best for me to use as a textbook.
 -- Carlos Faham, Security Data Scientist at LinkedIn
 
 [![](./images/jason_tweet.png)](https://twitter.com/jmwoloso/status/649288217364049920)
+
+
+<hr>
+
+> An amazing book, really can't praise it enough. Presentation of technical subjects are explained very clearly. The author is very thorough in his writing making sure to fill in the details so you don't get left behind. It was a wonderful experience. Clearly written examples showing the theory and practice of machine learning. An invaluable tutorial.  
+As a bonus, chapter on "Parallelizing Neural Network Training with Theano" was a great addition! A very exciting topic, author really went all out. Hands down the best Python Machine learning book available.  
+
+NazHuz via [Amazon](http://www.amazon.com/gp/customer-reviews/RURYHN1G3SRMZ/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=1783555130)
