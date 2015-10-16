@@ -27,6 +27,10 @@ Kindle ASIN: B00YSILNL0<br></div>
 > *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*   
 – [Brian Thomas](http://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
 
+> *I've purchased and read (virtually) every Machine Learning book that aims to teach the reader the basics of ML using the Scikit-learn library as the main focus. I've found them to be...less than satisfactory. [...]
+In stark contrast, Python Machine Learning by Sebastian Raschka is stunningly-impressive, not only for the breadth and depth of coverage, but also in the manner the information is presented to the reader.*    
+– [Jason Wolosonovich](https://www.linkedin.com/in/wolosonovich)
+
 ### [Feedback & Reviews](./docs/feedback.md)
 
 ## Links
