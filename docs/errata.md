@@ -11,17 +11,18 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $4.00
+- Current amount for the next donation: $4.50
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Ryan S. ($1.25)
+1. Ryan S. ($1.50)
 2. S.R. ($1.00)
 3. Joseph Gordon ($0.75)
 4. T.S. Jayram ($0.50)
 5. Elias R. ($0.25)
 6. Haitham H. Saleh ($0.25)
+7. Muqueet M. ($0.25)
 
 
 ...
@@ -45,6 +46,11 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 - p. 60: There is a missing product operator that defines the *likelihood* *L(**w**)* = ...=&prod;<sup>n</sup><sub>i=1</sub> (&phi;(z)<sup>(i)</sup>)<sup>y<sup>(i)</sup></sup> ... (Elias R.)
 
+- p. 64: In the section "Training a logistic regression model with scikit-learn" where we calculate the partial derivative of the sigmoid function, the equation is printed as   
+&part;/ [&part;w<sub>j</sub>]  * &phi;(z) = &part;/ [&part;z] * 1 / [1 + e<sup>-1</sup>] ...  
+This doesn't make sense of course (note the "&part;w<sub>j</sub>"), what I meant to write was  
+&part;/ [&part;z] * &phi;(z) = &part;/ [&part;z] * 1 / [1 + e<sup>-1</sup>] ... (Ryan S., Muqueet M.)
+
 **Chapter 5**
 
 - p. 131: In the section "Total and explained variance" I used the [`numpy.linalg.eig`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.eig.html) function to decompose the symmetric covariance matrix into its eigenvalues and eigenvectors.
@@ -52,7 +58,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
     This is not really a "mistake," but probably suboptimal. It would be better to use [`numpy.linalg.eigh`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.eigh.html) in such cases, which has been designed for [Hermetian matrices](https://en.wikipedia.org/wiki/Hermitian_matrix). The latter always returns real  eigenvalues; whereas the numerically less stable `np.linalg.eig` can decompose nonsymmetric square matrices, you may find that it returns complex eigenvalues in certain cases. (S.R.)
 
 
-- p. 143: In the section "Selecting linear discriminants for the new feature subspace," `numpy.linalg.eigh` should be prefered over `np.linalg.eig` for the same reasons as explained above. (S.R.)
+- p. 143: In the section "Selecting linear discriminants for the new feature subspace," `numpy.linalg.eigh` should be preferred over `np.linalg.eig` for the same reasons as explained above. (S.R.)
 
 
 - p. 144: I wrote in the Linear Discrimnant section that "Those who are a little more familiar with linear algebra may know that the rank of the d×d-dimensional covariance matrix can be at most *d − 1* ..." Sorry, this is a little bit out of context. First of all, this is only true if *d >> N* (where *d* is the number of dimensions and *N* is the number of samples), and this should have been in the Principal Component Analysis section. Secondly, in context of the Linear Discriminant Analysis, the number of linear discriminants is at most <em>c-1</em> where <em>c</em> is the number of class labels; the in-between class scatter matrix <em>S<sub>B</sub></em> is the sum of <em>c</em> matrices with rank 1 or less.</strong> (S.R.)
