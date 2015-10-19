@@ -3,8 +3,7 @@ The *Known Errors* Leaderboard
 
 I tried my best to cut all the little typos, errors, and formatting bugs that slipped through the copy editing stage. Even so, I think it is just human to have a little typo here and there in a first edition. I know that this can be annoying as a reader, and I was thinking to associate it with something positive. Let's have a little leaderboard (inspired by Donald Knuth's "[Known Errors in My Books](http://www-cs-faculty.stanford.edu/~uno/books.html)").
 
-Every error that is not listed in the *Errata* yet will be rewarded with $1. I am a man of my word, but I want to be a little bit careful with the initial amount; I will probably increase it soon depending on how it goes.
-
+**Every error that is not listed in the *Errata* yet will be rewarded with $1.**
 The only catch here is that you won't receive any single cent. Instead, I am going to donate the amount to [UNICEF USA](http://www.unicefusa.org), the US branch of the United Nations agency for raising funds to provide emergency food and healthcare for children in developing countries.
 
 I would be happy if you just write me a short [mail](mailto:mail@sebastianraschka.com) including the error and page number, and please let me know if you want to be listed on the public leaderboard.
@@ -12,12 +11,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $18.00
+- Current amount for the next donation: $22.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Ryan S. ($6.00)
+1. Ryan S. ($10.00)
 2. S.R. ($4.00)
 3. Joseph Gordon ($3.00)
 4. T.S. Jayram ($2.00)
@@ -43,6 +42,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 - p. 25:  The link to `matplotlib` is misspelled, it should be http://matplotlib.org/users/beginner.html instead of http://matplotlib.org/ussers/beginner.html (T.S. Jayram)
 - p. 35:  In the context "... update the weights by taking a step away from the gradient &nabla; J(w) ... weight change  &Delta;w defined as the negative gradient multiplied by the earning rate &eta; : &Delta; w = −&eta;&Delta;J(w)."  --> "&Delta;w = −&eta;&Delta;J(w)" should be "&Delta;w = −&eta;&nabla;J(w)" (Ryan S.)
 
+- p. 35: In the section "Minimizing cost functions with gradient descent" we wrote "the update of weight w<sub>j</sub> as:"  
+&Delta; w<sub>j</sub> = - &eta;     &nabla;J/&nabla;w<sub>j</sub> = &mu; &sum;<sub>i</sub> ...   
+The &mu; is a typo and it should be  
+&Delta; w<sub>j</sub> = - &eta;     &nabla;J/&nabla;w<sub>j</sub> = &eta; &sum;<sub>i</sub> ...  
+(Ryan S.)
+
 **Chapter 3**
 
 - p. 60: There is a missing product operator that defines the *likelihood* *L(**w**)* = ...=&prod;<sup>n</sup><sub>i=1</sub> (&phi;(z)<sup>(i)</sup>)<sup>y<sup>(i)</sup></sup> ... (Elias R.)
@@ -63,6 +68,22 @@ This doesn't make sense of course (note the "&part;w<sub>j</sub>"), what I meant
 
 
 - p. 144: I wrote in the Linear Discrimnant section that "Those who are a little more familiar with linear algebra may know that the rank of the d×d-dimensional covariance matrix can be at most *d − 1* ..." Sorry, this is a little bit out of context. First of all, this is only true if *d >> N* (where *d* is the number of dimensions and *N* is the number of samples), and this should have been in the Principal Component Analysis section. Secondly, in context of the Linear Discriminant Analysis, the number of linear discriminants is at most <em>c-1</em> where <em>c</em> is the number of class labels; the in-between class scatter matrix <em>S<sub>B</sub></em> is the sum of <em>c</em> matrices with rank 1 or less.</strong> (S.R.)
+
+**Chapter 7**
+
+- p. 227: In the section "Leveraging weak learners via adaptive boosting" we walk "through a more concrete example using a training set consisting of 10 training samples as illustrated in the following table ..." In the rows 7, 8, 9, it should say "No" in the column "Correct?" (Ryan S.)
+
+![](./images/errata/07_10_err.png)
+
+- p. 227: Related to the error(s) in the table above, the computation of the error was written as  
+0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 +  **0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0** = 0.3  
+This should be:  
+0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + 0.1 &times; 0 + **0.1 &times; 1 + 0.1 &times; 1 + 0.1 &times; 1 + 0.1 &times; 0** = 0.3  
+(Ryan S.)
+
+- p. 227: The equation at the bottom
+![](./images/errata/07_eq_p227_01_wrong.png) should be replaced with ![](./images/errata/07_eq_p227_01_correct.png)  
+(Ryan S.)
 
 **Chapter 12**
 
