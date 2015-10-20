@@ -11,12 +11,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $22.00
+- Current amount for the next donation: $24.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Ryan S. ($10.00)
+1. Ryan S. ($12.00)
 2. S.R. ($4.00)
 3. Joseph Gordon ($3.00)
 4. T.S. Jayram ($2.00)
@@ -29,11 +29,40 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 # Errata
 
-### Technical Notes
-
 **I am really sorry about you seeing many typos up in the equations so far. Unfortunately, the layout team needed to retype the equations for compatibility reasons. There were a lot of typos introduced during this process, and I tried my very best to eliminate all of these by comparing the pre-finals against my draft. Cross-comparing 450 pages was a tedious task, and it appears that several typos slipped through, so if you see something that does not make quite sense to you, please let me know.**
 
-###[PDF version](./errata.pdf)
+**E-book Update (2015-10-20):**    
+
+Good news! I just heard back from the publisher; all the typos and errors which are listed below will be fixed by next week. If you bought the book via Packt, you'd just need to re-download the book. I hope that the updates will also be reflected in the Amazon Kindle version. If not, please contact me, and I'll be happy to make an arrangement with the publisher so that you'll get the updated e-book.
+I am really sorry about the inconvenience, and I really there weren't any errors in the first place. As Alexander Pope once said:
+
+> *to err is human; to forgive, divine*
+
+ I really hope you can overlook these little mishaps, but please do look over the errata, since I really don't want these typos to become misleading!
+
+
+**How can I tell if I have the initial or updated version of the book?**
+
+The easiest way may be to go to page viii, the second page of the **Preface**. If you see *Classifiers* spelled as *Classifirs*, that's definitely an old version then!
+
+![](./images/errata/errata_2015-10-20.png)
+
+
+<hr>
+
+### Previous Errata: Sep 23 - Oct 25, 2015
+
+
+Below, you'll find a list of the errors as they appear throughout the chapters. I recommend you to take a look at the PDF version if possible, where I highlighted the errors in the original PDF of the book.   
+
+####[View PDF](./errata_pdf/errata_2015-10-20.pdf)
+
+
+
+
+
+#### Technical Notes
+
 
 **Chapter 2**
 
@@ -85,6 +114,12 @@ This should be:
 ![](./images/errata/07_eq_p227_01_wrong.png) should be replaced with ![](./images/errata/07_eq_p227_01_correct.png)  
 (Ryan S.)
 
+**Chapter 10**
+
+- p. 279: Just above the section header "Exploring the Housing Dataset," the &sum;<sup>n</sup><sub>i=1</sub> should be replaced by &sum;<sup>m</sup><sub>i=1</sub>. (Ryan S.)
+
+- p. 290: There is a brief note about the "normal equations" (matrix form) of the OLS linear regression. After adding a column of 1s to the dataset **X**, you don't need to compute the bias unit explicitely. Also, upon request, I added a short code snippet to the [IPython notebook](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb#Estimating-the-coefficient-of-a-regression-model-via-scikit-learn) to compute the coefficients of the OLS regression model via this closed-form solution. (Ryan S.)
+
 **Chapter 12**
 
 - p. 347: In the section "Introducing the multi-layer neural network architecture" it says "where *h* is the number of hidden units and *m + 1* is the number of hidden units plus bias unit." It should be "the number of **input** units plus bias unit." (Ryan S.)
@@ -103,7 +138,7 @@ Here, the inner &sum;<sup>t</sup><sub>k=1</sub> should be &sum;<sup>t</sup><sub>
       should be "**&delta;**<sup>(3)</sup>"  so that   
       "**&delta;**<sup>(2)</sup> = (**W**<sup>(2)</sup>)<sup>T</sup> **&delta;**<sup>(3)</sup> * [ &part; &phi;(z<sup>(2)</sup>)/  &part; z<sup>(2)</sup>]" (Ryan S.)
 
-### Language
+#### Language
 
 **Preface**
 
