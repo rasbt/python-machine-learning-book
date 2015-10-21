@@ -1,10 +1,20 @@
 Sebastian Raschka, 2015
 
-# Python Machine Learning
-# Chapter 9 Code Examples
+Python Machine Learning - Code Examples
 
-## Embedding a Machine Learning Model into a Web Application
+## Chapter 9 - Embedding a Machine Learning Model into a Web Application
 
+- Serializing fitted scikit-learn estimators
+- Setting up a SQLite database for data storage
+- Developing a web application with Flask
+- Our first Flask web application
+  - Form validation and rendering
+  - Turning the movie classifier into a web application
+- Deploying the web application to a public server
+  - Updating the movie review classifier
+- Summary
+
+---
 
 The code for the Flask web applications can be found in the following directories:
     

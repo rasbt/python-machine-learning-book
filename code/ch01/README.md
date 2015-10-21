@@ -1,16 +1,35 @@
 Sebastian Raschka, 2015
 
-# Python Machine Learning 
+Python Machine Learning - Code Examples
 
-# Chapter 1 Code Examples
 
-## Giving Computers the Ability to Learn from Data
+##  Chapter 1 - Giving Computers the Ability to Learn from Data
 
-<hr>
+- Building intelligent machines to transform data into knowledge
+- The three different types of machine learning
+  - Making predictions about the future with supervised learning
+    - Classification for predicting class labels
+    - Regression for predicting continuous outcomes
+  - Solving interactive problems with reinforcement learning
+  - Discovering hidden structures with unsupervised learning
+    - Finding subgroups with clustering
+    - Dimensionality reduction for data compression
+- An introduction to the basic terminology and notations
+- A roadmap for building machine learning systems
+  - Preprocessing – getting data into shape
+  - Training and selecting a predictive model
+  - Evaluating models and predicting unseen data instances
+- Using Python for machine learning
+  - Installing Python packages
+- Summary
+
+
+
+---
 
 **Chapter 1 does not contain any code examples.**
 
-<hr>
+---
 
 ## Installing Python packages
 
