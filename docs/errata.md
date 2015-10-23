@@ -58,3 +58,4 @@ I converted the errata into a PDF document where I highlighted the errors and in
 Thanks so much for your feedback so far, I truly appreciate it and will do my best to get this fixed as soon as possible!
 
 ####[View PDF](./errata_pdf/errata_2015-10-23.pdf)
+####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_2015-10-23.pdf)
