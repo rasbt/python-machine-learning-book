@@ -11,7 +11,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $33.00
+- Current amount for the next donation: $34.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
@@ -26,6 +26,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 6. Haitham H. Saleh ($1.00)
 7. Muqueet M. ($1.00)
 10. Renato R. ($1.00)
+11. Michael L. ($1.00)
 
 
 ...
