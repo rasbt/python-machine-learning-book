@@ -79,3 +79,11 @@ your book is the best for me to use as a textbook.
 As a bonus, chapter on "Parallelizing Neural Network Training with Theano" was a great addition! A very exciting topic, author really went all out. Hands down the best Python Machine learning book available.  
 
 NazHuz via [Amazon](http://www.amazon.com/gp/customer-reviews/RURYHN1G3SRMZ/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=1783555130)
+
+
+<hr>
+
+I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
+-- Michaël Lambé
+
+[![](./images/armand_g_tweet.png)](https://twitter.com/arm_gilles/status/658927560932401154)

@@ -17,7 +17,6 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 10. Predicting Continuous Target Variables with Regression Analysis [[dir](./ch10)] [[ipynb](./ch10/ch10.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb)]
 11. Working with Unlabeled Data – Clustering Analysis [[dir](./ch11)] [[ipynb](./ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
 12. Training Artificial Neural Networks for Image Recognition [[dir](./ch12)] [[ipynb](./ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
-13. Parallelizing Neural Network Training via Theano [[dir](./ch13)] [[ipynb](.2/ch12.ipynb)]
 13. Parallelizing Neural Network Training via Theano [[dir](./ch13)] [[ipynb](./ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
 ## Contact
