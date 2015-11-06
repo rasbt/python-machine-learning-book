@@ -36,6 +36,15 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 **I am really sorry about you seeing many typos up in the equations so far. Unfortunately, the layout team needed to retype the equations for compatibility reasons. There were a lot of typos introduced during this process, and I tried my very best to eliminate all of these by comparing the pre-finals against my draft. Cross-comparing 450 pages was a tedious task, and it appears that several typos slipped through, so if you see something that does not make quite sense to you, please let me know.**
 
+### Current Errata:
+
+####[View PDF on GitHub](./errata_pdf/errata_2nd.pdf)
+
+#### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_2nd.pdf)
+
+####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_2nd.pdf)
+
+
 **E-book Update (2015-10-20):**    
 
 Good news! I just heard back from the publisher; all the typos and errors which are listed below will be fixed by next week. If you bought the book via Packt, you'd just need to re-download the book. I hope that the updates will also be reflected in the Amazon Kindle version. If not, please contact me, and I'll be happy to make an arrangement with the publisher so that you'll get the updated e-book.
@@ -55,14 +64,14 @@ The easiest way may be to go to page viii, the second page of the **Preface**. I
 
 <hr>
 
-### Previous Errata: Sep 23 - Oct 25, 2015
+### Old Errata: Sep 23 - Oct 25, 2015
 
 
 I converted the errata into a PDF document where I highlighted the errors and inserted the corrections as they appear in the book as many readers suggested. Please find the PDF version of the errata below.  
 Thanks so much for your feedback so far, I truly appreciate it and will do my best to get this fixed as soon as possible!
 
-####[View PDF on GitHub](./errata_pdf/errata_2015-10-23.pdf)
+####[View PDF on GitHub](./errata_pdf/errata_1st.pdf)
 
-#### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_2015-10-23.pdf)
+#### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_1st.pdf)
 
-####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_2015-10-23.pdf)
+####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_1st.pdf)
