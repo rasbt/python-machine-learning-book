@@ -67,6 +67,10 @@ your book is the best for me to use as a textbook.
 
 <hr>
 
+[![](./images/yong_cho_tweet.png)](https://twitter.com/syc22/status/661963391100133377)
+
+<hr>
+
 > I am a big fan of Sebastian Raschka's machine learning tutorials on his personal website, and have found him to be an excellent teacher for complex concepts in ML, so I've been looking forward to reading this book. I found the book similarly well-written and the explanations clear. It is heavy on examples (in Python 3! well done), so it's a good hands-on resource.   
 -- Carlos Faham, Security Data Scientist at LinkedIn
 
