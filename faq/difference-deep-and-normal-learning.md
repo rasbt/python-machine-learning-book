@@ -9,7 +9,7 @@ Let's start with multi-layer perceptrons (MLPs) ...
 
 
 On a tangent: The term "perceptron" in MLPs may be a bit confusing since you don't really want only linear neurons in your network. Using MLPs, you want to learn complex functions to solve non-linear problems. Thus, your network is conventionally composed of one or multiple "hidden" layers that connect the input and output layer. Those hidden layers normally have some sort of sigmoid activation function (log-sigmoid or the hyperbolic tangent etc.). For example, think of a log-sigmoid unit in your network as a logistic regression unit that returns continuous values outputs in the range 0-1. A simple MLP could look like this
-![](./difference_deep_and_normal_learning/mlp.png)
+![](./difference-deep-and-normal-learning/mlp.png)
 
 
 where y_hat is the final class label that you return as the prediction based on the inputs (x) if this are classification tasks. The "a"s are your activated neurons and the "w"s are the weight coefficients.
@@ -20,10 +20,10 @@ Now, this is where "deep learning" comes into play. Roughly speaking, you can th
 Let's consider a ConvNet in context of image classification
 Here, you use so-called "receptive fields" (think of them as "windows") that slide over your image. You then connect those "receptive fields" (for example of the size of 5x5 pixel) with 1 unit in the next layer, this is also called "feature map". After you are done with this mapping, you have constructed a so-called convolutional layer. Note that your feature detectors are basically replicates of one another -- they share the same weights. The idea is that if a feature detector is useful in one part of the imagine it is likely that it is useful somewhere else, but at the same time it allows each patch of image to be represented in several ways.
 
-![](./difference_deep_and_normal_learning/convolution.png)
+![](./difference-deep-and-normal-learning/convolution.png)
 
 
 Next, you have a "pooling" layer, where you reduce neighboring features from your feature map into single units (by taking the max feature or by averaging them, for example). You do this over many rounds and eventually arrive at an almost scale invariant representation of your image (the exact term is "equivariant"). This is very powerful since you can detect objects in an image no matter where they are located.
 
 
-![](./difference_deep_and_normal_learning/convnet.png)   
+![](./difference-deep-and-normal-learning/convnet.png)   

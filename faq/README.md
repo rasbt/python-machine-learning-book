@@ -20,8 +20,8 @@ Sebastian
 ### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
-- [What are some of the issues with clustering?](./issues_with_clustering.md)
-- [What is the difference between deep learning and usual machine learning?](./difference_deep_and_normal_learning.md)
+- [What are some of the issues with clustering?](./issues-with-clustering.md)
+- [What is the difference between deep learning and usual machine learning?](./difference-deep-and-normal-learning.md)
 - [What is the best validation metric for multi-class classification?](./multiclass-metric.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./datamining-vs-ml.md)
 - [How do I know if the problem is solvable through machine learning?](./ml-solvable.md)
@@ -38,13 +38,13 @@ Sebastian
 - [Which version of Python was used in the code examples?](./py2py3.md)
 - [Which technologies and libraries are being used?](./technologies.md)
 - [Which book version/format would you recommend?](./version.md)
-- [Why did you choose Python for machine learning?](./why_python.md)
-- [Why do you use so many leading and trailing underscores in the code examples?](./underscore_convention.md)
+- [Why did you choose Python for machine learning?](./why-python.md)
+- [Why do you use so many leading and trailing underscores in the code examples?](./underscore-convention.md)
 - [Are there any prerequisites and recommended pre-readings?](./prerequisites.md)
 
 ### General Questions
 
-- [What learning path/discipline in data science I should focus on?](./data_science_career.md)
+- [What learning path/discipline in data science I should focus on?](./data-science-career.md)
 - [At what point should one start contributing to open source?](./faq/open-source.md)
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
