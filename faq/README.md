@@ -17,9 +17,11 @@ Sebastian
 
 ## FAQ
 
-### Questions about ML
+### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
+- [What are some of the issues with Clustering?](./issues_with_clustering.md)
+- [What is the difference between deep learning and usual machine learning?](./difference_deep_and_normal_learning.md)
 
 ### Questions about the Book
 
@@ -31,3 +33,7 @@ Sebastian
 - [Why did you choose Python for machine learning?](./why_python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./underscore_convention.md)
 - [Are There Any Prerequisites and Recommended Pre-Readings?](./prerequisites.md)
+
+### General Questions
+
+- [What learning path/discipline in data science I should focus on?](./data_science_career.md)
