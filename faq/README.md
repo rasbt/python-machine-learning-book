@@ -17,6 +17,12 @@ Sebastian
 
 ## FAQ
 
+### Questions about ML
+
+- [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
+
+### Questions about the Book
+
 - [Can I use paragraphs and images from the book in presentations or my blog?](./copyright.md)
 - [How is this different from other machine learning books?](./different.md)
 - [Which version of Python was used in the code examples?](./py2py3.md)
