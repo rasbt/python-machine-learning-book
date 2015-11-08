@@ -78,10 +78,10 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
-- [What are some of the issues with Clustering?](./faq/issues_with_clustering.md)
+- [What are some of the issues with clustering?](./faq/issues_with_clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./faq/difference_deep_and_normal_learning.md)
 - [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
-- [What are differences in research nature between the two fields: Machine Learning & Data Mining?](./faq/datamining-vs-ml.md)
+- [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
 
 ### Questions about the Book
@@ -93,7 +93,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Which book version/format would you recommend?](./faq/version.md)
 - [Why did you choose Python for machine learning?](./faq/why_python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
-- [Are There Any Prerequisites and Recommended Pre-Readings?](./faq/prerequisites.md)
+- [Are there any prerequisites and recommended pre-readings?](./faq/prerequisites.md)
 
 ### General Questions
 
