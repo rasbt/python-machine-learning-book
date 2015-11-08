@@ -100,6 +100,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What learning path/discipline in data science I should focus on?](./faq/data_science_career.md)
 - [At what point should one start contributing to open source?](./open-source.md)
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
+- [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
 
 ## Contact
 
