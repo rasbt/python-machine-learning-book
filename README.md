@@ -80,6 +80,8 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
 - [What are some of the issues with Clustering?](./faq/issues_with_clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./faq/difference_deep_and_normal_learning.md)
+- [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
+- [What are differences in research nature between the two fields: Machine Learning & Data Mining?](./faq/)
 
 ### Questions about the Book
 
