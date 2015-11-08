@@ -75,6 +75,12 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ## FAQ
 
+### Questions about ML
+
+- [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
+
+### Questions about the Book
+
 - [Can I use paragraphs and images from the book in presentations or my blog?](./faq/copyright.md)
 - [How is this different from other machine learning books?](./faq/different.md)
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
@@ -83,6 +89,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Why did you choose Python for machine learning?](./faq/why_python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
 - [Are There Any Prerequisites and Recommended Pre-Readings?](./faq/prerequisites.md)
+
 
 
 ## Contact
