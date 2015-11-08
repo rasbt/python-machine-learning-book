@@ -22,6 +22,7 @@ Sebastian
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
 - [What are some of the issues with Clustering?](./issues_with_clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./difference_deep_and_normal_learning.md)
+- [What is the best validation metric for multi-class classification?](./multiclass-metric.md)
 
 ### Questions about the Book
 
