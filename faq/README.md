@@ -40,3 +40,5 @@ Sebastian
 ### General Questions
 
 - [What learning path/discipline in data science I should focus on?](./data_science_career.md)
+- [At what point should one start contributing to open source?](./faq/open-source.md)
+- [How important do you think having a mentor is to the learning process?](./faq/mentor.md)

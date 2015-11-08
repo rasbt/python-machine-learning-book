@@ -98,8 +98,8 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ### General Questions
 
 - [What learning path/discipline in data science I should focus on?](./faq/data_science_career.md)
-
-
+- [At what point should one start contributing to open source?](./open-source.md)
+- [How important do you think having a mentor is to the learning process?](./mentor.md)
 
 ## Contact
 
