@@ -75,9 +75,11 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ## FAQ
 
-### Questions about ML
+### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
+- [What are some of the issues with Clustering?](./faq/issues_with_clustering.md)
+- [What is the difference between deep learning and usual machine learning?](./faq/difference_deep_and_normal_learning.md)
 
 ### Questions about the Book
 
@@ -89,6 +91,10 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Why did you choose Python for machine learning?](./faq/why_python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
 - [Are There Any Prerequisites and Recommended Pre-Readings?](./faq/prerequisites.md)
+
+### General Questions
+
+- [What learning path/discipline in data science I should focus on?](./faq/data_science_career.md)
 
 
 

@@ -1,4 +1,4 @@
-# What are some of the issues of Clustering?
+# What are some of the issues with Clustering?
 
 I wouldn't necessarily call most of them "issues" but rather "challenges". For example, *k*-means:
 
