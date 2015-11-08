@@ -87,6 +87,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
+- [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
 
 ### Questions about the Book
 
