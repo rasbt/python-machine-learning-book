@@ -22,7 +22,7 @@ Next, let's assume our model has learned to classify samples with a standardized
 - new_5: 6 cm -> class ?
 - new_6: 7 cm -> class ?
 
-If we look at the "unstandardized "length" values in our training datast, it is intuitive to say that all of these samples are likely belonging to class_2. However, if we standardize these by re-computing standard deviation and and mean you would get similar values as before in the training set and your classifier would (probably incorrectly) classify samples 4 and 5 as class 2.
+If we look at the "unstandardized "length" values in our training dataset, it is intuitive to say that all of these samples are likely belonging to class_2. However, if we standardize these by re-computing standard deviation and and mean you would get similar values as before in the training set and your classifier would (probably incorrectly) classify samples 4 and 5 as class 2.
 
 - new_std_4: -1.21 -> class 2
 - new_std_5: 0 -> class 2
