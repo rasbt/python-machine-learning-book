@@ -27,6 +27,7 @@ Sebastian
 - [How do I know if the problem is solvable through machine learning?](./ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
+- [How was classification, as a learning machine, developed?](./classifier-history.md)
 
 ### Questions about the Book
 

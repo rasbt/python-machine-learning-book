@@ -85,6 +85,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
+- [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 
 ### Questions about the Book
 
