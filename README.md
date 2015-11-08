@@ -86,6 +86,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
+- [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
 
 ### Questions about the Book
 
