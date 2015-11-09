@@ -32,6 +32,7 @@ The two classes are not separable anymore...
 Let's use kernel PCA:
 
 ![](./large-num-features/kpca-pc1.png)
+
 This is much better; we can now train a linear classifier to separate those two classes. However, the problem is that we introduce an additional hyperparameter (gamma) that needs to be tuned. Also, this "kernel trick" does not work for any dataset, and there are also many more manifold learning techniques that are "more powerful"/appropriate than kernel PCA.
 For example, locally linear embedding (LLE) to unfold the famous Swiss Roll:
 
