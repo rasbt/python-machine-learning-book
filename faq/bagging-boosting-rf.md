@@ -6,19 +6,19 @@ Let's assume we use a decision tree algorithms as base classifier for all three:
 Why and when do we want to use any of these? Given a fixed-size number of training samples, our model will increasingly suffers from the "curse of dimensionality" if we increase the number of features. The challenge of individual, unpruned decision trees is that the hypothesis often ends up being too complex for the underlying training data -- decision trees are prone to overfitting.
 
 
-tl;dr: Bagging and random forests are "bagging" algorithms that aim to reduce the complexity of models that overfit the training data. In contrast, boosting is an approach to increase the complexity of models that suffer from high bias, that is, models that underfit the training data.
+**tl;dr: Bagging and random forests are "bagging" algorithms that aim to reduce the complexity of models that overfit the training data. In contrast, boosting is an approach to increase the complexity of models that suffer from high bias, that is, models that underfit the training data.**
 
 
 ## Bagging
 
 
-Now, let's take a look at the probably "simplest" case, bagging. Here we train a number (ensemble) of decision trees from bootstrap samples of your training set. Bootstrap sampling means drawing random samples from our training set with replacement. E.g., if our training set consists of 7 training samples, our bootstrap samples (here: n=7) can look as follows, where C1, C2, ... Cm shall symbolize the decision tree classifiers:
+Now, let's take a look at the probably "simplest" case, bagging. Here, we train a number (ensemble) of decision trees from bootstrap samples of your training set. Bootstrap sampling means drawing random samples from our training set with replacement. E.g., if our training set consists of 7 training samples, our bootstrap samples (here: n=7) can look as follows, where C1, C2, ... Cm shall symbolize the decision tree classifiers:
 
 
 ![](./bagging-boosting-rf/bagging.png)
 
 
-After we trained your (m) decision trees, we can use them to classify new data via majority rule. For instance, we'd let each decision tree make a decision and predict the class label that received more votes. Typically, this would result in a less complex decision boundary, and the bagging classifier would have a lower variance (less overfitting) than an individual decision tree. Below is a plot comparing a single decision tree (left) to a bagging classifier (right) for 2 variables from the Wine dataset (Alcohol and Hue). 
+After we trained your (m) decision trees, we can use them to classify new data via majority rule. For instance, we'd let each decision tree make a decision and predict the class label that received more votes. Typically, this would result in a less complex decision boundary, and the bagging classifier would have a lower variance (less overfitting) than an individual decision tree. Below is a plot comparing a single decision tree (left) to a bagging classifier (right) for 2 variables from the Wine dataset (Alcohol and Hue).
 
 
 ![](./bagging-boosting-rf/bagging-regions.png)
