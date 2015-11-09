@@ -75,11 +75,19 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ## FAQ
 
+### General Questions
+
+- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)]
+- [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
+- [At what point should one start contributing to open source?](./open-source.md)
+- [How important do you think having a mentor is to the learning process?](./mentor.md)
+- [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
+
 ### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
-- [What are some of the issues with clustering?](./faq/issues_with_clustering.md)
-- [What is the difference between deep learning and usual machine learning?](./faq/difference_deep_and_normal_learning.md)
+- [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
+- [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
 - [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
@@ -96,16 +104,11 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [Which version of Python was used in the code examples?](./faq/py2py3.md)
 - [Which technologies and libraries are being used?](./faq/technologies.md)
 - [Which book version/format would you recommend?](./faq/version.md)
-- [Why did you choose Python for machine learning?](./faq/why_python.md)
-- [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore_convention.md)
+- [Why did you choose Python for machine learning?](./faq/why-python.md)
+- [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore-convention.md)
 - [Are there any prerequisites and recommended pre-readings?](./faq/prerequisites.md)
 
-### General Questions
 
-- [What learning path/discipline in data science I should focus on?](./faq/data_science_career.md)
-- [At what point should one start contributing to open source?](./open-source.md)
-- [How important do you think having a mentor is to the learning process?](./mentor.md)
-- [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
 
 ## Contact
 

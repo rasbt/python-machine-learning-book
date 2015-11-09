@@ -17,6 +17,15 @@ Sebastian
 
 ## FAQ
 
+
+### General Questions
+
+- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
+- [What learning path/discipline in data science I should focus on?](./data-science-career.md)
+- [At what point should one start contributing to open source?](./faq/open-source.md)
+- [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
+- [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
+
 ### Questions about ML Concepts
 
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
@@ -31,6 +40,7 @@ Sebastian
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
 
+
 ### Questions about the Book
 
 - [Can I use paragraphs and images from the book in presentations or my blog?](./copyright.md)
@@ -41,10 +51,3 @@ Sebastian
 - [Why did you choose Python for machine learning?](./why-python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./underscore-convention.md)
 - [Are there any prerequisites and recommended pre-readings?](./prerequisites.md)
-
-### General Questions
-
-- [What learning path/discipline in data science I should focus on?](./data-science-career.md)
-- [At what point should one start contributing to open source?](./faq/open-source.md)
-- [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
-- [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
