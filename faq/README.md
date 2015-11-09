@@ -25,6 +25,7 @@ Sebastian
 - [At what point should one start contributing to open source?](./faq/open-source.md)
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
+- [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
 
 ### Questions about ML Concepts
 
