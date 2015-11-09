@@ -1,0 +1,6 @@
+# Is it always better to have the largest possible number of folds when performing cross validation?
+
+Let's assume we mean k-fold cross-validation used for hyperparameter tuning of algorithms for classification, and with "better," we mean better at estimating the generalization performance.
+In this case, my answer would be no, otherwise we would always use LOOCV (Leave one out cross validation) instead of k-fold CV. (A useful reference: Shao, Jun. [Linear model selection by cross-validation.](http://www.sciencedirect.com/science/article/pii/S0378375803003719) Journal of the American statistical Association 88.422 (1993): 486-494.).
+
+In practice, I would say that the default value is k=10 in k-fold CV, which is typically a good choice. But if we are working with small training sets, I would increase the number of folds to use more training data in each iteration; this will lower the bias towards estimating the generalization error. On the other hand, it will also increase the run-time though. So, if we are training deep neural nets on large datasets, and if we want to tune hyperparameters, I would think carefully about the size of *k*. If our dataset is large, it is typically okay to choose smaller *k* since you will still get good average performance estimates. And for our final estimate, we still have our independent test set anyway.   
