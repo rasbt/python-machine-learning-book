@@ -82,42 +82,75 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [At what point should one start contributing to open source?](./faq/open-source.md)
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
-- [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
-- [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
+
 
 ### Questions about ML Concepts
 
+##### Tree models
+
 - [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./faq/bagging-boosting-rf.md)
 - [What are the disadvantages of using classic decision tree algorithm for large dataset?](./faq/decision-tree-disadvantages.md)
-- [Is it always better to have the largest possible number of folds when performing cross validation?](./faq/number-of-kfolds.md)
-- [What are the different fields of study in data mining?](./faq/datamining-overview.md)
-- [When training an SVM classifier, is it better to have a large or small number of support vectors?](./faq/num-support-vectors.md)
 - [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./faq/decision-tree-binary.md)
-- [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
-- [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
-- [How do I evaluate a model?](./faq/evaluate-a-model.md)
-- [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
-- [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
-- [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
-- [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
-- [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
+
+##### About the Machine Learning Field
+
+- [What are the different fields of study in data mining?](./faq/datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
-- [What is the difference between LDA and PCA for dimensionality reduction?](./faq/lda-vs-pca.md)
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
-- [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
-- [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
-- [Why did it take so long for deep networks to be invented?](./faq/inventing-deeplearning.md)
 - [What are the origins of machine learning?](./faq/ml-origins.md)
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
-- [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
-- [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
-- [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
-- [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
-- [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
-- [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
+
+##### Model evaluation
+
+- [Is it always better to have the largest possible number of folds when performing cross validation?](./faq/number-of-kfolds.md)
+- [When training an SVM classifier, is it better to have a large or small number of support vectors?](./faq/num-support-vectors.md)
+- [How do I evaluate a model?](./faq/evaluate-a-model.md)
+- [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
+- [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
+
+##### Logistic Regression
+
+- [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
+- [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
+- [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
+- [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
+
+##### Neural Networks
+
+- [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
+- [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
+- [Why did it take so long for deep networks to be invented?](./faq/inventing-deeplearning.md)
+- [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
+- [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
+- [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
+
+##### Unsupervised Learning
+
+- [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
+
+##### Preprocessing
+
+- [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
+- [What is the difference between LDA and PCA for dimensionality reduction?](./faq/lda-vs-pca.md)
+- [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
+
+#### Other
+
+- [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
+- [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
+
+
+
+
+
+
+
+
+
+
 
 ### Questions about the Book
 
