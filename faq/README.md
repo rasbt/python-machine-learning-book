@@ -29,6 +29,7 @@ Sebastian
 
 ### Questions about ML Concepts
 
+- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./bagging-boosting-rf.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./visual-backpropagation.md)
 - [How do I evaluate a model?](./evaluate-a-model.md)

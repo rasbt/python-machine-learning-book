@@ -86,6 +86,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### Questions about ML Concepts
 
+- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./faq/bagging-boosting-rf.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
