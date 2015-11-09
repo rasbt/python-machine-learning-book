@@ -20,7 +20,7 @@ Sebastian
 
 ### General Questions
 
-- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
+- [Why do you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./data-science-career.md)
 - [At what point should one start contributing to open source?](./open-source.md)
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
@@ -50,6 +50,7 @@ Sebastian
 - [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
+- [What are the broad categories of classifiers?](./classifier-categories.md)
 
 ### Questions about the Book
 
