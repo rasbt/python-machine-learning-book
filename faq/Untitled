@@ -1,0 +1,3 @@
+# How do you attack a machine learning problem with a large number of features?
+
+There are 3 main strategies to reduce the number of features if necessary to avoid overfitting (due to the curse of dimensionality) and/or reduce the compuational complexity (i.e., increase the computational efficiency).

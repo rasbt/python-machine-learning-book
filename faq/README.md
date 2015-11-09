@@ -55,7 +55,9 @@ Sebastian
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
 - [What is the decision boundary for Naive Bayes?](./naive-bayes-boundary.md)
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
+- [How do you attack a machine learning problem with a large number of features?](./many-features.md)
 - [What are the broad categories of classifiers?](./classifier-categories.md)
+- [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
 
 ### Questions about the Book
 
