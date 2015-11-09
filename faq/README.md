@@ -43,7 +43,8 @@ Sebastian
 - [How was classification, as a learning machine, developed?](./classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
-- [# What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
+- [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
+- [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
 
 ### Questions about the Book
 
