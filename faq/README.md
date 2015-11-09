@@ -28,6 +28,7 @@ Sebastian
 
 ### Questions about ML Concepts
 
+- [Can you give a visual explanation for the back propagation algorithm for neural networks?](./visual-backpropagation.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
 - [What are some of the issues with clustering?](./issues-with-clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./difference-deep-and-normal-learning.md)
