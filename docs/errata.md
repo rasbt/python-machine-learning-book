@@ -11,23 +11,24 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $38.00
+- Current amount for the next donation: $46.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
 1. Ryan S. ($16.00)
-2. S.R. ($4.00)
-3. Joseph Gordon ($3.00)
-4. Edgar C. ($3.00)
-5. T.S. Jayram ($2.00)
-6. Andrei R. ($2.00)
-7. Ilmo S. ($3.00)
-8. Elias R. ($1.00)
-9. Haitham H. Saleh ($1.00)
-10. Muqueet M. ($1.00)
-11. Renato R. ($1.00)
-12. Michael L. ($1.00)
+2. Christopher Galpin ($8.00)
+3. S.R. ($4.00)
+4. Joseph Gordon ($3.00)
+5. Edgar C. ($3.00)
+6. T.S. Jayram ($2.00)
+7. Andrei R. ($2.00)
+8. Ilmo S. ($3.00)
+9. Elias R. ($1.00)
+10. Haitham H. Saleh ($1.00)
+11. Muqueet M. ($1.00)
+12. Renato R. ($1.00)
+13. Michael L. ($1.00)
 
 
 ...
