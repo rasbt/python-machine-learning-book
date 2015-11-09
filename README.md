@@ -100,7 +100,8 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
-- [# What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
+- [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
+- [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
 
 ### Questions about the Book
 
