@@ -86,6 +86,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### Questions about ML Concepts
 
+- [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
@@ -97,6 +98,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
+- [Why did it take so long for deep networks to be invented?](./faq/Why did it take so long for deep networks to be invented?)
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
