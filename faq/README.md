@@ -36,6 +36,7 @@ Sebastian
 - [What is the difference between deep learning and usual machine learning?](./difference-deep-and-normal-learning.md)
 - [What is the best validation metric for multi-class classification?](./multiclass-metric.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./datamining-vs-ml.md)
+- [What is the difference between LDA and PCA for dimensionality reduction?](./lda-vs-pca.md)
 - [How do I know if the problem is solvable through machine learning?](./ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
