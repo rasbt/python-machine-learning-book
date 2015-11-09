@@ -43,3 +43,5 @@ This is a very broad question, and the answer would basically fill an entire boo
 The list goes on and on :). I think Andreas Mueller's scikit-learn algorithm "cheat-sheet" is an excellent resource. (Click on the image to view the original, interactive version on scikit-learn)
 
 [![](./choosing-technique/scikit-cheatsheet.png)](http://scikit-learn.org/dev/tutorial/machine_learning_map/index.html)
+
+[Source: http://scikit-learn.org/dev/tutorial/machine_learning_map/index.html]

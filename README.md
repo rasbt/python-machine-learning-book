@@ -77,7 +77,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### General Questions
 
-- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
+- [Why do you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
 - [At what point should one start contributing to open source?](./faq/open-source.md)
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
@@ -107,6 +107,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
+- [What are the broad categories of classifiers?](./faq/classifier-categories.md)
 
 ### Questions about the Book
 

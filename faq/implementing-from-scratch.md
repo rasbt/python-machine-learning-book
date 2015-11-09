@@ -1,6 +1,6 @@
-# Why are you and other people sometimes implement machine learning algorithms from scratch?
+# Why do you and other people sometimes implement machine learning algorithms from scratch?
 There are several different reasons why implementing algorithms from scratch can be useful:
- 
+
 1. it can help us to understand the inner works of an algorithm
 2. we could try to implement an algorithm more efficiently
 3. we can add new features to an algorithm or experiment with different variations of the core idea
