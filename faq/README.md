@@ -51,6 +51,7 @@ Sebastian
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
+- [What is the decision boundary for Naive Bayes?](./naive-bayes-boundary.md)
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
 - [What are the broad categories of classifiers?](./classifier-categories.md)
 
