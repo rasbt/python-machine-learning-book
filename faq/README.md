@@ -43,7 +43,7 @@ Sebastian
 - [How was classification, as a learning machine, developed?](./classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
-
+- [# What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
 
 ### Questions about the Book
 
