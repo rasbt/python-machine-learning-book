@@ -93,6 +93,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
 - [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
+- [What is the difference between LDA and PCA for dimensionality reduction?](./faq/lda-vs-pca.md)
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
