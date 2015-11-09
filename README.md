@@ -91,6 +91,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
+- [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
 - [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)

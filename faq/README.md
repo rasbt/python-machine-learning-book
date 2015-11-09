@@ -34,6 +34,7 @@ Sebastian
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./visual-backpropagation.md)
 - [How do I evaluate a model?](./evaluate-a-model.md)
+- [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./softmax.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./standardize-param-reuse.md)
 - [What are some of the issues with clustering?](./issues-with-clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./difference-deep-and-normal-learning.md)
