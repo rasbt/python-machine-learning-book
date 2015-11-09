@@ -5,10 +5,10 @@ In my opinion, the main reason is that everything in the Deep Learning field is 
 However, I also think that it may only seem that there are so many libraries because it is a truly trendy topic at the moment, and we are living in the time and age where open-source and code sharing is (fortunately) very popular. I guess there are 100x more libraries that implement SVMs, logistic regression etc. than deep learning libraries.
 
 
-Anyway, if you are interested in implementing neural networks yourself, have a look at Theano (Welcome - Theano 0.7 documentation) -- NumPy on steroids as how it is commonly called. Not only does it allow you to use numerical expressions more efficiently, but they also implement tensors and let you utilize GPUs. Theano is actually what most of the "many deep learning libraries" in Python are using, e.g,.
+Anyway, if you are interested in implementing neural networks yourself, have a look at [Theano](http://deeplearning.net/software/theano/) -- NumPy on steroids as how it is commonly called. Not only does it allow you to use numerical expressions more efficiently, but they also implement tensors and let you utilize GPUs. Theano is actually what most of the "many deep learning libraries" in Python are using, e.g,.
 
-- Lasagne (Lasagne/Lasagne)
-- Keras (Keras Documentation)
-- PyLearn 2 (lisa-lab/pylearn2)
+- [Lasagne](https://github.com/Lasagne/Lasagne)
+- [Keras](http://keras.io)
+- [PyLearn 2](https://github.com/lisa-lab/pylearn2)
 
 ...

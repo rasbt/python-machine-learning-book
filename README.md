@@ -87,6 +87,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ### Questions about ML Concepts
 
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
+- [How do I evaluate a model?](./faq/evaluate-a-model.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
 - [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
