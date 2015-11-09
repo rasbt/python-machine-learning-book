@@ -79,10 +79,10 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 - [Why are you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
-- [At what point should one start contributing to open source?](./open-source.md)
-- [How important do you think having a mentor is to the learning process?](./mentor.md)
-- [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
-- [Why are there so many deep learning libraries?](./many-deeplearning-libs.md)
+- [At what point should one start contributing to open source?](./faq/open-source.md)
+- [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
+- [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
+- [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
 
 ### Questions about ML Concepts
 
