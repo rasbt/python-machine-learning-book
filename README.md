@@ -105,6 +105,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
+- [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 
 ### Questions about the Book
