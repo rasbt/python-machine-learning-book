@@ -34,6 +34,7 @@ Sebastian
 - [What are the disadvantages of using classic decision tree algorithm for large dataset?](./decision-tree-disadvantages.md)
 - [Is it always better to have the largest possible number of folds when performing cross validation?](./number-of-kfolds.md)
 - [What are the different fields of study in data mining?](./datamining-overview.md)
+- [When training an SVM classifier, is it better to have a large or small number of support vectors?](./num-support-vectors.md)
 - [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./decision-tree-binary.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./visual-backpropagation.md)
