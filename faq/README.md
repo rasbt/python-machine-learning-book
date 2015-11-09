@@ -41,7 +41,7 @@ Sebastian
 - [What is the difference between LDA and PCA for dimensionality reduction?](./lda-vs-pca.md)
 - [How do I know if the problem is solvable through machine learning?](./ml-solvable.md)
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
-- [Why did it take so long for deep networks to be invented?](./Why did it take so long for deep networks to be invented?)
+- [Why did it take so long for deep networks to be invented?](./inventing-deeplearning.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
 - [How was classification, as a learning machine, developed?](./classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)

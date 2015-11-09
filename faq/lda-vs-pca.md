@@ -4,11 +4,11 @@ Both LDA and PCA are linear transformation techniques: LDA is a supervised where
 
 We can picture PCA as a technique that finds the directions of maximal variance:
 
-![](./lda-vs-pca/pca.md)
+![](./lda-vs-pca/pca.png)
 
 In contrast to PCA, LDA attempts to find a feature subspace that maximizes class separability (note that LD 2 would be a very bad linear discriminant in the figure above).
 
-![](./lda-vs-pca/lda.md)
+![](./lda-vs-pca/lda.png)
 
 
 Remember that LDA makes assumptions about normally distributed classes and equal class covariances.
