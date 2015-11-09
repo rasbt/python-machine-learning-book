@@ -4,17 +4,17 @@
 There are 3 main strategies to reduce the number of features if necessary to avoid overfitting (due to the curse of dimensionality) and/or reduce the computational complexity (i.e., increase the computational efficiency).
 
 
-1. Regularization and Sparsity
+**1) Regularization and Sparsity**
 
 - If supported by the model, I would recommend L1 or ElasticNet regularization to zero-out some features.
 
 
-2. Feature Selection
+**2) Feature Selection**
 
-- we could try feature selection algorithms (e.g., selecting by variance or by greedy search: sequential backward/forward selection, genetic algorithms, etc.)
+- We could try various different feature selection algorithms (e.g., selecting by variance or by greedy search: sequential backward/forward selection, genetic algorithms, etc.)
 
 
-3. Feature Extraction
+**3) Feature Extraction**
 
 - We could compress your feature space via transformation onto a lower-dimensional subspace. One popular example would be Principal Component Analysis. But we have to keep in mind that PCA is a linear transformation technique, which may be problematic in non-linear problems. For example, let's consider a simple "concentric circles" dataset:
 
