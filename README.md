@@ -83,6 +83,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
 - [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
+- [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
 
 ### Questions about ML Concepts
 

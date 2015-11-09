@@ -26,6 +26,7 @@ Sebastian
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
 - [Why are there so many deep learning libraries?](./many-deeplearning-libs.md)
+- [Why do some people hate neural networks/deep learning?](./deeplearning-criticism.md)
 
 ### Questions about ML Concepts
 
