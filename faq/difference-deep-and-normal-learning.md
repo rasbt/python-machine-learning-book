@@ -9,6 +9,7 @@ Let's start with multi-layer perceptrons (MLPs) ...
 
 
 On a tangent: The term "perceptron" in MLPs may be a bit confusing since you don't really want only linear neurons in your network. Using MLPs, you want to learn complex functions to solve non-linear problems. Thus, your network is conventionally composed of one or multiple "hidden" layers that connect the input and output layer. Those hidden layers normally have some sort of sigmoid activation function (log-sigmoid or the hyperbolic tangent etc.). For example, think of a log-sigmoid unit in your network as a logistic regression unit that returns continuous values outputs in the range 0-1. A simple MLP could look like this
+
 ![](./difference-deep-and-normal-learning/mlp.png)
 
 
