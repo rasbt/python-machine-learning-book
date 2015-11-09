@@ -48,6 +48,7 @@ Sebastian
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
+- [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
 
 ### Questions about the Book
 

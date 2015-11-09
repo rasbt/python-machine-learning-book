@@ -81,8 +81,7 @@ your book is the best for me to use as a textbook.
 
 > An amazing book, really can't praise it enough. Presentation of technical subjects are explained very clearly. The author is very thorough in his writing making sure to fill in the details so you don't get left behind. It was a wonderful experience. Clearly written examples showing the theory and practice of machine learning. An invaluable tutorial.  
 As a bonus, chapter on "Parallelizing Neural Network Training with Theano" was a great addition! A very exciting topic, author really went all out. Hands down the best Python Machine learning book available.  
-
-NazHuz via [Amazon](http://www.amazon.com/gp/customer-reviews/RURYHN1G3SRMZ/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=1783555130)
+-- NazHuz via [Amazon](http://www.amazon.com/gp/customer-reviews/RURYHN1G3SRMZ/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
 
 <hr>
@@ -91,3 +90,9 @@ I am reading your recent book on ML and I think this is on the best book I ever 
 -- Michaël Lambé
 
 [![](./images/armand_g_tweet.png)](https://twitter.com/arm_gilles/status/658927560932401154)
+
+
+<hr>
+
+This is the first Python Machine Learning book that actually made sense. Sebastian managed to combine theory (math behind the models, how to implement an algorithm from scratch) with practice (how to actually implement it using scikit-learn) in a way no book has done thus far. I was really impressed (and surprised) to see how 'easy' it is to implement the more simple algorithms from scratch [...]  
+-- C. Herther via [Amazon](http://www.amazon.com/gp/customer-reviews/R2I0D8HNIQODVA/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=B00YSILNL0)
