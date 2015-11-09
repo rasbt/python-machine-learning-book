@@ -46,6 +46,7 @@ Sebastian
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
 - [Why did it take so long for deep networks to be invented?](./inventing-deeplearning.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
+- [What are the origins of machine learning?](./ml-origins.md)
 - [How was classification, as a learning machine, developed?](./classifier-history.md)
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
