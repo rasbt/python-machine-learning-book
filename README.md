@@ -108,6 +108,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
+- [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
 
