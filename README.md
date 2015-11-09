@@ -137,7 +137,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
 
-#### Other
+##### Other
 
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
 - [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
@@ -146,7 +146,9 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 
 
-
+<br>
+<br>
+<br>
 
 
 
