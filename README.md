@@ -77,7 +77,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### General Questions
 
-- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)]
+- [Why are you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
 - [At what point should one start contributing to open source?](./open-source.md)
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
@@ -85,6 +85,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### Questions about ML Concepts
 
+- [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
 - [Why do we re-use parameters from the training set to standardize the test set and new data?](./faq/standardize-param-reuse.md)
 - [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
 - [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
