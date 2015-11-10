@@ -79,10 +79,15 @@ Sebastian
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
 - [How do you attack a machine learning problem with a large number of features?](./large-num-features.md)
 
+##### Naive Bayes
+
+- [What is the decision boundary for Naive Bayes?](./naive-bayes-boundary.md)
+- [Is it possible to mix different variable types in Naive Bayes, for example, binary and continues features?](./naive-bayes-vartypes.md)
+
 ##### Other
 
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
-- [What is the decision boundary for Naive Bayes?](./naive-bayes-boundary.md)
+
 
 
 <br>
