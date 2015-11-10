@@ -17,7 +17,9 @@ Sebastian
 
 ## FAQ
 
-### General Questions
+<!--- start -->
+
+### General Questions about Machine Learning and 'Data Science'
 
 - [Why do you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./data-science-career.md)
@@ -25,8 +27,7 @@ Sebastian
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
 
-
-### Questions about ML Concepts
+### Questions about Machine Learning Concepts
 
 ##### Tree models
 
@@ -89,6 +90,7 @@ Sebastian
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
 
 
+<!--- end -->
 
 <br>
 <br>
