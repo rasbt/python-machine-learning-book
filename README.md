@@ -137,10 +137,15 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
 
+##### Naive Bayes
+
+- [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
+- [Can I use Naive Bayes classifiers for mixed variable types?](./faq/naive-bayes-vartypes.md)
+- [Is it possible to mix different variable types in Naive Bayes, for example, binary and continues features?](./naive-bayes-vartypes.md)
+
 ##### Other
 
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
-- [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
 
 
 
