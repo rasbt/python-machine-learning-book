@@ -30,6 +30,7 @@ In machine learning, we take data (e.g., e-mails), provide information about the
 
 
 **machine learning:**
+
 - results + data -> machine learning algorithm + computer -> set of rules
 
 
