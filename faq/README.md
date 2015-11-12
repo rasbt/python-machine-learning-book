@@ -26,6 +26,7 @@ Sebastian
 - [At what point should one start contributing to open source?](./open-source.md)
 - [How important do you think having a mentor is to the learning process?](./mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
+- [How would you explain machine learning to a software engineer?](./ml-to-a-programmer.md)
 
 ### Questions about Machine Learning Concepts
 

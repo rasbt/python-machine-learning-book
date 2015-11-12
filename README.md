@@ -82,6 +82,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [At what point should one start contributing to open source?](./faq/open-source.md)
 - [How important do you think having a mentor is to the learning process?](./faq/mentor.md)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
+- [How would you explain machine learning to a software engineer?](./ml-to-a-programmer.md)
 
 
 ### Questions about ML Concepts
