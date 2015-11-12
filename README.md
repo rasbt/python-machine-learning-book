@@ -136,6 +136,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
 - [What is the difference between LDA and PCA for dimensionality reduction?](./faq/lda-vs-pca.md)
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
+- [Does mean centering or feature scaling affect a Principal Component Analysis?](./faq/pca-scaling.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
 
 ##### Naive Bayes
