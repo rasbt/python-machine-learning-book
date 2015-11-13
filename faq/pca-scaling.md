@@ -1,6 +1,6 @@
-# Does mean centering or feature scaling affect a Principal Component Analysis?
+i. Does mean centering or feature scaling affect a Principal Component Analysis?
 
-Let us think about whether it matters or not if the variables are centered for applications such as Principal Component Analysis (PCA) if the PCA is calculated from the covariance matrix (i.e., the k principal components are the eigenvectors of the covariance matrix that correspond to the k largest eigenvalues.
+Let us think about whether it matters or not if the variables are centered for applications such as Principal Component Analysis (PCA) if the PCA is calculated from the covariance matrix (i.e., the *k* principal components are the eigenvectors of the covariance matrix that correspond to the *k* largest eigenvalues).
 
 ###  1. Mean centering does not affect the covariance matrix
 Here, the rational is: If the covariance is the same whether the variables are centered or not, the result of the PCA will be the same.
