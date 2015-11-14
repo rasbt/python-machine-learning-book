@@ -45,7 +45,7 @@ Sebastian
 
 ##### Regression Analysis
 
-- [What is the difference between Pearson R and Simple Linear Regression?](./faq/pearson-r-vs-linear-regr.md)
+- [What is the difference between Pearson R and Simple Linear Regression?](./pearson-r-vs-linear-regr.md)
 
 ##### Tree models
 
