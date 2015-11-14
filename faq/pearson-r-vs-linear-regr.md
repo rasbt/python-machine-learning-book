@@ -3,7 +3,7 @@
 
 In "simple linear regression" (ordinary least-squares regression with 1 variable), you fit a line    
 
-*y&#770; = a + b\*x*
+y&#770; = a + b * x
 
 in the attempt to predict the target variable  *y*  using the predictor *x*.
 
