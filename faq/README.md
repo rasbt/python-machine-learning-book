@@ -32,6 +32,7 @@ Sebastian
 
 ### Questions about the Machine Learning Field
 
+- [What are some real-world examples of applications of machine learning in the field?](./ml-examples.md)
 - [What are the different fields of study in data mining?](./datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./datamining-vs-ml.md)
 - [How do I know if the problem is solvable through machine learning?](./ml-solvable.md)

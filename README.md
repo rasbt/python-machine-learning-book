@@ -87,6 +87,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### Questions about the Machine Learning Field
 
+- [What are some real-world examples of applications of machine learning in the field?](./faq/ml-examples.md)
 - [What are the different fields of study in data mining?](./faq/datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
 - [How do I know if the problem is solvable through machine learning?](./faq/ml-solvable.md)
