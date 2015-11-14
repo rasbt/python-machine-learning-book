@@ -29,15 +29,8 @@ Sebastian
 - [How would you explain machine learning to a software engineer?](./ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./ml-curriculum.md)
 
-### Questions about Machine Learning Concepts
 
-##### Tree models
-
-- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./bagging-boosting-rf.md)
-- [What are the disadvantages of using classic decision tree algorithm for large dataset?](./decision-tree-disadvantages.md)
-- [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./decision-tree-binary.md)
-
-##### About the Machine Learning Field
+### Questions about the Machine Learning Field
 
 - [What are the different fields of study in data mining?](./datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./datamining-vs-ml.md)
@@ -46,6 +39,20 @@ Sebastian
 - [How was classification, as a learning machine, developed?](./classifier-history.md)
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
 - [What are the broad categories of classifiers?](./classifier-categories.md)
+
+
+### Questions about Machine Learning Concepts and Statistics
+
+##### Regression Analysis
+
+- [What is the difference between Pearson R and Simple Linear Regression?](./faq/pearson-r-vs-linear-regr.md)
+
+##### Tree models
+
+- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./bagging-boosting-rf.md)
+- [What are the disadvantages of using classic decision tree algorithm for large dataset?](./decision-tree-disadvantages.md)
+- [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./decision-tree-binary.md)
+
 
 ##### Model evaluation
 

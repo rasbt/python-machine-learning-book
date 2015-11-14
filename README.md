@@ -85,15 +85,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How would you explain machine learning to a software engineer?](./faq/ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./faq/ml-curriculum.md)
 
-### Questions about ML Concepts
-
-##### Tree models
-
-- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./faq/bagging-boosting-rf.md)
-- [What are the disadvantages of using classic decision tree algorithm for large dataset?](./faq/decision-tree-disadvantages.md)
-- [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./faq/decision-tree-binary.md)
-
-##### About the Machine Learning Field
+### Questions about the Machine Learning Field
 
 - [What are the different fields of study in data mining?](./faq/datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
@@ -102,6 +94,18 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
+
+### Questions about ML Concepts and Statistics
+
+##### Regression Analysis
+
+- [What is the difference between Pearson R and Simple Linear Regression?](./faq/pearson-r-vs-linear-regr.md)
+
+##### Tree models
+
+- [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./faq/bagging-boosting-rf.md)
+- [What are the disadvantages of using classic decision tree algorithm for large dataset?](./faq/decision-tree-disadvantages.md)
+- [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./faq/decision-tree-binary.md)
 
 ##### Model evaluation
 
