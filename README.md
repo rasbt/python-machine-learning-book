@@ -153,6 +153,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ##### Other
 
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
+- [When should one use median, as opposed to the mean or average?](./faq/median-vs-mean.md)
 
 
 

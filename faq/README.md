@@ -99,7 +99,7 @@ Sebastian
 ##### Other
 
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
-
+- [When should one use median, as opposed to the mean or average?](./median-vs-mean.md)
 
 <!--- end -->
 

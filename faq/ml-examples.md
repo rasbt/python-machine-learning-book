@@ -35,19 +35,21 @@ Some interesting papers if you want to read more:
 
 ### Finance
 ￼
-- predict if an applicant is credit-worthy
+- predict if an applicant is credit-worthy  
+
 - detect credit card fraud
 - find promising trends on the stock market
 
 ![](./ml-examples/stock-market.png)
 
+
+
+
 ### Text and Speech Recognition
 
-
-
 - handwritten digit and letter recognition at the post office
-- voice assistants (Siri)
-- language translation services
+- voice assistants (Siri)  
+- language translation services  
 
 ![](./ml-examples/letter.jpg)
 
