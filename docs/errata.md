@@ -11,12 +11,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $53.00
+- Current amount for the next donation: $55.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
-1. Ryan S. ($16.00)
+1. Ryan S. ($21.00)
 2. Christopher Galpin ($8.00)
 2. Edgar C. ($4.00)
 3. S.R. ($4.00)
