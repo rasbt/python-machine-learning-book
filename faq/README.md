@@ -93,6 +93,7 @@ Sebastian
 
 ##### Naive Bayes
 
+- [Why is the Naive Bayes Classifier naive?](./naive-naive-bayes.md)
 - [What is the decision boundary for Naive Bayes?](./naive-bayes-boundary.md)
 - [Is it possible to mix different variable types in Naive Bayes, for example, binary and continues features?](./naive-bayes-vartypes.md)
 

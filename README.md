@@ -146,6 +146,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ##### Naive Bayes
 
+- [Why is the Naive Bayes Classifier naive?](./faq/naive-naive-bayes.md)
 - [What is the decision boundary for Naive Bayes?](./faq/naive-bayes-boundary.md)
 - [Can I use Naive Bayes classifiers for mixed variable types?](./faq/naive-bayes-vartypes.md)
 - [Is it possible to mix different variable types in Naive Bayes, for example, binary and continues features?](./naive-bayes-vartypes.md)
