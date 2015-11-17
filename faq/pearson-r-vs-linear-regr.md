@@ -40,11 +40,19 @@ In our simple example above, we get
 
 ### Simple Linear Regression
 
-Now, for simple linear regression, we can use the “linear correlation” to compute the slope of the line
+Now, for simple linear regression, we compute the slope as follows:
 
 ![](./pearson-r-vs-linear-regr/slope.png)
 
-b ≈ 0.8171
+To show how the correlation coefficient r factors in, let's rewrite it as
+
+![](./pearson-r-vs-linear-regr/slope_rewrite.png)
+
+where the first term is equal to r, which we defined earlier; we can now see that we could use the “linear correlation coefficient” to compute the slope of the line as
+
+![](./pearson-r-vs-linear-regr/slope_r.png)
+
+Continuing with the example from above, we get b ≈ 0.8171.
 
 **So, essentially, the linear correlation coefficient (Pearson’s r) is just the standardized slope of a simple linear regression line (fit).**    
 To continue with the example, we can now compute the y-axis intercept as
