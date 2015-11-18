@@ -98,6 +98,10 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 
 ### Questions about ML Concepts and Statistics
 
+##### Cost Functions and Optimization
+
+- [Fitting a model via closed-form equations vs. Gradient Descent vs Stochastic Gradient Descent vs Mini-Batch Learning -- what is the difference?](./faq/closed-form-vs-gd.md)
+
 ##### Regression Analysis
 
 - [What is the difference between Pearson R and Simple Linear Regression?](./faq/pearson-r-vs-linear-regr.md)

@@ -44,6 +44,10 @@ Sebastian
 
 ### Questions about Machine Learning Concepts and Statistics
 
+##### Cost Functions and Optimization
+
+- [Fitting a model via closed-form equations vs. Gradient Descent vs Stochastic Gradient Descent vs Mini-Batch Learning -- what is the difference?](./closed-form-vs-gd.md)
+
 ##### Regression Analysis
 
 - [What is the difference between Pearson R and Simple Linear Regression?](./pearson-r-vs-linear-regr.md)
