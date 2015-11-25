@@ -26,7 +26,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 7. Hyun L. ($3.00)
 8. T.S. Jayram ($2.00)
 9. Andrei R. ($2.00)
-10. Christoph K. ($2.00)
+10. Panos N. ($2.00)
 11. Elias R. ($1.00)
 12. Haitham H. Saleh ($1.00)
 13. Muqueet M. ($1.00)
