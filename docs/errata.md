@@ -11,7 +11,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $55.00
+- Current amount for the next donation: $56.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
@@ -21,16 +21,17 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 2. Edgar C. ($4.00)
 3. S.R. ($4.00)
 4. Joseph Gordon ($3.00)
-5. Ailin M. ($3.00)
+5. Ailin M. ($2.00)
 6. Ilmo S. ($3.00)
 7. Hyun L. ($3.00)
 8. T.S. Jayram ($2.00)
 9. Andrei R. ($2.00)
-10. Elias R. ($1.00)
-11. Haitham H. Saleh ($1.00)
-12. Muqueet M. ($1.00)
-13. Renato R. ($1.00)
-14. Michael L. ($1.00)
+10. Christoph K. ($2.00)
+11. Elias R. ($1.00)
+12. Haitham H. Saleh ($1.00)
+13. Muqueet M. ($1.00)
+14. Renato R. ($1.00)
+15. Michael L. ($1.00)
 
 
 ...
