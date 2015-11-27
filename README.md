@@ -101,6 +101,7 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ##### Cost Functions and Optimization
 
 - [Fitting a model via closed-form equations vs. Gradient Descent vs Stochastic Gradient Descent vs Mini-Batch Learning -- what is the difference?](./faq/closed-form-vs-gd.md)
+- [How do you derive the Gradient Descent rule for Linear Regression and Adaline?](./faq/linear-gradient-derivative.md)
 
 ##### Regression Analysis
 
