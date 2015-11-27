@@ -64,12 +64,4 @@ To summarize: in order to use gradient descent to learn the model coefficients, 
 
 Let's walk through the derivation step by step.
 
-$$\begin{aligned}
-& \frac{\partial J}{\partial w_j} \\
-& = \frac{\partial}{\partial w_j} \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2 \\
-& = \frac{1}{2} \frac{\partial}{\partial w_j} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2 \\
-& = \frac{1}{2} \sum_i  \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) \frac{\partial}{\partial w_j}  \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) \\
-& = \sum_i  \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) \frac{\partial}{\partial w_j} \bigg(y^{(i)} - \sum_i \big(w_{j}^{(i)} x_{j}^{(i)} \big) \bigg) \\
-& = \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)(-x_{j}^{(i)}) \\
-& = - \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)x_{j}^{(i)}
-\end{aligned}$$
+![](linear-gradient-derivative/23.png)
