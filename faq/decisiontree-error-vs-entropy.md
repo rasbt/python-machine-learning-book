@@ -36,7 +36,7 @@ We write the Entropy equation as
 
 for all non-empty classed *p(i | t)* &ne; 0, where *p(i | t)* is the proportion (or frequency or probability) of the samples that belong to class *i* for a particular node *t*; *C* is the number of unique class labels.
 
-![](./decisiontree-error-vs-entropy/error_plot.png)
+![](./decisiontree-error-vs-entropy/entropy_plot.png)
 
 
 
@@ -45,7 +45,7 @@ Although we are all very familiar with the classification error, we write it dow
 
 ![](./decisiontree-error-vs-entropy/error_eq.png)
 
-![](./decisiontree-error-vs-entropy/entropy_plot.png)
+![](./decisiontree-error-vs-entropy/error_plot.png)
 
 
 
