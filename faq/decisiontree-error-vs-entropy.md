@@ -1,4 +1,4 @@
-# Why don't we use the classification error as a metric to grow a decision tree?
+# Why are we growing decision trees via entropy instead of the classification error?
 
 Before we get to the main question -- the real interesting part -- let's take a look at some of the (classification) decision tree basics to make sure that we are on the same page.
 
@@ -33,11 +33,21 @@ We write the Entropy equation as
 
 ![](./decisiontree-error-vs-entropy/entropy_eq.png)
 
+
 for all non-empty classed *p(i | t)* &ne; 0, where *p(i | t)* is the proportion (or frequency or probability) of the samples that belong to class *i* for a particular node *t*; *C* is the number of unique class labels.
+
+![](./decisiontree-error-vs-entropy/error_plot.png)
+
+
+
 
 Although we are all very familiar with the classification error, we write it down for completeness:
 
 ![](./decisiontree-error-vs-entropy/error_eq.png)
+
+![](./decisiontree-error-vs-entropy/entropy_plot.png)
+
+
 
 ### Classification Error vs. Entropy
 
