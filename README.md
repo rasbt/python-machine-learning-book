@@ -110,8 +110,9 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 ##### Tree models
 
 - [How does the random forest model work? How is it different from bagging and boosting in ensemble models?](./faq/bagging-boosting-rf.md)
-- [What are the disadvantages of using classic decision tree algorithm for large dataset?](./faq/decision-tree-disadvantages.md)
+- [What are the disadvantages of using classic decision tree algorithm for a large dataset?](./faq/decision-tree-disadvantages.md)
 - [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./faq/decision-tree-binary.md)
+- [Why don't we use the classification error as a metric to grow a decision tree?](./faq/decisiontree-error-vs-entropy.md)
 
 ##### Model evaluation
 

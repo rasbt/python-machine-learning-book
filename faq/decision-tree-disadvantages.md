@@ -1,4 +1,4 @@
-# What are the disadvantages of using classic decision tree algorithm for large dataset?
+# What are the disadvantages of using classic decision tree algorithm for a large dataset?
 
 
 
