@@ -96,3 +96,12 @@ I am reading your recent book on ML and I think this is on the best book I ever 
 
 This is the first Python Machine Learning book that actually made sense. Sebastian managed to combine theory (math behind the models, how to implement an algorithm from scratch) with practice (how to actually implement it using scikit-learn) in a way no book has done thus far. I was really impressed (and surprised) to see how 'easy' it is to implement the more simple algorithms from scratch [...]  
 -- C. Herther via [Amazon](http://www.amazon.com/gp/customer-reviews/R2I0D8HNIQODVA/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=B00YSILNL0)
+
+<hr>
+
+I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
+-- Michaël Lambé
+
+<hr>
+
+[![](./images/josiah_tweet.png)](https://twitter.com/thenome/status/668805677951922176)
