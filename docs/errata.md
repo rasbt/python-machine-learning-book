@@ -42,11 +42,8 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ### Current Errata:
 
-####[View PDF on GitHub](./errata_pdf/errata_2nd.pdf)
-
 #### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_2nd.pdf)
 
-####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_2nd.pdf)
 
 
 **E-book Update (2015-10-20):**    
@@ -74,8 +71,4 @@ The easiest way may be to go to page viii, the second page of the **Preface**. I
 I converted the errata into a PDF document where I highlighted the errors and inserted the corrections as they appear in the book as many readers suggested. Please find the PDF version of the errata below.  
 Thanks so much for your feedback so far, I truly appreciate it and will do my best to get this fixed as soon as possible!
 
-####[View PDF on GitHub](./errata_pdf/errata_1st.pdf)
-
 #### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_1st.pdf)
-
-####[Download PDF](https://github.com/rasbt/python-machine-learning-book/raw/master/docs/errata_pdf/errata_1st.pdf)
