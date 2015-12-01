@@ -135,6 +135,7 @@ Bonus Notebooks (not in the book)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
 - [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
+- [What is the relation between Loigistic Regression and Neural Networks and when to use which?](./faq/logisticregr-neuralnet.md)
 
 ##### Neural Networks
 
