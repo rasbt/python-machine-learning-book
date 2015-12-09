@@ -58,3 +58,5 @@ In his new book ([The Master Algorithm](http://www.amazon.com/Master-Algorithm-U
 **Analogizers**  
 - generalizing from similarity, i.e., recognizing similarities or in other words: remember experiences (training data) and how to combine them to make new predictions
 - "master algorithm:" support vector machine
+
+![](./classifier_categories/master_chart.jpg)
