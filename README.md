@@ -102,7 +102,7 @@ Bonus Notebooks (not in the book)
 - [How was classification, as a learning machine, developed?](./faq/classifier-history.md)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
-- [What is the difference between a classifier and a model?](./faq/difference_classfier_model.md)
+- [What is the difference between a classifier and a model?](./faq/difference_classifier_model.md)
 
 ### Questions about ML Concepts and Statistics
 
