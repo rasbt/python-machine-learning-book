@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Webapp Ex 1</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+  <dl>
+	{{ render_field(form.x_entry, cols='1', rows='1') }}
+    {{ render_field(form.y_entry, cols='1', rows='1') }}
+  </dl>
+  <div>
+	  <input type=submit value='Submit' name='submit_btn'>
+  </div>
+
+  <dl>
+	x + y = {{ z }}
+  </dl>
+</form>
+
+  </body>
+</html>
