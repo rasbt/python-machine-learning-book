@@ -11,4 +11,4 @@ A collection of additional notebooks and code examples to clarify and explain co
 
 - An Extended Nested Cross-Validation Example [[GitHub ipynb](./nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
 
-- A Simple(r) Barebones Flask Webapp Template [[view directory](./flask_webapp_ex01)][[download as zip-file]()]
+- A Simple(r) Barebones Flask Webapp Template [[view directory](./flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]

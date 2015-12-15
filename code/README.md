@@ -19,6 +19,16 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 12. Training Artificial Neural Networks for Image Recognition [[dir](./ch12)] [[ipynb](./ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
 13. Parallelizing Neural Network Training via Theano [[dir](./ch13)] [[ipynb](./ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
+**Bonus Notebooks (not in the book)**
+
+- A Basic Pipeline and Grid Search Setup [[dir](./bonus)] [[ipynb](./bonus/nsvm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
+- An Extended Nested Cross-Validation Example [[dir](./bonus)] [[ipynb](./bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
+- A Simple(r) Barebones Flask Webapp Template [[view directory](./bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
+
+
+
+
+
 ## Contact
 
 I am happy to answer questions! Just write me an [email](mailto:mail@sebastianraschka.com)
