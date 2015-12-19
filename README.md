@@ -125,6 +125,7 @@ Bonus Notebooks (not in the book)
 
 ##### Model evaluation
 
+- [What is overfitting?](./overfitting.md)
 - [Is it always better to have the largest possible number of folds when performing cross validation?](./faq/number-of-kfolds.md)
 - [When training an SVM classifier, is it better to have a large or small number of support vectors?](./faq/num-support-vectors.md)
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
