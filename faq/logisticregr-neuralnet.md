@@ -1,4 +1,4 @@
-# What is the relation between Loigistic Regression and Neural Networks and when to use which?
+# What is the relation between Logistic Regression and Neural Networks and when to use which?
 
 
 The "classic" application of logistic regression model is binary classification. However, we can also use "flavors" of logistic to tackle multi-class classification problems, e.g., using the One-vs-All or One-vs-One approaches, via the related softmax regression / multinomial logistic regression.
