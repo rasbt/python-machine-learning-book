@@ -21,7 +21,8 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 **Bonus Notebooks (not in the book)**
 
-- A Basic Pipeline and Grid Search Setup [[dir](./bonus)] [[ipynb](./bonus/nsvm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
+- Logistic Regression Implementation [[dir](./bonus)] [[ipynb](./bonus/logistic_regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
+- A Basic Pipeline and Grid Search Setup [[dir](./bonus)] [[ipynb](./bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
 - An Extended Nested Cross-Validation Example [[dir](./bonus)] [[ipynb](./bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
 - A Simple(r) Barebones Flask Webapp Template [[view directory](./bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
 
