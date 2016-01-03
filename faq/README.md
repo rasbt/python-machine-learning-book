@@ -99,6 +99,7 @@ Sebastian
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
 - [Does mean centering or feature scaling affect a Principal Component Analysis?](./pca-scaling.md)
 - [How do you attack a machine learning problem with a large number of features?](./large-num-features.md)
+- [What are some common approaches for dealing with missing data?](./missing-data.md)
 
 ##### Naive Bayes
 

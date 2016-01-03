@@ -161,6 +161,7 @@ Bonus Notebooks (not in the book)
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)
 - [Does mean centering or feature scaling affect a Principal Component Analysis?](./faq/pca-scaling.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
+- [What are some common approaches for dealing with missing data?](./faq/missing-data.md)
 
 ##### Naive Bayes
 
