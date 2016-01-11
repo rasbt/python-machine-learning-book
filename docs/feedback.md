@@ -99,6 +99,10 @@ This is the first Python Machine Learning book that actually made sense. Sebasti
 
 <hr>
 
+[![](./images/matthew_m_tweet.png)](https://twitter.com/mattmayo13/status/686614780589797376)
+
+<hr>
+
 I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
 -- Michaël Lambé
 
