@@ -40,7 +40,7 @@ Kindle ASIN: B00YSILNL0<br></div>
 - free [sample chapter](http://www.slideshare.net/packtpub/python-machine-learning-sample-chapter)
 
 
-![](./images/ml-overview.jpeg)
+![](./images/ml-overview.jpg)
 
 ### [Literature References & Further Reading Resources](./docs/references.md)
 
