@@ -17,7 +17,7 @@ Python Machine Learning - Code Examples
 ---
 
 The code for the Flask web applications can be found in the following directories:
-    
+
 - `1st_flask_app_1/`: A simple Flask web app
 - `1st_flask_app_2/`: `1st_flask_app_1` extended with flexible form validation and rendering
 - `movieclassifier/`: The movie classifier embedded in a web application
@@ -28,11 +28,14 @@ To run the web applications locally, `cd` into the respective directory (as list
 
     cd ./1st_flask_app_1
     python3 app.py
-    
+
 Now, you should see something like
-    
+
      * Running on http://127.0.0.1:5000/
      * Restarting with reloader
-     
+
 in your terminal.
-Next, open a web browsert and enter the address displayed in your terminal (typically http://127.0.0.1:5000/) to view the web application.
+Next, open a web browser and enter the address displayed in your terminal (typically http://127.0.0.1:5000/) to view the web application.
+
+
+**Link to a live example application built with this tutorial: http://raschkas.pythonanywhere.com/**.
