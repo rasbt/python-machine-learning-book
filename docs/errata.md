@@ -35,6 +35,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 14. Renato R. ($1.00)
 15. Michael L. ($1.00)
 16. Olaf R. ($1.00)
+17. Neeraj K ($1.00)
 
 ...
 
@@ -44,11 +45,15 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ### Current Errata:
 
-#### [View Errata on GitHub](./errata/errata_2nd.pdf)
 
-#### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_2nd.pdf)
+**Note**
+
+Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim.
 
 
+#### [Errata PDF v.2](http://sebastianraschka.com/pdf/books/pymle/errata_2nd.pdf)
+
+(Left-click to view it in the browser; right-click for select a direct download option from the context menu.)
 
 **E-book Update (2015-10-20):**    
 
@@ -75,6 +80,10 @@ The easiest way may be to go to page viii, the second page of the **Preface**. I
 I converted the errata into a PDF document where I highlighted the errors and inserted the corrections as they appear in the book as many readers suggested. Please find the PDF version of the errata below.  
 Thanks so much for your feedback so far, I truly appreciate it and will do my best to get this fixed as soon as possible!
 
-#### [View Errata on GitHub](./errata/errata_1st.pdf)
+**Note**
 
-#### [External View Link](http://sebastianraschka.com/pdf/books/pymle/errata_1st.pdf)
+Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim.
+
+#### [Errata PDF v.1](http://sebastianraschka.com/pdf/books/pymle/errata_1st.pdf)
+
+(Left-click to view it in the browser; right-click for select a direct download option from the context menu.)
