@@ -28,6 +28,7 @@ Sebastian
 - [Where are the best online communities centered around data science/machine learning or python?](./ml-python-communities.md)
 - [How would you explain machine learning to a software engineer?](./ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./ml-curriculum.md)
+- [What's the Definition of Data Science?](./definition_data-science.md)
 
 
 ### Questions about the Machine Learning Field
@@ -41,7 +42,7 @@ Sebastian
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
 - [What are the broad categories of classifiers?](./classifier-categories.md)
 - [What is the difference between a classifier and a model?](./difference_classifier_model.md)
-
+- [What is the difference between a parametric learning algorithm and a nonparametric learning algorithm?](./parametric_vs_nonparametric.md)
 
 ### Questions about Machine Learning Concepts and Statistics
 
