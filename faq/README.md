@@ -41,7 +41,7 @@ Sebastian
 - [Which machine learning algorithms can be considered as among the best?](./best-ml-algo.md)
 - [What are the broad categories of classifiers?](./classifier-categories.md)
 - [What is the difference between a classifier and a model?](./difference_classifier_model.md)
-
+- [What is the difference between a parametric learning algorithm and a nonparametric learning algorithm?](./parametric_vs_nonparametric.md)
 
 ### Questions about Machine Learning Concepts and Statistics
 

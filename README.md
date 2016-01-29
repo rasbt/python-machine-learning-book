@@ -105,6 +105,7 @@ Bonus Notebooks (not in the book)
 - [Which machine learning algorithms can be considered as among the best?](./faq/best-ml-algo.md)
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
 - [What is the difference between a classifier and a model?](./faq/difference_classifier_model.md)
+- [What is the difference between a parametric learning algorithm and a nonparametric learning algorithm?](./faq/parametric_vs_nonparametric.md)
 
 ### Questions about ML Concepts and Statistics
 
