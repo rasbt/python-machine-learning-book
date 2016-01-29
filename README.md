@@ -93,6 +93,7 @@ Bonus Notebooks (not in the book)
 - [Where are the best online communities centered around data science/machine learning or python?](./faq/ml-python-communities.md)
 - [How would you explain machine learning to a software engineer?](./faq/ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./faq/ml-curriculum.md)
+- [What's the Definition of Data Science?](./faq/definition_data-science.md)
 
 ### Questions about the Machine Learning Field
 
