@@ -22,6 +22,14 @@ I must honestly say that I was truly relieved and very happy about all the feedb
 
 <hr>
 
+> [...] The text contains lots of practical advice as well as inline links to other sources of information. While this book is a good end-to-end read, it would also serve as a useful reference text. Recommended.  
+Score: 10 of 10
+-- British Computer Society, review by Patrick Hill
+
+Source: [http://www.bcs.org/content/conWebDoc/55586](http://www.bcs.org/content/conWebDoc/55586)
+
+<hr>
+
 > Technical, but not too much. Let's face it, machine learning algorithms are technical in nature. However, this book allows you to gloss over the actual technical details if you don't really need to understand them right away and view the implementation of the logic in the code snippets. Though, I must say, the presentation of the technical subjects are explained clearly and with supporting graphs and images to help visualize the concepts. It was a wonderful experience to understand the code, even though the theory was also given. This allows most people to jump right in and start writing in python. For the mathematicians out there, you can take the equations and verify them if need be. [...]
 The fundamental concepts I've learned have opened the door to an enormous amount of possibilities I could not have even thought of doing had I not read this book. I used to think that true machine learning was only for super geniuses. But now I feel like I have another set of tools I can use to perform nearly superhero tasks. Python Machine Learning will be a reference book I use for many years to come.   
 --  Perry Nally on [Amazon](http://www.amazon.com/gp/product/1783555130/ref=s9_simh_gw_p14_d0_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1&pf_rd_r=0QKDZ9QNCW8269FMDSQG&pf_rd_t=36701&pf_rd_p=2079475242&pf_rd_i=desktop)
@@ -86,7 +94,7 @@ As a bonus, chapter on "Parallelizing Neural Network Training with Theano" was a
 
 <hr>
 
-I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
+> I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
 -- Michaël Lambé
 
 [![](./images/armand_g_tweet.png)](https://twitter.com/arm_gilles/status/658927560932401154)
@@ -94,18 +102,25 @@ I am reading your recent book on ML and I think this is on the best book I ever 
 
 <hr>
 
-This is the first Python Machine Learning book that actually made sense. Sebastian managed to combine theory (math behind the models, how to implement an algorithm from scratch) with practice (how to actually implement it using scikit-learn) in a way no book has done thus far. I was really impressed (and surprised) to see how 'easy' it is to implement the more simple algorithms from scratch [...]  
+> This is the first Python Machine Learning book that actually made sense. Sebastian managed to combine theory (math behind the models, how to implement an algorithm from scratch) with practice (how to actually implement it using scikit-learn) in a way no book has done thus far. I was really impressed (and surprised) to see how 'easy' it is to implement the more simple algorithms from scratch [...]  
 -- C. Herther via [Amazon](http://www.amazon.com/gp/customer-reviews/R2I0D8HNIQODVA/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=B00YSILNL0)
 
 <hr>
 
 [![](./images/matthew_m_tweet.png)](https://twitter.com/mattmayo13/status/686614780589797376)
 
-<hr>
+> This is a great book.
+It gives the mathematical definitions of popular machine learning algorithms and shows you how to implement them. Then it explains how to use them with scikit-learn which has much more efficient implementations.
+What is great is that this book has chapters on data cleaning, what to do with missing data, etc. Compliments greatly the Andrew Ng's ML course which lacked lectures about all of these things.  
+-- Peteris via [Goodreads](https://www.goodreads.com/review/show/1475215520?book_show_action=true&from_review_page=1)
 
-I am reading your recent book on ML and I think this is on the best book I ever read on machine learning.  Especially with my background as software developer.  
--- Michaël Lambé
 
 <hr>
 
 [![](./images/josiah_tweet.png)](https://twitter.com/thenome/status/668805677951922176)
+
+<hr>
+
+> A great book, it will teach you exactly what it promises - how to use the most common ML algorithms using Python and libraries like sklearn/numpy/pandas.
+I found it to have a great balance between the theoretical math and implementation in Python; the split is somewhere around 20/80 in favour of implementation and actually using the algorithms on real data-sets. If you are trying to get a good understanding of the theory, then this book is a good starting point but you will most definitely need to supplement it with something else. I would recommend it even if you have no previous experience with Machine Learning. [...]  
+-- Rafal Szymanski via [Goodreads](https://www.goodreads.com/review/show/1514154895?book_show_action=true&from_review_page=1)

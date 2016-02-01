@@ -81,6 +81,15 @@ Bonus Notebooks (not in the book)
 - Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
 
 
+<hr>
+
+**Note**
+
+I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), containing additional implementations of machine learning (and general "data science") algorithms. I also added implementations from this book (for example, the decision region plot, the artificial neural network, and sequential feature selection algorithms) with additional functionality.
+
+[![](./images/mlxtend_logo.png)](http://rasbt.github.io/mlxtend/)
+
+<hr>
 
 ## FAQ
 
