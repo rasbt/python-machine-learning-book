@@ -30,5 +30,5 @@ Sebastian Raschka, 2015
 
 ### mnist
 
-- used in chapters 12 and 13
+- used in chapter 12, 13
 - source: [http://yann.lecun.com/exdb/mnist/]
