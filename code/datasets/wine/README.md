@@ -2,33 +2,52 @@ Sebastian Raschka, 2015
 
 # Python Machine Learning - Supplementary Datasets
 
-### iris
+## Wine Dataset
 
-- used in chapters 1, 2, and 3
-- source: [https://archive.ics.uci.edu/ml/datasets/Iris](https://archive.ics.uci.edu/ml/datasets/Iris)
+- Used in chapters 4 and 5
 
-### wine
+The Wine dataset for classification.
 
-- used in chapters 4 and 5
-- source: [https://archive.ics.uci.edu/ml/datasets/Wine](https://archive.ics.uci.edu/ml/datasets/Wine)
+|				  |		  			|
+|----------------------------|----------------|
+| Samples                    | 178            |
+| Features                   | 13             |
+| Classes                    | 3              |
+| Data Set Characteristics:  | Multivariate   |
+| Attribute Characteristics: | Integer, Real  |
+| Associated Tasks:          | Classification |
+| Missing Values             | None           |
 
-### wdbc
+|	column| attribute	|
+|-----|------------------------------|
+| 1)  | Class Label                  |
+| 2)  | Alcohol                      |
+| 3)  | Malic acid                   |
+| 4)  | Ash                          |
+| 5)  | Alcalinity of ash            |
+| 6)  | Magnesium                    |
+| 7)  | Total phenols                |
+| 8)  | Flavanoids                   |
+| 9)  | Nonflavanoid phenols         |
+| 10) | Proanthocyanins              |
+| 11) | intensity                    |
+| 12) | Hue                          |
+| 13) | OD280/OD315 of diluted wines |
+| 14) | Proline                      |
 
-- used in chapter 6
-- source: [https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
 
-### movie
+| class | samples   |
+|-------|----|
+| 0     | 59 |
+| 1     | 71 |
+| 2     | 48 |
 
-- used in chapters 8 and 9
-- movie dataset converted into a 2-column CSV format: The first column (`review`) contains the text, and the second column (`sentiment`) denotes the polarity, where 0=negative and 1=positive. The first 25,000 are the training samples and the remaining 25,000 rows are the test samples from the "Large Movie Review Dataset v1.0," respectively.
-- source: [http://ai.stanford.edu/~amaas/data/sentiment/](http://ai.stanford.edu/~amaas/data/sentiment/)
 
-### housing
+### References
 
-- used in chapter 10
-- source: [https://archive.ics.uci.edu/ml/datasets/Housing](https://archive.ics.uci.edu/ml/datasets/Housing)
-
-### mnist
-
-- used in chapter 12, 13
-- source: [http://yann.lecun.com/exdb/mnist/]
+- Forina, M. et al, PARVUS -
+An Extendible Package for Data Exploration, Classification and Correlation.
+Institute of Pharmaceutical and Food Analysis and Technologies, Via Brigata Salerno,
+16147 Genoa, Italy.
+- Source: [https://archive.ics.uci.edu/ml/datasets/Wine](https://archive.ics.uci.edu/ml/datasets/Wine)
+- Bache, K. & Lichman, M. (2013). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
