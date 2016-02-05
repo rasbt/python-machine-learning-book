@@ -124,3 +124,8 @@ What is great is that this book has chapters on data cleaning, what to do with m
 > A great book, it will teach you exactly what it promises - how to use the most common ML algorithms using Python and libraries like sklearn/numpy/pandas.
 I found it to have a great balance between the theoretical math and implementation in Python; the split is somewhere around 20/80 in favour of implementation and actually using the algorithms on real data-sets. If you are trying to get a good understanding of the theory, then this book is a good starting point but you will most definitely need to supplement it with something else. I would recommend it even if you have no previous experience with Machine Learning. [...]  
 -- Rafal Szymanski via [Goodreads](https://www.goodreads.com/review/show/1514154895?book_show_action=true&from_review_page=1)
+
+<hr>
+
+> Love it! Clearly written with nice examples. I have a certificate in data science, and was looking for something to fill in the gaps, consolidate and to learn new topics. This book does exactly that. I would recommend to people who are totally new to machine learning, and also those with some background.   
+-- Reader via [Amazon](http://www.amazon.com/gp/customer-reviews/R2P8OGDU7XIIL5/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=B00YSILNL0)
