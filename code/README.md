@@ -4,6 +4,10 @@
 Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version).
 **Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
 
+- [Instructions for setting up Python and the Jupiter Notebook](./ch01/README.md)  
+
+<br>
+
 
 1. Machine Learning - Giving Computers the Ability to Learn from Data [[dir](./ch01)] [[ipynb](./ch01/ch01.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch01/ch01.ipynb)]
 2. Training Machine Learning Algorithms for Classification [[dir](./ch02)] [[ipynb](./ch02/ch02.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb)]
@@ -18,6 +22,8 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 11. Working with Unlabeled Data – Clustering Analysis [[dir](./ch11)] [[ipynb](./ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
 12. Training Artificial Neural Networks for Image Recognition [[dir](./ch12)] [[ipynb](./ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
 13. Parallelizing Neural Network Training via Theano [[dir](./ch13)] [[ipynb](./ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
+
+<br>
 
 **Bonus Notebooks (not in the book)**
 

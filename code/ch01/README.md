@@ -39,6 +39,17 @@ This book is written for Python version `>= 3.4.3`, and it is recommended
 you use the most recent version of Python 3 that is currently available,
 although most of the code examples may also be compatible with Python `>= 2.7.10`. If you decide to use Python 2.7 to execute the code examples, please make sure that you know about the major differences between the two Python versions. A good summary about the differences between Python 3.4 and 2.7 can be found at https://wiki.python.org/moin/Python2orPython3.
 
+**Note**
+
+You can check your current default version of Python by executing
+
+    $ python -V
+
+In my case, it returns
+
+    Python 3.5.1 :: Continuum Analytics, Inc.
+
+
 #### Pip
 
 The additional packages that we will be using throughout this book can be installed via the `pip` installer program, which has been part of the Python standard library since Python 3.3. More information about pip can be found at https://docs.python.org/3/installing/index.html.
@@ -76,3 +87,35 @@ The version numbers of the major Python packages that were used for writing this
 - [scikit-learn](http://scikit-learn.org/stable/) 0.15.2
 - [matplotlib](http://matplotlib.org) 1.4.0
 - [pandas](http://pandas.pydata.org) 0.15.2
+
+## Python/Jupyter Notebook
+
+Some readers where wondering about the `.ipynb` of the code files -- these files are IPython notebooks. I chose IPython notebooks over plain Python `.py` scripts, because I think that they are just great for data analysis projects! IPython notebooks allow us to have everything in one place: Our code, the results from executing the code, plots of our data, and documentation that supports the handy Markdown and powerful LaTeX syntax!
+
+![](./images/ipynb_ex1.png)
+
+**Side Note:**  
+
+"IPython Notebook" recently became the "[Jupyter Notebook](<http://jupyter.org>)"; Jupyter is an umbrella project that aims to support other languages in addition to Python including Julia, R, and many more. Don't worry, though, for a Python user, there's only a difference in terminology (we say "Jupyter Notebook" now instead of "IPython Notebook").
+
+The Jupyter notebook can be installed as usually via pip. 
+
+    $ pip install jupyter notebook
+
+Alternatively, you can use the Conda installer if you have Anaconda or Miniconda installed.
+
+    $ conda install jupyter notebook
+    
+To open a Jupyter notebook, `cd` to the directory that contains your code examples, e.g,. 
+
+    $ cd ~/code/python-machine-learning-book
+
+Next, you just need to execute 
+
+    $ jupyter notebook
+
+And Jupyter will start in your default browser (typically running at [http://localhost:8888/](http://localhost:8888/)). Next, you can simply select the notebook you wish to open from the Jupyter menu.
+
+![](./images/ipynb_ex2.png)
+
+For more information about the Jupyter notebook, I recommend the [Jupyter Beginner Guide](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html).

@@ -129,3 +129,8 @@ I found it to have a great balance between the theoretical math and implementati
 
 > Love it! Clearly written with nice examples. I have a certificate in data science, and was looking for something to fill in the gaps, consolidate and to learn new topics. This book does exactly that. I would recommend to people who are totally new to machine learning, and also those with some background.   
 -- Reader via [Amazon](http://www.amazon.com/gp/customer-reviews/R2P8OGDU7XIIL5/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=B00YSILNL0)
+
+<hr>
+
+> Absolutely the best machine machine learning book for Python out there. Very clear examples and very well written. The author gives a clear explanation of machine learning algorithms and techniques, as well as going into some of the math and provides code in the form of Juypter notebooks on github. Highly recommended!  
+-- David M. Comfort via [Amazon](http://www.amazon.com/gp/customer-reviews/R1KU3VMAU3PY05/ref=cm_cr_pr_rvw_ttl?ie=UTF8&ASIN=1783555130)

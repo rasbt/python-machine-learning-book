@@ -56,7 +56,10 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 **Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
 
 
-Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf)
+- Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf)
+- [Instructions for setting up Python and the Jupiter Notebook](./code/ch01/README.md)  
+
+<br>
 
 1. Machine Learning - Giving Computers the Ability to Learn from Data [[dir](./code/ch01)] [[ipynb](./code/ch01/ch01.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch01/ch01.ipynb)]
 2. Training Machine Learning Algorithms for Classification [[dir](./code/ch02)] [[ipynb](./code/ch02/ch02.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb)]
@@ -72,7 +75,9 @@ Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/prefac
 12. Training Artificial Neural Networks for Image Recognition [[dir](./code/ch12)] [[ipynb](./code/ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
 13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
-Bonus Notebooks (not in the book)
+<br>
+
+**Bonus Notebooks (not in the book)**
 
 - Logistic Regression Implementation [[dir](./code/bonus)] [[ipynb](./code/bonus/logistic_regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
 - A Basic Pipeline and Grid Search Setup [[dir](./code/bonus)] [[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
