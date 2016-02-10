@@ -166,6 +166,10 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
 - [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
 
+##### Other Algorithms for Supervised Learning
+
+- [Why is Nearest Neighbor a 'Lazy' Algorithm?](./lazy-knn.md)
+
 ##### Unsupervised Learning
 
 - [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
