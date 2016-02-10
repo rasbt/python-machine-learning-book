@@ -90,7 +90,7 @@ The version numbers of the major Python packages that were used for writing this
 
 ## Python/Jupyter Notebook
 
-Some readers where wondering about the `.ipynb` of the code files -- these files are IPython notebooks. I chose IPython notebooks over plain Python `.py` scripts, because I think that they are just great for data analysis projects! IPython notebooks allow us to have everything in one place: Our code, the results from executing the code, plots of our data, and documentation that supports the handy Markdown and powerful LaTeX syntax!
+Some readers weere wondering about the `.ipynb` of the code files -- these files are IPython notebooks. I chose IPython notebooks over plain Python `.py` scripts, because I think that they are just great for data analysis projects! IPython notebooks allow us to have everything in one place: Our code, the results from executing the code, plots of our data, and documentation that supports the handy Markdown and powerful LaTeX syntax!
 
 ![](./images/ipynb_ex1.png)
 
@@ -98,23 +98,23 @@ Some readers where wondering about the `.ipynb` of the code files -- these files
 
 "IPython Notebook" recently became the "[Jupyter Notebook](<http://jupyter.org>)"; Jupyter is an umbrella project that aims to support other languages in addition to Python including Julia, R, and many more. Don't worry, though, for a Python user, there's only a difference in terminology (we say "Jupyter Notebook" now instead of "IPython Notebook").
 
-The Jupyter notebook can be installed as usually via pip. 
+The Jupyter notebook can be installed as usually via pip.
 
     $ pip install jupyter notebook
 
-Alternatively, you can use the Conda installer if you have Anaconda or Miniconda installed.
+Alternatively, we can use the Conda installer if we have Anaconda or Miniconda installed:
 
     $ conda install jupyter notebook
-    
-To open a Jupyter notebook, `cd` to the directory that contains your code examples, e.g,. 
+
+To open a Jupyter notebook, we `cd` to the directory that contains your code examples, e.g,.
 
     $ cd ~/code/python-machine-learning-book
 
-Next, you just need to execute 
+and launch `jupyter notebook` by executing
 
     $ jupyter notebook
 
-And Jupyter will start in your default browser (typically running at [http://localhost:8888/](http://localhost:8888/)). Next, you can simply select the notebook you wish to open from the Jupyter menu.
+Jupyter will start in our default browser (typically running at [http://localhost:8888/](http://localhost:8888/)). Now, we can simply select the notebook you wish to open from the Jupyter menu.
 
 ![](./images/ipynb_ex2.png)
 
