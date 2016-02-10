@@ -91,7 +91,7 @@ Sebastian
 
 ##### Other Algorithms for Supervised Learning
 
-- [Why is Nearest Neighbor a 'Lazy' Algorithm?](./lazy-knn.md)
+- [Why is Nearest Neighbor a Lazy Algorithm?](./lazy-knn.md)
 
 ##### Unsupervised Learning
 

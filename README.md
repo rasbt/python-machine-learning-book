@@ -168,7 +168,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ##### Other Algorithms for Supervised Learning
 
-- [Why is Nearest Neighbor a 'Lazy' Algorithm?](./lazy-knn.md)
+- [Why is Nearest Neighbor a Lazy Algorithm?](./faq/lazy-knn.md)
 
 ##### Unsupervised Learning
 
