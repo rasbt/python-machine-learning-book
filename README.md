@@ -176,6 +176,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ##### Preprocessing
 
+- [Why do we need to re-use training parameters to transform test data?](./faq/scale-training-test.md)
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
 - [What is the difference between LDA and PCA for dimensionality reduction?](./faq/lda-vs-pca.md)
 - [When should I apply data normalization/standardization?](./faq/when-to-standardize.md)

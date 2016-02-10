@@ -99,6 +99,7 @@ Sebastian
 
 ##### Preprocessing
 
+- [Why do we need to re-use training parameters to transform test data?](./scale-training-test.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
 - [What is the difference between LDA and PCA for dimensionality reduction?](./lda-vs-pca.md)
 - [When should I apply data normalization/standardization?](./when-to-standardize.md)
