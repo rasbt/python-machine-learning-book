@@ -8,19 +8,23 @@ In practice, I’ve seen many ways for scaling a dataset prior to feeding it to 
 
 ### Scenario 1:
 
-```scaled_dataset = (dataset - dataset_mean) / dataset_std_deviation
-train, test = split(scaled_dataset)```
+    scaled_dataset = (dataset - dataset_mean) / dataset_std_deviation
+    
+    train, test = split(scaled_dataset)
 
 ### Scenario 2:
 
-```train, test = split(dataset)
-scaled_train =  (train - train_mean) / train_std_deviation
-scaled_test = (test - test_mean) / test_std_deviation```
+    train, test = split(dataset)
+
+    scaled_train =  (train - train_mean) / train_std_deviation
+
+    scaled_test = (test - test_mean) / test_std_deviation
 
 ### Scenario 3:
 
-```scaled_train =  (train - train_mean) / train_std_deviation
-scaled_test = (test - train_mean) / train_std_deviation```
+    scaled_train =  (train - train_mean) / train_std_deviation
+
+    scaled_test = (test - train_mean) / train_std_deviation
 
 That’s right, the “correct” way is *Scenario 3*. I agree, it may look a bit odd to use the training parameters and re-use them to scale the test dataset. (Note that in practice, if the dataset is sufficiently large, we wouldn’t notice any substantial difference between the scenarios 1-3 because we assume that the samples have all been drawn from the same distribution.)
 
