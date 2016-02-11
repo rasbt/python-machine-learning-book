@@ -151,6 +151,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ##### Logistic Regression
 
+- [Why is logistic regression considered a linear model?](./faq/logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)

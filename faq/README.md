@@ -74,6 +74,7 @@ Sebastian
 
 ##### Logistic Regression
 
+- [Why is logistic regression considered a linear model?](./logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
 - [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
