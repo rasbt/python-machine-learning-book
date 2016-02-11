@@ -26,11 +26,12 @@ Now, let's assume our weight vector looks like this:
 
 Let's compute *z* now!
 
-    z = w<sup>T</sup>x = 1*0.5 + 2*0.5 + 3*0.5 + 4*0.5 = 5
+z = w<sup>T</sup>x = 1*0.5 + 2*0.5 + 3*0.5 + 4*0.5 = 5
 
 ---
 
 Not that it is important, but we have a 99.3% chance that this sample belongs to class 1:
+
 *&Phi;(z=148.41) = 1 / (1 + e<sup>-5</sup>) = 0.993*
 
 ---
@@ -40,4 +41,6 @@ our outcome *z* depends on the additivity of the parameter (times input) values,
 
 *z = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>*
 
-There's no interaction between input values, nothing like x<sub>1</sub>*<sub>2</sub> or so, which would make our model non-linear!
+There's no interaction between input values, nothing like w<sub>1</sub>x<sub>1</sub> * w<sub>2</sub>x<sub>2</sub>
+
+ or so, which would make our model non-linear!
