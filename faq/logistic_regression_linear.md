@@ -31,12 +31,12 @@ Let's compute *z* now!
 ---
 
 Not that it is important, but we have a 99.3% chance that this sample belongs to class 1:
-*&Phi;(z) = 1 / (1 + e<sup>-5</sup> = 148.41)*
+*&Phi;(z=148.41) = 1 / (1 + e<sup>-5</sup>) = 0.993*
 
 ---
 
 The key is that our model is ***additive***
-our outcome *z* depends on the additivity of values, e.g., :
+our outcome *z* depends on the additivity of the parameter (times input) values, e.g., :
 
 *z = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>*
 
