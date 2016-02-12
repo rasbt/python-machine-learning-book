@@ -100,6 +100,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ### General Questions
 
+- [What are machine learning and data science?](./faq/datascience-ml.md) 
 - [Why do you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
 - [At what point should one start contributing to open source?](./faq/open-source.md)

@@ -21,6 +21,7 @@ Sebastian
 
 ### General Questions about Machine Learning and 'Data Science'
 
+- [What are machine learning and data science?](./datascience-ml.md) 
 - [Why do you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./data-science-career.md)
 - [At what point should one start contributing to open source?](./open-source.md)
