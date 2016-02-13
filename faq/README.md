@@ -21,7 +21,7 @@ Sebastian
 
 ### General Questions about Machine Learning and 'Data Science'
 
-- [What are machine learning and data science?](./datascience-ml.md) 
+- [What are machine learning and data science?](./datascience-ml.md)
 - [Why do you and other people sometimes implement machine learning algorithms from scratch?](./implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./data-science-career.md)
 - [At what point should one start contributing to open source?](./open-source.md)
@@ -75,6 +75,7 @@ Sebastian
 
 ##### Logistic Regression
 
+- [What is Softmax regression and how is it related to Logistic regression?](./faq/softmax_regression.md)
 - [Why is logistic regression considered a linear model?](./logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
