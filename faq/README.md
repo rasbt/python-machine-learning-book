@@ -83,7 +83,7 @@ Sebastian
 - [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./softmax.md)
 - [What is the relation between Loigistic Regression and Neural Networks and when to use which?](./logisticregr-neuralnet.md)
 
-##### Neural Networks
+##### Neural Networks and Deep Learning
 
 - [What is the difference between deep learning and usual machine learning?](./difference-deep-and-normal-learning.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./visual-backpropagation.md)
@@ -91,6 +91,7 @@ Sebastian
 - [What are some good books/papers for learning deep learning?](./deep-learning-resources.md)
 - [Why are there so many deep learning libraries?](./many-deeplearning-libs.md)
 - [Why do some people hate neural networks/deep learning?](./deeplearning-criticism.md)
+- [How can I know if Deep Learning works better for a specific problem than SVM or random forest?](./deeplearn-vs-svm-randomforest.md)
 
 ##### Other Algorithms for Supervised Learning
 
