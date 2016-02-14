@@ -100,7 +100,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ### General Questions
 
-- [What are machine learning and data science?](./faq/datascience-ml.md) 
+- [What are machine learning and data science?](./faq/datascience-ml.md)
 - [Why do you and other people sometimes implement machine learning algorithms from scratch?](./faq/implementing-from-scratch.md)
 - [What learning path/discipline in data science I should focus on?](./faq/data-science-career.md)
 - [At what point should one start contributing to open source?](./faq/open-source.md)
@@ -140,6 +140,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What are the disadvantages of using classic decision tree algorithm for a large dataset?](./faq/decision-tree-disadvantages.md)
 - [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./faq/decision-tree-binary.md)
 - [Why are we growing decision trees via entropy instead of the classification error?](./faq/decisiontree-error-vs-entropy.md)
+- [When can a random forest perform terribly?](./faq/random-forest-perform-terribly.md)
 
 ##### Model evaluation
 
@@ -152,6 +153,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ##### Logistic Regression
 
+- [What is Softmax regression and how is it related to Logistic regression?](./softmax_regression.md)
 - [Why is logistic regression considered a linear model?](./faq/logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
@@ -159,7 +161,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
 - [What is the relation between Loigistic Regression and Neural Networks and when to use which?](./faq/logisticregr-neuralnet.md)
 
-##### Neural Networks
+##### Neural Networks and Deep Learning
 
 - [What is the difference between deep learning and usual machine learning?](./faq/difference-deep-and-normal-learning.md)
 - [Can you give a visual explanation for the back propagation algorithm for neural networks?](./faq/visual-backpropagation.md)
@@ -167,6 +169,8 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What are some good books/papers for learning deep learning?](./faq/deep-learning-resources.md)
 - [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
 - [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
+- [How can I know if Deep Learning works better for a specific problem than SVM or random forest?](./faq/deeplearn-vs-svm-randomforest.md)
+
 
 ##### Other Algorithms for Supervised Learning
 
@@ -198,7 +202,9 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
 - [When should one use median, as opposed to the mean or average?](./faq/median-vs-mean.md)
 
+##### Programming Languages for Data Science and ML
 
+- [Is R used extensively today in data science?](./faq/r-in-datascience.md)
 
 <br>
 

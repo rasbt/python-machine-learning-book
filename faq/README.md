@@ -76,7 +76,7 @@ Sebastian
 
 ##### Logistic Regression
 
-- [What is Softmax regression and how is it related to Logistic regression?](./faq/softmax_regression.md)
+- [What is Softmax regression and how is it related to Logistic regression?](./softmax_regression.md)
 - [Why is logistic regression considered a linear model?](./logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./regularized-logistic-regression-performance.md)
