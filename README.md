@@ -153,7 +153,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ##### Logistic Regression
 
-- [What is Softmax regression and how is it related to Logistic regression?](./softmax_regression.md)
+- [What is Softmax regression and how is it related to Logistic regression?](./faq/softmax_regression.md)
 - [Why is logistic regression considered a linear model?](./faq/logistic_regression_linear.md)
 - [What is the probabilistic interpretation of regularized logistic regression?](./faq/probablistic-logistic-regression.md)
 - [Does regularization in logistic regression always results in better fit and better generalization?](./faq/regularized-logistic-regression-performance.md)
