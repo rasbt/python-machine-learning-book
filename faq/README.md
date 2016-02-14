@@ -62,6 +62,7 @@ Sebastian
 - [What are the disadvantages of using classic decision tree algorithm for a large dataset?](./decision-tree-disadvantages.md)
 - [Why are implementations of decision tree algorithms usually binary, and what are the advantages of the different impurity metrics?](./decision-tree-binary.md)
 - [Why are we growing decision trees via entropy instead of the classification error?](./decisiontree-error-vs-entropy.md)
+- [When can a random forest perform terribly?](./random-forest-perform-terribly.md)
 
 ##### Model evaluation
 
