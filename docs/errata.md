@@ -11,13 +11,14 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $69.00
+- Current amount for the next donation: $74.00
 - Amount donated to charity: $0.00
 
 ## Leaderboard
 
 1. Ryan S. ($24.00)
 2. Christopher Galpin ($8.00)
+18. David C. ($6.00)
 2. Edgar C. ($5.00)
 3. S.R. ($4.00)
 3. Will P. ($4.00)
@@ -36,7 +37,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 15. Michael L. ($1.00)
 16. Olaf R. ($1.00)
 17. Neeraj K. ($1.00)
-18. David C. ($1.00)
+
 
 ...
 
