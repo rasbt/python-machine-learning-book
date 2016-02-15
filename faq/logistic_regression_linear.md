@@ -1,12 +1,18 @@
 # Why is logistic regression considered a linear model?
 
-The short answer is: Logistic regression is considered a linear model because the outcome **always** depends on the **sum** of the inputs. Or in other words, the output **cannot** depend on the product (or quotient etc.) of the input features!
+
+The short answer is: Logistic regression is considered a generalized linear model because the outcome **always** depends on the **sum** of the inputs and parameters. Or in other words, the output cannot depend on the product (or quotient, etc.) of its parameters!
 
 So, why is that? Let’s recapitulate the basics of logistic regression first, which hopefully makes things more clear. Logistic regression is an algorithm that learns a model for binary classification. A nice side-effect is that it gives us the *probability* that a sample belongs to class 1 (or vice versa: class 0). Our objective function is to minimize the so-called logistic function &Phi; (a certain kind of sigmoid function); it looks like this:
 
 ![](./logistic_regression_linear/2.png)
 
-Now, if *&Phi;(z)* is larger than *0.5* (alternatively: if *z* is larger than *0*), we classify an input as class 1 (and class 0, otherwise). This logistic (activation) function doesn't look very linear at all, right!? So, let's dig a bit deeper and take a look at the equation we use to compute *z* -- the net input function!
+Now, if *&phi;(z)* is larger than *0.5* (alternatively: if *z* is larger than *0*), we classify an input as class 1 (and class 0, otherwise).  Although logistic regression produces a linear decision surface (see the classification example in the figure below) this logistic (activation) function doesn't look very linear at all, right!?doesn't look very linear at all, right!?
+
+![](./logistic_regression_linear/4.png)
+
+
+So, let's dig a bit deeper and take a look at the equation we use to compute *z* -- the net input function!
 
 ![](./logistic_regression_linear/1.png)
 
@@ -37,10 +43,10 @@ Not that it is important, but we have a 99.3% chance that this sample belongs to
 ---
 
 The key is that our model is ***additive***
-our outcome *z* depends on the additivity of the parameter (times input) values, e.g., :
+our outcome *z* depends on the additivity of the weight parameter values, e.g., :
 
 *z = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>*
 
-There's no interaction between input values, nothing like w<sub>1</sub>x<sub>1</sub> * w<sub>2</sub>x<sub>2</sub>
+There's no interaction between the weight parameter values, nothing like w<sub>1</sub>x<sub>1</sub> * w<sub>2</sub>x<sub>2</sub>
 
  or so, which would make our model non-linear!
