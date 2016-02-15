@@ -36,9 +36,8 @@ Kindle ASIN: B00YSILNL0<br></div>
 
 - ebook and paperback at [Amazon.com](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
 - [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) from Packt (the publisher)
-- at other book stores: [O'Reilly](http://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble](http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
-- free [sample chapter](http://www.slideshare.net/packtpub/python-machine-learning-sample-chapter)
-
+- at other book stores: [Google Books](https://books.google.com/books?id=GOVOCwAAQBAJ&source=gbs_slider_cls_metadata_7_mylibrary), [O'Reilly](http://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble](http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
+- social platforms: [Goodreads](https://www.goodreads.com/book/show/25545994-python-machine-learning)
 
 ![](./images/ml-overview.jpg)
 
