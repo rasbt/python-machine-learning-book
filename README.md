@@ -149,6 +149,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
 - [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
+- [What are the best toy datasets to help visualize and understand classifier behavior?](./faq/clf-behavior-data.md)
 
 ##### Logistic Regression
 

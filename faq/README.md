@@ -72,6 +72,7 @@ Sebastian
 - [How do I evaluate a model?](./evaluate-a-model.md)
 - [What is the best validation metric for multi-class classification?](./multiclass-metric.md)
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
+- [What are the best toy datasets to help visualize and understand classifier behavior?](./faq/clf-behavior-data.md)
 
 
 ##### Logistic Regression
