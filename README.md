@@ -179,6 +179,10 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 - [What are some of the issues with clustering?](./faq/issues-with-clustering.md)
 
+##### Semi-Supervised Learning
+
+- [What are the advantages of semi-supervised learning over supervised and unsupervised learning?](./faq/semi-vs-supervised.md)
+
 ##### Preprocessing
 
 - [Why do we need to re-use training parameters to transform test data?](./faq/scale-training-test.md)

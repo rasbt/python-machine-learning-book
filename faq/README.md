@@ -102,6 +102,10 @@ Sebastian
 
 - [What are some of the issues with clustering?](./issues-with-clustering.md)
 
+##### Semi-Supervised Learning
+
+- [What are the advantages of semi-supervised learning over supervised and unsupervised learning?](./semi-vs-supervised.md)
+
 ##### Preprocessing
 
 - [Why do we need to re-use training parameters to transform test data?](./scale-training-test.md)
