@@ -44,6 +44,7 @@ Sebastian
 - [What are the broad categories of classifiers?](./classifier-categories.md)
 - [What is the difference between a classifier and a model?](./difference_classifier_model.md)
 - [What is the difference between a parametric learning algorithm and a nonparametric learning algorithm?](./parametric_vs_nonparametric.md)
+- [What is the difference between a cost function and a loss function in machine learning?](./cost-vs-loss.md)
 
 ### Questions about Machine Learning Concepts and Statistics
 

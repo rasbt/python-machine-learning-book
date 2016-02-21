@@ -121,6 +121,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What are the broad categories of classifiers?](./faq/classifier-categories.md)
 - [What is the difference between a classifier and a model?](./faq/difference_classifier_model.md)
 - [What is the difference between a parametric learning algorithm and a nonparametric learning algorithm?](./faq/parametric_vs_nonparametric.md)
+- [What is the difference between a cost function and a loss function in machine learning?](./faq/cost-vs-loss.md)
 
 ### Questions about ML Concepts and Statistics
 
