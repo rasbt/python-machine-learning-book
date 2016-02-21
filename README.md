@@ -184,6 +184,10 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 - [What are the advantages of semi-supervised learning over supervised and unsupervised learning?](./faq/semi-vs-supervised.md)
 
+##### Ensemble Methods
+
+- [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./logistic-boosting.md)
+
 ##### Preprocessing
 
 - [Why do we need to re-use training parameters to transform test data?](./faq/scale-training-test.md)

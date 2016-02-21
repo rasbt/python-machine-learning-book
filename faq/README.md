@@ -107,6 +107,10 @@ Sebastian
 
 - [What are the advantages of semi-supervised learning over supervised and unsupervised learning?](./semi-vs-supervised.md)
 
+##### Ensemble Methods
+
+- [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./logistic-boosting.md)
+
 ##### Preprocessing
 
 - [Why do we need to re-use training parameters to transform test data?](./scale-training-test.md)
