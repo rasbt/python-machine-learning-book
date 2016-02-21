@@ -85,6 +85,7 @@ Sebastian
 - [What is the major difference between naive Bayes and logistic regression?](./naive-bayes-vs-logistic-regression.md)
 - [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./softmax.md)
 - [What is the relation between Loigistic Regression and Neural Networks and when to use which?](./logisticregr-neuralnet.md)
+- [Is there an analytical solution to Logistic Regression similar to the Normal Equation for Linear Regression?](./logistic-analytical.md)
 
 ##### Neural Networks and Deep Learning
 
