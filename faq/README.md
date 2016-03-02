@@ -113,7 +113,7 @@ Sebastian
 
 - [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./logistic-boosting.md)
 
-##### Preprocessing
+##### Preprocessing, Feature Selection and Extraction
 
 - [Why do we need to re-use training parameters to transform test data?](./scale-training-test.md)
 - [What are the different dimensionality reduction methods in machine learning?](./dimensionality-reduction.md)
@@ -122,6 +122,7 @@ Sebastian
 - [Does mean centering or feature scaling affect a Principal Component Analysis?](./pca-scaling.md)
 - [How do you attack a machine learning problem with a large number of features?](./large-num-features.md)
 - [What are some common approaches for dealing with missing data?](./missing-data.md)
+- [What is the difference between filter, wrapper, and embedded methods for feature selection?](./feature_sele_categories.md)
 
 ##### Naive Bayes
 
