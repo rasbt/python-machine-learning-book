@@ -151,6 +151,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [What is the best validation metric for multi-class classification?](./faq/multiclass-metric.md)
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [What are the best toy datasets to help visualize and understand classifier behavior?](./faq/clf-behavior-data.md)
+- [How do I select SVM kernels?](./faq/select_svm_kernels.md)
 
 ##### Logistic Regression
 
@@ -191,7 +192,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 - [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./logistic-boosting.md)
 
-##### Preprocessing
+##### Preprocessing, Feature Selection and Extraction
 
 - [Why do we need to re-use training parameters to transform test data?](./faq/scale-training-test.md)
 - [What are the different dimensionality reduction methods in machine learning?](./faq/dimensionality-reduction.md)
@@ -200,6 +201,8 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [Does mean centering or feature scaling affect a Principal Component Analysis?](./faq/pca-scaling.md)
 - [How do you attack a machine learning problem with a large number of features?](./faq/large-num-features.md)
 - [What are some common approaches for dealing with missing data?](./faq/missing-data.md)
+- [What is the difference between filter, wrapper, and embedded methods for feature selection?](./faq/feature_sele_categories.md)
+- [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./faq/dataprep-vs-dataengin.md)
 
 ##### Naive Bayes
 
@@ -232,6 +235,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [Which book version/format would you recommend?](./faq/version.md)
 - [Why did you choose Python for machine learning?](./faq/why-python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore-convention.md)
+- [What is the purpose of the `return self` idioms in your code examples?](./faq/return_self_idiom.md)
 - [Are there any prerequisites and recommended pre-readings?](./faq/prerequisites.md)
 
 

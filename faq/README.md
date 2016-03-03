@@ -124,6 +124,7 @@ Sebastian
 - [How do you attack a machine learning problem with a large number of features?](./large-num-features.md)
 - [What are some common approaches for dealing with missing data?](./missing-data.md)
 - [What is the difference between filter, wrapper, and embedded methods for feature selection?](./feature_sele_categories.md)
+- [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./dataprep-vs-dataengin.md)
 
 ##### Naive Bayes
 
