@@ -158,4 +158,5 @@ Sebastian
 - [Which book version/format would you recommend?](./version.md)
 - [Why did you choose Python for machine learning?](./why-python.md)
 - [Why do you use so many leading and trailing underscores in the code examples?](./underscore-convention.md)
+- [What is the purpose of the `return self` idioms in your code examples?](./return_self_idiom.md)
 - [Are there any prerequisites and recommended pre-readings?](./prerequisites.md)
