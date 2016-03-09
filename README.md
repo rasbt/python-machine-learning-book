@@ -174,6 +174,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 - [Why are there so many deep learning libraries?](./faq/many-deeplearning-libs.md)
 - [Why do some people hate neural networks/deep learning?](./faq/deeplearning-criticism.md)
 - [How can I know if Deep Learning works better for a specific problem than SVM or random forest?](./faq/deeplearn-vs-svm-randomforest.md)
+- [What is wrong when my neural network's error increases?](./faq/neuralnet-error.md)
 
 
 ##### Other Algorithms for Supervised Learning

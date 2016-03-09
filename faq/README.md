@@ -97,6 +97,7 @@ Sebastian
 - [Why are there so many deep learning libraries?](./many-deeplearning-libs.md)
 - [Why do some people hate neural networks/deep learning?](./deeplearning-criticism.md)
 - [How can I know if Deep Learning works better for a specific problem than SVM or random forest?](./deeplearn-vs-svm-randomforest.md)
+- [What is wrong when my neural network's error increases?](./neuralnet-error.md)
 
 ##### Other Algorithms for Supervised Learning
 
