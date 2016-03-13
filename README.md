@@ -48,6 +48,7 @@ Kindle ASIN: B00YSILNL0<br></div>
 ### [Errata](./docs/errata.md)
 
 
+
 ## Table of Contents and Code Notebooks
 
 
@@ -81,7 +82,7 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 - Logistic Regression Implementation [[dir](./code/bonus)] [[ipynb](./code/bonus/logistic_regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
 - A Basic Pipeline and Grid Search Setup [[dir](./code/bonus)] [[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
 - An Extended Nested Cross-Validation Example [[dir](./code/bonus)] [[ipynb](./code/bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
-- A Simple(r) Barebones Flask Webapp Template [[view directory](./code/bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
+- A Simple Barebones Flask Webapp Template [[view directory](./code/bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
 - Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
 
 
@@ -93,7 +94,27 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 [![](./images/mlxtend_logo.png)](http://rasbt.github.io/mlxtend/)
 
-<hr>
+
+<br>
+
+---
+
+***Dear readers***,  
+first of all, I want to thank all of you for the great support! I am really happy about all the great feedback you sent me so far, and I am glad that the book has been so useful to a broad audience.
+
+Over the last couple of months, I received hundreds of emails, and I tried to answer as many as possible in the available time I have. To make them useful to other readers as well, I collected many of my answers in the FAQ section (below).
+
+In addition, some of you asked me about a platform for readers to discuss the contents of the book. I hope that this would provide an opportunity for you to discuss and share your knowledge with other readers:
+
+#### [Google Groups Discussion Board](https://groups.google.com/forum/#!forum/python-machine-learning-reader-discussion-board)
+
+(And I will try my best to answer questions myself if time allows! :))
+
+> The only thing to do with good advice is to pass it on. It is never of any use to oneself.  
+— Oscar Wilde
+
+---
+
 
 ## FAQ
 
