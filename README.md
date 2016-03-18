@@ -129,6 +129,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [How would you explain machine learning to a software engineer?](./faq/ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./faq/ml-curriculum.md)
 - [What is the Definition of Data Science?](./faq/definition_data-science.md)
+- [How do Data Scientists perform model selection? Is it different from Kaggle?](./faq/model-selection-in-datascience.html)
 
 ### Questions about the Machine Learning Field
 
