@@ -20,6 +20,11 @@ ISBN-10: 1783555130<br>
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br></div>
 
+
+### [Feedback & Reviews](./docs/feedback.md)
+
+[![](./images/pymle_amzn.png)]((./docs/feedback.md))
+
 ---
 > *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
 – Lon Riesberg at [Data Elixir](http://dataelixir.com/issues/55#start)
@@ -30,7 +35,7 @@ Kindle ASIN: B00YSILNL0<br></div>
 > *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*    
 – [Jason Wolosonovich](https://www.linkedin.com/pulse/python-machine-learning-sebastian-raschka-review-jason-wolosonovich?trk=prof-post)
 
-### [Feedback & Reviews](./docs/feedback.md)
+
 
 ## Links
 
