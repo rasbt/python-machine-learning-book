@@ -246,9 +246,10 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [What is Euclidean distance in terms of machine learning?](./faq/euclidean-distance.md)
 - [When should one use median, as opposed to the mean or average?](./faq/median-vs-mean.md)
 
-##### Programming Languages for Data Science and ML
+##### Programming Languages and Libraries for Data Science and Machine Learning
 
 - [Is R used extensively today in data science?](./faq/r-in-datascience.md)
+- [What is the main difference between TensorFlow and scikit-learn?](./faq/tensorflow-vs-scikitlearn.md)
 
 <br>
 

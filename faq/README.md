@@ -141,9 +141,10 @@ Sebastian
 - [What is Euclidean distance in terms of machine learning?](./euclidean-distance.md)
 - [When should one use median, as opposed to the mean or average?](./median-vs-mean.md)
 
-##### Programming Languages for Data Science and ML
+##### Programming Languages and Libraries for Data Science and Machine Learning
 
 - [Is R used extensively today in data science?](./r-in-datascience.md)
+- [What is the main difference between TensorFlow and scikit-learn?](./tensorflow-vs-scikitlearn.md)
 
 <!--- end -->
 
