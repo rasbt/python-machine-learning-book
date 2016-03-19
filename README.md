@@ -23,7 +23,7 @@ Kindle ASIN: B00YSILNL0<br></div>
 
 ### [Feedback & Reviews](./docs/feedback.md)
 
-[![](./images/pymle_amzn.png)]((./docs/feedback.md))
+[ ![](./images/pymle_amzn.png)](./docs/feedback.md)
 
 ---
 > *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
@@ -232,6 +232,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [What are some common approaches for dealing with missing data?](./faq/missing-data.md)
 - [What is the difference between filter, wrapper, and embedded methods for feature selection?](./faq/feature_sele_categories.md)
 - [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./faq/dataprep-vs-dataengin.md)
+- [Is a bag of words feature representation for text classification considered as a sparse matrix?](./faq/bag-of-words-sparsity.md)
 
 ##### Naive Bayes
 

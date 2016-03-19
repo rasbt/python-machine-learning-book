@@ -128,6 +128,7 @@ Sebastian
 - [What are some common approaches for dealing with missing data?](./missing-data.md)
 - [What is the difference between filter, wrapper, and embedded methods for feature selection?](./feature_sele_categories.md)
 - [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./dataprep-vs-dataengin.md)
+- [Is a bag of words feature representation for text classification considered as a sparse matrix?](./bag-of-words-sparsity.md)
 
 ##### Naive Bayes
 
