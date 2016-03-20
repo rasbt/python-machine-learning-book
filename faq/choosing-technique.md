@@ -1,3 +1,8 @@
+---
+layout: faq
+title: Machine Learning FAQ
+---
+
 # What factors should I consider when choosing a predictive model technique?
 
 This is a very broad question, and the answer would basically fill an entire book. In a nutshell, I would come up with the
