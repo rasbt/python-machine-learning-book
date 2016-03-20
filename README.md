@@ -189,6 +189,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [What is the major difference between naive Bayes and logistic regression?](./faq/naive-bayes-vs-logistic-regression.md)
 - [What exactly is the "softmax and the multinomial logistic loss" in the context of machine learning?](./faq/softmax.md)
 - [What is the relation between Loigistic Regression and Neural Networks and when to use which?](./faq/logisticregr-neuralnet.md)
+- [Logistic Regression: Why sigmoid function?](./faq/logistic-why-sigmoid.md)
 - [Is there an analytical solution to Logistic Regression similar to the Normal Equation for Linear Regression?](./faq/logistic-analytical.md)
 
 
