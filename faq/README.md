@@ -30,7 +30,7 @@ Sebastian
 - [How would you explain machine learning to a software engineer?](./ml-to-a-programmer.md)
 - [How would your curriculum for a machine learning beginner look like?](./ml-curriculum.md)
 - [What is the Definition of Data Science?](./definition_data-science.md)
-- [How do Data Scientists perform model selection? Is it different from Kaggle?](./model-selection-in-datascience.html)
+- [How do Data Scientists perform model selection? Is it different from Kaggle?](./model-selection-in-datascience.md)
 
 
 ### Questions about the Machine Learning Field
