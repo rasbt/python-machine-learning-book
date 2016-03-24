@@ -14,3 +14,5 @@ A collection of additional notebooks and code examples to clarify and explain co
 - A Simple(r) Barebones Flask Webapp Template [[view directory](./flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
 
 - Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
+
+- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]

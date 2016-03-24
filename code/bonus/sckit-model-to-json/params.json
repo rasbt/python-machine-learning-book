@@ -1,0 +1,1 @@
+{"dual": false, "max_iter": 100, "warm_start": false, "verbose": 0, "C": 100.0, "class_weight": null, "random_state": 1, "fit_intercept": true, "multi_class": "multinomial", "intercept_scaling": 1, "penalty": "l2", "solver": "newton-cg", "n_jobs": 1, "tol": 0.0001}
