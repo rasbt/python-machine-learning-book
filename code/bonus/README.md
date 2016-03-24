@@ -15,4 +15,4 @@ A collection of additional notebooks and code examples to clarify and explain co
 
 - Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
 
-- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
+- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./scikit-model-to-json.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
