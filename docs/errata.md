@@ -11,12 +11,13 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $00.00
+- Current amount for the next donation: $26.00
 - Amount donated to charity:
   - [$76.00 2015-03-03](./2016-03-03-unicef.pdf)
 
 ## Leaderboard
 
+1. Jeremy N. ($30.00)
 1. Ryan S. ($24.00)
 2. Christopher Galpin ($8.00)
 18. David C. ($6.00)
@@ -31,6 +32,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 8. T.S. Jayram ($2.00)
 9. Andrei R. ($2.00)
 10. Panos N. ($2.00)
+19. F. Liu ($2.00)
 11. Elias R. ($1.00)
 12. Haitham H. Saleh ($1.00)
 13. Muqueet M. ($1.00)
@@ -39,7 +41,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 16. Olaf R. ($1.00)
 17. Neeraj K. ($1.00)
 18. Dan I. ($1.00)
-19. F. Liu ($2.00)
+19. Evan Colvin ($1.00)
 
 ...
 
@@ -52,10 +54,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 **Note**
 
-Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim.
+Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim. For similar reasons, I decided to split the errata into 2 parts, a "technical" errata and a "language" errata.
 
 
-#### [Errata PDF v.2](http://sebastianraschka.com/pdf/books/pymle/errata_2nd.pdf)
+#### [Technical Errata PDF v.2](http://sebastianraschka.com/pdf/books/pymle/errata_2nd_technical.pdf)
+
+#### [Language Errata PDF v.2](http://sebastianraschka.com/pdf/books/pymle/errata_2nd_language.pdf)
 
 (Left-click to view it in the browser; right-click for select a direct download option from the context menu.)
 
