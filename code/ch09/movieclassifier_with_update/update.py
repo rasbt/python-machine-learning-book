@@ -20,20 +20,20 @@ def update_model(db_path, model, batch_size=10000):
 
         classes = np.array([0, 1])
         X_train = vect.transform(X)
-        clf.partial_fit(X_train, y, classes=classes)
+        model.partial_fit(X_train, y, classes=classes)
         results = c.fetchmany(batch_size)
 
     conn.close()
-    return None
+    return model
 
 cur_dir = os.path.dirname(__file__)
 
 clf = pickle.load(open(os.path.join(cur_dir,
-                 'pkl_objects',
-                 'classifier.pkl'), 'rb'))
+                  'pkl_objects',
+                  'classifier.pkl'), 'rb'))
 db = os.path.join(cur_dir, 'reviews.sqlite')
 
-update_model(db_path=db, model=clf, batch_size=10000)
+clf = update_model(db_path=db, model=clf, batch_size=10000)
 
 # Uncomment the following lines if you are sure that
 # you want to update your classifier.pkl file
