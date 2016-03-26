@@ -92,6 +92,8 @@ Thanks so much for your feedback so far, I truly appreciate it and will do my be
 
 Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim.
 
-#### [Errata PDF v.1](http://sebastianraschka.com/pdf/books/pymle/errata_1st.pdf)
+#### [Technical Errata PDF v.1](http://sebastianraschka.com/pdf/books/pymle/errata_1st_technical.pdf)
+
+#### [Language Errata PDF v.1](http://sebastianraschka.com/pdf/books/pymle/errata_1st_language.pdf)
 
 (Left-click to view it in the browser; right-click for select a direct download option from the context menu.)
