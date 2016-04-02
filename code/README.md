@@ -32,6 +32,8 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 - An Extended Nested Cross-Validation Example [[dir](./bonus)] [[ipynb](./bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
 - A Simple(r) Barebones Flask Webapp Template [[view directory](./bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
 - Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
+- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./bonus/scikit-model-to-json.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
+- Multinomial logistic regression / softmax regression [[GitHub ipynb](./bonus/softmax-regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/softmax-regression.ipynb)]
 
 
 
