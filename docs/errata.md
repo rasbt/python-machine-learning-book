@@ -11,13 +11,13 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $28.00
+- Current amount for the next donation: $39.00
 - Amount donated to charity:
   - [$76.00 2015-03-03](./2016-03-03-unicef.pdf)
 
 ## Leaderboard
 
-1. Jeremy N. ($30.00)
+1. Jeremy N. ($40.00)
 1. Ryan S. ($24.00)
 2. Christopher Galpin ($8.00)
 18. David C. ($6.00)
@@ -43,6 +43,8 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 17. Neeraj K. ($1.00)
 18. Dan I. ($1.00)
 19. Evan Colvin ($1.00)
+20. Claude C. ($2.00)
+21. Dominik S. ($1.00)
 
 ...
 
