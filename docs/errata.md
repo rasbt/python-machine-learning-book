@@ -13,8 +13,8 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 - Current amount for the next donation: $00.00
 - Amount donated to charity:
-  - [$39.00 2015-04-07](./2016-04-07-unicef.pdf)
-  - [$76.00 2015-03-03](./2016-03-03-unicef.pdf)
+  - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
+  - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
 
 ## Leaderboard
 
