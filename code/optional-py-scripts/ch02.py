@@ -78,7 +78,7 @@ class Perceptron(object):
 #############################################################################
 print(50 * '=')
 print('Section: Training a perceptron model on the Iris dataset')
-print(50 * '=')
+print(50 * '-')
 
 df = pd.read_csv('https://archive.ics.uci.edu/ml/'
                  'machine-learning-databases/iris/iris.data', header=None)
@@ -87,7 +87,7 @@ print(df.tail())
 #############################################################################
 print(50 * '=')
 print('Plotting the Iris data')
-print(50 * '=')
+print(50 * '-')
 
 # select setosa and versicolor
 y = df.iloc[0:100, 4].values
@@ -113,7 +113,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Training the perceptron model')
-print(50 * '=')
+print(50 * '-')
 
 ppn = Perceptron(eta=0.1, n_iter=10)
 
@@ -130,7 +130,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('A function for plotting decision regions')
-print(50 * '=')
+print(50 * '-')
 
 
 def plot_decision_regions(X, y, classifier, resolution=0.02):
@@ -171,7 +171,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Implementing an adaptive linear neuron in Python')
-print(50 * '=')
+print(50 * '-')
 
 
 class AdalineGD(object):
@@ -285,7 +285,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Large scale machine learning and stochastic gradient descent')
-print(50 * '=')
+print(50 * '-')
 
 
 class AdalineSGD(object):

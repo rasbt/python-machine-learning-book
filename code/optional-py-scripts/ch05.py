@@ -31,7 +31,7 @@ from matplotlib.ticker import FormatStrFormatter
 print(50 * '=')
 print('Section: Unsupervised dimensionality reduction'
       ' via principal component analysis')
-print(50 * '=')
+print(50 * '-')
 
 df_wine = pd.read_csv('https://archive.ics.uci.edu/ml/'
                       'machine-learning-databases/wine/wine.data',
@@ -64,7 +64,7 @@ print('\nEigenvalues \n%s' % eigen_vals)
 #############################################################################
 print(50 * '=')
 print('Section: Total and explained variance')
-print(50 * '=')
+print(50 * '-')
 
 tot = sum(eigen_vals)
 var_exp = [(i / tot) for i in sorted(eigen_vals, reverse=True)]
@@ -84,7 +84,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Feature Transformation')
-print(50 * '=')
+print(50 * '-')
 
 # Make a list of (eigenvalue, eigenvector) tuples
 eigen_pairs = [(np.abs(eigen_vals[i]), eigen_vecs[:, i])
@@ -119,7 +119,7 @@ print('Dot product:\n', X_train_std[0].dot(w))
 #############################################################################
 print(50 * '=')
 print('Section: Principal component analysis in scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 pca = PCA()
 X_train_pca = pca.fit_transform(X_train_std)
@@ -193,7 +193,7 @@ print('Explaind variance ratio:\n', pca.explained_variance_ratio_)
 print(50 * '=')
 print('Section: Supervised data compression via linear discriminant analysis'
       ' - Computing the scatter matrices')
-print(50 * '=')
+print(50 * '-')
 
 np.set_printoptions(precision=4)
 
@@ -241,7 +241,7 @@ print('Between-class scatter matrix: %sx%s' % (S_B.shape[0], S_B.shape[1]))
 #############################################################################
 print(50 * '=')
 print('Section: Selecting linear discriminants for the new feature subspace')
-print(50 * '=')
+print(50 * '-')
 
 eigen_vals, eigen_vecs = np.linalg.eig(np.linalg.inv(S_W).dot(S_B))
 
@@ -282,7 +282,7 @@ print('Matrix W:\n', w)
 #############################################################################
 print(50 * '=')
 print('Section: Projecting samples onto the new feature space')
-print(50 * '=')
+print(50 * '-')
 
 X_train_lda = X_train_std.dot(w)
 colors = ['r', 'b', 'g']
@@ -304,7 +304,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: LDA via scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 lda = LDA(n_components=2)
 X_train_lda = lda.fit_transform(X_train_std, y_train)
@@ -334,7 +334,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Implementing a kernel principal component analysis in Python')
-print(50 * '=')
+print(50 * '-')
 
 
 def rbf_kernel_pca(X, gamma, n_components):
@@ -386,7 +386,7 @@ def rbf_kernel_pca(X, gamma, n_components):
 #############################################################################
 print(50 * '=')
 print('Section: Example 1: Separating half-moon shapes')
-print(50 * '=')
+print(50 * '-')
 
 X, y = make_moons(n_samples=100, random_state=123)
 
@@ -451,7 +451,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Example 2: Separating concentric circles')
-print(50 * '=')
+print(50 * '-')
 
 X, y = make_circles(n_samples=1000, random_state=123, noise=0.1, factor=0.2)
 
@@ -515,7 +515,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Projecting new data points')
-print(50 * '=')
+print(50 * '-')
 
 
 def rbf_kernel_pca(X, gamma, n_components):
@@ -608,7 +608,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Kernel principal component analysis in scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 
 X, y = make_moons(n_samples=100, random_state=123)

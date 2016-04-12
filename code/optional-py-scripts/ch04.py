@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 #############################################################################
 print(50 * '=')
 print('Section: Dealing with missing data')
-print(50 * '=')
+print(50 * '-')
 
 csv_data = '''A,B,C,D
 1.0,2.0,3.0,4.0
@@ -51,7 +51,7 @@ print(df.isnull().sum())
 #############################################################################
 print(50 * '=')
 print('Section: Eliminating samples or features with missing values')
-print(50 * '=')
+print(50 * '-')
 
 print('\n\nExecuting df.dropna()')
 print(df.dropna())
@@ -75,7 +75,7 @@ print(df.dropna(subset=['C']))
 #############################################################################
 print(50 * '=')
 print('Section: Imputing missing values')
-print(50 * '=')
+print(50 * '-')
 
 imr = Imputer(missing_values='NaN', strategy='mean', axis=0)
 imr = imr.fit(df)
@@ -88,7 +88,7 @@ print('Imputed Data:\n', imputed_data)
 #############################################################################
 print(50 * '=')
 print('Section: Handling categorical data')
-print(50 * '=')
+print(50 * '-')
 
 df = pd.DataFrame([['green', 'M', 10.1, 'class1'],
                    ['red', 'L', 13.5, 'class2'],
@@ -101,7 +101,7 @@ print('Input Array:\n', df)
 #############################################################################
 print(50 * '=')
 print('Section: Mapping ordinal features')
-print(50 * '=')
+print(50 * '-')
 
 size_mapping = {'XL': 3,
                 'L': 2,
@@ -118,7 +118,7 @@ print('\nInverse mapping:\n', df_inv)
 #############################################################################
 print(50 * '=')
 print('Section: Encoding class labels')
-print(50 * '=')
+print(50 * '-')
 
 class_mapping = {label: idx for idx, label
                  in enumerate(np.unique(df['classlabel']))}
@@ -142,7 +142,7 @@ print('Label encoder inverse tansform:\n', y_inv)
 #############################################################################
 print(50 * '=')
 print('Section: Performing one hot encoding on nominal features')
-print(50 * '=')
+print(50 * '-')
 
 X = df[['color', 'size', 'price']].values
 
@@ -161,7 +161,7 @@ print("Pandas get_dummies alternative:\n", df_dummies)
 #############################################################################
 print(50 * '=')
 print('Section: Partitioning a dataset in training and test sets')
-print(50 * '=')
+print(50 * '-')
 
 df_wine = pd.read_csv('https://archive.ics.uci.edu/'
                       'ml/machine-learning-databases/wine/wine.data',
@@ -187,7 +187,7 @@ X_train, X_test, y_train, y_test = \
 #############################################################################
 print(50 * '=')
 print('Section: Bringing features onto the same scale')
-print(50 * '=')
+print(50 * '-')
 
 mms = MinMaxScaler()
 X_train_norm = mms.fit_transform(X_train)
@@ -215,7 +215,7 @@ print('\nOutput array after scaling:\n', ex)
 #############################################################################
 print(50 * '=')
 print('Section: Sparse solutions with L1-regularization')
-print(50 * '=')
+print(50 * '-')
 
 lr = LogisticRegression(penalty='l1', C=0.1)
 lr.fit(X_train_std, y_train)
@@ -261,7 +261,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Sequential feature selection algorithms')
-print(50 * '=')
+print(50 * '-')
 
 
 class SBS():
@@ -351,7 +351,7 @@ print('Test accuracy:', knn.score(X_test_std[:, k5], y_test))
 #############################################################################
 print(50 * '=')
 print('Section: Assessing Feature Importances with Random Forests')
-print(50 * '=')
+print(50 * '-')
 
 feat_labels = df_wine.columns[1:]
 

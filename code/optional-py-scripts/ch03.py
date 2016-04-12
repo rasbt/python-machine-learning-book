@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 #############################################################################
 print(50 * '=')
 print('Section: First steps with scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 iris = datasets.load_iris()
 X = iris.data[:, [2, 3]]
@@ -46,7 +46,7 @@ X_test_std = sc.transform(X_test)
 #############################################################################
 print(50 * '=')
 print('Section: Training a perceptron via scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 ppn = Perceptron(n_iter=40, eta0=0.1, random_state=0)
 ppn.fit(X_train_std, y_train)
@@ -117,7 +117,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Logistic regression intuition and conditional probabilities')
-print(50 * '=')
+print(50 * '-')
 
 
 def sigmoid(z):
@@ -144,7 +144,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Learning the weights of the logistic cost function')
-print(50 * '=')
+print(50 * '-')
 
 
 def cost_1(z):
@@ -176,7 +176,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Training a logistic regression model with scikit-learn')
-print(50 * '=')
+print(50 * '-')
 
 
 lr = LogisticRegression(C=1000.0, random_state=0)
@@ -196,7 +196,7 @@ print('Predicted probabilities', lr.predict_proba(X_test_std[0, :]))
 #############################################################################
 print(50 * '=')
 print('Section: Tackling overfitting via regularization')
-print(50 * '=')
+print(50 * '-')
 
 weights, params = [], []
 for c in np.arange(-5, 5):
@@ -221,7 +221,7 @@ plt.show()
 print(50 * '=')
 print('Section: Dealing with the nonlinearly'
       'separable case using slack variables')
-print(50 * '=')
+print(50 * '-')
 
 svm = SVC(kernel='linear', C=1.0, random_state=0)
 svm.fit(X_train_std, y_train)
@@ -238,7 +238,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Solving non-linear problems using a kernel SVM')
-print(50 * '=')
+print(50 * '-')
 
 np.random.seed(0)
 X_xor = np.random.randn(200, 2)
@@ -267,7 +267,7 @@ plt.show()
 print(50 * '=')
 print('Section: Using the kernel trick to find separating hyperplanes'
       'in higher dimensional space')
-print(50 * '=')
+print(50 * '-')
 
 svm = SVC(kernel='rbf', random_state=0, gamma=0.10, C=10.0)
 svm.fit(X_xor, y_xor)
@@ -309,7 +309,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Decision tree learning')
-print(50 * '=')
+print(50 * '-')
 
 
 def gini(p):
@@ -354,7 +354,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Building a decision tree')
-print(50 * '=')
+print(50 * '-')
 
 tree = DecisionTreeClassifier(criterion='entropy', max_depth=3, random_state=0)
 tree.fit(X_train, y_train)
@@ -379,7 +379,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: Combining weak to strong learners via random forests')
-print(50 * '=')
+print(50 * '-')
 
 
 forest = RandomForestClassifier(criterion='entropy',
@@ -402,7 +402,7 @@ plt.show()
 #############################################################################
 print(50 * '=')
 print('Section: K-nearest neighbors - a lazy learning algorithm')
-print(50 * '=')
+print(50 * '-')
 
 knn = KNeighborsClassifier(n_neighbors=5, p=2, metric='minkowski')
 knn.fit(X_train_std, y_train)
