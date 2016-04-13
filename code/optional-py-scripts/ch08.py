@@ -39,6 +39,7 @@ _ = input('Please hit enter to continue.')
 
 basepath = './aclImdb'
 
+"""
 labels = {'pos': 1, 'neg': 0}
 pbar = pyprind.ProgBar(50000)
 df = pd.DataFrame()
@@ -58,8 +59,9 @@ np.random.seed(0)
 df = df.reindex(np.random.permutation(df.index))
 
 df.to_csv('./movie_data.csv', index=False)
+"""
 
-df = pd.read_csv('./movie_data.csv')
+df = pd.read_csv('../datasets/movie/movie_data.csv')
 print('Excerpt of the movie dataset', df.head(3))
 
 
@@ -69,10 +71,9 @@ print('Section: Transforming documents into feature vectors')
 print(50 * '-')
 
 count = CountVectorizer()
-docs = np.array([
-        'The sun is shining',
-        'The weather is sweet',
-        'The sun is shining and the weather is sweet'])
+docs = np.array(['The sun is shining',
+                 'The weather is sweet',
+                 'The sun is shining and the weather is sweet'])
 bag = count.fit_transform(docs)
 
 print('Vocabulary', count.vocabulary_)
@@ -91,7 +92,7 @@ print(tfidf.fit_transform(count.fit_transform(docs)).toarray())
 
 tf_is = 2
 n_docs = 3
-idf_is = np.log((n_docs+1) / (3+1))
+idf_is = np.log((n_docs + 1) / (3 + 1))
 tfidf_is = tf_is * (idf_is + 1)
 print('tf-idf of term "is" = %.2f' % tfidf_is)
 
