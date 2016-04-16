@@ -9,9 +9,13 @@ The only catch here is that you won't receive any single cent. Instead, I am goi
 I would be happy if you just write me a short [mail](mailto:mail@sebastianraschka.com) including the error and page number, and please let me know if you want to be listed on the public leaderboard.
 
 
+## Note (2016-04-15)
+
+**I am happy to say that layout team recently agreed to fix all the errors listed in the current errata! The fixes have already been applied, and I got a glance at the current version last -- it looks good :). So, based on what I've heard, the revised version will go online on April 19th, 2016 across the various platforms. If you got the book via Packt directly, you just need to log back in to re-download the .pdf, .epub, and/or .mobi files. Also, I was told that the same applies to the Kindle and iBooks versions and so forth. There may be a few delays depending on how fast the servers propagate the changes, but I will check back next week and post another update as soon as I see that the revision's gone life! Also, I want to say that I am really, really happy about all your feedback, and I really appreciate the nice words you are sending me about the book despite the little typos here and there! Thank you!**
+
 ## Donations
 
-- Current amount for the next donation: $01.00
+- Current amount for the next donation: $2.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
@@ -47,6 +51,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 19. Evan Colvin ($1.00)
 21. Dominik S. ($1.00)
 22. Andrei R. ($1.00)
+23. Richard L ($1.00)
 
 ...
 
