@@ -9,9 +9,14 @@ The only catch here is that you won't receive any single cent. Instead, I am goi
 I would be happy if you just write me a short [mail](mailto:mail@sebastianraschka.com) including the error and page number, and please let me know if you want to be listed on the public leaderboard.
 
 
-## Note (2016-04-15)
+### Note (2016-04-15)
 
-**I am happy to say that layout team recently agreed to fix all the errors listed in the current errata! The fixes have already been applied, and I got a glance at the current version last -- it looks good :). So, based on what I've heard, the revised version will go online on April 19th, 2016 across the various platforms. If you got the book via Packt directly, you just need to log back in to re-download the .pdf, .epub, and/or .mobi files. Also, I was told that the same applies to the Kindle and iBooks versions and so forth. There may be a few delays depending on how fast the servers propagate the changes, but I will check back next week and post another update as soon as I see that the revision's gone life! Also, I want to say that I am really, really happy about all your feedback, and I really appreciate the nice words you are sending me about the book despite the little typos here and there! Thank you!**
+ ~~I am happy to say that layout team recently agreed to fix all the errors listed in the current errata! The fixes have already been applied, and I got a glance at the current version last -- it looks good :). So, based on what I've heard, the revised version will go online on April 19th, 2016 across the various platforms. If you got the book via Packt directly, you just need to log back in to re-download the .pdf, .epub, and/or .mobi files. Also, I was told that the same applies to the Kindle and iBooks versions and so forth. There may be a few delays depending on how fast the servers propagate the changes, but I will check back next week and post another update as soon as I see that the revision's gone life! Also, I want to say that I am really, really happy about all your feedback, and I really appreciate the nice words you are sending me about the book despite the little typos here and there! Thank you!~~
+
+### Note (2016-04-23)
+
+**I just checked the e-book out via my Packt account; I am happy to announce that the revision has gone live! Based on my interpretation of the publisher's feedback, the revision should be available via the other platforms as well. Please scroll down to the "Current Errata" section below for more information on the current state of the book.**
+
 
 ## Donations
 
@@ -59,12 +64,26 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 **I am really sorry about you seeing many typos up in the equations so far. Unfortunately, the layout team needed to retype the equations for compatibility reasons. There were a lot of typos introduced during this process, and I tried my very best to eliminate all of these by comparing the pre-finals against my draft. Cross-comparing 450 pages was a tedious task, and it appears that several typos slipped through, so if you see something that does not make quite sense to you, please let me know.**
 
-### Current Errata:
-
 
 **Note**
 
 Due to the large file sizes of the PDFs, I moved the errata documents to an external source to keep this GitHub repository reasonably slim. For similar reasons, I decided to split the errata into 2 parts, a "technical" errata and a "language" errata.
+
+### Current Errata:
+
+
+**How can I tell if I have the initial or updated version of the book?**
+
+This time, the easiest way may be to go to page 6 in chapter 1. Finally, the labeling in the *reinforcement learning* figure should be correct!
+
+![](./images/errata/errata_2016-04-22.jpg)
+
+---
+
+
+### Old Errata: Oct 25, 2015 - Apr 22, 2016
+
+
 
 
 #### [Technical Errata PDF v.2](http://sebastianraschka.com/pdf/books/pymle/errata_2nd_technical.pdf)
@@ -90,7 +109,7 @@ The easiest way may be to go to page viii, the second page of the **Preface**. I
 ![](./images/errata/errata_2015-10-20.png)
 
 
-<hr>
+---
 
 ### Old Errata: Sep 23 - Oct 25, 2015
 
