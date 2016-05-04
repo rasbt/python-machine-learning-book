@@ -29,7 +29,7 @@ As we probably heard or read before, the F1-score is simply the harmonic mean of
 
 F1 = 2 * (PRE * REC) / (PRE + REC)
 
-What we are trying to achieve with the F1-score metric is to find an equal balance between precision and recall, which is extremely useful in most scenarios when we are working with imbalanced datasets (i.e., a dataset with a non-uniform distribution of class labels).
+***What we are trying to achieve with the F1-score metric is to find an equal balance between precision and recall, which is extremely useful in most scenarios when we are working with imbalanced datasets (i.e., a dataset with a non-uniform distribution of class labels).***
 
 ---
 If we write the two metrics PRE and REC in terms of true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN), we get:
@@ -39,9 +39,10 @@ If we write the two metrics PRE and REC in terms of true positives (TP), true ne
 
 Thus, the recall score gives us an idea (expressed as a score from 1.0 to 0.0, from good to bad) of the proportion of how many actual spam emails (TP) we correctly classified as spam among all the emails we classified as spam (TP + FP).
 In contrast, the precision (also ranging from 1.0 to 0.0) tells us about how many of the actual spam emails (TP) we "retrieved" or "recalled" (TP + FN).
+
 ---
 
-Okay, let's assume we settled on the F1-score as our performance metric of choice to benchmark our new algorithm; coincidentally, the algorithm in a certain paper, which should serve as our reference performance, was also evaluated using the F1 score. Using the same cross-validation technique on the same dataset, this should make this comparison, fair, right? No, no, no, not so fast! On top of choosing the appropriate performance metric -- comparing "fruits to fruits" -- we also have to care about how it's computed in order to compare "apples to apples." This is extremely important if we are comparing performance metrics on imbalanced datasets, which I will explain in a second (based on the results from Forman & Martin Scholz' paper). Also, keep in mind that even if our dataset doesn't seem to be imbalanced at first glance, let's think of the Iris dataset with 50 Setosa, 50 Virginica, and 50 Versicolor flowers: What happens if we use a One-vs-Rest (OVR; or One-vs-All, OVA) classification scheme?
+Okay, let's assume we settled on the F1-score as our performance metric of choice to benchmark our new algorithm; coincidentally, the algorithm in a certain paper, which should serve as our reference performance, was also evaluated using the F1 score. Using the same cross-validation technique on the same dataset, this should make this comparison, fair, right? No, no, no, not so fast! On top of choosing the appropriate performance metric -- comparing "fruits to fruits" -- we also have to care about how it's computed in order to compare "apples to apples." This is extremely important if we are comparing performance metrics on imbalanced datasets, which I will explain in a second (based on the results from Forman & Martin Scholz' paper). ***Also, keep in mind that even if our dataset doesn't seem to be imbalanced at first glance, let's think of the Iris dataset with 50 Setosa, 50 Virginica, and 50 Versicolor flowers: What happens if we use a One-vs-Rest (OVR; or One-vs-All, OVA) classification scheme?***
 
 In any case, let's focus on a binary classification problem (a *positive* and a *negative* class) for now using k-fold cross-validation as our cross-validation technique of choice for model selection.
 
@@ -53,7 +54,7 @@ Now, what happens if we have a highly imbalanced dataset and perform our k-fold 
 
 What can we do about it? There are two things. Firstly, let's stratify our folds -- stratification means that the random sampling procedure attempts to maintain the class-label proportion across the different folds. Thus, we are unlikely to face problems like having "no samples from the *positive* class" given that *k* is not larger than the number of *positive* samples in the training dataset.
 
-In practice, different software packages handle the zero-division error differently: Some don't hesitate throwing run-time exceptions; some may silently substitute the precision and/or recall by a 0 -- make sure what it's doing! On top of that, we can compute the F1 score in several distinct ways (and in multi-class problems, we can put the micro- and macro-averaging techniques on top of that, but this is beyond of the scope of this section). As listed by Forman and Scholz, these three different scenarios are
+***In practice, different software packages handle the zero-division errors differently: Some don't hesitate throwing run-time exceptions; some may silently substitute the precision and/or recall by a 0 -- make sure what it's doing!*** On top of that, we can compute the F1 score in several distinct ways (and in multi-class problems, we can put the micro- and macro-averaging techniques on top of that, but this is beyond of the scope of this section). As listed by Forman and Scholz, these three different scenarios are
 
 #### (1)
 
@@ -112,6 +113,6 @@ Eventually, Forman and Scholz plaid this game of using different ways to compute
 - F1<sub>PRE, REC</sub>: 73%
 - F1<sub>TP, FP, FN</sub>: 58%
 
-Finally, based on further simulations, Forman and Scholz concluded that the computation of F1<sub>TP, FP, FN</sub> (compared to the alternative ways of computing the F1 score), were yielded the "most unbiased" estimate of the generalization performance using *k*-fold cross-validation.
+***Finally, based on further simulations, Forman and Scholz concluded that the computation of F1<sub>TP, FP, FN</sub> (compared to the alternative ways of computing the F1 score), were yielded the "most unbiased" estimate of the generalization performance using *k*-fold cross-validation.***
 
-In any case, the bottom line is that we should not only choose the appropriate performance metric and cross-validation technique for the task, but we also take a closer look at how the different performance metrics are computed in case we cite papers or rely on off-the-shelve machine learning libraries.
+In any case, the bottom line is that we should not only choose the appropriate performance metric and cross-validation technique for the task, but we also take a ***closer look at how the different performance metrics are computed in case we cite papers or rely on off-the-shelve machine learning libraries.***
