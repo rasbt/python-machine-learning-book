@@ -37,8 +37,8 @@ If we write the two metrics PRE and REC in terms of true positives (TP), true ne
 - PRE = TP / (TP + FP)
 - REC = TP / (TP + FN)
 
-Thus, the recall score gives us an idea (expressed as a score from 1.0 to 0.0, from good to bad) of the proportion of how many actual spam emails (TP) we correctly classified as spam among all the emails we classified as spam (TP + FP).
-In contrast, the precision (also ranging from 1.0 to 0.0) tells us about how many of the actual spam emails (TP) we "retrieved" or "recalled" (TP + FN).
+Thus, the precision score gives us an idea (expressed as a score from 1.0 to 0.0, from good to bad) of the proportion of how many actual spam emails (TP) we correctly classified as spam among all the emails we classified as spam (TP + FP).
+In contrast, the recall (also ranging from 1.0 to 0.0) tells us about how many of the actual spam emails (TP) we "retrieved" or "recalled" (TP + FN).
 
 ---
 
