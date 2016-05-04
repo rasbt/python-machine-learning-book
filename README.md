@@ -180,6 +180,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [What factors should I consider when choosing a predictive model technique?](./faq/choosing-technique.md)
 - [What are the best toy datasets to help visualize and understand classifier behavior?](./faq/clf-behavior-data.md)
 - [How do I select SVM kernels?](./faq/select_svm_kernels.md)
+- [Interlude: Comparing and Computing Performance Metrics in Cross-Validation -- Imbalanced Class Problems and 3 Different Ways to Compute the F1 Score](./faq/computing-the-f1-score.md)
 
 ##### Logistic Regression
 

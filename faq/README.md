@@ -76,6 +76,7 @@ Sebastian
 - [What factors should I consider when choosing a predictive model technique?](./choosing-technique.md)
 - [What are the best toy datasets to help visualize and understand classifier behavior?](./clf-behavior-data.md)
 - [How do I select SVM kernels?](./select_svm_kernels.md)
+- [Interlude: Comparing and Computing Performance Metrics in Cross-Validation -- Imbalanced Class Problems and 3 Different Ways to Compute the F1 Score](./computing-the-f1-score.md)
 
 
 ##### Logistic Regression
