@@ -107,6 +107,8 @@ ACC <sub>avg</sub> = (TP + TN) / N
 
 The two approaches are identical, or with a more concrete example: (30 + 40) / 100  = (30/50 + 40/50) / 2 = 0.7.
 
+---
+
 Eventually, Forman and Scholz plaid this game of using different ways to compute the F1 score based on a benchmark dataset with a high-class imbalance (a bit exaggerated for demonstration purposes but not untypical when working with text data). It turns out that the resulting scores (from the identical model) differed substantially:
 
 - F1<sub>avg</sub>: 69%
