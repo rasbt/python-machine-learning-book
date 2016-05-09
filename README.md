@@ -207,6 +207,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 - [What is wrong when my neural network's error increases?](./faq/neuralnet-error.md)
 - [How do I debug an artificial neural network algorithm?](./faq/nnet-debugging-checklist.md)
 - [What is the difference between a Perceptron, Adaline, and neural network model?](./faq/diff-perceptron-adaline-neuralnet.md)
+- [What is the basic idea behind the dropout technique?](./faq/dropout.md)
 
 
 ##### Other Algorithms for Supervised Learning
