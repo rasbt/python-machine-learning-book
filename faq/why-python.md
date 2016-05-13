@@ -1,6 +1,6 @@
 # Why did you choose Python for Machine Learning?
 
-(Edit: This article is now also available in visually more appealing version [here](http://sebastianraschka.com/Articles/2015_why_python.html).)
+(Edit: This article is now also available in visually more appealing version [here](http://sebastianraschka.com/blog/2015/why-python.html).)
 
 Oh god, another one of those subjective, pointedly opinionated click-bait headlines? Yes! Why did I bother writing this? Well, here is one of the most trivial yet life-changing insights and worldly wisdoms from my former professor that has become my mantra ever since: "If you have to do this task more than 3 times just write a script and automate it."  
 
@@ -38,7 +38,7 @@ Maybe I should start with the short answer. You are welcome to stop reading this
 Remember: "Premature optimization is the root of all evil" (Donald Knuth). If you are part of the software engineering team that wants to optimize the next game-changing high-frequency trading model from your machine learning and data science division, Python is probably not for you (but maybe it was the language of choice by the data science team, so it may still be useful to learn how to read it). So, my little piece of advice is to evaluate your daily problem tasks and needs when you choose a language. "If all that you have is a hammer, everything starts to look like a nail" -- you are too smart to fall for this trap! However, keep in mind that there is a balance. There are occasions where the hammer may be the best choice even if a screwdriver would probably be the "nicer" solution. Again, it comes down to productivity.
 
 **Let me give you an example from personal experience.**
-I needed to develop a bunch of novel algorithms to "screen" 15 million small, chemical compounds with regard to a very problem specific hypothesis. I am an entirely computational person, but I am collaborating with biologists who do non-computational experiments (we call them "wet lab" experiments). The goal was to narrow it down to a list of 100 potential compounds that they could test in their lab. The caveat was that they needed the results quickly, because they only had limited time to conduct the experiments. 
+I needed to develop a bunch of novel algorithms to "screen" 15 million small, chemical compounds with regard to a very problem specific hypothesis. I am an entirely computational person, but I am collaborating with biologists who do non-computational experiments (we call them "wet lab" experiments). The goal was to narrow it down to a list of 100 potential compounds that they could test in their lab. The caveat was that they needed the results quickly, because they only had limited time to conduct the experiments.
 
 > You’re bound to be unhappy if you optimize everything.         — Donald Knuth
 
