@@ -224,7 +224,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 
 ##### Ensemble Methods
 
-- [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./logistic-boosting.md)
+- [Is Combining Classifiers with Stacking Better than Selecting the Best One?](./faq/logistic-boosting.md)
 
 ##### Preprocessing, Feature Selection and Extraction
 
