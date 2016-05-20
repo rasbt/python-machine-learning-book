@@ -1,12 +1,7 @@
 import pandas as pd
-<<<<<<< HEAD
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
-=======
-import matplotlib.pyplot as plt
-import numpy as np
->>>>>>> db1b381e8424a19b83836015642c657f7ffda28f
 from perceptron import *
 
 def scatter_data(X, y):
@@ -34,7 +29,6 @@ def plot_error(data):
     # plt.savefig('./perceptron_1.png', dpi=300)
     plt.show()
 
-<<<<<<< HEAD
 def plot_decision_regions(X, y, classifier, resolution=0.02):
 
     # setup marker generator and color map
@@ -67,8 +61,6 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
     # plt.savefig('./perceptron_2.png', dpi=300)
     plt.show()
 
-=======
->>>>>>> db1b381e8424a19b83836015642c657f7ffda28f
 # main
 
 df = pd.read_csv('../datasets/iris/iris.data', header=None)
@@ -91,8 +83,5 @@ ppn = Perceptron(eta=0.1, n_iter=10)
 ppn.fit(X, y)
 
 plot_error(ppn.errors_)
-<<<<<<< HEAD
 
 plot_decision_regions(X, y, classifier=ppn)
-=======
->>>>>>> db1b381e8424a19b83836015642c657f7ffda28f
