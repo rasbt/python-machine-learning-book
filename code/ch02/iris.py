@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from perceptron import *
+from adaline_gd import *
 
 def scatter_data(X, y):
     # plot data
@@ -61,6 +62,24 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
     # plt.savefig('./perceptron_2.png', dpi=300)
     plt.show()
 
+def plot_adalines(ada1, ada2, eta1, eta2):
+
+    fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8, 4))
+
+    ax[0].plot(range(1, len(ada1.cost_) + 1), np.log10(ada1.cost_), marker='o')
+    ax[0].set_xlabel('Epochs')
+    ax[0].set_ylabel('log(Sum-squared-error)')
+    ax[0].set_title('Adaline - Learning rate ' + str(eta1))
+    
+    ax[1].plot(range(1, len(ada2.cost_) + 1), ada2.cost_, marker='o')
+    ax[1].set_xlabel('Epochs')
+    ax[1].set_ylabel('Sum-squared-error')
+    ax[1].set_title('Adaline - Learning rate ' + str(eta2))
+    
+    plt.tight_layout()
+    # plt.savefig('./adaline_1.png', dpi=300)
+    plt.show()
+
 # main
 
 df = pd.read_csv('../datasets/iris/iris.data', header=None)
@@ -85,3 +104,13 @@ ppn.fit(X, y)
 plot_error(ppn.errors_)
 
 plot_decision_regions(X, y, classifier=ppn)
+
+# adaline gd
+eta1 = 0.01
+eta2 = 0.0001
+
+ada1 = AdalineGD(n_iter=10, eta=eta1).fit(X, y)
+ada2 = AdalineGD(n_iter=10, eta=eta2).fit(X, y)
+
+plot_adalines(ada1, ada2, eta1, eta2)
+
