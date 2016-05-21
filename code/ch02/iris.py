@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from perceptron import *
 from adaline_gd import *
+from adaline_sgd import *
 
 def scatter_data(X, y):
     # plot data
@@ -63,11 +64,12 @@ def plot_decision_regions(X, y, classifier, resolution=0.02, xlabel='', ylabel='
     # plt.savefig('./perceptron_2.png', dpi=300)
     plt.show()
 
-def plot_adaline(ada):
+def plot_adaline(ada, xlabel='', ylabel=''):
     
     plt.plot(range(1, len(ada.cost_) + 1), ada.cost_, marker='o')
-    plt.xlabel('Epochs')
-    plt.ylabel('Sum-squared-error')
+    
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
 
     plt.tight_layout()
     # plt.savefig('./adaline_3.png', dpi=300)
@@ -135,4 +137,15 @@ ada.fit(X_std, y)
 
 plot_decision_regions(X_std, y, classifier=ada, title='Adaline - Gradient Descent', xlabel='sepal length [standardized]', ylabel = 'petal length [standardized]')
 
-plot_adaline(ada)
+plot_adaline(ada, xlabel='Epochs', ylabel='Sum-squared-error')
+
+# adaline sgd
+ada = AdalineSGD(n_iter=15, eta=0.01, random_state=1)
+ada.fit(X_std, y)
+
+plot_decision_regions(X_std, y, classifier=ada, title='Adaline - Stochastic Gradient Descent', xlabel = 'sepal length [standardized]', ylabel='petal length [standardized]')
+
+plot_adaline(ada, xlabel='Epochs', ylabel='Sum-squared-error')
+
+# online learning example
+ada.partial_fit(X_std[0, :], y[0])
