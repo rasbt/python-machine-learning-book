@@ -30,7 +30,7 @@ def plot_error(data):
     # plt.savefig('./perceptron_1.png', dpi=300)
     plt.show()
 
-def plot_decision_regions(X, y, classifier, resolution=0.02):
+def plot_decision_regions(X, y, classifier, resolution=0.02, xlabel='', ylabel='', title=''):
 
     # setup marker generator and color map
     markers = ('s', 'x', 'o', '^', 'v')
@@ -54,12 +54,23 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
                     alpha=0.8, c=cmap(idx),
                     marker=markers[idx], label=cl)
 
-    plt.xlabel('sepal length [cm]')
-    plt.ylabel('petal length [cm]')
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
     plt.legend(loc='upper left')
 
     plt.tight_layout()
     # plt.savefig('./perceptron_2.png', dpi=300)
+    plt.show()
+
+def plot_adaline(ada):
+    
+    plt.plot(range(1, len(ada.cost_) + 1), ada.cost_, marker='o')
+    plt.xlabel('Epochs')
+    plt.ylabel('Sum-squared-error')
+
+    plt.tight_layout()
+    # plt.savefig('./adaline_3.png', dpi=300)
     plt.show()
 
 def plot_adalines(ada1, ada2, eta1, eta2):
@@ -103,7 +114,7 @@ ppn.fit(X, y)
 
 plot_error(ppn.errors_)
 
-plot_decision_regions(X, y, classifier=ppn)
+plot_decision_regions(X, y, classifier=ppn, xlabel = 'sepal length [cm]', ylabel = 'petal length [cm]')
 
 # adaline gd
 eta1 = 0.01
@@ -114,3 +125,14 @@ ada2 = AdalineGD(n_iter=10, eta=eta2).fit(X, y)
 
 plot_adalines(ada1, ada2, eta1, eta2)
 
+# standardize features
+X_std = np.copy(X)
+for col in range(X_std.shape[1]):
+    X_std[:, col] = (X[:, col] - X[:, col].mean()) / X[:, col].std()
+
+ada = AdalineGD(n_iter=15, eta=0.01)
+ada.fit(X_std, y)
+
+plot_decision_regions(X_std, y, classifier=ada, title='Adaline - Gradient Descent', xlabel='sepal length [standardized]', ylabel = 'petal length [standardized]')
+
+plot_adaline(ada)
