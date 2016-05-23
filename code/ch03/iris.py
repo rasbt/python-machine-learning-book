@@ -122,3 +122,11 @@ plt.xlabel('C')
 plt.legend(loc='upper left')
 plt.xscale('log')
 plt.show()
+
+# svm
+from sklearn.svm import SVC
+
+svm = SVC(kernel='linear', C=1.0, random_state=0)
+svm.fit(X_train_std, y_train)
+
+plot_decision_regions(X_combined_std, y_combined, classifier=svm, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]')
