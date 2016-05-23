@@ -90,5 +90,14 @@ print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
 # visualize decision regions
 X_combined_std = np.vstack((X_train_std, X_test_std))
 y_combined = np.hstack((y_train, y_test))
+test_idx = range(X_train_std.shape[0], X_combined_std.shape[0])
 
-plot_decision_regions(X=X_combined_std, y=y_combined, classifier=ppn, test_idx=range(105, 150), xlabel='petal length [standardized]', ylabel='petal width [standardized]')
+plot_decision_regions(X=X_combined_std, y=y_combined, classifier=ppn, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]')
+
+# logistic regression
+from sklearn.linear_model import LogisticRegression
+
+lr = LogisticRegression(C=1000.0, random_state=0)
+lr.fit(X_train_std, y_train)
+
+plot_decision_regions(X_combined_std, y_combined, classifier=lr, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]')
