@@ -78,3 +78,10 @@ svm = SVC(kernel='linear', C=1.0, random_state=0)
 svm.fit(X_train_std, y_train)
 
 plot_decision_regions(X_combined_std, y_combined, classifier=svm, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]')
+
+# kernel svm
+for gamma in [0.2, 100]:
+    svm = SVC(kernel='rbf', random_state=0, gamma=gamma, C=1.0)
+    svm.fit(X_train_std, y_train)
+
+    plot_decision_regions(X_combined_std, y_combined, classifier=svm, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]', title = 'gamma ' + str(gamma))

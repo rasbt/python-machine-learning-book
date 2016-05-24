@@ -6,7 +6,7 @@ import warnings
 def versiontuple(v):
     return tuple(map(int, (v.split("."))))
 
-def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02, xlabel='', ylabel=''):
+def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02, xlabel='', ylabel='', title=''):
 
     # setup marker generator and color map
     markers = ('s', 'x', 'o', '^', 'v')
@@ -46,6 +46,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02, xlab
                     marker='o',
                     s=55, label='test set')
 
+    plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.legend(loc='upper left')
