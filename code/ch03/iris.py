@@ -85,3 +85,16 @@ for gamma in [0.2, 100]:
     svm.fit(X_train_std, y_train)
 
     plot_decision_regions(X_combined_std, y_combined, classifier=svm, test_idx=test_idx, xlabel='petal length [standardized]', ylabel='petal width [standardized]', title = 'gamma ' + str(gamma))
+
+# decision tree
+from sklearn.tree import DecisionTreeClassifier
+
+tree = DecisionTreeClassifier(criterion='entropy', max_depth=3, random_state=0)
+tree.fit(X_train, y_train)
+
+X_combined = np.vstack((X_train, X_test))
+y_combined = np.hstack((y_train, y_test))
+plot_decision_regions(X_combined, y_combined, classifier=tree, test_idx=test_idx, xlabel='petal length', ylabel='petal width')
+
+from sklearn.tree import export_graphviz
+export_graphviz(tree, out_file='tree.dot', feature_names=['petal length', 'petal width'])
