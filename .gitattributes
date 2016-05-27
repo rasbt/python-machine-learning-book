@@ -12,6 +12,7 @@
 *.svg text
 *.java text
 *.py text
+*.ipynb text
 *.vbs text
 *.bst text
 *.cls text
