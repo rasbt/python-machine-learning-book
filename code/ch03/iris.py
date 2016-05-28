@@ -98,3 +98,14 @@ plot_decision_regions(X_combined, y_combined, classifier=tree, test_idx=test_idx
 
 from sklearn.tree import export_graphviz
 export_graphviz(tree, out_file='tree.dot', feature_names=['petal length', 'petal width'])
+
+# random forest
+from sklearn.ensemble import RandomForestClassifier
+
+forest = RandomForestClassifier(criterion='entropy',
+                                n_estimators=10, 
+                                random_state=1,
+                                n_jobs=2)
+forest.fit(X_train, y_train)
+
+plot_decision_regions(X_combined, y_combined, classifier=forest, test_idx=test_idx, xlabel='petal length', ylabel='petal width')
