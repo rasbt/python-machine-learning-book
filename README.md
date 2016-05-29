@@ -44,6 +44,11 @@ Kindle ASIN: B00YSILNL0<br></div>
 - at other book stores: [Google Books](https://books.google.com/books?id=GOVOCwAAQBAJ&source=gbs_slider_cls_metadata_7_mylibrary), [O'Reilly](http://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble](http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
 - social platforms: [Goodreads](https://www.goodreads.com/book/show/25545994-python-machine-learning)
 
+#### Translations
+
+- [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via “mitp Verlag”
+- [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via “Impress Top Gear”
+
 ![](./images/ml-overview.jpg)
 
 ### [Literature References & Further Reading Resources](./docs/references.md)
