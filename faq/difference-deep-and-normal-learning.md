@@ -3,7 +3,7 @@
 That's an interesting question, and I try to answer this is a very general way.
 The tl;dr version of this is: Deep learning refers to neural network structures with many layers and parameters that learn features in data. Deep learning methods can be applied to many machine learning problems.
 
-Before giving an intro to deep learning, I'll answer the second part of the question. Deep learning encompasses a set of machine learning algorithms. Deep learning is yet another tool in the machine learning practitioner's toolbox to solve problems like classification and prediction.
+Before giving an intro to deep learning, I'll answer the second part of the question. Deep learning encompasses a set of machine learning algorithms, specifically that employ artificial neural network architectures with many hidden layers. Deep learning is yet another tool in the machine learning practitioner's toolbox to solve problems like classification and prediction.
 
 Now to introduce deep learning I'll go through a concrete example:
 Let's start with multi-layer perceptrons (MLPs) ...
