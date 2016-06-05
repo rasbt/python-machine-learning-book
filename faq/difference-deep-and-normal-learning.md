@@ -1,6 +1,6 @@
 # What is the difference between deep learning and usual machine learning?
 
-That's an interesting question, and I try to answer this is a very general way.
+That's an interesting question, and I try to answer this in a very general way.
 The tl;dr version of this is: Deep learning is essentially a set of techniques that help us to parameterize deep neural network structures, neural networks with many, many layers and parameters.
 
 
@@ -18,7 +18,7 @@ Now, if we add multiple hidden layers to this MLP, we'd also call the network "d
 
 **Deep Learning**
 
-Now, this is where "deep learning" comes into play. Roughly speaking, we can think of deep learning as "clever" tricks or algorithms that can help we with the training of such "deep" neural network structures. There are many, many different neural network architectures, but to continue with the example of the MLP, let me introduce the idea of convolutional neural networks (ConvNets). We can think of those as an "add-on" to our MLP that helps we to detect features as "good" inputs for our MLP.
+Now, this is where "deep learning" comes into play. Roughly speaking, we can think of deep learning as "clever" tricks or algorithms that can help us with the training of such "deep" neural network structures. There are many, many different neural network architectures, but to continue with the example of the MLP, let me introduce the idea of convolutional neural networks (ConvNets). We can think of those as an "add-on" to our MLP that helps we to detect features as "good" inputs for our MLP.
 
 In applications of "usual" machine learning, there is typically a strong focus on the feature engineering part; the model learned by an algorithm can only be so good as its input data. Of course, there must be sufficient discriminatory information in our dataset, however, the performance of machine learning algorithms can suffer substantially when the information is buried in meaningless features. The goal behind deep learning is to automatically learn the features from (somewhat) noisy data; it's about algorithms that do the feature engineering for us to provide deep neural network structures with meaningful information so that it can learn more effectively. **We can think of deep learning as algorithms for automatic "feature engineering," or we could simply call them "feature detectors," which help us to overcome the vanishing gradient challenge and facilitate the learning in neural networks with many layers.**
 
