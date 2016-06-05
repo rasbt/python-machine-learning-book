@@ -1,7 +1,7 @@
 # What is the difference between deep learning and usual machine learning?
 
 That's an interesting question, and I try to answer this is a very general way.
-The tl;dr version of this is: Deep learning is essentially a set of techniques that help we to parameterize deep neural network structures, neural networks with many, many layers and parameters.
+The tl;dr version of this is: Deep learning is essentially a set of techniques that help us to parameterize deep neural network structures, neural networks with many, many layers and parameters.
 
 
 And if we are interested, a more concrete example:
