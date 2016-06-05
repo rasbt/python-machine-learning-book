@@ -1,12 +1,12 @@
-# What is the difference between deep learning and usual machine learning?
+# What's an intro to deep learning and how does it relate to usual machine learning?
 
 That's an interesting question, and I try to answer this is a very general way.
-The tl;dr version of this is: Deep learning is essentially a set of techniques that help us to parameterize deep neural network structures, neural networks with many, many layers and parameters.
+The tl;dr version of this is: Deep learning refers to neural network structures with many layers and parameters that learn features in data. Deep learning methods can be applied to many machine learning problems.
 
+Before giving an intro to deep learning, I'll answer the second part of the question. Deep learning encompasses a set of machine learning algorithms. Deep learning is yet another tool in the machine learning practitioner's toolbox to solve problems like classification and prediction.
 
-And if we are interested, a more concrete example:
+Now to introduce deep learning I'll go through a concrete example:
 Let's start with multi-layer perceptrons (MLPs) ...
-
 
 On a tangent: The term "perceptron" in MLPs may be a bit confusing since we don't really want only linear neurons in our network. Using MLPs, we want to learn complex functions to solve non-linear problems. Thus, our network is conventionally composed of one or multiple "hidden" layers that connect the input and output layer. Those hidden layers normally have some sort of sigmoid activation function (log-sigmoid or the hyperbolic tangent etc.). For example, think of a log-sigmoid unit in our network as a logistic regression unit that returns continuous values outputs in the range 0-1. A simple MLP could look like this
 
