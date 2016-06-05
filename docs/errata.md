@@ -24,7 +24,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $6.00
+- Current amount for the next donation: $7.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
@@ -63,6 +63,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 23. Richard L. ($1.00)
 24. Justin H. ($1.00)
 25. Neeraj K. ($1.00)
+26. Attila B. ($1.00)
 
 ...
 
@@ -85,10 +86,9 @@ This time, the easiest way may be to go to page 6 in chapter 1. Finally, the lab
 ![](./images/errata/errata_2016-04-22.jpg)
 
 
-#### [Technical Errata PDF v.3](http://sebastianraschka.com/pdf/books/pymle/errata_3st_technical.pdf)
+#### [Technical Errata PDF v.3](http://sebastianraschka.com/pdf/books/pymle/errata_3rd_technical.pdf)
 
-#### [Language Errata PDF v.3]
----
+#### [Language Errata PDF v.3](http://sebastianraschka.com/pdf/books/pymle/errata_3rd_language.pdf)
 
 
 ### Old Errata: Oct 25, 2015 - Apr 22, 2016
