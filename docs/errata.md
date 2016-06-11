@@ -24,7 +24,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $7.00
+- Current amount for the next donation: $12.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
@@ -33,6 +33,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 1. Jeremy N. ($40.00)
 1. Ryan S. ($24.00)
+2. Claude C. ($11.00)
 2. Christopher Galpin ($8.00)
 18. David C. ($6.00)
 2. Edgar C. ($5.00)
@@ -48,7 +49,6 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 10. Panos N. ($2.00)
 19. F. Liu ($2.00)
 20. Stefan P. ($2.00)
-20. Claude C. ($6.00)
 11. Elias R. ($1.00)
 12. Haitham H. Saleh ($1.00)
 13. Muqueet M. ($1.00)
