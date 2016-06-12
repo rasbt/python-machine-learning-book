@@ -101,7 +101,7 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 **"Bonus Content" (not in the book)**
 
-- [Model evaluation, model selection, and algorithm selection in machine learning - Part I](Model evaluation, model selection, and algorithm selection in machine learning - Part I)
+- [Model evaluation, model selection, and algorithm selection in machine learning - Part I](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html)
 
 <hr>
 
