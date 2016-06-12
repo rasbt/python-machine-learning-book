@@ -99,6 +99,12 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 <hr>
 
+**"Bonus Content" (not in the book)**
+
+- [Model evaluation, model selection, and algorithm selection in machine learning - Part I](Model evaluation, model selection, and algorithm selection in machine learning - Part I)
+
+<hr>
+
 **Note**
 
 I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), containing additional implementations of machine learning (and general "data science") algorithms. I also added implementations from this book (for example, the decision region plot, the artificial neural network, and sequential feature selection algorithms) with additional functionality.
