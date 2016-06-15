@@ -53,8 +53,6 @@ Kindle ASIN: B00YSILNL0<br></div>
 
 ### [Literature References & Further Reading Resources](./docs/references.md)
 
-### [Image Gallery](./images/image_gallery/README.md)
-
 ### [Errata](./docs/errata.md)
 
 
@@ -84,6 +82,9 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 11. Working with Unlabeled Data – Clustering Analysis [[dir](./code/ch11)] [[ipynb](./code/ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
 12. Training Artificial Neural Networks for Image Recognition [[dir](./code/ch12)] [[ipynb](./code/ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
 13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
+
+
+- Equation Reference [[PDF](./docs/equations/pymle-equations.pdf)] [[TEX](./docs/equations/pymle-equations.tex)]
 
 <br>
 
