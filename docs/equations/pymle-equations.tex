@@ -1,0 +1,529 @@
+\documentclass{report}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+% start meta data
+\title{Python Machine Learning\\ Equation Reference}
+\author{Sebastian Raschka \\ \texttt{mail@sebastianraschka.com}} 
+\date{05\slash 04\slash 2015 \\ (last updated: 06\slash 15\slash 2016) \\ \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book }}
+
+% end meta data 
+
+% start header and footer
+\pagestyle{fancy}
+\lhead{Sebastian Raschka}
+\rhead{Python Machine Learning -- Equation Reference -- Ch. \thechapter}
+\cfoot{\thepage} % centered footer
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+{}}
+
+
+
+% end header and footer
+
+
+
+
+\begin{document} % start main document
+
+\maketitle % makes the title page from meta data
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 1
+%%%%%%%%%%%%%%%
+
+
+\chapter{Giving Computers the Ability to Learn from Data}
+
+\section{Building intelligent machines to transform data into knowledge}
+\section{The three different types of machine learning}
+\section{Making predictions about the future with supervised learning}
+\subsection{Classification for predicting class labels}
+\subsection{Regression for predicting continuous outcomes}
+\section{Solving interactive problems with reinforcement learning}
+\section{Discovering hidden structures with unsupervised learning}
+\subsection{Finding subgroups with clustering}
+\subsection{Dimensionality reduction for data compression}
+\section{An introduction to the basic terminology and notations}
+
+\newpage
+
+The Iris dataset, consisting of 150 samples and 4 features, can then be written as a $150 \times 4$ matrix $\mathbf{X} \in \mathbb{R}^{150 \times 4}:$
+
+\[
+\begin{bmatrix}
+    x_{1}^{(1)} & x_{2}^{(1)} & x_{3}^{(1)} & \dots  & x_{4}^{(1)} \\
+    x_{1}^{(2)} & x_{2}^{(2)} & x_{3}^{(2)} & \dots  & x_{4}^{(2)} \\
+    \vdots & \vdots & \vdots & \ddots & \vdots \\
+    x_{1}^{(150)} & x_{2}^{(150)} & x_{3}^{(150)} & \dots  & x_{4}^{(150)}
+\end{bmatrix}
+\]
+
+For the rest of this book, unless noted otherwise, we will use the superscript $(i)$ to refer to the $i$th training sample, and the subscript $j$ to refer to the $j$th dimension of the training dataset. 
+
+We use lower-case, bold-face letters to refer to vectors ($\mathbf{x} \in \mathbb{R}^{n \times 1}$) and upper-case, bold-face letters to refer to matrices, respectively ($\mathbf{X} \in \mathbb{R}^{n \times m}$), where $n$ refers to the number of rows, and $m$ refers to the number of columns, respectively. To refer to single elements in a vector or matrix, we write the letters in italics ($x^{(n)}) or x^{(n)}_{m}$, respectively). For example, $x^{150}_1$ refers to the refers to the first dimension of the flower sample 150, the sepal length. Thus, each row in this feature matrix represents one flower instance and can be written as four-dimensional row vector $\mathbf{x}^{(i)} \in \mathbb{R}^{1 \times 4}$
+
+\[ \mathbf{x}^{(i)} = \bigg[x^{(i)}_1 \; x^{(i)}_2 \; x^{(i)}_3 \; x^{(i)}_4 \bigg]. \]
+
+Each feature dimension is a 150-dimensional column vector $\mathbf{x}_{j} \in \mathbb{R}^{150 \times 1}$, for example
+
+\[
+\mathbf{x_j} = \begin{bmatrix}
+    x_{j}^{(1)}  \\
+    x_{j}^{(2)}  \\
+    \vdots  \\
+    x_{j}^{(150)}
+\end{bmatrix}
+.\]
+
+Similarly, we store the target variables (here: class labels) as a 150-dimensional column vector
+
+\[
+\mathbf{y} = \begin{bmatrix}
+    y^{(1)}  \\
+    y^{(2)}  \\
+    \vdots  \\
+    y^{(150)}
+\end{bmatrix}
+, (y \in \{ \text{Setosa, Versicolor, Virginica \}}).\]
+
+\newpage
+
+\section{A roadmap for building machine learning systems}
+\subsection{Preprocessing ? getting data into shape}
+\subsection{Training and selecting a predictive model}
+\subsection{Evaluating models and predicting unseen data instances}
+\section{Using Python for machine learning}
+\subsection{Installing Python packages}
+\section{Summary}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 2
+%%%%%%%%%%%%%%%
+
+
+\chapter{Training Machine Learning Algorithms for Classification}
+
+\section{Artificial neurons -- a brief glimpse into the early history of machine learning}
+
+We can then define an activation function $\phi(z)$ that takes a linear combination of certain
+input values $\mathbf{x}$ and a corresponding weight vector $\mathbf{w}$ where $z$ is the so-called net
+input ($z = w_1 x_1 + \dots + w_m x_m$):
+
+\[
+\mathbf{w} = \begin{bmatrix}
+    w^{(1)}  \\
+    w^{(2)}  \\
+    \vdots  \\
+    w^{(m)}
+\end{bmatrix},
+\mathbf{w} = \begin{bmatrix}
+    x^{(1)}  \\
+    x^{(2)}  \\
+    \vdots  \\
+    x^{(m)}
+\end{bmatrix}.
+\]
+
+Now, if the activation of a particular sample $x^{(i)}$, that is, the output of $\phi(z)$, is greater than a defined threshold $\theta$, we predict class 1 and class -1, otherwise. In the perceptron algorithm, the activation function $\phi(\cdot)$ is a simple \textit{unit step function}, which is sometimes also called the \textit{Heaviside step function}:
+
+\[ \phi(z) = \begin{cases} 
+      1 & \text{ if } z \ge \theta \\
+      -1 & \text{ otherwise }.
+   \end{cases}
+\]
+
+For simplicity, we can bring the threshold $\theta$ to the left side of the equation and define a weight-zero as $w_0 = -\theta$ and $x_0=1$, so that we write $\mathbf{z}$ in a more compact form
+
+\[
+z  = w_0 x_0 + w_1 x_1 + \dots + w_m x_m = \mathbf{w^T x}
+\]
+
+and
+
+\[ \phi(z) = \begin{cases} 
+      1 & \text{ if } z \ge 0 \\
+      -1 & \text{ otherwise }.
+   \end{cases}
+\]
+
+
+In the following sections, we will often make use of basic notations from linear algebra. For example, we will abbreviate the sum of the products of the values in $\mathbf{x}$ and $\mathbf{w}$ using a \textit{vector dot product}, whereas superscript $T$ stands for \textit{transpose}, which is an operation that transforms a column vector into a row vector and vice versa:
+
+\[
+z  = w_0 x_0 + w_1 x_1 + \dots + w_m x_m = \mathbf{w^T x} = \sum_{j=0}^{m} \mathbf{w_j} \mathbf{x_j} = \mathbf{w}^T \mathbf{x}.
+\]
+
+For example:
+
+\[
+\big[1 \quad 2 \quad 3 \big] \times \begin{bmatrix}
+    4  \\
+    5  \\
+    6
+\end{bmatrix} = 1 \times 4 + 2 \times 5 + 3 \times 6 = 32.
+\]
+
+Furthermore, the transpose operation can also be applied to a matrix toreflect it over its diagonal, for example:
+
+\[
+ \begin{bmatrix}
+    1 & 2  \\
+    3 & 4  \\
+    5 & 6
+\end{bmatrix}^T =  \begin{bmatrix}
+    1 & 3 & 5 \\
+    2 & 4 & 6
+\end{bmatrix}
+\]
+
+Rosenblatt's initial perceptron rule is fairly simple and can be summarized by the following steps:
+
+\begin{enumerate}  
+\item Initialize the weights to 0 or small random numbers.
+\item For each training sample $\mathbf{x}^{(i)}$, perform the following steps:
+\begin{enumerate}  
+\item Compute the output value $\hat{y}$.
+\item Update the weights.
+\end{enumerate}
+\end{enumerate}
+
+Here, the output value is the class label predicted by the unit step function that we de ned earlier, and the simultaneous update of each weight $w_j$ in the weight vector $\mathbf{w}$ can be more formally written as:
+
+\[
+w_j := w_j + \Delta w_j
+\]
+
+The value of $\Delta w_j$, which is used to update the weight $w_j$, is calculated by the perceptron rule:
+
+\[
+\Delta w_j = \eta \bigg( y^{(i)} - \hat{y}^{(i)} \bigg)x_{j}^{(i)}
+\]
+
+Where $\eta$ is the learning rate (a constant between 0.0 and 1.0), $y^{(i)}$ is the true class label of the $i$th training sample, and $\hat{y}^{(i)}$ is the predicted class label. It is important to note that all weights in the weight vector are being updated simultaneously, which means that we don't recompute $\hat{y}^{(i)}$ before all of the weights $\Delta w_j$ were updated. Concretely, for a 2D dataset, we would write the update as follows:
+
+\[
+\Delta w_0 = \eta \bigg(  y^{(i)} - \hat{y}^{(i)} \bigg) 
+\]
+
+\[
+\Delta w_1 = \eta \bigg(  y^{(i)} - \hat{y}^{(i)} \bigg) x_{1}^{(i)}
+\]
+
+\[
+\Delta w_2 = \eta \bigg(  y^{(i)} - \hat{y}^{(i)} \bigg) x_{2}^{(i)}
+\]
+
+Before we implement the perceptron rule in Python, let us make a simple thought experiment to illustrate how beautifully simple this learning rule really is. In the two scenarios where the perceptron predicts the class label correctly, the weights remain unchanged:
+
+\[
+\Delta w_j = \eta \bigg( -1 -- 1 \bigg)x_{j}^{(i)} = 0
+\]
+
+\[
+\Delta w_j = \eta \bigg( 1-1 \bigg)x_{j}^{(i)} = 0
+\]
+
+However, in the case of a wrong prediction, the weights are being pushed towards the direction of the positive or negative target class, respectively:
+
+\[
+\Delta w_j = \eta \bigg( 1 -- 1 \bigg)x_{j}^{(i)} = \eta(2)x_{j}^{(i)}
+\]
+
+\[
+\Delta w_j = \eta \bigg( -1-1 \bigg)x_{j}^{(i)} = \eta(-2)x_{j}^{(i)}
+\]
+
+
+To get a better intuition for the multiplicative factor $x_{j}^{(i)}$, let us go through anothersimple example, where:
+
+\[
+y^{(i)} = +1, \quad \hat{y}^{(i)} = -1, \quad \eta = 1
+ \]
+
+Let's assume that $x_{j}^{(i)}=0.5$ and we misclassify this sample as $-1$. In this case, we would increase the corresponding weight by $1$ so that the activation $x_{j}^{i} \times w_{j}^{(i)}$ will be more positive the next time we encounter this sample and thus will be more likely to be above the threshold of the unit step function to classify the sample as  $+1$:
+
+\[
+\Delta w_{j}^{(i)} = (1--1)0.5 = (2)0.5 = 1
+\]
+
+The weight update is proportional to the value of $x_{j}^{(i)}$. For example, if we have another sample $x_{j}^{(i)}=2$ that is incorrectly classified as $-1$, we'd push the decision boundary by an even larger extent to classify this sample correctly the next time:
+
+\[
+\Delta w_{j}^{(i)} = (1--1)2 = (2)2 = 4.
+\]
+
+
+\section{Implementing a perceptron learning algorithm in Python}
+
+\subsection{Training a perceptron model on the Iris dataset}
+
+\section{Adaptive linear neurons and the convergence of learning}
+
+The key difference between the Adaline rule (also known as the Widrow-Hoff rule) and Rosenblatt's perceptron is that the weights are updated based on a linear activation function rather than a unit step function like in the perceptron. In Adaline, this linear activation function $\phi{z}$ is simply the identity function of the net input so that 
+
+\[
+\phi \big( \mathbf{w}^T \mathbf{x} \big) = \mathbf{w}^T \mathbf{x}
+\]
+
+\subsection{Minimizing cost functions with gradient descent}
+
+One of the key ingredients of supervised machine learning algorithms is to define an objective function that is to be optimized during the learning process. This objective function is often a cost function that we want to minimize. In the case of Adaline, we can define the cost function $J(\cdot)$ to learn the weights as the Sum of Squared Errors (SSE) between the calculated outcomes and the true class labels
+
+\[
+J(\mathbf{w}) = \frac{1}{2} \sum_i \bigg(y^{(i)}  - \phi \big(z^{(i)} \big) \bigg)^2.
+\]
+
+Using gradient descent, we can now update the weights by taking a step away from the gradient $\nabla J(\mathbf{w})$ of our cost function $J(\mathbf{\cdot})$:
+
+\[
+\mathbf{w} := \mathbf{w} + \Delta \mathbf{w}.
+\]
+
+To compute the gradient of the cost function, we need to compute the partial derivative of the cost function with respect to each weight $w_j$,
+
+\[
+\frac{\partial J}{\partial w_j} = - \sum_i \bigg( y^{(i)} - \phi \big(z^{(i)} \big) \bigg) x_{j}^{(i)}, 
+\]
+
+so that we can write the update of weight $w_j$ as 
+
+\[
+\Delta w_j = - \eta \frac{\partial J}{\partial w_j} = \eta  \sum_i \bigg( y^{(i)} - \phi \big(z^{(i)} \big) \bigg) x_{j}^{(i)}
+\]
+
+Since we update all weights simultaneously, our Adaline learning rule becomes
+
+\[
+\mathbf{w} := \mathbf{w} + \Delta \mathbf{w}.
+\]
+
+
+For those who are familiar with calculus, the partial derivative of the SSE cost function with respect to the $j$th weight in can be obtained as follows:
+
+\begin{equation} 
+\begin{split}
+& \frac{\partial J}{\partial w_j} = \frac{\partial}{\partial w_j} \frac{1}{2} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
+& = \frac{1}{2} \frac{\partial}{\partial w_j} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
+& = \frac{1}{2} \sum_i 2 \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) \frac{\partial J}{\partial w_j} \Bigg( y^{(i)} - \sum_i \bigg( w_{j}^{(i)} x_{j}^{(i)} \bigg)\Bigg) \\
+& = \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) \bigg( - x_{j}^{(i)} \bigg) \\
+& = - \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) x_{j}^{(i)}  \\
+\end{split}
+\end{equation}
+
+Performing a matrix-vector multiplication is similar to calculating a vector dot product where each row in the matrix is treated as a single row vector. This vectorized approach represents a more compact notation and results in a more efficient computation using NumPy. For example:
+
+\[
+ \begin{bmatrix}
+    1 & 2  & 3\\
+    4 & 5  & 6
+\end{bmatrix} \times  \begin{bmatrix}
+    7 \\
+    8 \\
+    9
+\end{bmatrix} =  \begin{bmatrix}
+    1 \times 7 + 2 \times 8 + 3 \times 9 \\
+    4 \times 7 + 5 \times 8 + 6 \times 9
+\end{bmatrix} = \begin{bmatrix}
+    50 \\
+    122
+\end{bmatrix}
+\]
+
+\subsection{Implementing an Adaptive Linear Neuron in Python}
+
+Here, we will use a feature scaling method called standardization, which gives our data the property of a standard normal distribution. The mean of each featureis centered at value 0 and the feature column has a standard deviation of 1. For example, to standardize the $j$th feature, we simply need to subtract the sample mean $\mu_j$ from every training sample and divide it by its standard deviation $\sigma_j$:
+
+\[
+\mathbf{x'}_j = \frac{\mathbf{x} - \mathbf{\mathbf{\mu_j}}}{\sigma_j}.
+\]
+
+
+Here $\mathbf{x}_j$ is a vector consisting of the $j$th feature values of all training samples $n$.
+
+\subsection{Large scale machine learning and stochastic gradient descent}
+
+A popular alternative to the batch gradient descent algorithm is stochastic gradient descent, sometimes also called iterative or on-line gradient descent. Instead of updating the weights based on the sum of the accumulated errors over all samples $\mathbf{x}^{(i)}$:
+
+\[
+\Delta \mathbf{w} = \eta \sum_i \bigg( y^{(i)} - \phi \big( z^{(i)}\big) \bigg) \mathbf{x}^{(i)}.
+\]
+
+We update the weights incrementally for each training sample:
+
+\[
+\Delta \mathbf{w} = \eta  \bigg( y^{(i)} - \phi \big( z^{(i)}\big) \bigg) \mathbf{x}^{(i)}.
+\]
+
+\section{Summary}
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 3
+%%%%%%%%%%%%%%%
+
+\chapter{A Tour of Machine Learning Classifiers Using Scikit-learn}
+
+\section{Choosing a classification algorithm}
+\section{First steps with scikit-learn}
+\subsection{Training a perceptron via scikit-learn}
+\section{Modeling class probabilities via logistic regression}
+\subsection{Logistic regression intuition and conditional probabilities}
+
+The odds ratio can be written as
+
+\[
+\frac{p}{(1-p)},
+\]
+
+where $p$ stands for the probability of the positive (1? p) event. The term positive event does not necessarily mean good, but refers to the event that we want to predict, for example, the probability that a patient has a certain disease; we can think of the positive event as class label $y =1$. We can then further define the logit function, which is simply the logarithm of the odds ratio (log-odds):
+
+\[
+logit(p) = log \frac{p}{1-p}
+\]
+
+The logit function takes input values in the range 0 to 1 and transforms them to values over the entire real number range, which we can use to express a linear relationship between feature values and the log-odds:
+
+\[
+logit ( p (y=1 | \mathbf{x})) = w_0 x_0 + w_1 x_1 + \cdots + x_m w_m = \sum^{m}_{i=0} w_i x_i = \mathbf{w}^T \mathbf{x}.
+\]
+
+Here, $p(y=1 | \mathbf{x})$ s the conditional probability that a particular sample belongs to class 1 given its features $\mathbf{x}$. Now what we are actually interested in is predicting the probability that a certain sample belongs to a particular class, which is the inverse form of the logit function. It is also called the logistic function, sometimes simply abbreviated as sigmoid function due to its characteristic S-shape
+
+\[
+\phi(z) = \frac{1}{1+e^{-z}}.
+\]
+
+The output of the sigmoid function is then interpreted as the probability of particular sample belonging to class 1
+
+\[
+\phi(z) = P(y=1 | \mathbf{x}; \mathbf{w})
+\]
+
+given its features $x$ parameterized by the weights $w$. For example, if we compute $\phi(z) = 0.8$ for a particular flower sample, it means that the chance that this sample is an Iris-Versicolor  ower is 80 percent. Similarly, the probability that this  ower is an Iris-Setosa  ower can be calculated as $P(y=0 | \mathbf{x};\mathbf{w})=1 - P (y=1 | \mathbf{x}; \mathbf{w}) = 0.2 or 20 percent.$ The predicted probability can then simply be converted into a binary outcome via a quantizer (unit step function):
+
+\[ \hat{y}= \begin{cases} 
+      1 & \text{ if } \phi(z) \ge 0.5 \\
+      0 & \text{ otherwise }.
+   \end{cases}
+\]
+
+If we look at the preceding sigmoid plot, this is equivalent to the following:
+
+\[ \hat{y}= \begin{cases} 
+      1 & \text{ if } \phi(z) \ge 0.0 \\
+      0 & \text{ otherwise }.
+   \end{cases}
+\]
+
+\subsection{Learning the weights of the logistic cost function}
+
+In the previous chapter, we de ned the sum-squared-error cost function: 
+
+\[
+J(\mathbf{w}) = \frac{1}{2} \sum_i \bigg( \phi \big( z^{(i)} \big) - y^{(i)}  \bigg)^2.
+\]
+
+We minimized this in order to learn the weights w for our Adaline classification model. To explain how we can derive the cost function for logistic regression, let's  first define the likelihood L that we want to maximize when we build a logistic regression model, assuming that the individual samples in our dataset are independent of one another. The formula is as follows:
+
+\[
+L(\mathbf{w}) = P(\mathbf{y} | \mathbf{x}; \mathbf{w}) = \prod_{i=1}^{n} P \big( y^{(i)} | x^{(i)}; \mathbf{w} \big) =  \prod_{i=1}^{n} \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}
+\]
+
+In practice, it is easier to maximize the (natural) log of this equation, which is calledthe log-likelihood function:
+
+\[
+l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+\]
+
+Firstly, applying the log function reduces the potential for numerical under ow, which can occur if the likelihoods are very small. Secondly, we can convert the product of factors into a summation of factors, which makes it easier to obtain the derivative of this function via the addition trick, as you may rememberfrom calculus.
+
+Now we could use an optimization algorithm such as gradient ascent to maximize this log-likelihood function. Alternatively, let's rewrite the log-likelihood as a cost function $J(\cdot)$ that can be minimized using gradient descent as in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}:
+
+\[
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+\]
+
+To get a better grasp on this cost function, let's take a look at the cost that wecalculate for one single-sample instance:
+
+\[
+J\big( \phi(z), y; \mathbf{w}   \big) = -y \log \big( \phi(z) \big) - (1-y) \log \big(1 - \phi(z) \big).
+\]
+
+Looking at the preceding equation, we can see that the  rst term becomes zero if$y = 0$ , and the second term becomes zero if $y = 1$, respectively:
+
+
+\[ 
+J \big( \phi(z), y; \mathbf{w} \big)= \begin{cases} 
+      - \log \big( \phi(z) \big) \text{ if } y=1\\
+      - \log \big( 1 - \phi(z) \big)  \text{ if }  y=0
+   \end{cases}
+\]
+
+\subsection{Training a logistic regression model with scikit-learn}
+
+If we were to implement logistic regression ourselves, we could simply substitute the cost function $J(\cdot)$ in our Adaline implementation from \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, by the new cost function:
+
+\[
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+\]
+
+We can show that the weight update in logistic regression via gradient descent is indeed equal to the equation that we used in Adaline in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}. Let's start by calculating the partial derivative of the log-likelihood function with respect to the $j$th weight:
+
+\[
+\frac{\partial}{\partial w_j} l(\mathbf{w}) = \Bigg( y \frac{1}{\phi(z)}  - (1-y) \frac{1}{1-\phi(z)}   \Bigg)   \frac{\partial}{\partial w_j} \phi(z)
+\]
+
+Before we continue, let's calculate the partial derivative of the sigmoid function  first:
+
+\[
+\frac{\partial}{\partial z} \phi(z) = \frac{\partial}{\partial z} \frac{1}{1 + e^{-1}} \frac{1}{\big( 1 + e^{-z}\big)^2} e^{-z} = \frac{1}{1 + e^{-z}} = \frac{1}{1 + e^{-z}} \bigg( 1 - \frac{1}{1 + e^{-z}} \bigg) \\\\
+\]
+\[
+= \phi(z)(1-\phi(z)).
+\]
+
+Now we can resubstitute $\frac{\partial}{\partial z} \phi(z) = \phi(z)(1-\phi(z))$ in our first equation to obtain the following:
+
+
+\newpage
+
+... to be continued ... 
+
+\newpage
+
+\subsection{Tackling overfitting via regularization}
+\section{Maximum margin classification with support vector machines}
+\subsection{Maximum margin intuition}
+\subsection{Dealing with the nonlinearly separable case using slack variables}
+\subsection{Alternative implementations in scikit-learn}
+\section{Solving nonlinear problems using a kernel SVM}
+\subsection{Using the kernel trick to find separating hyperplanes in higher dimensional space}
+\section{Decision tree learning}
+\subsection{Maximizing information gain -- getting the most bang for the buck}
+\subsection{Building a decision tree}
+\subsection{Combining weak to strong learners via random forests}
+\section{K-nearest neighbors -- a lazy learning algorithm}
+\section{Summary}
+
+
+\end{document} % end main document
