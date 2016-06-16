@@ -102,7 +102,7 @@ Similarly, we store the target variables (here: class labels) as a 150-dimension
 \newpage
 
 \section{A roadmap for building machine learning systems}
-\subsection{Preprocessing ? getting data into shape}
+\subsection{Preprocessing -- getting data into shape}
 \subsection{Training and selecting a predictive model}
 \subsection{Evaluating models and predicting unseen data instances}
 \section{Using Python for machine learning}
@@ -183,7 +183,8 @@ For example:
 \end{bmatrix} = 1 \times 4 + 2 \times 5 + 3 \times 6 = 32.
 \]
 
-Furthermore, the transpose operation can also be applied to a matrix toreflect it over its diagonal, for example:
+Furthermore, the transpose operation can also be applied to a matrix to
+reflect it over its diagonal, for example:
 
 \[
  \begin{bmatrix}
@@ -254,7 +255,8 @@ However, in the case of a wrong prediction, the weights are being pushed towards
 \]
 
 
-To get a better intuition for the multiplicative factor $x_{j}^{(i)}$, let us go through anothersimple example, where:
+To get a better intuition for the multiplicative factor $x_{j}^{(i)}$, let us go through another
+simple example, where:
 
 \[
 y^{(i)} = +1, \quad \hat{y}^{(i)} = -1, \quad \eta = 1
@@ -351,7 +353,8 @@ Performing a matrix-vector multiplication is similar to calculating a vector dot
 
 \subsection{Implementing an Adaptive Linear Neuron in Python}
 
-Here, we will use a feature scaling method called standardization, which gives our data the property of a standard normal distribution. The mean of each featureis centered at value 0 and the feature column has a standard deviation of 1. For example, to standardize the $j$th feature, we simply need to subtract the sample mean $\mu_j$ from every training sample and divide it by its standard deviation $\sigma_j$:
+Here, we will use a feature scaling method called standardization, which gives our data the property of a standard normal distribution. The mean of each feature
+is centered at value 0 and the feature column has a standard deviation of 1. For example, to standardize the $j$th feature, we simply need to subtract the sample mean $\mu_j$ from every training sample and divide it by its standard deviation $\sigma_j$:
 
 \[
 \mathbf{x'}_j = \frac{\mathbf{x} - \mathbf{\mathbf{\mu_j}}}{\sigma_j}.
@@ -395,7 +398,8 @@ The odds ratio can be written as
 \frac{p}{(1-p)},
 \]
 
-where $p$ stands for the probability of the positive (1? p) event. The term positive event does not necessarily mean good, but refers to the event that we want to predict, for example, the probability that a patient has a certain disease; we can think of the positive event as class label $y =1$. We can then further define the logit function, which is simply the logarithm of the odds ratio (log-odds):
+where $p$ stands for the probability of the positive (1? p)
+ event. The term positive event does not necessarily mean good, but refers to the event that we want to predict, for example, the probability that a patient has a certain disease; we can think of the positive event as class label $y =1$. We can then further define the logit function, which is simply the logarithm of the odds ratio (log-odds):
 
 \[
 logit(p) = log \frac{p}{1-p}
@@ -449,13 +453,15 @@ We minimized this in order to learn the weights w for our Adaline classification
 L(\mathbf{w}) = P(\mathbf{y} | \mathbf{x}; \mathbf{w}) = \prod_{i=1}^{n} P \big( y^{(i)} | x^{(i)}; \mathbf{w} \big) =  \prod_{i=1}^{n} \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}
 \]
 
-In practice, it is easier to maximize the (natural) log of this equation, which is calledthe log-likelihood function:
+In practice, it is easier to maximize the (natural) log of this equation, which is called
+the log-likelihood function:
 
 \[
 l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
 \]
 
-Firstly, applying the log function reduces the potential for numerical under ow, which can occur if the likelihoods are very small. Secondly, we can convert the product of factors into a summation of factors, which makes it easier to obtain the derivative of this function via the addition trick, as you may rememberfrom calculus.
+Firstly, applying the log function reduces the potential for numerical under ow, which can occur if the likelihoods are very small. Secondly, we can convert the product of factors into a summation of factors, which makes it easier to obtain the derivative of this function via the addition trick, as you may remember
+from calculus.
 
 Now we could use an optimization algorithm such as gradient ascent to maximize this log-likelihood function. Alternatively, let's rewrite the log-likelihood as a cost function $J(\cdot)$ that can be minimized using gradient descent as in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}:
 
@@ -463,13 +469,15 @@ Now we could use an optimization algorithm such as gradient ascent to maximize t
 J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
 \]
 
-To get a better grasp on this cost function, let's take a look at the cost that wecalculate for one single-sample instance:
+To get a better grasp on this cost function, let's take a look at the cost that we
+calculate for one single-sample instance:
 
 \[
 J\big( \phi(z), y; \mathbf{w}   \big) = -y \log \big( \phi(z) \big) - (1-y) \log \big(1 - \phi(z) \big).
 \]
 
-Looking at the preceding equation, we can see that the  rst term becomes zero if$y = 0$ , and the second term becomes zero if $y = 1$, respectively:
+Looking at the preceding equation, we can see that the  rst term becomes zero if
+$y = 0$ , and the second term becomes zero if $y = 1$, respectively:
 
 
 \[ 
@@ -504,20 +512,191 @@ Before we continue, let's calculate the partial derivative of the sigmoid functi
 
 Now we can resubstitute $\frac{\partial}{\partial z} \phi(z) = \phi(z)(1-\phi(z))$ in our first equation to obtain the following:
 
+\begin{equation} 
+\begin{split}
+& \Bigg( y \frac{1}{\phi(z)} - (1-y) \frac{1}{1-\phi(z)} \Bigg) \frac{\partial}{\partial w_j} \phi(z) \\
+& = \Bigg( y \frac{1}{\phi(z)} - (1-y) \frac{1}{1-\phi(z)} \Bigg) \phi(z) \big(1 - \phi(z)\big) \frac{\partial}{\partial w_j} z \\
+& = \bigg(  y \big( 1 - \phi(z)   \big) - (1-y) \phi(z)  \bigg) x_j \\
+& = \big( y - \phi(z)  \big) x_j
+\end{split}
+\end{equation}
 
-\newpage
+Remember that the goal is to find the weights that maximize the log-likelihood so that we would perform the update for each weight as follows:
 
-... to be continued ... 
+\[
+w_j := w_j + \eta \sum_{i=1}^{n} \bigg( y^{(i)} - \phi(z^{(i)}) \bigg) x_{j}^{(i)}
+\]
 
-\newpage
+Since we update all weights simultaneously, we can write the general update rule as follows:
+
+\[
+\mathbf{w} := \mathbf{w} + \Delta \mathbf{w}
+\]
+
+We define $\Delta \mathbf{w}$ as follows:
+
+\[
+\Delta \mathbf{w} = \eta \nabla l (\mathbf{w})
+\]
+
+Since maximizing the log-likelihood is equal to minimizing the cost function $J(\cdot)$ that we defined earlier, we can write the gradient descent update rule as follows:
+
+\[
+\Delta w_j = - \eta \frac{\partial J}{\partial w_j} = \eta \sum_{i=1}^{n} \bigg( y^{(i)} - \phi(z^{(i)}) \bigg)x_{j}^{(i)}
+\]
+
+\[
+\mathbf{w} := \mathbf{w} + \Delta \mathbf{w}, \; \Delta \mathbf{w} = - \eta \nabla J(\mathbf{w})
+\]
+
+This is equal to the gradient descent rule in Adaline in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}.
+
 
 \subsection{Tackling overfitting via regularization}
+
+The most common form of regularization is the so-called L2 regularization (sometimes also called L2 shrinkage or weight decay), which can be written as follows:
+
+\[
+\frac{\lambda}{2} \lVert \mathbf{w} \rVert^2 = \frac{\lambda}{2} \sum_{j=1}^m w_{j}^{2}
+\]
+
+Here, $\lambda$ is the so-called regularization parameter.
+
+In order to apply regularization, we just need to add the regularization term to the cost function that we de ned for logistic regression to shrink the weights:
+
+\[
+J(\mathbf{w}) = \sum_{i=1}^{n} \bigg[ - y^{(i)} \log \big(  \phi(z^{(i)})  \big)  - \big( 1 - y ^{(i)} \big)  \log \big( 1 - \phi(z^{(i)})   \big)   \bigg] + \frac{\lambda}{2} \lVert \mathbf{w}\rVert^2  
+\]
+
+Via the regularization parameter $\lambda$, we can then control how well we  t the training data while keeping the weights small. By increasing the value of $\lambda$, we increase the regularization strength. 
+
+The parameter \textit{C} that is implemented for the \textit{LogisticRegression} class in scikit-learn comes from a convention in support vector machines, which will be the topic of the next section. \textit{C} is directly related to the regularization parameter $\lambda$ , which is its inverse:
+
+\[
+C = \frac{1}{\lambda}
+\]
+
+So, we can rewrite the regularized cost function of logistic regression as follows:
+
+\[
+J(\mathbf{w}) = C \Bigg[  \sum_{i=1}^{n} \Big(   -y^{(i)} \log \big( \phi(z^{(i)} \big) - \big(  1 - y^{(i)} \big)    \Big) \log \bigg( 1 - \phi(z^{(i)}) \bigg)         \Bigg] + \frac{1}{2} \lVert \mathbf{w} \rVert^2
+\]
+
+
+
+
 \section{Maximum margin classification with support vector machines}
+
 \subsection{Maximum margin intuition}
+
+To get an intuition for the margin maximization, let's take a closer look at those \textit{positive} and \textit{negative} hyperplanes that are parallel to the decision boundary, which can be expressed as follows:
+
+\[
+w_0 + \mathbf{w}^T \mathbf{x}_{pos} = 1 \quad (1)
+\]
+
+\[
+w_0 + \mathbf{w}^T \mathbf{x}_{neg} = -1 \quad (2)
+\]
+
+If we subtract those two linear equations (1) and (2) from each other, we get:
+
+\[
+\Rightarrow \mathbf{w}^T \big(  \mathbf{x}_{pos} - \mathbf{x}_{neg} \big) = 2
+\]
+
+We can normalize this by the length of the vector $\mathbf{w}$, which is de ned as follows:
+
+\[
+\lVert \mathbf{w} \rVert = \sqrt{\sum_{j=1}^{m} w_{j}^{2}} 
+\]
+
+So we arrive at the following equation:
+
+\[
+\frac{\mathbf{w}^T ( \mathbf{x}_{pos} - \mathbf{x}_{neg}  )}{\lVert \mathbf{w} \rVert} = \frac{2}{\lVert \mathbf{w} \rVert}
+\]
+
+The left side of the preceding equation can then be interpreted as the distance between the positive and negative hyperplane, which is the so-called margin that we want to maximize.
+
+Now the objective function of the SVM becomes the maximization of this margin by maximizing $\frac{2}{\lVert \mathbf{w} \rVert}$ under the constraint that the samples are classi ed correctly, which can be written as follows:
+
+
+\[
+w_0 + \mathbf{w}^T \mathbf{x}^{(i)} \ge 1 \text{ if } y^{(i)} = 1
+\]
+
+\[
+w_0 + \mathbf{w}^T \mathbf{x}^{(i)}  < -1 \text{ if } y^{(i)} = -1
+\]
+
+These two equations basically say that all negative samples should fall on one side of the negative hyperplane, whereas all the positive samples should fall behind the positive hyperplane. This can also be written more compactly as follows:
+
+\[
+y^{(i)} \big(  w_0 + \mathbf{w}^T \mathbf{x}^{(i)} \big) \ge 1 \quad \forall_i
+\]
+
+In practice, though, it is easier to minimize the reciprocal term $\frac{1}{2} \lVert \mathbf{w} \rVert^2$, which can be solved by quadratic programming. 
+
 \subsection{Dealing with the nonlinearly separable case using slack variables}
+
+The motivation for introducing the slack variable $\xi$ was that the linear constraints need to be relaxed for nonlinearly separable data to allow convergence of the optimization in the presence of misclassifications under the appropriate cost penalization. The positive-values slack variable is simply added to the linear constraints:
+
+\[
+\mathbf{w}^T \mathbf{x}^{(i)} \ge 1 - \xi^{(i)} \text{ if } y^{(i)} = 1
+\]
+
+\[
+\mathbf{w}^T \mathbf{x}^{(i)} < -1 + \xi^{(i)} \text{ if } y^{(i)} = -1
+\]
+
+So the new objective to be minimized (subject to the preceding constraints) becomes:
+
+\[
+\frac{1}{2} \lVert \mathbf{w} \rVert^2 + C \Big(\sum_i \xi^{(i)} \Big)
+\]
+
+
 \subsection{Alternative implementations in scikit-learn}
 \section{Solving nonlinear problems using a kernel SVM}
+
+As shown in the next  figure, we can transform a two-dimensional dataset onto a new three-dimensional feature space where the classes become separable via the following projection:
+
+\[
+\phi(x_1, x_2) = (z_1, z_2, z_3) = (x_1, x_2, x_{1}^{2} + x_{2}^{2})
+\]
+
 \subsection{Using the kernel trick to find separating hyperplanes in higher dimensional space}
+
+To solve a nonlinear problem using an SVM, we transform the training data onto a higher dimensional feature space via a mapping function $\phi(\cdot)$ and train a linear SVM model to classify the data in this new feature space. Then we can use the same mapping function $\phi(\cdot)$ to transform new, unseen data to classify it using the linear SVM model.
+
+However, one problem with this mapping approach is that the construction of the new features is computationally very expensive, especially if we are dealing with high-dimensional data. This is where the so-called kernel trick comes into play. Although we didn't go into much detail about how to solve the quadratic programming task to train an SVM, in practice all we need is to replace the dot product 
+
+\[
+\mathbf{x}^{(i) \; T} \mathbf{x}^{(j)} \text{ by } \phi \big( \mathbf{x}^{(i)} \big)^T \phi \big( \mathbf{x}^{(j)} \big)
+\]
+
+
+In order to save the expensive step of calculating this dot product between two points explicitly, we de define a so-called kernel function:
+
+\[
+k \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)}  \big) = \phi \big( \mathbf{x}^{(i)} \big)^T \phi \big( \mathbf{x}^{(j)} \big)
+\]
+
+One of the most widely used kernels is the \textit{Radial Basis Function kernel} (RBF kernel) or Gaussian kernel:
+
+\[
+k \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)}  \big) = \exp \Bigg( - \frac{ \lVert \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \rVert^2  }{2 \sigma^2} \Bigg)
+\]
+
+This is often simplified to:
+
+\[
+k \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)}  \big) = \exp \bigg(  -\gamma\ \lVert \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \rVert^2  \bigg)
+\]
+
+Here, $\gamma = \frac{1}{2 \sigma^2}$ is a free parameter that is to be optimized.
+
 \section{Decision tree learning}
 \subsection{Maximizing information gain -- getting the most bang for the buck}
 \subsection{Building a decision tree}
@@ -525,5 +704,11 @@ Now we can resubstitute $\frac{\partial}{\partial z} \phi(z) = \phi(z)(1-\phi(z)
 \section{K-nearest neighbors -- a lazy learning algorithm}
 \section{Summary}
 
+
+\newpage
+
+... to be continued ... 
+
+\newpage
 
 \end{document} % end main document
