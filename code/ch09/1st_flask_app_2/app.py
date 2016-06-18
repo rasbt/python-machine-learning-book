@@ -9,7 +9,7 @@ class HelloForm(Form):
 @app.route('/')
 def index():
     form = HelloForm(request.form)
-    return render_template('first_app.html', form=form)
+    return render_template('submit.html', form=form)
 
 @app.route('/hello', methods=['POST'])
 def hello():
@@ -17,7 +17,8 @@ def hello():
     if request.method == 'POST' and form.validate():
         name = request.form['sayhello']
         return render_template('hello.html', name=name)
-    return render_template('first_app.html', form=form)
+    else:
+        return render_template('submit.html', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
