@@ -104,7 +104,7 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 - [Model evaluation, model selection, and algorithm selection in machine learning - Part I](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html)
 
-<hr>
+
 
 **Note**
 
@@ -114,6 +114,15 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 
 <br>
+
+<hr>
+
+### Translations
+
+[![](./images/pymle-cover_de.jpg)](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/)
+[![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
+
+<hr>
 
 ---
 
