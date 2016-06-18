@@ -329,7 +329,7 @@ Since we update all weights simultaneously, our Adaline learning rule becomes
 
 For those who are familiar with calculus, the partial derivative of the SSE cost function with respect to the $j$th weight in can be obtained as follows:
 
-\begin{equation} 
+\begin{equation*} 
 \begin{split}
 & \frac{\partial J}{\partial w_j} = \frac{\partial}{\partial w_j} \frac{1}{2} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
 & = \frac{1}{2} \frac{\partial}{\partial w_j} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
@@ -337,7 +337,7 @@ For those who are familiar with calculus, the partial derivative of the SSE cost
 & = \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) \bigg( - x_{j}^{(i)} \bigg) \\
 & = - \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) x_{j}^{(i)}  \\
 \end{split}
-\end{equation}
+\end{equation*}
 
 Performing a matrix-vector multiplication is similar to calculating a vector dot product where each row in the matrix is treated as a single row vector. This vectorized approach represents a more compact notation and results in a more efficient computation using NumPy. For example:
 
@@ -519,14 +519,14 @@ Before we continue, let's calculate the partial derivative of the sigmoid functi
 
 Now we can resubstitute $\frac{\partial}{\partial z} \phi(z) = \phi(z)(1-\phi(z))$ in our first equation to obtain the following:
 
-\begin{equation} 
+\begin{equation*} 
 \begin{split}
 & \Bigg( y \frac{1}{\phi(z)} - (1-y) \frac{1}{1-\phi(z)} \Bigg) \frac{\partial}{\partial w_j} \phi(z) \\
 & = \Bigg( y \frac{1}{\phi(z)} - (1-y) \frac{1}{1-\phi(z)} \Bigg) \phi(z) \big(1 - \phi(z)\big) \frac{\partial}{\partial w_j} z \\
 & = \bigg(  y \big( 1 - \phi(z)   \big) - (1-y) \phi(z)  \bigg) x_j \\
 & = \big( y - \phi(z)  \big) x_j
 \end{split}
-\end{equation}
+\end{equation*}
 
 Remember that the goal is to find the weights that maximize the log-likelihood so that we would perform the update for each weight as follows:
 
@@ -764,6 +764,12 @@ d \big(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}\big) =  \sqrt[p]{\sum_k \big| x_{k}^{(
 
 
 
+
+%%%%%%%%%%%%%%%
+% CHAPTER 4
+%%%%%%%%%%%%%%%
+
+
 \chapter{Building Good Training Sets -- Data Pre-Processing}
 
 \section{Dealing with missing data}
@@ -836,6 +842,342 @@ Based on the preceding definition of SBS, we can outline the algorithm in 4 simp
 \section{Summary}
 
 
+%%%%%%%%%%%%%%%
+% CHAPTER 5
+%%%%%%%%%%%%%%%
+
+\chapter{Compressing Data via Dimensionality Reduction}
+
+\section{Unsupervised dimensionality reduction via principal component analysis}
+
+When we use PCA for dimensionality reduction, we construct a $d \times k$-dimensional transformation matrix $\mathbf{W}$ that allows us to map a sample vector $\mathbf{x}$ onto a new $k$-dimensional feature subspace  that has fewer dimensions than the original $d$-dimensional feature space:
+
+\[
+\mathbf{x} = [ x_1, x_2, \dots, x_j], \mathbf{x} \in \mathbb{R}^4
+\]
+
+\[
+\downarrow \mathbf{x W}, \quad \mathbf{W} \in \mathbb{R}^{d \times k}
+\]
+
+\[
+\mathbf{z} = [z_1, z_2, \dots, z_k], \quad \mathbf{z} \in \mathbb{R}^4
+\]
+
+As a result of transforming the original $d$-dimensional data onto this new$k$-dimensional subspace (typically $k << d$ ), the  rst principal component will havethe largest possible variance, and all consequent principal components will have the largest possible variance given that they are uncorrelated (orthogonal) to the other principal components. Note that the PCA directions are highly sensitive to data scaling, and we need to standardize the features prior to PCA if the features were measured on different scales and we want to assign equal importance to all features.
+
+Before looking at the PCA algorithm for dimensionality reduction in more detail, let's summarize the approach in a few simple steps:
+
+\begin{enumerate}
+\item Standardize the $d$-dimensional dataset.
+\item Construct the covariance matrix.
+\item Decompose the covariance matrix into its eigenvectors and eigenvalues.
+\item Select $k$ eigenvectors that correspond to the $k$ largest eigenvalues, where $k$ is the dimensionality of the new feature subspace $(k \le d)$.
+\item Construct a projection matrix $\mathbf{W}$ from the "top" $k$ eigenvectors.
+\item Transform the $d$-dimensional input dataset $\mathbf{X}$ using the projection matrix $\mathbf{W}$ to obtain the new $k$-dimensional feature subspace.
+\end{enumerate}
+
+\subsection{Total and explained variance}
+
+After completing the mandatory preprocessing steps by executing the preceding code, let's advance to the second step: constructing the covariance matrix. The symmetric $d \times d$ -dimensional covariance matrix, where $d$ is the number of dimensions in the dataset, stores the pairwise covariances between the different features. For example, the covariance between two features $\mathbf{x}_j$ and $\mathbf{x}_k$ on the population level can be calculated via the following equation:
+
+\[
+\sigma_{jk} = \frac{1}{n} \sum_{i=1}^{n} \big(  x_{j}^{(i)} - \mu_j  \big) \big(  x_{k}^{(i)}  - \mu_k \big)
+\]
+
+Here, $\mu_j$ and $\mu_k$ are the sample means of feature $j$ and $k$, respectively. [...] For example, a covariance matrix of three features can then be written as 
+
+\[
+\Sigma = \begin{bmatrix}
+\sigma_{1}^2 & \sigma_{12} & \sigma_{13} \\
+\sigma_{21} & \sigma_{2}^{2} & \sigma_{23} \\
+\sigma_{31} & \sigma_{32} & \sigma_{3}^{2}
+\end{bmatrix}
+\]
+
+[...] an eigenvector $\mathbf{v}$ satisfies the following condition:
+
+\[
+\Sigma \mathbf{v} = \lambda \mathbf{v}
+\]
+
+Here, $\lambda$ is a scalar: the eigenvector.
+
+...
+
+The variance explained ratio of an eigenvalue $\lambda_j$ is simply the fraction of an eigenvalue  $\lambda_j$  and the total sum of the eigenvalues: 
+
+\[
+\frac{\lambda_j}{\sum_{j=1}^{d} \lambda_j}
+\]
+
+\subsection{Feature transformation}
+
+Using the projection matrix, we can now transform a sample $\mathbf{x}$ onto the PCA subspace obtaining $\mathbf{x}'$, a now two-dimensional sample vector consisting of two new features:
+
+\[
+\mathbf{x}' = \mathbf{xW}
+\]
+
+\subsection{Principal component analysis in scikit-learn}
+
+
+\section{Supervised data compression via linear discriminant analysis}
+
+Before we take a look into the inner workings of LDA in the following subsections, let's summarize the key steps of the LDA approach:
+
+\begin{enumerate}
+\item Standardize the $d$-dimensional dataset ($d$ is the number of features).
+\item For each class, compute the $d$ dimensional mean vector.
+\item Construct the between-class scatter matrix $\mathbf{S}_B$ and the within-class scatter matrix $\mathbf{S}_W$.
+\item Compute the eigenvectors and corresponding eigenvalues of the matrix $\mathbf{S}_{W}^{-1} \mathbf{S}_B$.
+\item Choose the $k$ eigenvectors that correspond to the $k$ largest eigenvalues to construct a  $d \times k$-dimensional transformation matrix $\mathbf{W}$; the eigenvectors are the columns of this matrix.
+\item Project the samples onto the new feature subspace using the transformation matrix $\mathbf{W}$.
+\end{enumerate}
+
+\subsection{Computing the scatter matrices}
+
+Each mean vector $\mathbf{m}_i$ stores the mean feature value $\mu_m$ with respect to the samples of class $i$:
+
+\[
+\mathbf{m}_i = \frac{1}{n_i} \sum_{x \in D_i}^{c} \mathbf{x}_m
+\]
+
+This results in three mean vectors:
+
+\[
+\mathbf{m}_i = \begin{bmatrix} 
+\mu_{i, \text{alcohol}} \\
+\mu_{i, \text{malic-acid}} \\
+\mu_{i, \text{proline}} 
+ \end{bmatrix}, i  \in   \{ 1, 2, 3 \}
+\]
+
+Using the mean vectors, we can now compute the within-class scatter matrix $\mathbf{S}_W$
+
+\[
+\mathbf{S}_W = \sum^{c}_{i=1} \mathbf{S}_i
+\]
+
+This is calculated by summing up the individual scatter matrices Si of eachindividual class $i$:
+
+\[
+\mathbf{S}_i = \sum_{x \in D_i}^{c} (\mathbf{x} - \mathbf{m}_i) (\mathbf{x} - \mathbf{m}_i)^T
+\]
+
+The assumption that we are making when we are computing the scatter matrices is that the class labels in the training set are uniformly distributed. [...] Thus, we want to scale the individual scatter matrices $\mathbf{S}_i$ before we sum them up as scatter matrix $\mathbf{S}_W$ When we divide the scatter matrices by the number of class samples $\mathbf{N}_i$, we can see that computing the scatter matrix is in fact the same as computing the covariance matrix $\mathbf{Sigma}_i$ The covariance matrix is a normalized version of the scatter matrix:
+
+\[
+\Sigma_i = \frac{1}{N_i} \mathbf{S}_W = \frac{1}{N_i} \sum^{c}_{x \in D_i}  (\mathbf{x} - \mathbf{m}_i) (\mathbf{x} - \mathbf{m}_i)^T
+\]
+
+After we have computed the scaled within-class scatter matrix (or covariance matrix), we can move on to the next step and compute the between-class scatter matrix $\mathbf{S}_B$
+
+\[
+\mathbf{S}_B = \sum^{c}_{i=1} N_i (\mathbf{m}_i - \mathbf{m})(\mathbf{m}_i - \mathbf{m})^T
+\]
+
+Here, $\mathbf{m}$ is the overall mean that is computed, including samples from all classes.
+
+\subsection{Selecting linear discriminants for the new feature subspace}
+\subsection{Projecting samples onto the new feature space}
+
+\[
+\mathbf{X'} = \mathbf{XW}
+\]
+
+\subsection{LDA via scikit-learn}
+\section{Using kernel principal component analysis for nonlinear mappings}
+\subsection{Kernel functions and the kernel trick}
+
+To transform the samples $\mathbf{x} \in \mathbb{R}^d$ onto this higher $k$-dimensional subspace, we defined a nonlinear mapping function $\phi$:
+
+\[
+\phi : \mathbb{R}^d \rightarrow \mathbb{R}^k \quad (k >> d)
+\]
+
+We can think of $\phi$ as a function that creates nonlinear combinations of the original features to map the original $d$-dimensional dataset onto a larger, $k$-dimensional feature space. For example, if we had feature vector $\mathbf{x} \in \mathbb{R}^d$ ($\mathbf{x}$ is a column vector consisting of $d$ features) with two dimensions ($d=2$), a potential mapping onto a 3D space could be as follows:
+
+\[
+\mathbf{x} = [x_1, x_2]^T
+\] 
+
+\[
+\downarrow \phi
+\]
+
+\[
+\mathbf{z} = \bigg[  x_{1}^{2}, \sqrt{2x_1x_2}, x_{2}^{2}    \bigg]^T
+\]
+ 
+ [...] We computed the covariance between two features $k$ and $j$ as follows:
+ 
+ \[
+ \sigma_{jk} = \frac{1}{n} \sum_{n}^{i=1} \big( x_{j}^{(i)} - \mu_j \big) \big( x_{k}^{(i)} - \mu_k \big)
+ \]
+ 
+ Since the standardizing of features centers them at mean zero, for instance, $\mu_j = 0$ and $\mu_k = 0$, we can simplify this equation as follows:
+ 
+ \[
+ \sigma_{jk} = \frac{1}{n} \sum_{i=1}^{n} x_{j}^{(i)} x_{k}^{(i)} 
+ \]
+ 
+Note that the preceding equation refers to the covariance between two features; now, let's write the general equation to calculate the covariance matrix $\Sigma$:
+
+\[
+\Sigma = \frac{1}{n} \sum_{i=1}^{n} \mathbf{x}^{(i)} \mathbf{x}^{(i)\;T}
+\]
+ 
+ Bernhard Scholkopf generalized this approach (B. Scholkopf, A. Smola, andK.-R. Muller. \textit{Kernel Principal Component Analysis}. pages 583-588, 1997) so that we can replace the dot products between samples in the original feature space by the nonlinear feature combinations via $\phi$:
+ 
+ \[
+ \Sigma = \frac{1}{n} \sum_{i=1}^{n} \phi \big( \mathbf{x}^{(i)} \big) \phi \big( \mathbf{x}^{(i)} \big)^T
+ \]
+ 
+ To obtain the eigenvectors?the principal components?from this covariance matrix,we have to solve the following equation:
+ 
+ 
+\begin{equation*} 
+\begin{split}
+   & \Sigma \mathbf{v} = \lambda \mathbf{v} \\
+   & \Rightarrow \frac{1}{n} \sum_{i=1}^{n} \phi \big( \mathbf{x}^{(i)} \big) \phi \big( \mathbf{x}^{(i)} \big)^T \mathbf{v} = \lambda \mathbf{v} \\
+   & \Rightarrow  \frac{1}{n \lambda} \sum^{n}_{i=1} \phi \big( \mathbf{x}^{(i)} \big) \big( \mathbf{x}^{(i)} \big)^T \mathbf{v} = \frac{1}{n} \sum^{n}_{(i=1)} \mathbf{a}^{(i)} \phi (\mathbf{x}^{(i)})
+\end{split}
+\end{equation*} 
+
+Here, $\lambda$ and v are the eigenvalues and eigenvectors of the covariance matrix $\Sigma$, and $\mathbf{a}$ can be obtained by extracting the eigenvectors of the kernel (similarity) matrix $\mathbf{K}$ as we will see in the following paragraphs.
+
+The derivation of the kernel matrix is as follows:
+
+
+ 
+\subsection{Implementing a kernel principal component analysis in Python}
+
+First, let's write the covariance matrix as in matrix notation, where $\phi(X)$ is an $n \times k$-dimensional matrix:
+
+\[
+\Sigma = \frac{1}{n} \sum_{i=1}^{n} \phi \big( \mathbf{x}^{(i)} \big) \big( \mathbf{x}^{(i)} \big)^T = \frac{1}{n} \phi ( \mathbf{X})^T \phi (\mathbf{X})
+\]
+
+Now, we can write the eigenvector equation as follows:
+
+\[
+mathbf{v} = \frac{1}{n} \sum_{i=1}^{n} \mathbf{a}^{(i)} \phi(\mathbf{x}^{(i)}) = \lambda \phi (\mathbf{X})^T \mathbf{a}
+\]
+
+Since $\Sigma \mathbf{v} = \lambda \mathbf{v}$, we get:
+
+\[
+\frac{1}{n} \phi (\mathbf{X})^T \phi (\mathbf{X}) \phi (\mathbf{X})^T \mathbf{a} = \lambda \phi (\mathbf{X})^T \mathbf{a} 
+\]
+
+Multiplying it by $\phi(\mathbf{X})$ on both sides yields the following result:
+
+\begin{equation*} 
+\begin{split}
+& \frac{1}{n} \phi(\mathbf{X}) \phi(\mathbf{X})^T \phi(\mathbf{X}) \phi(\mathbf{X})^T \mathbf{a} = \lambda \phi(\mathbf{X}) \phi(\mathbf{X})^T \mathbf{a} \\
+& \Rightarrow \frac{1}{n} \phi(\mathbf{X}) \phi(\mathbf{X})^T \mathbf{a} = \lambda \mathbf{a} \\
+& \Rightarrow \frac{1}{n} \mathbf{Ka} = \lambda \mathbf{a}
+\end{split}
+\end{equation*} 
+
+Here, K is the similarity (kernel) matrix:
+
+\[
+\mathbf{K} = \phi (\mathbf{X}) \phi (\mathbf{X})^T
+\]
+
+As we recall from the SVM section in \textit{Chapter 3, A Tour of Machine Learning Classifiers Using Scikit-learn}, we use the kernel trick to avoid calculating the pairwise dot products of the samples $\mathbf{x}$ under $\phi$ explicitly by using a kernel function $\kappa(\cdot)$ so that we don't need to calculate the eigenvectors explicitly:
+
+[...] The most commonly used kernels are the following ones:
+
+\begin{itemize}
+\item The polynomial kernel: 
+\[
+\kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) =  \big( \mathbf{x}^{(i)\;T} \mathbf{x}^{(j)} + \theta \big)^p
+ \]
+ Here, $\theta$ is the threshold and $p$ is the power that has to be specified by the user.\item the hyperbolic tangent (sigmoid) kernel:
+\[
+\kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) = \tanh \big( \eta \mathbf{x}^{(i)\; T} \mathbf{x}^{(j)} + \theta  \big)
+\]
+\item  The \textit{Radial Basis Function (RBF)} or Gaussian kernel that we will use in the following examples in the next subsection:
+\[
+\kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) = \exp \Bigg( - \frac{\lVert  \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \rVert^2}{2\sigma^2} \Bigg),
+\]
+which is also often written as 
+\[
+\kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) = \exp \big( -\gamma \lVert  \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \rVert^2 \big),
+\]
+
+where  $\gamma = \frac{1}{2 \sigma^2}$.
+
+\end{itemize}
+
+To summarize what we have discussed so far, we can define the following three steps to implement an RBF kernel PCA:
+
+\begin{enumerate}
+\item We compute the kernel (similarity) matrix $\mathbf{K}$, where we need to calculate the following:
+\[ 
+\kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)}  \big) = \exp \big( -\gamma \lVert \mathbf{x}^{(i)} -  \mathbf{x}^{(j)}  \rVert^2 \big)
+\]
+We do this for each pair of samples:
+
+
+\[
+\mathbf{K} = \begin{bmatrix}
+    \kappa \big(\mathbf{x}^{(1)},\mathbf{x}^{(1)}\big)& \kappa \big(\mathbf{x}^{(1)},\mathbf{x}^{(2)}\big)   & \dots & \kappa \big(\mathbf{x}^{(1)},\mathbf{x}^{(n)}\big) \\
+    \kappa \big(\mathbf{x}^{(2)},\mathbf{x}^{(1)}\big) & \kappa \big(\mathbf{x}^{(2)},\mathbf{x}^{(2)}\big) & \dots & \kappa \big(\mathbf{x}^{(2)},\mathbf{x}^{(n)}\big)\\
+    \vdots  & \vdots & \ddots & \vdots \\
+   \kappa \big(\mathbf{x}^{(n)},\mathbf{x}^{(1)}\big)  & \kappa \big(\mathbf{x}^{(n)},\mathbf{x}^{(2)}\big) & \dots & \kappa \big(\mathbf{x}^{(n)},\mathbf{x}^{(n)}\big)
+\end{bmatrix}.
+\]
+
+For example, if our dataset contains 100 training samples, the symmetric kernel matrix of the pair-wise similarities would be $100 \times 100$ dimensional.
+
+\item We center the kernel matrix $\mathbf{K}$ using the following equation:
+
+\[
+\mathbf{K}' = \mathbf{K} - 1_n \mathbf{K} - \mathbf{K} - \mathbf{K}1_n + 1_n \mathbf{K}1_n
+\]
+
+Here, $1_n$ is an $n \times n$-dimensional matrix (the same dimensions as the kernel matrix) where all values are equal to $\frac{1}{n}$.
+
+\item We collect the top $k$ eigenvectors of the centered kernel matrix based on their corresponding eigenvalues, which are ranked by decreasing magnitude. In contrast to standard PCA, the eigenvectors are not the principal component axes but the samples projected onto those axes
+
+\end{enumerate}
+
+
+\subsubsection{Example 1 -- separating half-moon shapes}
+\subsubsection{Example 2 -- separating concentric circles}
+\subsection{Projecting new data points}
+
+[...] Thus, if we want to project a new sample $\mathbf{x}'$ onto this principal component axis, we'd need to compute the following: 
+
+\[
+\phi(\mathbf{x}')^T \mathbf{v}
+\]
+
+Fortunately, we can use the kernel trick so that we don't have to calculate the projection $\phi(\mathbf{x}')^T \mathbf{v}$ explicitly. However, it is worth noting that kernel PCA, in contrast to standard PCA, is a memory-based method, which means that we have to reuse the original training set each time to project new samples. We have to calculate the pairwise RBF kernel (similarity) between each $i$th sample in the training dataset and the new sample $\mathbf{x}'$:
+
+\[
+\phi(\mathbf{x'})^T \mathbf{v} = \sum_i \mathbf{a}^{(i)} \phi(\mathbf{x'})^T \phi (\mathbf{x^{(i)}})
+\]
+
+\[
+= \sum_i \mathbf{a}^{(i)} k (\mathbf{x'}, \mathbf{x}^{(i)})^T
+\]
+
+Here, eigenvectors $\mathbf{a}$ and eigenvalues $\lambda$ of the Kernel matrix $\mathbf{K}$ satisfy the following condition in the equation
+
+\[
+\mathbf{Ka} = \lambda \mathbf{a}
+\]
+
+
+
+\subsection{Kernel principal component analysis in scikit-learn}
+\section{Summary}
+
 
 
 
@@ -843,6 +1185,9 @@ Based on the preceding definition of SBS, we can outline the algorithm in 4 simp
 \newpage
 
 ... to be continued ... 
+
+
+
 
 \newpage
 
