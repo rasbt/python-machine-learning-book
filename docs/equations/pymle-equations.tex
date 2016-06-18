@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[letterpaper]{report}
 
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -6,10 +6,17 @@
 \usepackage{amssymb}
 \usepackage{enumerate}
 
+\setlength\parindent{0pt}
+
 % start meta data
+
 \title{Python Machine Learning\\ Equation Reference}
 \author{Sebastian Raschka \\ \texttt{mail@sebastianraschka.com}} 
-\date{05\slash 04\slash 2015 \\ (last updated: 06\slash 15\slash 2016) \\ \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book }}
+\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 06\slash 15\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
+  title=\{Python Machine Learning\},\\
+  author=\{Raschka, Sebastian\},\\
+  year=\{2015\},\\
+  publisher=\{Packt Publishing\} \} \end{flushleft}}
 
 % end meta data 
 
@@ -31,9 +38,9 @@
 
 
 \begin{document} % start main document
+ 
 
-\maketitle % makes the title page from meta data
-
+\maketitle
 
 
 
@@ -711,7 +718,8 @@ Here, $f$ is the feature to perform the split, $D_p$ and $D_j$ are the dataset o
 IG(D_p, f) = 1 (D_p) - \frac{N_{left}}{N_p} I(D_{left}) - \frac{N_{right}}{N_p} I (D_{right})
 \]
 
-Now, the three impurity measures or splitting criteria that are commonly used inbinary decision trees are \textit{Gini impurity} ($I_G$), \textit{Entropy} ($I_H$) and the \textit{classification error} ($I_E$). Let's start with the definition of Entropy for all non-empty classes $p(i | t) \neq 0$:
+Now, the three impurity measures or splitting criteria that are commonly used in
+binary decision trees are \textit{Gini impurity} ($I_G$), \textit{Entropy} ($I_H$) and the \textit{classification error} ($I_E$). Let's start with the definition of Entropy for all non-empty classes $p(i | t) \neq 0$:
 
 
 \[
@@ -769,7 +777,12 @@ d \big(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}\big) =  \sqrt[p]{\sum_k \big| x_{k}^{(
 \section{Partitioning a dataset in training and test sets}
 \section{Bringing features onto the same scale}
 
-Now, there are two common approaches to bringing different features onto the samescale: \textit{normalization} and \textit{standardization}. Those terms are often used quite looselyin different fields, and the meaning has to be derived from the context. Most often,\textit{normalization} refers to the rescaling of the features to a range of [0, 1], which is aspecial case of min-max scaling.  To normalize our data, we can simply apply themin-max scaling to each feature column, where the new value $x_{norm}^{(i)}$ of a sample  $x^{(i)}$:
+Now, there are two common approaches to bringing different features onto the same
+scale: \textit{normalization} and \textit{standardization}. Those terms are often used quite loosely
+in different fields, and the meaning has to be derived from the context. Most often,
+\textit{normalization} refers to the rescaling of the features to a range of [0, 1], which is a
+special case of min-max scaling.  To normalize our data, we can simply apply the
+min-max scaling to each feature column, where the new value $x_{norm}^{(i)}$ of a sample  $x^{(i)}$:
 
 \[
 x_{norm}^{(i)} = \frac{x^{(i)} - \mathbf{x}_{min}}{\mathbf{x}_{max} - \mathbf{x}_{min}}
@@ -777,7 +790,8 @@ x_{norm}^{(i)} = \frac{x^{(i)} - \mathbf{x}_{min}}{\mathbf{x}_{max} - \mathbf{x}
 
 Here, $x^{(i)}$ is a particular sample, $x_{min}$ is the smallest value in a feature column, and $x_{max}$ the largest value, respectively.
 
-[...]  Furthermore, standardization maintains useful information about outliers and makes the algorithm less sensitive to them in contrast to min-max scaling, which scalesthe data to a limited range of values.
+[...]  Furthermore, standardization maintains useful information about outliers and makes the algorithm less sensitive to them in contrast to min-max scaling, which scales
+the data to a limited range of values.
 
 The procedure of standardization can be expressed by the following equation:
 
