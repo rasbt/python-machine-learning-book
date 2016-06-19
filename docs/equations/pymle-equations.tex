@@ -1203,12 +1203,60 @@ Here, eigenvectors $\mathbf{a}$ and eigenvalues $\lambda$ of the Kernel matrix $
 \subsection{Reading a confusion matrix}
 \subsection{Optimizing the precision and recall of a classification model}
 
+Both the prediction error (ERR) and accuracy (ACC) provide general information about how many samples are misclassi ed. The error can be understood as the sum of all false predictions divided by the number of total predictions, and the accuracy is calculated as the sum of correct predictions divided by the total number of predictions, respectively:
+
 \[
 ERR = \frac{FP + FN}{FP + FN + TP + TN}
 \]
 
+(TP = true positives, FP = false positives, TN = true negatives, FN = false negatives)
+
+The prediction accuracy can then be calculated directly from the error:
+
+\[
+ACC = \frac{TP + TN}{FP + FN + TP + TN} = 1 - ERR
+\]
+The true \textit{positive rate} (TPR) and \textit{false positive rate} (FPR) are performance metrics that are especially useful for imbalanced class problems:
+
+\[
+FPR = \frac{FP}{N} = \frac{FP}{FP + TN}
+\]
+
+\[
+TPR = \frac{TP}{P} = \frac{TP}{FN+TP}
+\]
+
+\textit{Precision (PRE)} and \textit{recall} (REC) are performance metrics that are related to those true positive and true negative rates, and in fact, recall is synonymous to the true positive rate:
+
+\[
+PRE = \frac{TP}{TP + FP}
+\]
+
+\[
+REC = TPR = \frac{TP}{P} = \frac{TP}{FN + TP}
+\]
+
+In practice, often a combination of precision and recall is used, the so-called \textit{F1-score}:
+
+\[
+\text{F1} = 2 \times \frac{PRE \times REC}{PRE + REC}
+\]
+
 \subsection{Plotting a receiver operating characteristic}
 \subsection{The scoring metrics for multiclass classification}
+
+he micro-average is calculated from the individual true positives, true negatives, false positives, and false negatives of the system. For example, the micro-average of the precision score in a k-class system can be calculated as follows:
+
+\[
+PRE_{micro} = \frac{TP_1 + \dots + TP_k}{TP_1 + \dots + TP_k + FP_1 + \dots + FP_k}
+\]
+
+The macro-average is simply calculated as the average scores of the different systems:
+
+\[
+PRE_{macro} = \frac{PRE_1 + \dots + PRE_k}{k}
+\]
+
 \section{Summary}
 
 
