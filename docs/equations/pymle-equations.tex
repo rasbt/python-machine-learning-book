@@ -12,7 +12,7 @@
 
 \title{Python Machine Learning\\ Equation Reference}
 \author{Sebastian Raschka \\ \texttt{mail@sebastianraschka.com}} 
-\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 06\slash 15\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
+\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 06\slash 19\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
   title=\{Python Machine Learning\},\\
   author=\{Raschka, Sebastian\},\\
   year=\{2015\},\\
@@ -333,12 +333,13 @@ For those who are familiar with calculus, the partial derivative of the SSE cost
 \begin{split}
 & \frac{\partial J}{\partial w_j} = \frac{\partial}{\partial w_j} \frac{1}{2} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
 & = \frac{1}{2} \frac{\partial}{\partial w_j} \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg)^2 \\
-& = \frac{1}{2} \sum_i 2 \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) \frac{\partial J}{\partial w_j} \Bigg( y^{(i)} - \sum_i \bigg( w_{j}^{(i)} x_{j}^{(i)} \bigg)\Bigg) \\
+& = \frac{1}{2} \sum_i 2 \big( y^{(i)} - \phi(z^{(i)})\big)  \frac{\partial}{\partial w_j} \Big( y^{(i)}  - \phi({z^{(i)}}) \Big) \\
+& = \sum_i \big( y^{(i)}  - \phi (z^{(i)})   \big) \frac{\partial}{\partial w_j} \Big( y^{(i)} - \sum_i \big(w^{(i)}_{j} x^{(i)}_{j} \big) \Big) \\
 & = \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) \bigg( - x_{j}^{(i)} \bigg) \\
 & = - \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) x_{j}^{(i)}  \\
 \end{split}
 \end{equation*}
-
+?
 Performing a matrix-vector multiplication is similar to calculating a vector dot product where each row in the matrix is treated as a single row vector. This vectorized approach represents a more compact notation and results in a more efficient computation using NumPy. For example:
 
 \[
@@ -409,7 +410,7 @@ where $p$ stands for the probability of the positive (1? p)
  event. The term positive event does not necessarily mean good, but refers to the event that we want to predict, for example, the probability that a patient has a certain disease; we can think of the positive event as class label $y =1$. We can then further define the logit function, which is simply the logarithm of the odds ratio (log-odds):
 
 \[
-logit(p) = log \frac{p}{1-p}
+logit(p) = \log \frac{p}{1-p}
 \]
 
 The logit function takes input values in the range 0 to 1 and transforms them to values over the entire real number range, which we can use to express a linear relationship between feature values and the log-odds:
@@ -1180,6 +1181,35 @@ Here, eigenvectors $\mathbf{a}$ and eigenvalues $\lambda$ of the Kernel matrix $
 
 
 
+%%%%%%%%%%%%%%%
+% CHAPTER 6
+%%%%%%%%%%%%%%%
+
+\chapter{Learning Best Practices for Model Evaluation and Hyperparameter Tuning}
+
+\section{Streamlining workflows with pipelines}
+\subsection{Loading the Breast Cancer Wisconsin dataset}
+\subsection{Combining transformers and estimators in a pipeline}
+\section{Using k-fold cross-validation to assess model performance}
+\subsection{The holdout method}
+\subsection{K-fold cross-validation}
+\section{Debugging algorithms with learning and validation curves}
+\subsection{Diagnosing bias and variance problems with learning curves}
+\subsection{Addressing overfitting and underfitting with validation curves}
+\section{Fine-tuning machine learning models via grid search}
+\subsection{Tuning hyperparameters via grid search}
+\subsection{Algorithm selection with nested cross-validation}
+\section{Looking at different performance evaluation metrics}
+\subsection{Reading a confusion matrix}
+\subsection{Optimizing the precision and recall of a classification model}
+
+\[
+ERR = \frac{FP + FN}{FP + FN + TP + TN}
+\]
+
+\subsection{Plotting a receiver operating characteristic}
+\subsection{The scoring metrics for multiclass classification}
+\section{Summary}
 
 
 \newpage
