@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{enumerate}
+\usepackage{caption}
 
 \setlength\parindent{0pt}
 
@@ -1256,6 +1257,210 @@ The macro-average is simply calculated as the average scores of the different sy
 \[
 PRE_{macro} = \frac{PRE_1 + \dots + PRE_k}{k}
 \]
+
+\section{Summary}
+
+
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 7
+%%%%%%%%%%%%%%%
+
+\chapter{Combining Different Models for Ensemble Learning}
+
+\section{Learning with ensembles}
+
+To predict a class label via a simple majority or plurality voting, we combine the predicted class labels of each individual classifier $C_j$ and select the class label $\hat{y}$ that received the most votes:
+
+\[
+\hat{y} = mode \{ C_1 (\mathbf{x}), C_2 (\mathbf{x}), \dots, C_m (\mathbf{x}) \}
+\]
+
+For example, in a binary classification task where $class1 = -1$ and $class2 = +1$, we can write the majority vote prediction as follows:
+
+\[
+C(\mathbf{x}) = sign \Bigg[ \sum_{j}^{m} C_j (\mathbf{x} \Bigg] = \begin{cases} 
+      1 & \text{ if } \sum_j C_j (\mathbf{x}) \ge 0 \\
+      -1 & \text{ otherwise }.
+   \end{cases}
+\]
+
+To illustrate why ensemble methods can work better than individual classifiers alone, let's apply the simple concepts of combinatorics. For the following example, we make the assumption that all $n$ base classifiers for a binary classification task have an equal error rate $\epsilon$. Furthermore, we assume that the classifiers are independent and the error rates are not correlated. Under those assumptions, we can simply express the error probability of an ensemble of base classifiers as a probabilitymass function of a binomial distribution:
+
+\[
+P(y \ge k) = \sum_{k}^{n} \binom{n}{k} \epsilon^k (1 - \epsilon)^{n-k} = \epsilon_{\text{ensemble}}
+\]
+
+Here, $\binom{n}{k}$ is the binomial coefficient \textit{n choose k}. In other words, we compute the probability that the prediction of the ensemble is wrong. Now let's take a look at a more concrete example of 11 base classifiers ($n=11$) with an error rate of 0.25 ($\epsilon = 0.25$):
+
+\[
+P(y \ge k) = \sum_{k=6}^{11} \binom{11}{k} 0.25^k (1 - \epsilon)^{11-k} = 0.034
+\]
+
+\section{Implementing a simple majority vote classifier}
+
+Our goal is to build a stronger meta-classifier that balances out the individual classifiers' weaknesses on a particular dataset.  In more precise mathematical terms, we can write the weighted majority vote as follows:
+ 
+\[
+\hat{y} = \text{arg} \max_i \sum_{j=1}^{m} w_j \chi_A \big(C_j (\mathbf{x})=i\big)
+\] 
+
+Let's assume that we have an ensemble of three base classifiers $C_j ( j \in {0,1})$ and want to predict the class label of a given sample instance x. Two out of three base classi ers predict the class label 0, and one $C_3$ predicts that the sample belongs to class 1. If we weight the predictions of each base classifier equally, the majority vote will predict that the sample belongs to class 0:
+
+\[
+C_1(\mathbf{x}) \rightarrow 0, C_2 (\mathbf{x}) \rightarrow 0, C_3(\mathbf{x}) \rightarrow 1
+\]
+
+\[
+\hat{y} = mode{0, 0, 1} = 0 
+\]
+
+Now let's assign a weight of 0.6 to $C_3$ and weight $C_1$ and $C_2$ by a coefficient of 0.2, respectively.
+
+\[
+\hat{y} = \text{arg}\max_i \sum_{j=1}^{m} w_j \chi_A \big( C_j(\mathbf{x}) = i \big)
+\]
+
+\[
+= \text{arg}\max_i \big[0.2 \times i_0 + 0.2 \times i_0 + 0.6 \times i_1 \big] = 1
+\]
+
+More intuitively, since $3 \times 0.2 = 0.6$, we can say that the prediction made by $C_3$ has three times more weight than the predictions by $C_1$ or $C_2$ , respectively. We can write this as follows:
+
+\[
+\hat{y} = mode\{0,0,1,1,1\} = 1
+\]
+
+[...] The modified version of the majority vote for predicting class labels from probabilities can be written as follows:
+
+\[
+\hat{y} = \text{arg} \max_i \sum^{m}_{j=1} w_j p_{ij}
+\]
+
+Here, $p_{ij}$ is the predicted probability of the $j$th classifier for class label $i$.
+
+To continue with our previous example, let's assume that we have a binary classification problem with class labels $i \in \{0, 1\}$ and an ensemble of three classifiers $C_j (j \in \{1, 2, 3\}$. Let's assume that the classifier $C_j$ returns the following class membership probabilities for a particular sample $\mathbf{x}$:
+
+\[
+C_1(\mathbf{x}) \rightarrow [0.9, 0.1], C_2 (\mathbf{x}) \rightarrow [0.8, 0.2], C_3(\mathbf{x}) \rightarrow [0.4, 0.6]
+\]
+
+We can then calculate the individual class probabilities as follows:
+
+\[
+p(i_0 | \mathbf{x}) = 0.2 \times 0.9 + 0.2 \times 0.8 + 0.6 \times 0.4 = 0.58
+\]
+
+\[
+p(i_1 | \mathbf{x}) = 0.2 \times 0.1 + 0.2 \times 0.2 + 0.6 \times 0.06 = 0.42
+\]
+
+\[
+\hat{y} = \text{arg} \max_i \big[ p(i_0 | \mathbf{x}), p(i_1 | \mathbf{x})   \big] = 0
+\]
+
+\subsection{Combining different algorithms for classification with majority vote}
+\section{Evaluating and tuning the ensemble classifier}
+\section{Bagging -- building an ensemble of classifiers from bootstrap samples}
+\section{Leveraging weak learners via adaptive boosting}
+
+[...] The original boosting procedure is summarized in four key steps as follows:
+
+\begin{enumerate}
+\item Draw a random subset of training samples $d_1$ without replacement from the training set $D$ to train a weak learner $C_1$.
+\item Draw second random training subset $d_2$ without replacement from the training set and add 50 percent of the samples that were previously misclassified to train a weak learner $C_2$.
+\item Find the training samples $d_3$ in the training set $D$ on which $C_1$ and $C_2$ disagree to train a third weak learner $C_3$
+\item Combine the weak learners $C_1, C_2$, and $C_3$ via majority voting.
+\end{enumerate}
+
+[...] Now that have a better understanding behind the basic concept of AdaBoost, let's take a more detailed look at the algorithm using pseudo code. For clarity, we will denote element-wise multiplication by the cross symbol $(\times)$ and the dot product between two vectors by a dot symbol $(\cdot)$, respectively. The steps are as follows:
+
+\begin{enumerate}
+\item Set weight vector $\mathbf{w}$ to uniform weights where $\sum_i  w_i = 1$.
+\item For $j$ in $m$ boosting rounds, do the following:
+\begin{enumerate}
+\item Train a weighted weak learner: $C_j = train(\mathbf{X, y, w})$.
+\item Predict class labels: $\hat{y} = predict(C_j, \mathbf{X})$.
+\item Compute the weighted error rate: $\epsilon = \mathbf{w} \cdot (\mathbf{\hat{y}} == \mathbf{y})$.
+\item Compute the coefficient $\alpha_j$: $\alpha_j=0.5 \log \frac{1 - \epsilon}{\epsilon}$.
+\item Update the weights: $\mathbf{w} := \mathbf{w} \times \exp \big( -\alpha_j \times \mathbf{\hat{y}} \times \mathbf{y} \big)$.
+\item Normalize weights to sum to 1: $\mathbf{w}:= \mathbf{w} / \sum_i w_i$.
+\end{enumerate}
+\item Compute the final prediction: $\mathbf{\hat{y}} = \big( \sum^{m}_{j=1} \big( \mathbf{\alpha}_j \times predict(C_j, \mathbf{X})  \big) > 0 \big)$.
+\end{enumerate}
+
+Note that the expression ($\mathbf{\hat{y}} == \mathbf{y}$) in step 5 refers to a vector of 1s and 0s, where a 1 is assigned if the prediction is incorrect and 0 is assigned otherwise.
+
+\begin{table}[!htbp]
+\centering
+\caption*{}
+\label{}
+\begin{tabular}{r | c c c c c | l}
+\hline
+Sample indices & x    & y  & Weights & $\hat{y}$(x $\le$ 3.0)? & Correct? & Updated weights \\ \hline
+1              & 1.0  & 1  & 0.1     & 1                       & Yes      & 0.072           \\ 
+2              & 2.0  & 1  & 0.1     & 1                       & Yes      & 0.072           \\ 
+3              & 3.0  & 1  & 0.1     & 1                       & Yes      & 0.072           \\
+4              & 4.0  & -1 & 0.1     & -1                      & Yes      & 0.072           \\ 
+5              & 5.0  & -1 & 0.1     & -1                      & Yes      & 0.072           \\
+6              & 6.0  & -1 & 0.1     & -1                      & Yes      & 0.072           \\ 
+7              & 7.0  & 1  & 0.1     & -1                      & No       & 0.167           \\ 
+8              & 8.0  & 1  & 0.1     & -1                      & No       & 0.167           \\
+9              & 9.0  & 1  & 0.1     & -1                      & No       & 0.167           \\ 
+10             & 10.0 & -1 & 0.1     & -1                      & Yes      & 0.072           \\  \hline
+\end{tabular}
+\end{table}
+
+Since the computation of the weight updates may look a little bit complicated at  rst, we will now follow the calculation step by step. We start by computing the weighted error rate $\epsilon$ as described in step 5:
+
+\[
+\epsilon = 0.1\times 0+0.1\times 0+0.1 \times 0+0.1 \times 0+0.1 \times 0+0.1 \times 0+0.1\times 1+0.1 \times 1 + 0.1 \times 1+0.1 \times 0
+\]
+\[
+= \frac{3}{10} = 0.3
+\]
+
+Next we compute the coefficient $\alpha_j$ (shown in step 6), which is later used in step 7 to update the weights as well as for the weights in majority vote prediction (step 10):
+
+\[
+\alpha_j = 0.5 \log \Bigg( \frac{1 - \epsilon}{\epsilon} \Bigg) \approx 0.424
+\]
+
+After we have computed the coefficient $\alpha_j$ we can now update the weight vector using the following equation:
+
+\[
+\mathbf{w} := \mathbf{w} \times \exp ( -\alpha_j \times \mathbf{\hat{y}} \times \mathbf{y})
+\]
+
+Here, $\mathbf{\hat{y}} \times \mathbf{y}$ is an element-wise multiplication between the vectors of the predicted and true class labels, respectively. Thus, if a prediction $\hat{y}_i$ is correct, $\hat{y}_i \times y_i$ will have a positive sign so that we decrease the $i$th weight since $\alpha_j$ is a positive number as well:
+
+\[
+0.1 \times \exp (-0.424 \times 1 \times 1) \approx 0.065
+\]
+
+Similarly, we will increase the $i$th weight if $\hat{y}_i$ predicted the label incorrectly like this:
+
+\[
+0.1 \times \exp (-0.424 \times 1 \times (-1)) \approx 0.153
+\]
+
+Or like this:
+
+\[
+0.1 \times \exp (-0.424 \times (-1) \times 1) \approx 0.153
+\]
+
+After we update each weight in the weight vector, we normalize the weights so that they sum up to 1 (step 8):
+
+\[
+\mathbf{w} := \frac{\mathbf{w}}{\sum_i w_i}
+\]
+
+Here, $\sum_i w_i = 7 \times 0.065 + 3 \times 0.153 = 0.914$.
+
+Thus, each weight that corresponds to a correctly classified sample will be reduced from the initial value of $0.1$ to $0.065 / 0.914 \approx 0.071$ for the next round of boosting. Similarly, the weights of each incorrectly classified sample will increase from $0.1$ to $0.153 / 0.914 \approx 0.167$.
+
 
 \section{Summary}
 
