@@ -81,7 +81,7 @@ The Iris dataset, consisting of 150 samples and 4 features, can then be written 
 
 For the rest of this book, unless noted otherwise, we will use the superscript $(i)$ to refer to the $i$th training sample, and the subscript $j$ to refer to the $j$th dimension of the training dataset. 
 
-We use lower-case, bold-face letters to refer to vectors ($\mathbf{x} \in \mathbb{R}^{n \times 1}$) and upper-case, bold-face letters to refer to matrices, respectively ($\mathbf{X} \in \mathbb{R}^{n \times m}$), where $n$ refers to the number of rows, and $m$ refers to the number of columns, respectively. To refer to single elements in a vector or matrix, we write the letters in italics ($x^{(n)}) or x^{(n)}_{m}$, respectively). For example, $x^{150}_1$ refers to the refers to the first dimension of the flower sample 150, the sepal length. Thus, each row in this feature matrix represents one flower instance and can be written as four-dimensional row vector $\mathbf{x}^{(i)} \in \mathbb{R}^{1 \times 4}$
+We use lower-case, bold-face letters to refer to vectors ($\mathbf{x} \in \mathbb{R}^{n \times 1}$) and upper-case, bold-face letters to refer to matrices, respectively ($\mathbf{X} \in \mathbb{R}^{n \times m}$), where $n$ refers to the number of rows, and $m$ refers to the number of columns, respectively. To refer to single elements in a vector or matrix, we write the letters in italics $x^{(n)}$ or $x^{(n)}_{m}$, respectively. For example, $x^{150}_1$ refers to the refers to the first dimension of the flower sample 150, the sepal length. Thus, each row in this feature matrix represents one flower instance and can be written as four-dimensional row vector $\mathbf{x}^{(i)} \in \mathbb{R}^{1 \times 4}$
 
 \[ \mathbf{x}^{(i)} = \bigg[x^{(i)}_1 \; x^{(i)}_2 \; x^{(i)}_3 \; x^{(i)}_4 \bigg]. \]
 
@@ -1461,8 +1461,58 @@ Here, $\sum_i w_i = 7 \times 0.065 + 3 \times 0.153 = 0.914$.
 
 Thus, each weight that corresponds to a correctly classified sample will be reduced from the initial value of $0.1$ to $0.065 / 0.914 \approx 0.071$ for the next round of boosting. Similarly, the weights of each incorrectly classified sample will increase from $0.1$ to $0.153 / 0.914 \approx 0.167$.
 
-
 \section{Summary}
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 8
+%%%%%%%%%%%%%%%
+
+\chapter{Applying Machine Learning to Sentiment Analysis}
+
+\section{Obtaining the IMDb movie review dataset}
+\section{Introducing the bag-of-words model}
+\subsection{Transforming words into feature vectors}
+\subsection{Assessing word relevancy via term frequency-inverse document frequency}
+
+The \textit{tf-idf} can be de ned as the product of the \textit{term frequency} and the \textit{inverse document frequency}:
+
+\[
+\text{tf-idf}(t, d) = \text{tf} (t, d) \times \text{idf}(t, d)
+\]
+
+Here the $\text{tf}(t, d)$ is the term frequency that we introduced in the previous section,and the inverse document frequency $\text{idf}(t, d)$ can be calculated as:
+
+\[
+\text{idf}(t, d) = \log \frac{n_d}{1 + \text{df}(d, t)},
+\]
+
+where $n_d$ is the total number of documents, and $\text{df}(d, t)$  is the number of documents $d$ that contain the term $t$. Note that adding the constant 1 to the denominator is optional and serves the purpose of assigning a non-zero value to terms that occur in all training samples; the log is used to ensure that low document frequencies are not given too much weight.
+
+However, if we'd manually calculated the tf-idfs of the individual terms in our feature vectors, we'd have noticed that the \textit{TfidfTransformer} calculates the tf-idfs slightly differently compared to the standard textbook equations that we de ned earlier. The equations for the idf and tf-idf that were implemented in scikit-learn are:
+
+\[
+\text{idf}(t, d) = \log \frac{1 + n_d}{1 + \text{df}(d, t)}
+\]
+
+The tf-idf equation that was implemented in scikit-learn is as follows:
+
+\[
+\text{tf-idf(t, d)} = \text{tf}(t, d) \times (\text{idf} (t, d) + 1).
+\]
+
+While it is also more typical to normalize the raw term frequencies before calculating the tf-idfs, the \textit{TfidfTransformer} normalizes the tf-idfs directly. By default (\text{norm='l2'}), scikit-learn's \textit{TfidfTransformer} applies the L2-normalization, which returns a vector of length 1 by dividing an un-normalized feature vector $\mathbf{v}$ by its L2-norm:
+
+\[
+\mathbf{v}_{norm} = \frac{\mathbf{v}}{\lVert \mathbf{v} \rVert}_2 = \frac{\mathbf{v}}{\sqrt{v_{1}^{2} + v_{2}^{2} + \cdots + v_{n}^{2}}} = \frac{\mathbf{v}}{ \big( \sum_{i=1}^{n} v_{i}^{2} \big)^{1/2} }
+\]
+
+\subsection{Cleaning text data}
+\subsection{Processing documents into tokens}
+\section{Training a logistic regression model for document classification}
+\section{Working with bigger data ? online algorithms and out-of-core learning}
+\section{Summary}
+
 
 
 \newpage
