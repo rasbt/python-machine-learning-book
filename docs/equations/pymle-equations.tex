@@ -2206,7 +2206,7 @@ In the previous sections, we de ned a cost function $J(\mathbf{W})$ where $\math
 Remember that we are updating the weights by taking an opposite step towards the direction of the gradient. In gradient checking, we compare this analytical solution to a numerically approximated gradient:
 
 \[
-\frac{\partial}{\partial w_{i, j}^{l}} J(\mathbf{W}) \approx \frac{J\big( w_{i, j}^{(l)} + \epsilon \big) - J \big( w_{i, j}^{(l)}\big)}{\epsilon}
+\frac{\partial}{\partial w_{i, j}^{(l)}} J(\mathbf{W}) \approx \frac{J\big( w_{i, j}^{(l)} + \epsilon \big) - J \big( w_{i, j}^{(l)}\big)}{\epsilon}
 \]
 
 Here, $\epsilon$ is typically a very small number, for example 1e-5 (note that 1e-5 is justa more convenient notation for 0.00001). Intuitively, we can think of this finite difference approximation as the slope of the secant line connecting the points of the cost function for the two weights w and $w + \epsilon$ (both are scalar values), as shown in the following  figure. We are omitting the superscripts and subscripts for simplicity.
