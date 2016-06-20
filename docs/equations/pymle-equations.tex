@@ -2239,14 +2239,54 @@ One problem is that the error is not scale invariant (small errors are more sign
 
 
 
+%%%%%%%%%%%%%%%
+% CHAPTER 13
+%%%%%%%%%%%%%%%
 
-\newpage
+\chapter{Parallelizing Neural Network Training with Theano}
 
-... to be continued ... 
+\section{Building, compiling, and running expressions with Theano}
+\subsection{What is Theano?}
+\subsection{First steps with Theano}
+\subsection{Configuring Theano}
+\subsection{Working with array structures}
+\subsection{Wrapping things up -- a linear regression example}
+\section{Choosing activation functions for feedforward neural networks}
+\subsection{Logistic function recap}
 
+We recall from the section on logistic regression in \textit{Chapter 3, A Tour of Machine Learning Classifiers Using Scikit-learn} that we can use the logistic function to model the probability that sample $x$ belongs to the positive class (class 1) in a binary classification task:
 
+\[ 
+\phi_{logistic} (z) = \frac{1}{1 + e^{-z}}
+\]
 
+Here, the scalar variable $z$ is de ned as the net input:
 
-\newpage
+\[
+z = w_0 x_0 + \dots + w_m x_m = \sum_{j=0}^{m} x_j w_j = \mathbf{w}^T \mathbf{x}
+\]
+
+Note that $w_0$ is the bias unit (y-axis intercept, $x_0 =1$).
+
+\subsection{Estimating probabilities in multi-class classification via the softmax function}
+
+The softmax function is a generalization of the logistic function that allows usto compute meaningful class-probabilities in multi-class settings (multinomial logistic regression). In softmax, the probability of a particular sample with net input z belongs to the i th class can be computed with a normalization term in the denominator that is the sum of all M linear functions:
+
+$P(y=i | z) = \phi_{softmax}(z) = \frac{e_{i}^{z}}{\sum_{m=1}^{M} e_{m}^{z}}$.
+
+\subsection{Broadening the output spectrum by using a hyperbolic tangent}
+
+Another sigmoid function that is often used in the hidden layers of artificial neural networks is the \textit{hyperbolic tangent (tanh)}, which can be interpreted as a rescaled version of the logistic function.
+
+\[
+\phi_{tanh} (z) = 2 \times \phi_{logistic} (2 \times z) - 1 = \frac{e^{z} - e^{-z} }{e^{z} + e^{-z}}
+\]
+
+\[
+\phi_{logistic}(z) = \frac{1}{1 + e^{-z}}
+\]
+
+\section{Training neural networks efficiently using Keras}
+\section{Summary}
 
 \end{document} % end main document
