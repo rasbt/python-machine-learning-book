@@ -340,7 +340,7 @@ For those who are familiar with calculus, the partial derivative of the SSE cost
 & = - \sum_i \bigg(  y^{(i)} - \phi \big( z^{(i)} \big)  \bigg) x_{j}^{(i)}  \\
 \end{split}
 \end{equation*}
-?
+
 Performing a matrix-vector multiplication is similar to calculating a vector dot product where each row in the matrix is treated as a single row vector. This vectorized approach represents a more compact notation and results in a more efficient computation using NumPy. For example:
 
 \[
@@ -1862,6 +1862,383 @@ After labeling the points as core, border, or noise points, the DBSCAN algorithm
 \end{enumerate}
 
 \section{Summary}
+
+
+
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 12
+%%%%%%%%%%%%%%%
+
+\chapter{Training Artificial Neural Networks for Image Recognition}
+
+\section{Modeling complex functions with artificial neural networks}
+\subsection{Single-layer neural network recap}
+
+In \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, we implemented the Adaline algorithm to perform binary classification, and we used a gradient descent optimization algorithm to learn the weight coefficients of the model. In every epoch (pass over the training set), we updated the weight vector $\mathbf{w}$ using the following update rule:
+
+\[
+\mathbf{w} := \mathbf{w} + \Delta \mathbf{w}, \quad \text{where } \Delta \mathbf{w} = - \eta \nabla J (\mathbf{w})
+\]
+
+In other words, we computed the gradient based on the whole training set and updated the weights of the model by taking a step into the opposite direction of the gradient $\nabla J(\mathbf{w})$. In order to find the optimal weights of the model, we optimized an objective function that we defined as the \textit{Sum of Squared Errors (SSE)} cost function $J(\mathbf{w})$. Furthermore, we multiplied the gradient by a factor, the learning rate $\eta$ , which we chose carefully to balance the speed of learning against the risk of overshooting the global minimum of the cost function.
+
+In gradient descent optimization, we updated all weights simultaneously after each epoch, and we de ned the partial derivative for each weight $w_j$ in the weight vector$\mathbf{w}$ as follows:
+
+\[
+\frac{\partial}{\partial w_j} J(\mathbf{w}) = \sum_i \big( y^{(i)} - a^{(i)} \big) x_{j}^{(i)}
+\]
+
+Here $y^{(i)}$ is the target class label of a particular sample $x^{(i)}$ , and $a^{(i)}$ is the \textit{activation} of the neuron, which is a linear function in the special case of Adaline. Furthermore, we defined the \textit{activation function} $\phi(\cdot)$ as follows:
+
+\[
+\phi(z) = z = a
+\]
+
+Here, the net input $z$  is a linear combination of the weights that are connecting theinput to the output layer:
+
+\[
+z = \sum_j w_j x_j = \mathbf{w}^T \mathbf{x}
+\]
+
+While we used the activation $\phi(z)$ to compute the gradient update, we implemented a \textit{threshold function} (Heaviside function) $g(\cdot)$ to squash the continuous-valued output into binary class labels for prediction:
+
+\[ \phi(z) = \begin{cases} 
+      1 & \text{ if } g(z) \ge 0 \\
+      -1 & \text{ otherwise }.
+   \end{cases}
+\]
+
+\subsection{Introducing the multi-layer neural network architecture}
+
+[...] As shown in the preceding figure, we denote the $i$th activation unit in the $l$th layer as $a_{i}^{l}$ , and the activation units $a_{0}^{1}$ and $a_{0}^{2}$ are the \textit{bias units}, respectively, which we set equal to 1. The activation of the units in the input layer is just its input plus the bias unit:
+
+\[
+\mathbf{a}^{(i)} = 
+\begin{bmatrix}
+ a_{0}^{(1)} \\
+ a_{1}^{(1)} \\
+ \vdots \\
+ a_{m}^{(1)}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+ 1 \\
+ x_{1}^{(i)} \\
+ \vdots \\
+ x_{m}^{(i)}
+\end{bmatrix}
+\]
+
+Each unit in layer $l$ is connected to all units in layer $l +1$ via a weight coefficient. For example, the connection between the $k$th unit in layer $l$ to the $j$th unit in layer$l+1$ would be written as $w^{(l)}_{j, k}$ . Please note that the superscript $i$ in $x^{(i)}_{m}$ stands for the $i$th sample, not the $i$th layer. In the following paragraphs, we will often omit the superscript $i$ for clarity.
+
+[...] To better understand how this works, remember the one-hot representation of categorical variables that we introduced in \textit{Chapter 4, Building Good Training Sets -- Data Preprocessing}. For example, we would encode the three class labels in the familiar Iris dataset (\textit{0=Setosa, 1=Versicolor, 2=Virginica})as follows:
+
+\[
+0 =
+\begin{bmatrix}
+1 \\
+0 \\
+0
+\end{bmatrix},
+1 =
+\begin{bmatrix}
+0 \\
+1 \\
+0
+\end{bmatrix},
+2 =
+\begin{bmatrix}
+0 \\
+0 \\
+1
+\end{bmatrix}.
+\]
+
+This one-hot vector representation allows us to tackle classification tasks with an arbitrary number of unique class labels present in the training set.
+
+
+[...] If you are new to neural network representations, the terminology around the indices (subscripts and superscripts) may look a little bit confusing at  first. You may wonder why we wrote $w^{(l)}_{j, k}$ and not $w^{(l)}_{k, j}$ to refer to the weight coefficient that connects the $k$th unit in layer $l$ to the $j$th unit in layer $l +1$. What may seem a little bit quirky at first will make much more sense in later sections when we vectorize the neural network representation. For example, we will summarize the weights that connect the input and hidden layer by a matrix $\mathbf{W}^{(1)} \in \mathbb{R}^{h \times [m+1]}$ , where $h$ is the number of hidden units and $m + 1$ is the number of input units plus bias unit. 
+
+\subsection{Activating a neural network via forward propagation}
+
+[...] Now, let's walk through the individual steps of forward propagation to generatean output from the patterns in the training data. Since each unit in the hidden layeris connected to all units in the input layers, we first calculate the activation $a_{1}^{(2)}$ as follows:
+
+\[
+z_{1}^{(2)} = a_{0}^{(1)} w_{1,0}^{(1)} + a_{1}^{(1)} w_{1, 1}^{(1)} + \dots + a_{m}^{(1)} w_{l, m}^{(1)}
+\]
+
+\[
+a_{1}^{(2)} = \phi \big( z_{1}^{(2)} \big)
+\]
+
+Here, $z_{1}^{(2)}$ is the net input and $\phi(\cdot)$ is the activation function, which has to be differentiable to learn the weights that connect the neurons using a gradient-based approach. To be able to solve complex problems such as image classification, we need nonlinear activation functions in our MLP model, for example, the sigmoid (logistic) function that we discussed in previous chapters:
+
+\[
+\phi(z) = \frac{1}{1 + e^{-z}}.
+\]
+
+For purposes of computational efficiency and code readability, we will now write the activation in a more compact form using the concepts of basic linear algebra, which will allow us to vectorize our code implementation:
+
+\[
+\mathbf{z}^{(2)} = \mathbf{W}^{(1)} \mathbf{a}^{(1)}
+\]
+
+\[
+\mathbf{a}^{(2)} = \phi \big( \mathbf{z}^{(2)} \big)
+\]
+
+\textit{Note: Everywhere you read $h$ in the following paragraphs of this section, you can think of $h$ as $h+1$ to include the bias unit (and in order to get the dimensions right).}
+
+Here, $\mathbf{a}^{(1)}$ is our $[m+1] \times 1$ dimensional feature vector a sample $\mathbf{x}^{(i)}$ plus bias unit. $\mathbf{W}^{(i)}$ is an $h \times [m + 1]$-dimensional weight matrix where $h$ is the number of hidden units in our neural network. After matrix-vector multiplication, we obtain the $h \times 1$-dimensional net input vector $\mathbf{z}^{(2)}$ to calculate the activation $\mathbf{a}^{(2)}$ (where $\mathbf{a}^{(2)} \in \mathbb{R}^{h \times 1}$). Furthermore, we can generalize this computation to all $n$ samples in the training set:
+
+\[
+\mathbf{Z}^{(2)} = \mathbf{W}^{(1)} \big[ \mathbf{A}^{(1)} \big]^T
+\]
+
+Here, $\mathbf{A}^{(1)}$ is now an $n \times [m+1]$ matrix, and the matrix-matrix multiplication will result in an  $h \times n$-dimensional net input matrix $\mathbf{Z}^{(2)}$. Finally, we apply the activation function $\phi(\cdot)$ to each value in the net input matrix to get the $h \times n$ activation matrix $\mathbf{A}^{(2)}$ for the next layer (here, output layer):
+
+\[
+\mathbf{A}^{(2)} = \phi \big( \mathbf{Z}^{(2)}  \big)
+\]
+
+Similarly, we can rewrite the activation of the output layer in the vectorized form:
+
+\[
+\mathbf{Z}^{(3)} \mathbf{W}^{(2)}  \mathbf{A}^{(2)} 
+\]
+
+Here, we multiply the $t \times h$ matrix $\mathbf{W}^{(2)}$ ($t$ is the number of output units) by the $h \times n$ dimensional matrix $\mathbf{A}^{(2)}$ to obtain the $t \times n$ dimensional matrix $\mathbf{Z}^{(3)}$ (the columns in this matrix represent the outputs for each sample). Lastly, we apply the sigmoid activation function to obtain the continuous valued output of our network:
+
+\[
+\mathbf{A}^{(3)} = \phi \big( \mathbf{Z}^{(3)} \big), \; \mathbf{A}^{(3)} \in \mathbb{R}^{t \times n}.
+\]
+
+
+
+\section{Classifying handwritten digits}
+\subsection{Obtaining the MNIST dataset}
+\subsection{Implementing a multi-layer perceptron}
+
+As you may have noticed, by going over our preceding MLP implementation, we also implemented some additional features, which are summarized here:
+
+\begin{itemize}
+\item \textit{l2}: the $\lambda$ parameter for L2 regularization to decrease the degree of overfitting; equivalently, \textit{l1} is the $\lambda$ parameter for L1 regularization.
+\item \textit{epochs}: The number of passes over the training set.
+\item \textit{eta}: The learning rate $\eta$
+\item \textit{alpha}: A parameter for momentum learning to add a factor of the previous gradient to the weight update for faster learning
+\[
+\Delta \mathbf{w}_t = \eta \nabla J(\mathbf{w}_t) + \alpha \Delta \mathbf{w}_t-1,
+\]
+where $t$ is the current time step or epoch.
+\item \textit{decrease\_const}: The decrease constant $d$ for an adaptive learning rate $\eta$ that decreases over time for better convergence $\eta / 1 + t \times d .$
+\item \textit{shuffle}: Shuffling the training set prior to every epoch to prevent the algorithm from getting stuck in cycles.
+\item \textit{Minibatches}: Splitting of the training data into k mini-batches in each epoch. The gradient is computed for each mini-batch separately instead of the entire training data for faster learning.
+\end{itemize}
+
+\section{Training an artificial neural network}
+
+\subsection{Computing the logistic cost function}
+
+The logistic cost function that we implemented as the \textit{\_get\_cost} method is actually pretty simple to follow since it is the same cost function that we described in the logistic regression section in \textit{Chapter 3, A Tour of Machine Learning Classifiers Using Scikit-learn.}
+
+\[
+J(\mathbf{w}) = -\sum_{i=1}^{n} y^{(i)} \log \big( a^{(i)} \big) + \big( 1 - y^{(i)} \big) \log \big( 1 - a^{(i)}\big)
+\]
+
+Here, $a^{(i)}$ is the sigmoid activation of the $i$th unit in one of the layers which we compute in the forward propagation step:
+
+\[
+a^{(i)} = \phi \big( z^{(i)} \big).
+\]
+
+Now, let's add a regularization term, which allows us to reduce the degree of over tting. As you will recall from earlier chapters, the L2 and L1 regularization terms are de ned as follows (remember that we don't regularize the bias units):
+
+\[
+L2 = \lambda \lVert  \mathbf{w} \rVert^{2}_{2} = \lambda \sum_{j=1}^{m} w_{j}^{2} \text{ and } L1 = \lambda \lVert  \mathbf{w} \rVert_{1} = \lambda \sum_{j=1}^{m} | w_j |.
+\]
+
+[...] By adding the L2 regularization term to our logistic cost function, we obtain the following equation:
+
+\[
+J(\mathbf{w}) = - \Bigg[ \sum_{i=1}^{n} y^{(i)} \log \big( a^{(i)} \big) + \big(1 - y^{(i)} \big) \log \big(1- a^{(i)} \big) \Bigg] + \frac{\lambda}{2} \lVert  \mathbf{w} \rVert^{2}_{2}
+\]
+
+Since we implemented an MLP for multi-class classification, this returns an output vector of $t$ elements, which we need to compare with the $t \times 1$ dimensional target vector in the one-hot encoding representation. For example, the activation of the third layer and the target class (here: class 2) for a particular sample may look like this:
+
+\[
+a^{(3)} = 
+\begin{bmatrix}
+0.1 \\
+0.9 \\
+\vdots \\
+0.3
+\end{bmatrix}
+ ,\; \mathbf{y} = 
+ \begin{bmatrix}
+0 \\
+1 \\
+\vdots \\
+0
+\end{bmatrix}
+\]
+
+Thus, we need to generalize the logistic cost function to all activation units $j$ in our network. So our cost function (without the regularization term) becomes:
+
+\[
+J(\mathbf{w}) = - \sum_{i=1}^{n} \sum_{j=1}^{t} = y_{j}^{(i)} \log \big( 1 - a^{(1)}_{j}  \big)
+\]
+
+Here, the superscript $i$ is the index of a particular sample in our training set.The following generalized regularization term may look a little bit complicated at first, but here we are just calculating the sum of all weights of a layer $l$ (without the bias term) that we added to the first column:
+
+\[
+J(\mathbf{w}) = - \Bigg[ \sum_{i=1}^{n} \sum_{j=1}^{m} y_{j}^{(i)}  \log \bigg( \phi \Big( z_{j}^{(i)} \Big) \bigg) + \Big(1 - y_{j}^{(i)} \Big) \log  \bigg(1 - \phi \Big( z_{j}^{(i)} \Big)  \bigg) \Bigg] + \frac{\lambda}{2} \sum_{l=1}^{L-1} \sum_{i=1}^{u_l} \sum_{j=1}^{u_{l+1}} \Big(w_{j, i}^{(l)}\Big)^2
+\]
+
+The following expression represents the L2-penalty term:
+
+\[
+\frac{\lambda}{2} \sum_{l=1}^{L-1} \sum_{i=1}^{u_l} \sum_{j=1}^{u_{l+1}} \Big(w_{j, i}^{(l)}\Big)^2
+\]
+
+Remember that our goal is to minimize the cost function $J(\mathbf{w})$. Thus, we need to calculate the partial derivative of matrix $\mathbf{W}$ with respect to each weight for every layer in the network:
+
+\[
+\frac{\partial}{\partial w_{j, i}^{l}} J(\mathbf{W}).
+\]
+
+
+\subsection{Training neural networks via backpropagation}
+
+[...] As we recall from the beginning of this chapter, we first need to apply forward propagation in order to obtain the activation of the output layer, which we formulated as follows:
+
+\[
+\mathbf{Z}^{(2)} = \mathbf{W}^{(1)} \Big[ \mathbf{A}^{(1)}  \Big]^T  \quad \text{(net input of the hidden layer)}
+\]
+
+\[
+\mathbf{A}^{(2)} = \phi \big( \mathbf{Z}^{(2)} =  \big) \quad \text{(activation of the hidden layer)}
+\]
+
+\[
+\mathbf{Z}^{(3)} = \mathbf{W}^{(2)}  \mathbf{A}^{(2)}  \quad \text{(net input of the output layer)}
+\]
+
+\[
+\mathbf{A}^{(3)} = \phi \big( \mathbf{Z}^{(3)}  \big) \quad \text{(activation of the output layer)}
+\]
+
+[...] In backpropagation, we propagate the error from right to left. We start by calculating the error vector of the output layer:
+
+\[
+\delta^{(3)} = \mathbf{a}^{(3)} - \mathbf{y} 
+\]
+
+Here, $\mathbf{y}$ is the vector of the true class labels. Next, we calculate the error term of the hidden layer:
+
+\[
+\delta^{(2)} = \big( \mathbf{W}^{(2)}  \big)^T \delta^{(3)} \cdot \frac{\partial \phi \big( z^{(2)} \big) }{\partial z^{(2)}}
+.\]
+
+Here, $\frac{\partial \phi \big( z^{(2)} \big)}{\partial z^{(2)}}$ is simply the derivative of the sigmoid activation function, which we implemented as \textit{\_sigmoid\_gradient}:
+
+\[
+\frac{\partial \phi \big( z^{(2)} \big)}{\partial z^{(2)}} = \Big( a^{(2)} \cdot \big( 1 - a^{(2)} \big) \Big).
+\]
+
+Note that the asterisk symbol ($\cdot$) means element-wise multiplication in this context.
+
+Although, it is not important to follow the next equations, you may be curious as to how I obtained the derivative of the activation function. I summarized the derivation step by step here:
+
+\begin{equation*} 
+\begin{split}
+& \phi' (z) = \frac{\partial}{\partial z} \Big( \frac{1}{1 + e^{-z}} \Big) \\
+& = \frac{e^{-z}}{(1 + e^{-z})^2} \\
+& = \frac{1 + e^{-z}}{\big( 1 + e^{-z} \big)^2} - \Big( \frac{1}{1 + e^{-z}}  \Big)^2  \\
+& = \frac{1}{\big( 1 + e^{-z} \big)^2} - \Big( \frac{1}{1 + e^{-z}}  \Big)^2  \\
+& = \phi(z) - \big(\phi(z)\big)^2 \\
+& = \phi(z) - \big( 1 - \phi(z) \big) \\
+& = a(1 -a)
+\end{split}
+\end{equation*}
+
+To better understand how we compute the $\delta^P{(3)}$ term, let's walk through it in more detail. In the preceding equation, we multiplied the transpose $(\mathbf{W}^{(2)})^T$ of the $t \times h$ dimensional matrix $\mathbf{W}^{(2)}$; $t$ is the number of output class labels and $h$ is the number of hidden units. Now,  $(\mathbf{W}^{(2)})^T$ becomes an $h \times t$ dimensional matrix with $\delta^{(3)}$, which is a $t \times 1$ dimensional vector. We then performed a pair-wise multiplication between $(\mathbf{W}^{(2)})^T \delta^{(3)}$ and $\Big( a^{(2)} \cdot \big( 1 - a^{(2)} \big)  \Big)$, which is also a $t \times 1$ dimensional vector. Eventually, after obtaining the ? terms, we can now write the derivation of the cost function as follows:
+
+\[
+\frac{\partial}{\partial w_{i, j}^{l}} J(\mathbf{W}) = a_{j}^{l} \delta_{i}^{(l+1)}
+\]
+
+Next, we need to accumulate the partial derivative of every $j$th node in layer $l$ and the $i$th error of the node in layer $l +1$:
+
+\[
+\Delta^{(l)}_{i, j} := \Delta_{i, j}^{(l)} + a_{j}^{(l)} \delta_{i}^{(l+1)}
+\]
+
+Remember that we need to compute $\Delta_{i, j}^{(l)}$ for every sample in the training set. Thus, it is easier to implement it as a vectorized version like in our preceding MLP code implementation:
+
+\[
+\Delta^{(l)} := \Delta^{(l)} \delta^{(l + 1)} \big( \mathbf{A}^{(l)}  \big)^T 
+\]
+
+After we have accumulated the partial derivatives, we can add the regularization term as follows:
+
+\[
+\Delta^{(l)} := \Delta^{(l)} + \lambda^{(l)} \quad \text{(except for the bias term)}
+\]
+
+Lastly, after we have computed the gradients, we can now update the weights bytaking an opposite step towards the gradient:
+
+\[
+\mathbf{W}^{(l)} := \mathbf{W}^{(l)} - \eta\Delta^{(l)} 
+\]
+
+
+\section{Developing your intuition for backpropagation}
+\section{Debugging neural networks with gradient checking}
+
+In the previous sections, we de ned a cost function $J(\mathbf{W})$ where $\mathbf{W}$ is the matrixof the weight coefficients of an artificial network. Note that $J(\mathbf{W})$  is -- roughly speaking -- a "stacked" matrix consisting of the matrices $\mathbf{W}^{(1)}	$ and $W^{(2)}$ in a multi-layer perceptron with one hidden unit. We de ned $\mathbf{W}^{(1)}$ as the $h \times [m+1]$-dimensional matrix that connects the input layer to the hidden layer, where $h$ is the number of hidden units and $m$ is the number of features (input units). The matrix $\mathbf{W}^{(2)}$ that connects the hidden layer to the output layer has the dimensions $t \times h$, where $t$ is the number of output units. We then calculated the derivative of the cost function for a weight $w_{i, j}^{l}$ as follows:
+
+\[
+\frac{\partial}{\partial w_{i, j}^{(i)}}
+\]
+
+Remember that we are updating the weights by taking an opposite step towards the direction of the gradient. In gradient checking, we compare this analytical solution to a numerically approximated gradient:
+
+\[
+\frac{\partial}{\partial w_{i, j}^{l}} J(\mathbf{W}) \approx \frac{J\big( w_{i, j}^{(l)} + \epsilon \big) - J \big( w_{i, j}^{(l)}\big)}{\epsilon}
+\]
+
+Here, $\epsilon$ is typically a very small number, for example 1e-5 (note that 1e-5 is justa more convenient notation for 0.00001). Intuitively, we can think of this finite difference approximation as the slope of the secant line connecting the points of the cost function for the two weights w and $w + \epsilon$ (both are scalar values), as shown in the following  figure. We are omitting the superscripts and subscripts for simplicity.
+
+[...] An even better approach that yields a more accurate approximation of the gradient is to compute the symmetric (or centered) difference quotient given by the two-point formula:
+
+\[
+\frac{ J\big( w_{i, j}^{(l)} + \epsilon \big) - J\big( w_{i, j}^{(l)} - \epsilon \big)  }{2 \epsilon}
+\]
+
+Typically, the approximated difference between the numerical gradient $J'_{n}$ and analytical gradient $J'_{a}$ is then calculated as the L2 vector norm. For practical a reasons, we unroll the computed gradient matrices into  at vectors so that we can calculate the error (the difference between the gradient vectors) more conveniently:
+
+\[
+\text{error} = \lVert  J'_n - J'_a  \rVert_2
+\]
+
+One problem is that the error is not scale invariant (small errors are more significant if the weight vector norms are small, too). Thus, it is recommended to calculate a normalized difference:
+
+\[
+\text{relative error} = \frac{\lVert J'_n - J'_a \rVert_2}{\lVert J'_n \rVert_2 +  \lVert J'_a \rVert_2 }
+\]
+
+
+\section{Convergence in neural networks}
+\section{Other neural network architectures}
+\subsection{Convolutional Neural Networks}
+\subsection{Recurrent Neural Networks}
+\section{A few last words about neural network implementation}
+\section{Summary}
+
+
+
 
 \newpage
 
