@@ -1530,6 +1530,198 @@ While it is also more typical to normalize the raw term frequencies before calcu
 \subsection{Updating the movie review classifier}
 \section{Summary}
 
+
+
+%%%%%%%%%%%%%%%
+% CHAPTER 10
+%%%%%%%%%%%%%%%
+
+\chapter{Predicting Continuous Target Variables with Regression Analysis}
+
+\section{Introducing a simple linear regression model}
+
+The goal of simple (univariate) linear regression is to model the relationship between a single feature (explanatory variable x) and a continuous valued \textit{response} (target variable \textit{y}). The equation of a linear model with one explanatory variable is defined as follows:
+
+\[
+y = w_0 + w_1 + x
+\]
+
+Here, the weight $w_0$ represents the $y$ axis intercepts and $w_1$ is the coefficient of the explanatory variable.
+
+[...] The special case of one explanatory variable is also called \textit{simple linear regression}, but of course we can also generalize the linear regression model to multiple explanatory variables. Hence, this process is called \textit{multiple linear regression}:
+
+\[
+y = w_0 x_0 + w_1 x_1 + \cdots + w_m x_m = \sum_{i=0}^{m} w_i x_i = \mathbf{w}^T \mathbf{x}
+\]
+
+Here, $w_0$ is the $y$-axis intercept with $x_0$ =1.
+
+\section{Exploring the Housing Dataset}
+\subsection{Visualizing the important characteristics of a dataset}
+
+The correlation matrix is a square matrix that contains the Pearson product-moment correlation coeffcients (often abbreviated as Pearson's $r$), which measure the linear dependence between pairs of features. The correlation coefficients are bounded to the range $-1$ and $1$. Two features have a perfect positive correlation if $r =1$, no correlation if $r = 0$, and a perfect negative correlation if $r = ?1$, respectively. As mentioned previously, Pearson's correlation coefficient can simply be calculated as the covariance between two features $x$ and $y$ (numerator) divided by the product of their standard deviations (denominator):
+
+\[
+r = \frac{\sum_{i=1}^{n} \Big[ \big( x^{(i)} - \mu_x \big) \big( y^{(i)} - \mu_y  \big) \Big]  }{ \sqrt{\sum_{i=1}^{n} \big( x^{(i)} - \mu_x  \big)^2}  \sqrt{\sum_{i=1}^{n} \big( y^{(i)} - \mu_y  \big)^2}} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
+\]
+
+Here, $\mu$ denotes the sample mean of the corresponding feature, $\sigma_{xy}$ is the covariance between the features $x$ and $y$, and $\sigma_x$ and $\sigma_y$ are the features'standard deviations, respectively.
+
+We can show that the covariance between standardized features is in fact equal to their linear correlation coefficient. Let's first standardize the features $x$ and $y$, to obtain their $z$-scores which we will denote as $x'$ and $y'$ , respectively:
+
+\[
+x' = \frac{x-\mu_x}{\sigma_x}, \; y' = \frac{y - \mu_y}{\sigma_y}
+\]
+
+Remember that we calculate the (population) covariance between two features as follows:
+
+\[
+\sigma_xy = \frac{1}{n} \sum_{i}^{n} \big( x^{(i)} - \mu_x \big) \big(  y^{(i)} - \mu_y \big)
+\]
+
+Since standardization centers a feature variable at mean 0, we can now calculate the covariance between the scaled features as follows:
+
+\[
+\sigma'_{xy} = \frac{1}{n} \sum_{i}^{n} (x' - 0)(y' - 0)
+\]
+
+Through resubstitution, we get the following result:
+
+\[
+\frac{1}{n} \sum_{i}^{n} \Big( \frac{x - \mu_x}{\sigma_x}  \Big) \Big( \frac{y - \mu_y}{\sigma_y} \Big)
+\]
+
+\[
+= \frac{1}{n \cdot \sigma_x \sigma_y} \sum^{n}_{i} \sum_{i}^{n} \big(x^{(i)} - \mu_x \big) \big(y^{(i)} - \mu_y \big)
+\]
+ 
+We can simplify it as follows:
+
+\[
+\sigma'_{xy} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
+\]
+
+\section{Implementing an ordinary least squares linear regression model}
+\subsection{Solving regression for regression parameters with gradient descent}
+
+Consider our implementation of the \textit{ADAptive LInear NEuron (Adaline)} from \textit{Chapter 2, Training Machine Learning Algorithms for Classifcation}; we remember that the artificial neuron uses a linear activation function and we de ned a cost function $J (\cdot)$, which we minimized to learn the weights via optimization algorithms, such as \textit{Gradient Descent (GD)} and \textit{Stochastic Gradient Descent (SGD)}. This cost function in Adaline is the \textit{Sum of Squared Errors (SSE)}. This is identical to the OLS cost function that we defined:
+
+\[
+J(w) = \frac{1}{2} \sum_{i=1}^{n} \big( y^{(i)} -  \hat{y}^{(i)} \big)^2
+\]
+
+Here, $\hat{y}$ is the predicted value $\hat{y} = \mathbf{w}^T\mathbf{x}$  (note that the term $1/2$ is just used for convenience to derive the update rule of GD). Essentially, OLS linear regression can be understood as Adaline without the unit step function so that we obtain continuous target values instead of the class labels $-1$ and $1$.
+
+[...] As an alternative to using machine learning libraries, there is alsoa closed-form solution for solving OLS involving a system of linear equations that can be found in most introductory statistics textbooks:
+
+\[
+\mathbf{w} = (\mathbf{X}^T \mathbf{X})^{(-1)} \mathbf{X}^T \mathbf{y}
+\]
+
+\subsection{Estimating the coefficient of a regression model via scikit-learn}
+\section{Fitting a robust regression model using RANSAC}
+\section{Evaluating the performance of linear regression models}
+
+Another useful quantitative measure of a model's performance is the so-called \textit{Mean Squared Error (MSE)}, which is simply the average value of the SSE cost function that we minimize to  t the linear regression model. The MSE is useful to for comparing different regression models or for tuning their parameters via a grid search and cross-validation:
+
+\[
+MSE = \frac{1}{n} \sum_{i=1}^{n} \big( y^{(i)} - \hat{y}^{(i)}  \big)^2
+\]
+
+[...] Sometimes it may be more useful to report the coef cient of determination ($R^2$), which can be understood as a standardized version of the MSE, for better interpretability of the model performance. In other words, $R^2$ is the fraction of response variance that is captured by the model. The $R^2$ value is defined as follows:
+
+\[
+R^2 = 1 - \frac{SSE}{SST}
+\]
+
+Here, SSE is the sum of squared errors and SST is the total sum of squares $SST = \sum^{n}_{i=1} \big( y^{(i)} - \mu_y \big)^2$, or in other words, it is simply the variance of the response. Let's quickly show that $R^2$ is indeed just the rescaled version of the MSE:
+
+\[
+R^2 = 1 - \frac{SSE}{SST}
+\]
+
+\[
+= 1 - \frac{\frac{1}{n} \sum^{n}_{i=1} \big( y^{(i)} - \hat{y}^{(i)}  \big)^2 }{\frac{1}{n} \sum_{i=1}^{n} \big( y^{(i)} - \mu_y \big)^2 }
+\] 
+\[
+= 1 - \frac{MSE}{Var(y)}
+\]
+
+For the training dataset, $R^2$ is bounded between 0 and 1, but it can become negative for the test set. If $R^2$ =1, the model  fits the data perfectly with acorresponding $MSE = 0$.
+
+\section{Using regularized methods for regression}
+
+The most popular approaches to regularized linear regression are the so-called \textit{Ridge Regression}, \textit{Least Absolute Shrinkage and Selection Operator (LASSO)}, and the \textit{Elastic Net} method.
+
+Ridge regression is an L2 penalized model where we simply add the squared sum of the weights to our least-squares cost function:
+
+\[
+J(\mathbf{w})_{ridge} = \sum^{n}_{i=1} \big( y^{(i)} - \hat{y}^{(i)} \big)^2 + \lambda \lVert \mathbf{w}  \rVert^{2}_{2}
+\]
+
+Here:
+
+\[
+\text{L2}: \quad \lambda \lVert \mathbf{w}  \rVert^{2}_{2} = \lambda \sum^{m}_{j=1} w_{j}^{2}
+\]
+
+By increasing the value of the hyperparameter $\lambda$ , we increase the regularization strength and shrink the weights of our model. Please note that we don't regularize the intercept term $w_0$.
+An alternative approach that can lead to sparse models is the LASSO. Depending on the regularization strength, certain weights can become zero, which makes the LASSO also useful as a supervised feature selection technique:
+
+\[
+J(\mathbf{w})_{LASSO} = \sum^{n}_{i=1} \big( y^{(i)} - \hat{y}^{(i)} \big)^2 + \lambda \lVert w \rVert_1
+\]
+
+Here:
+
+\[
+L1: \quad \lambda \lVert \mathbf{w} \rVert_1  = \lambda \sum^{m}_{j=1} | w_j |
+\]
+
+However, a limitation of the LASSO is that it selects at most $n$ variables if $m > n$. A compromise between Ridge regression and the LASSO is the Elastic Net, which has a L1 penalty to generate sparsity and a L2 penalty to overcome some of the limitations of the LASSO, such as the number of selected variables.
+
+\[
+J(\mathbf{w})_{ElasticNet} = \sum_{i=1}^{n} \big( y^{(i)} - \hat{y}^{(i)}  \big)^2 + \lambda_1 \sum^{m}_{j=1} w_{j}^2+ \lambda_2 \sum^{m}_{j=1} |w_j|
+\]
+
+\section{Turning a linear regression model into a curve - polynomial regression}
+
+In the previous sections, we assumed a linear relationship between explanatory and response variables. One way to account for the violation of linearity assumption is to use a polynomial regression model by adding polynomial terms:
+
+\[
+y = w_0 + w_1 x + w_2 x^2 x^2 + \dots + w_d x^d,
+\]
+
+where $d$ denotes the degree of the polynomial.
+
+\subsection{Modeling nonlinear relationships in the Housing Dataset}
+\subsection{Dealing with nonlinear relationships using random forests}
+\subsubsection{Decision tree regression}
+
+When we used decision trees for classi cation, we de ned entropy as a measure of impurity to determine which feature split maximizes the \textit{Information Gain (IG)}, which can be de ned as follows for a binary split:
+
+\[
+IG(D_p, x_i) = I(D_p) - \frac{N_{left}}{N_{p}} I (D_{left}) - \frac{N_{right}}{N_p} I (D_{right})
+\]
+
+To use a decision tree for regression, we will replace entropy as the impurity measure of a node $t$ by the MSE:
+
+\[
+I(t) - MSE(t) = \frac{1}{N_t} \sum_{i \in D_t} \big( y^{(i)} - \hat{y}_t  \big)^2
+\]
+
+Here, $N_t$ is the number of training samples at node $t$, $D_t$ is the training subset at node $t$, $y^{(i)}$ is the true target value, and $\hat{y}^{(i)}$ is the predicted target value (sample mean):
+
+\[
+\hat{y}_t = \frac{1}{N} \sum_{i \in D_t} y^{(i)}
+\]
+
+In the context of decision tree regression, the MSE is often also referred to as within-node variance, which is why the splitting criterion is also better knownas \textit{variance reduction}. 
+
+\subsubsection{Random forest regression}
+\section{Summary}
+
+
 \newpage
 
 ... to be continued ... 
