@@ -1722,6 +1722,147 @@ In the context of decision tree regression, the MSE is often also referred to as
 \section{Summary}
 
 
+
+%%%%%%%%%%%%%%%
+% CHAPTER 11
+%%%%%%%%%%%%%%%
+
+\chapter{Working with Unlabeled Data -- Clustering Analysis}
+
+
+\section{Grouping objects by similarity using k-means}
+
+Thus, our goal is to group the samples based on their feature similarities, which we can be achieved using the k-means algorithm that can be summarized by the following four steps:
+
+\begin{enumerate}
+\item Randomly pick $k$ centroids from the sample points as initial cluster centers.
+\item Assign each sample to the nearest centroid $\mu^{(j)}, \quad j \in {1, ..., k}.$
+\item Move the centroids to the center of the samples that were assigned to it.
+\item Repeat steps 2 and 3 until the cluster assignments do not change or a user-de ned tolerance or a maximum number of iterations is reached.
+\end{enumerate}
+
+Now the next question is \textit{how do we measure similarity between objects?} We can de ne similarity as the opposite of distance, and a commonly used distance for clustering samples with continuous features is the \textit{squared Euclidean distance} between two points $\mathbf{x}$ and $\mathbf{y}$ in $m$-dimensional space:
+
+\[
+d(\mathbf{x}, \mathbf{y})^2 = \sum_{j=1}^{m} \big(x_j - y_j \big)^2 = \lVert \mathbf{x} - \mathbf{y} \rVert^{2}_{2}.
+\]
+
+Note that, in the preceding equation, the index $j$ refers to the $j$th dimension(feature column) of the sample points x and y. In the rest of this section, we will use the superscripts $i$ and $j$ to refer to the sample index and cluster index, respectively.
+
+Based on this Euclidean distance metric, we can describe the k-means algorithmas a simple optimization problem, an iterative approach for minimizing the \textit{within-cluster sum of squared errors (SSE)}, which is sometimes also called \textit{cluster inertia}:
+
+\[
+SSE = \sum_{i=1}^{n} \sum^{k}_{j=1} w^{(i, j)} \big \lVert \mathbf{x}^{(i)} - \mu^{(j)} \big \rVert^{2}_{2}
+\]
+
+Here, $\mu^{(j)}$ is the representative point (centroid) for cluster $j$, and $w^{(i, j)} = 1$ if the sample $\mathbf{x}^{(i)}$ is in cluster $j$; $w^{(i, j)}=0$ otherwise.
+
+\subsection{K-means++}
+
+[...] The initialization in k-means++ can be summarized as follows:
+\begin{enumerate}
+\item Initialize an empty set $M$ to store the $k$ centroids being selected.
+\item Randomly choose the first centroid $\mu^{(j)}$ from the input samples and assign it to $M$
+\item For each sample $\mathbf{x}^{(i)}$ that is not in $M$, find the minimum distance $d \big( x^{(i)}, M \big)^2$ to any of the centroids in $M$.
+\item To randomly select the next centroid $\mu^{(p)}$, use a weighted probability distribution equal to $\frac{d(\mu^{(p)}, M)^2 }{\sum_i d(x^{(i)}M)^2}$
+\item Repeat steps 2 and 3 until $k$ centroids are chosen.
+\item Proceed with the classic \textit{k}-means algorithm.
+\end{enumerate}
+
+\subsection{Hard versus soft clustering}
+
+The $fuzzy c-means (FCM)$ procedure is very similar to k-means. However, we replace the hard cluster assignment by probabilities for each point belonging to each cluster. In $k$-means, we could express the cluster membership of a sample $x$ by a sparse vector of binary values:
+
+\[
+\begin{bmatrix}
+\mathbf{\mu}^{(1)} \rightarrow 0 \\
+\mathbf{\mu}^{(2)} \rightarrow 1 \\
+\mathbf{\mu}^{(3)} \rightarrow 0 
+\end{bmatrix}
+\]
+
+Here, the index position with value 1 indicates the cluster centroid $\mathbf{\mu}^{(j)}$ the sample is assigned to (assuming $k=3, \; j \in \{ 1, 2, 3 \}$). In contrast, a membership vector in FCM could be represented as follows:
+
+\[
+\begin{bmatrix}
+\mathbf{\mu}^{(1)} \rightarrow 0.1 \\
+\mathbf{\mu}^{(2)} \rightarrow 0.85 \\
+\mathbf{\mu}^{(3)} \rightarrow 0.05 
+\end{bmatrix}
+\]
+
+Here, each value falls in the range $[0, 1]$ and represents a probability of membership to the respective cluster centroid. The sum of the memberships for a given sample is equal to 1. Similarly to the k-means algorithm, we can summarize the FCM algorithm in four key steps:
+
+\begin{enumerate}
+\item Specify the number of $k$ centroids and randomly assign the cluster memberships for each point.
+\item Compute the cluster centroids $\mathbf{\mu^{(j)}}, j \in \{1, \dots, k \}$.
+\item Update the cluster memberships for each point.
+\item Repeat steps 2 and 3 until the membership coefficients do not change or a user-de ned tolerance or a maximum number of iterations is reached.
+\end{enumerate}
+
+The objective function of FCM -- we abbreviate it by $J_m$ -- looks very similar to the within cluster sum-squared-error that we minimize in $k$-means:
+
+\[
+J_m = \sum_{i=1}^{n} \sum_{j=1}^{k} w^{m(i, j)} \big \lVert  \mathbf{x}^{(i)} - \mathbf{\mu}^{(j)} \big \rVert^{2}_{2} \; m \in [1, \infty)
+\]
+
+However, note that the membership indicator $w^{(i, j)}$ is not a binary value as in $k$-means $\big( w^{(i, j)} \in \{0, 1\} \big)$ but a real value that denotes the cluster membership probability $\big(  w^{(i, j)} \in [0, 1] \big).$ You also may have noticed that we added an additional exponent to $w^{(i, j)}$; the exponent $m$, any number greater or equal to 1 (typically $m=2$), is the so-called \textit{fuzziness coefficient} (or simply \textit{fuzzifier}) that controls the degree of \textit{fuzziness}. The larger the value of $m$, the smaller the cluster membership $w^{(i, j)}$ becomes, which leads to fuzzier clusters. The cluster membership probability itself is calculated as follows:
+
+\[
+w^{(i, j)} = \Bigg[ \sum^{k}_{p=1} \Bigg(  \frac{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(j)}  \rVert_2}{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(p)} \rVert_2}   \Bigg)^{\frac{2}{m-1}} \Bigg]^{-1}
+\]
+
+For example, if we chose three cluster centers as in the previous $k$-means example, we could calculate the membership of the $\mathbf{x}^{(i)}$ sample belonging to its own cluster:
+
+\[
+w^{(i, j)} = \Bigg[ \sum^{k}_{p=1} \Bigg(  \frac{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(j)}  \rVert_2}{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(1)} \rVert_2}   \Bigg)^{\frac{2}{m-1}} + \sum^{k}_{p=1} \Bigg(  \frac{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(j)}  \rVert_2}{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(2)} \rVert_2}   \Bigg)^{\frac{2}{m-1}} + \sum^{k}_{p=1} \Bigg(  \frac{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(j)}  \rVert_2}{\lVert \mathbf{x}^{(i)} - \mathbf{\mu}^{(3)} \rVert_2}   \Bigg)^{\frac{2}{m-1}} \Bigg]^{-1}
+\]
+
+The center $\mu^{(j)}$ of a cluster itself is calculated as the mean of all samples in the cluster weighted by the membership degree of belonging to its own cluster:
+
+\[
+\mathbf{\mu}^{(j)} = \frac{\sum_{i=1}^{n} w^{m(i, j)} \mathbf{x}^{(i)}}{\sum_{i=1}^{n} w^{m(i, j)}}
+\]
+
+\subsection{Using the elbow method to find the optimal number of clusters}
+\subsection{Quantifying the quality of clustering via silhouette plots}
+
+To calculate the \textit{silhouette coefficient} of a single sample in our dataset, we can apply the following three steps:
+
+\begin{enumerate}
+\item Calculate the cluster cohesion $a^{(i)}$ as the average distance between a sample $\mathbf{x}^{(i)}$ and all other points in the same cluster.
+\item Calculate the cluster separation $b^{(i)}$ from the next closest cluster as the average distance between the sample $\mathbf{x}^{(i)}$ and all samples in the nearest cluster.
+\item Calculate the silhouette $s^{(i)}$ as the difference between cluster cohesion and separation divided by the greater of the two, as shown here:
+\[
+s^{(i)} = \frac{b^{(i)} - a^{(i)}}{\max \{ b^{(i)}, a^{(i)}  \}}.
+\]
+\end{enumerate}
+
+The silhouette coefficient is bounded in the range $-1$ to $1$. Based on the preceding formula, we can see that the silhouette coefficient is 0 if the cluster separationand cohesion are equal $(b^{(i)} = a^{(i)})$. Furthermore, we get close to an ideal silhouette coefficient of $1$ if $b^{(i)} >> a^{(i)}$, since $b^{(i)}$ quantifies how dissimilar a sample is to other clusters, and $a^{(i)}$ tells us how similar it is to the other samples in its own cluster, respectively.
+
+\section{Organizing clusters as a hierarchical tree}
+\subsection{Performing hierarchical clustering on a distance matrix}
+\subsection{Attaching dendrograms to a heat map}
+\subsection{Applying agglomerative clustering via scikit-learn}
+\section{Locating regions of high density via DBSCAN}
+
+[...] In \textit{Density-based Spatial Clustering of Applications with Noise} (DBSCAN), a special label is assigned to each sample (point) using the following criteria:
+
+\begin{itemize}
+\item A point is considered as \textit{core point} if at least a specified number (\textit{MinPts}) of neighboring points fall within the specified radius $\epsilon$.
+\item A \textit{border point} is a point that has fewer neighbors than MinPts within $\epsilon$, but lies within the $\epsilon$ radius of a core point.
+\item All other points that are neither core nor border points are considered as \textit{noise points}.
+\end{itemize}
+
+After labeling the points as core, border, or noise points, the DBSCAN algorithm can be summarized in two simple steps:
+
+\begin{enumerate}
+\item Form a separate cluster for each core point or a connected group of core points (core points are connected if they are no farther away than $\epsilon$).
+\item Assign each border point to the cluster of its corresponding core poin.
+\end{enumerate}
+
+\section{Summary}
+
 \newpage
 
 ... to be continued ... 
