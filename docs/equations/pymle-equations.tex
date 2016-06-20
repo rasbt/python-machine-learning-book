@@ -44,7 +44,7 @@
 \maketitle
 
 
-
+\tableofcontents
 
 
 
@@ -270,7 +270,7 @@ simple example, where:
 y^{(i)} = +1, \quad \hat{y}^{(i)} = -1, \quad \eta = 1
  \]
 
-Let's assume that $x_{j}^{(i)}=0.5$ and we misclassify this sample as $-1$. In this case, we would increase the corresponding weight by $1$ so that the activation $x_{j}^{i} \times w_{j}^{(i)}$ will be more positive the next time we encounter this sample and thus will be more likely to be above the threshold of the unit step function to classify the sample as  $+1$:
+Let's assume that $x_{j}^{(i)}=0.5$ and we misclassify this sample as $-1$. In this case, we would increase the corresponding weight by $1$ so that the net input $x_{j}^{i} \times w_{j}^{(i)}$ will be more positive the next time we encounter this sample and thus will be more likely to be above the threshold of the unit step function to classify the sample as  $+1$:
 
 \[
 \Delta w_{j}^{(i)} = (1--1)0.5 = (2)0.5 = 1
@@ -739,7 +739,7 @@ I_G(t) = \sum_{i=1}^{c} p(i | t) (1 - p (i | t)) = 1 - \sum_{i=1}^{c} p(i|t)^2
 Similar to entropy, the Gini impurity is maximal if the classes are perfectly mixed, for example, in a binary class setting ($c = 2 $):
 
 \[
-1 - \sum_{i=1}^{c} 0.5^2 = 0.5.
+I_G(t) = 1 - \sum_{i=1}^{c} 0.5^2 = 0.5.
 \]
 
 ...
@@ -747,7 +747,7 @@ Similar to entropy, the Gini impurity is maximal if the classes are perfectly mi
 Another impurity measure is the classification error:
 
 \[
-I_E = 1 - max \{ p(i|t) \}
+I_E(t) = 1 - max \{ p(i|t) \}
 \]
 
 \subsection{Maximizing information gain -- getting the most bang for the buck}
@@ -866,7 +866,9 @@ When we use PCA for dimensionality reduction, we construct a $d \times k$-dimens
 \mathbf{z} = [z_1, z_2, \dots, z_k], \quad \mathbf{z} \in \mathbb{R}^4
 \]
 
-As a result of transforming the original $d$-dimensional data onto this new$k$-dimensional subspace (typically $k << d$ ), the  rst principal component will havethe largest possible variance, and all consequent principal components will have the largest possible variance given that they are uncorrelated (orthogonal) to the other principal components. Note that the PCA directions are highly sensitive to data scaling, and we need to standardize the features prior to PCA if the features were measured on different scales and we want to assign equal importance to all features.
+As a result of transforming the original $d$-dimensional data onto this new
+$k$-dimensional subspace (typically $k << d$ ), the  rst principal component will have
+the largest possible variance, and all consequent principal components will have the largest possible variance given that they are uncorrelated (orthogonal) to the other principal components. Note that the PCA directions are highly sensitive to data scaling, and we need to standardize the features prior to PCA if the features were measured on different scales and we want to assign equal importance to all features.
 
 Before looking at the PCA algorithm for dimensionality reduction in more detail, let's summarize the approach in a few simple steps:
 
@@ -952,7 +954,7 @@ This results in three mean vectors:
 \mu_{i, \text{alcohol}} \\
 \mu_{i, \text{malic-acid}} \\
 \mu_{i, \text{proline}} 
- \end{bmatrix}, i  \in   \{ 1, 2, 3 \}
+ \end{bmatrix}^T, i  \in   \{ 1, 2, 3 \}
 \]
 
 Using the mean vectors, we can now compute the within-class scatter matrix $\mathbf{S}_W$
@@ -961,7 +963,8 @@ Using the mean vectors, we can now compute the within-class scatter matrix $\mat
 \mathbf{S}_W = \sum^{c}_{i=1} \mathbf{S}_i
 \]
 
-This is calculated by summing up the individual scatter matrices Si of eachindividual class $i$:
+This is calculated by summing up the individual scatter matrices Si of each
+individual class $i$:
 
 \[
 \mathbf{S}_i = \sum_{x \in D_i}^{c} (\mathbf{x} - \mathbf{m}_i) (\mathbf{x} - \mathbf{m}_i)^T
@@ -1030,13 +1033,15 @@ Note that the preceding equation refers to the covariance between two features; 
 \Sigma = \frac{1}{n} \sum_{i=1}^{n} \mathbf{x}^{(i)} \mathbf{x}^{(i)\;T}
 \]
  
- Bernhard Scholkopf generalized this approach (B. Scholkopf, A. Smola, andK.-R. Muller. \textit{Kernel Principal Component Analysis}. pages 583-588, 1997) so that we can replace the dot products between samples in the original feature space by the nonlinear feature combinations via $\phi$:
+ Bernhard Scholkopf generalized this approach (B. Scholkopf, A. Smola, and
+K.-R. Muller. \textit{Kernel Principal Component Analysis}. pages 583-588, 1997) so that we can replace the dot products between samples in the original feature space by the nonlinear feature combinations via $\phi$:
  
  \[
  \Sigma = \frac{1}{n} \sum_{i=1}^{n} \phi \big( \mathbf{x}^{(i)} \big) \phi \big( \mathbf{x}^{(i)} \big)^T
  \]
  
- To obtain the eigenvectors?the principal components?from this covariance matrix,we have to solve the following equation:
+ To obtain the eigenvectors?the principal components?from this covariance matrix,
+we have to solve the following equation:
  
  
 \begin{equation*} 
@@ -1098,7 +1103,8 @@ As we recall from the SVM section in \textit{Chapter 3, A Tour of Machine Learni
 \[
 \kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) =  \big( \mathbf{x}^{(i)\;T} \mathbf{x}^{(j)} + \theta \big)^p
  \]
- Here, $\theta$ is the threshold and $p$ is the power that has to be specified by the user.\item the hyperbolic tangent (sigmoid) kernel:
+ Here, $\theta$ is the threshold and $p$ is the power that has to be specified by the user.
+\item the hyperbolic tangent (sigmoid) kernel:
 \[
 \kappa \big( \mathbf{x}^{(i)}, \mathbf{x}^{(j)} \big) = \tanh \big( \eta \mathbf{x}^{(i)\; T} \mathbf{x}^{(j)} + \theta  \big)
 \]
@@ -1217,7 +1223,8 @@ The prediction accuracy can then be calculated directly from the error:
 \[
 ACC = \frac{TP + TN}{FP + FN + TP + TN} = 1 - ERR
 \]
-The true \textit{positive rate} (TPR) and \textit{false positive rate} (FPR) are performance metrics that are especially useful for imbalanced class problems:
+
+The true \textit{positive rate} (TPR) and \textit{false positive rate} (FPR) are performance metrics that are especially useful for imbalanced class problems:
 
 \[
 FPR = \frac{FP}{N} = \frac{FP}{FP + TN}
@@ -1286,7 +1293,8 @@ C(\mathbf{x}) = sign \Bigg[ \sum_{j}^{m} C_j (\mathbf{x} \Bigg] = \begin{cases}
    \end{cases}
 \]
 
-To illustrate why ensemble methods can work better than individual classifiers alone, let's apply the simple concepts of combinatorics. For the following example, we make the assumption that all $n$ base classifiers for a binary classification task have an equal error rate $\epsilon$. Furthermore, we assume that the classifiers are independent and the error rates are not correlated. Under those assumptions, we can simply express the error probability of an ensemble of base classifiers as a probabilitymass function of a binomial distribution:
+To illustrate why ensemble methods can work better than individual classifiers alone, let's apply the simple concepts of combinatorics. For the following example, we make the assumption that all $n$ base classifiers for a binary classification task have an equal error rate $\epsilon$. Furthermore, we assume that the classifiers are independent and the error rates are not correlated. Under those assumptions, we can simply express the error probability of an ensemble of base classifiers as a probability
+mass function of a binomial distribution:
 
 \[
 P(y \ge k) = \sum_{k}^{n} \binom{n}{k} \epsilon^k (1 - \epsilon)^{n-k} = \epsilon_{\text{ensemble}}
@@ -1295,7 +1303,7 @@ P(y \ge k) = \sum_{k}^{n} \binom{n}{k} \epsilon^k (1 - \epsilon)^{n-k} = \epsilo
 Here, $\binom{n}{k}$ is the binomial coefficient \textit{n choose k}. In other words, we compute the probability that the prediction of the ensemble is wrong. Now let's take a look at a more concrete example of 11 base classifiers ($n=11$) with an error rate of 0.25 ($\epsilon = 0.25$):
 
 \[
-P(y \ge k) = \sum_{k=6}^{11} \binom{11}{k} 0.25^k (1 - \epsilon)^{11-k} = 0.034
+P(y \ge k) = \sum_{k=6}^{11} \binom{11}{k} 0.25^k (1 - 0.25)^{11-k} = 0.034
 \]
 
 \section{Implementing a simple majority vote classifier}
@@ -1382,7 +1390,7 @@ p(i_1 | \mathbf{x}) = 0.2 \times 0.1 + 0.2 \times 0.2 + 0.6 \times 0.06 = 0.42
 \begin{enumerate}
 \item Train a weighted weak learner: $C_j = train(\mathbf{X, y, w})$.
 \item Predict class labels: $\hat{y} = predict(C_j, \mathbf{X})$.
-\item Compute the weighted error rate: $\epsilon = \mathbf{w} \cdot (\mathbf{\hat{y}} == \mathbf{y})$.
+\item Compute the weighted error rate: $\epsilon = \mathbf{w} \cdot (\mathbf{\hat{y}} \neq \mathbf{y})$.
 \item Compute the coefficient $\alpha_j$: $\alpha_j=0.5 \log \frac{1 - \epsilon}{\epsilon}$.
 \item Update the weights: $\mathbf{w} := \mathbf{w} \times \exp \big( -\alpha_j \times \mathbf{\hat{y}} \times \mathbf{y} \big)$.
 \item Normalize weights to sum to 1: $\mathbf{w}:= \mathbf{w} / \sum_i w_i$.
@@ -1439,7 +1447,8 @@ Here, $\mathbf{\hat{y}} \times \mathbf{y}$ is an element-wise multiplication bet
 0.1 \times \exp (-0.424 \times 1 \times 1) \approx 0.065
 \]
 
-Similarly, we will increase the $i$th weight if $\hat{y}_i$ predicted the label incorrectly like this:
+Similarly, we will increase the $i$th weight if $\hat{y}_i$ predicted the label incorrectly
+ like this:
 
 \[
 0.1 \times \exp (-0.424 \times 1 \times (-1)) \approx 0.153
@@ -1481,7 +1490,8 @@ The \textit{tf-idf} can be de ned as the product of the \textit{term frequency} 
 \text{tf-idf}(t, d) = \text{tf} (t, d) \times \text{idf}(t, d)
 \]
 
-Here the $\text{tf}(t, d)$ is the term frequency that we introduced in the previous section,and the inverse document frequency $\text{idf}(t, d)$ can be calculated as:
+Here the $\text{tf}(t, d)$ is the term frequency that we introduced in the previous section,
+and the inverse document frequency $\text{idf}(t, d)$ can be calculated as:
 
 \[
 \text{idf}(t, d) = \log \frac{n_d}{1 + \text{df}(d, t)},
@@ -1565,7 +1575,8 @@ The correlation matrix is a square matrix that contains the Pearson product-mome
 r = \frac{\sum_{i=1}^{n} \Big[ \big( x^{(i)} - \mu_x \big) \big( y^{(i)} - \mu_y  \big) \Big]  }{ \sqrt{\sum_{i=1}^{n} \big( x^{(i)} - \mu_x  \big)^2}  \sqrt{\sum_{i=1}^{n} \big( y^{(i)} - \mu_y  \big)^2}} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
 \]
 
-Here, $\mu$ denotes the sample mean of the corresponding feature, $\sigma_{xy}$ is the covariance between the features $x$ and $y$, and $\sigma_x$ and $\sigma_y$ are the features'standard deviations, respectively.
+Here, $\mu$ denotes the sample mean of the corresponding feature, $\sigma_{xy}$ is the covariance between the features $x$ and $y$, and $\sigma_x$ and $\sigma_y$ are the features'
+standard deviations, respectively.
 
 We can show that the covariance between standardized features is in fact equal to their linear correlation coefficient. Let's first standardize the features $x$ and $y$, to obtain their $z$-scores which we will denote as $x'$ and $y'$ , respectively:
 
@@ -1612,7 +1623,8 @@ J(w) = \frac{1}{2} \sum_{i=1}^{n} \big( y^{(i)} -  \hat{y}^{(i)} \big)^2
 
 Here, $\hat{y}$ is the predicted value $\hat{y} = \mathbf{w}^T\mathbf{x}$  (note that the term $1/2$ is just used for convenience to derive the update rule of GD). Essentially, OLS linear regression can be understood as Adaline without the unit step function so that we obtain continuous target values instead of the class labels $-1$ and $1$.
 
-[...] As an alternative to using machine learning libraries, there is alsoa closed-form solution for solving OLS involving a system of linear equations that can be found in most introductory statistics textbooks:
+[...] As an alternative to using machine learning libraries, there is also
+a closed-form solution for solving OLS involving a system of linear equations that can be found in most introductory statistics textbooks:
 
 \[
 \mathbf{w} = (\mathbf{X}^T \mathbf{X})^{(-1)} \mathbf{X}^T \mathbf{y}
@@ -1642,12 +1654,14 @@ R^2 = 1 - \frac{SSE}{SST}
 
 \[
 = 1 - \frac{\frac{1}{n} \sum^{n}_{i=1} \big( y^{(i)} - \hat{y}^{(i)}  \big)^2 }{\frac{1}{n} \sum_{i=1}^{n} \big( y^{(i)} - \mu_y \big)^2 }
-\] 
+\]
+ 
 \[
 = 1 - \frac{MSE}{Var(y)}
 \]
 
-For the training dataset, $R^2$ is bounded between 0 and 1, but it can become negative for the test set. If $R^2$ =1, the model  fits the data perfectly with acorresponding $MSE = 0$.
+For the training dataset, $R^2$ is bounded between 0 and 1, but it can become negative for the test set. If $R^2$ =1, the model  fits the data perfectly with a
+corresponding $MSE = 0$.
 
 \section{Using regularized methods for regression}
 
@@ -1666,7 +1680,8 @@ Here:
 \]
 
 By increasing the value of the hyperparameter $\lambda$ , we increase the regularization strength and shrink the weights of our model. Please note that we don't regularize the intercept term $w_0$.
-An alternative approach that can lead to sparse models is the LASSO. Depending on the regularization strength, certain weights can become zero, which makes the LASSO also useful as a supervised feature selection technique:
+
+An alternative approach that can lead to sparse models is the LASSO. Depending on the regularization strength, certain weights can become zero, which makes the LASSO also useful as a supervised feature selection technique:
 
 \[
 J(\mathbf{w})_{LASSO} = \sum^{n}_{i=1} \big( y^{(i)} - \hat{y}^{(i)} \big)^2 + \lambda \lVert w \rVert_1
@@ -1716,7 +1731,8 @@ Here, $N_t$ is the number of training samples at node $t$, $D_t$ is the training
 \hat{y}_t = \frac{1}{N} \sum_{i \in D_t} y^{(i)}
 \]
 
-In the context of decision tree regression, the MSE is often also referred to as within-node variance, which is why the splitting criterion is also better knownas \textit{variance reduction}. 
+In the context of decision tree regression, the MSE is often also referred to as within-node variance, which is why the splitting criterion is also better known
+as \textit{variance reduction}. 
 
 \subsubsection{Random forest regression}
 \section{Summary}
@@ -1747,9 +1763,12 @@ Now the next question is \textit{how do we measure similarity between objects?} 
 d(\mathbf{x}, \mathbf{y})^2 = \sum_{j=1}^{m} \big(x_j - y_j \big)^2 = \lVert \mathbf{x} - \mathbf{y} \rVert^{2}_{2}.
 \]
 
-Note that, in the preceding equation, the index $j$ refers to the $j$th dimension(feature column) of the sample points x and y. In the rest of this section, we will use the superscripts $i$ and $j$ to refer to the sample index and cluster index, respectively.
+Note that, in the preceding equation, the index $j$ refers to the $j$th dimension
+(feature column) of the sample points x and y. In the rest of this section, we will use the superscripts $i$ and $j$ to refer to the sample index and cluster index, respectively.
 
-Based on this Euclidean distance metric, we can describe the k-means algorithmas a simple optimization problem, an iterative approach for minimizing the \textit{within-cluster sum of squared errors (SSE)}, which is sometimes also called \textit{cluster inertia}:
+
+Based on this Euclidean distance metric, we can describe the k-means algorithm
+as a simple optimization problem, an iterative approach for minimizing the \textit{within-cluster sum of squared errors (SSE)}, which is sometimes also called \textit{cluster inertia}:
 
 \[
 SSE = \sum_{i=1}^{n} \sum^{k}_{j=1} w^{(i, j)} \big \lVert \mathbf{x}^{(i)} - \mu^{(j)} \big \rVert^{2}_{2}
@@ -1838,7 +1857,8 @@ s^{(i)} = \frac{b^{(i)} - a^{(i)}}{\max \{ b^{(i)}, a^{(i)}  \}}.
 \]
 \end{enumerate}
 
-The silhouette coefficient is bounded in the range $-1$ to $1$. Based on the preceding formula, we can see that the silhouette coefficient is 0 if the cluster separationand cohesion are equal $(b^{(i)} = a^{(i)})$. Furthermore, we get close to an ideal silhouette coefficient of $1$ if $b^{(i)} >> a^{(i)}$, since $b^{(i)}$ quantifies how dissimilar a sample is to other clusters, and $a^{(i)}$ tells us how similar it is to the other samples in its own cluster, respectively.
+The silhouette coefficient is bounded in the range $-1$ to $1$. Based on the preceding formula, we can see that the silhouette coefficient is 0 if the cluster separation
+and cohesion are equal $(b^{(i)} = a^{(i)})$. Furthermore, we get close to an ideal silhouette coefficient of $1$ if $b^{(i)} >> a^{(i)}$, since $b^{(i)}$ quantifies how dissimilar a sample is to other clusters, and $a^{(i)}$ tells us how similar it is to the other samples in its own cluster, respectively.
 
 \section{Organizing clusters as a hierarchical tree}
 \subsection{Performing hierarchical clustering on a distance matrix}
@@ -1884,7 +1904,8 @@ In \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, 
 
 In other words, we computed the gradient based on the whole training set and updated the weights of the model by taking a step into the opposite direction of the gradient $\nabla J(\mathbf{w})$. In order to find the optimal weights of the model, we optimized an objective function that we defined as the \textit{Sum of Squared Errors (SSE)} cost function $J(\mathbf{w})$. Furthermore, we multiplied the gradient by a factor, the learning rate $\eta$ , which we chose carefully to balance the speed of learning against the risk of overshooting the global minimum of the cost function.
 
-In gradient descent optimization, we updated all weights simultaneously after each epoch, and we de ned the partial derivative for each weight $w_j$ in the weight vector$\mathbf{w}$ as follows:
+In gradient descent optimization, we updated all weights simultaneously after each epoch, and we de ned the partial derivative for each weight $w_j$ in the weight vector
+$\mathbf{w}$ as follows:
 
 \[
 \frac{\partial}{\partial w_j} J(\mathbf{w}) = \sum_i \big( y^{(i)} - a^{(i)} \big) x_{j}^{(i)}
@@ -1896,7 +1917,8 @@ Here $y^{(i)}$ is the target class label of a particular sample $x^{(i)}$ , and 
 \phi(z) = z = a
 \]
 
-Here, the net input $z$  is a linear combination of the weights that are connecting theinput to the output layer:
+Here, the net input $z$  is a linear combination of the weights that are connecting the
+input to the output layer:
 
 \[
 z = \sum_j w_j x_j = \mathbf{w}^T \mathbf{x}
@@ -1931,9 +1953,11 @@ While we used the activation $\phi(z)$ to compute the gradient update, we implem
 \end{bmatrix}
 \]
 
-Each unit in layer $l$ is connected to all units in layer $l +1$ via a weight coefficient. For example, the connection between the $k$th unit in layer $l$ to the $j$th unit in layer$l+1$ would be written as $w^{(l)}_{j, k}$ . Please note that the superscript $i$ in $x^{(i)}_{m}$ stands for the $i$th sample, not the $i$th layer. In the following paragraphs, we will often omit the superscript $i$ for clarity.
+Each unit in layer $l$ is connected to all units in layer $l +1$ via a weight coefficient. For example, the connection between the $k$th unit in layer $l$ to the $j$th unit in layer
+$l+1$ would be written as $w^{(l)}_{j, k}$ . Please note that the superscript $i$ in $x^{(i)}_{m}$ stands for the $i$th sample, not the $i$th layer. In the following paragraphs, we will often omit the superscript $i$ for clarity.
 
-[...] To better understand how this works, remember the one-hot representation of categorical variables that we introduced in \textit{Chapter 4, Building Good Training Sets -- Data Preprocessing}. For example, we would encode the three class labels in the familiar Iris dataset (\textit{0=Setosa, 1=Versicolor, 2=Virginica})as follows:
+[...] To better understand how this works, remember the one-hot representation of categorical variables that we introduced in \textit{Chapter 4, Building Good Training Sets -- Data Preprocessing}. For example, we would encode the three class labels in the familiar Iris dataset (\textit{0=Setosa, 1=Versicolor, 2=Virginica})
+as follows:
 
 \[
 0 =
@@ -1959,11 +1983,14 @@ Each unit in layer $l$ is connected to all units in layer $l +1$ via a weight co
 This one-hot vector representation allows us to tackle classification tasks with an arbitrary number of unique class labels present in the training set.
 
 
-[...] If you are new to neural network representations, the terminology around the indices (subscripts and superscripts) may look a little bit confusing at  first. You may wonder why we wrote $w^{(l)}_{j, k}$ and not $w^{(l)}_{k, j}$ to refer to the weight coefficient that connects the $k$th unit in layer $l$ to the $j$th unit in layer $l +1$. What may seem a little bit quirky at first will make much more sense in later sections when we vectorize the neural network representation. For example, we will summarize the weights that connect the input and hidden layer by a matrix $\mathbf{W}^{(1)} \in \mathbb{R}^{h \times [m+1]}$ , where $h$ is the number of hidden units and $m + 1$ is the number of input units plus bias unit. 
+[...] If you are new to neural network representations, the terminology around the indices (subscripts and superscripts) may look a little bit confusing at  first. You may wonder
+ why we wrote $w^{(l)}_{j, k}$ and not $w^{(l)}_{k, j}$ to refer to the weight coefficient that connects the $k$th unit in layer $l$ to the $j$th unit in layer $l +1$. What may seem a little bit quirky at first will make much more sense in later sections when we vectorize the neural network representation. For example, we will summarize the weights that connect the input and hidden layer by a matrix $\mathbf{W}^{(1)} \in \mathbb{R}^{h \times [m+1]}$ , where $h$ is the number of hidden units and $m + 1$ is the number of input units plus bias unit. 
 
 \subsection{Activating a neural network via forward propagation}
 
-[...] Now, let's walk through the individual steps of forward propagation to generatean output from the patterns in the training data. Since each unit in the hidden layeris connected to all units in the input layers, we first calculate the activation $a_{1}^{(2)}$ as follows:
+[...] Now, let's walk through the individual steps of forward propagation to generate
+an output from the patterns in the training data. Since each unit in the hidden layer
+is connected to all units in the input layers, we first calculate the activation $a_{1}^{(2)}$ as follows:
 
 \[
 z_{1}^{(2)} = a_{0}^{(1)} w_{1,0}^{(1)} + a_{1}^{(1)} w_{1, 1}^{(1)} + \dots + a_{m}^{(1)} w_{l, m}^{(1)}
@@ -2090,7 +2117,8 @@ Thus, we need to generalize the logistic cost function to all activation units $
 J(\mathbf{w}) = - \sum_{i=1}^{n} \sum_{j=1}^{t} = y_{j}^{(i)} \log \big( 1 - a^{(1)}_{j}  \big)
 \]
 
-Here, the superscript $i$ is the index of a particular sample in our training set.The following generalized regularization term may look a little bit complicated at first, but here we are just calculating the sum of all weights of a layer $l$ (without the bias term) that we added to the first column:
+Here, the superscript $i$ is the index of a particular sample in our training set.
+The following generalized regularization term may look a little bit complicated at first, but here we are just calculating the sum of all weights of a layer $l$ (without the bias term) that we added to the first column:
 
 \[
 J(\mathbf{w}) = - \Bigg[ \sum_{i=1}^{n} \sum_{j=1}^{m} y_{j}^{(i)}  \log \bigg( \phi \Big( z_{j}^{(i)} \Big) \bigg) + \Big(1 - y_{j}^{(i)} \Big) \log  \bigg(1 - \phi \Big( z_{j}^{(i)} \Big)  \bigg) \Bigg] + \frac{\lambda}{2} \sum_{l=1}^{L-1} \sum_{i=1}^{u_l} \sum_{j=1}^{u_{l+1}} \Big(w_{j, i}^{(l)}\Big)^2
@@ -2187,7 +2215,8 @@ After we have accumulated the partial derivatives, we can add the regularization
 \Delta^{(l)} := \Delta^{(l)} + \lambda^{(l)} \quad \text{(except for the bias term)}
 \]
 
-Lastly, after we have computed the gradients, we can now update the weights bytaking an opposite step towards the gradient:
+Lastly, after we have computed the gradients, we can now update the weights by
+taking an opposite step towards the gradient:
 
 \[
 \mathbf{W}^{(l)} := \mathbf{W}^{(l)} - \eta\Delta^{(l)} 
@@ -2197,7 +2226,8 @@ Lastly, after we have computed the gradients, we can now update the weights byt
 \section{Developing your intuition for backpropagation}
 \section{Debugging neural networks with gradient checking}
 
-In the previous sections, we de ned a cost function $J(\mathbf{W})$ where $\mathbf{W}$ is the matrixof the weight coefficients of an artificial network. Note that $J(\mathbf{W})$  is -- roughly speaking -- a "stacked" matrix consisting of the matrices $\mathbf{W}^{(1)}	$ and $W^{(2)}$ in a multi-layer perceptron with one hidden unit. We de ned $\mathbf{W}^{(1)}$ as the $h \times [m+1]$-dimensional matrix that connects the input layer to the hidden layer, where $h$ is the number of hidden units and $m$ is the number of features (input units). The matrix $\mathbf{W}^{(2)}$ that connects the hidden layer to the output layer has the dimensions $t \times h$, where $t$ is the number of output units. We then calculated the derivative of the cost function for a weight $w_{i, j}^{l}$ as follows:
+In the previous sections, we de ned a cost function $J(\mathbf{W})$ where $\mathbf{W}$ is the matrix
+of the weight coefficients of an artificial network. Note that $J(\mathbf{W})$  is -- roughly speaking -- a "stacked" matrix consisting of the matrices $\mathbf{W}^{(1)}	$ and $W^{(2)}$ in a multi-layer perceptron with one hidden unit. We de ned $\mathbf{W}^{(1)}$ as the $h \times [m+1]$-dimensional matrix that connects the input layer to the hidden layer, where $h$ is the number of hidden units and $m$ is the number of features (input units). The matrix $\mathbf{W}^{(2)}$ that connects the hidden layer to the output layer has the dimensions $t \times h$, where $t$ is the number of output units. We then calculated the derivative of the cost function for a weight $w_{i, j}^{l}$ as follows:
 
 \[
 \frac{\partial}{\partial w_{i, j}^{(i)}}
@@ -2209,7 +2239,8 @@ Remember that we are updating the weights by taking an opposite step towards the
 \frac{\partial}{\partial w_{i, j}^{(l)}} J(\mathbf{W}) \approx \frac{J\big( w_{i, j}^{(l)} + \epsilon \big) - J \big( w_{i, j}^{(l)}\big)}{\epsilon}
 \]
 
-Here, $\epsilon$ is typically a very small number, for example 1e-5 (note that 1e-5 is justa more convenient notation for 0.00001). Intuitively, we can think of this finite difference approximation as the slope of the secant line connecting the points of the cost function for the two weights w and $w + \epsilon$ (both are scalar values), as shown in the following  figure. We are omitting the superscripts and subscripts for simplicity.
+Here, $\epsilon$ is typically a very small number, for example 1e-5 (note that 1e-5 is just
+a more convenient notation for 0.00001). Intuitively, we can think of this finite difference approximation as the slope of the secant line connecting the points of the cost function for the two weights w and $w + \epsilon$ (both are scalar values), as shown in the following  figure. We are omitting the superscripts and subscripts for simplicity.
 
 [...] An even better approach that yields a more accurate approximation of the gradient is to compute the symmetric (or centered) difference quotient given by the two-point formula:
 
@@ -2270,7 +2301,8 @@ Note that $w_0$ is the bias unit (y-axis intercept, $x_0 =1$).
 
 \subsection{Estimating probabilities in multi-class classification via the softmax function}
 
-The softmax function is a generalization of the logistic function that allows usto compute meaningful class-probabilities in multi-class settings (multinomial logistic regression). In softmax, the probability of a particular sample with net input z belongs to the i th class can be computed with a normalization term in the denominator that is the sum of all M linear functions:
+The softmax function is a generalization of the logistic function that allows us
+to compute meaningful class-probabilities in multi-class settings (multinomial logistic regression). In softmax, the probability of a particular sample with net input z belongs to the i th class can be computed with a normalization term in the denominator that is the sum of all M linear functions:
 
 $P(y=i | z) = \phi_{softmax}(z) = \frac{e_{i}^{z}}{\sum_{m=1}^{M} e_{m}^{z}}$.
 
