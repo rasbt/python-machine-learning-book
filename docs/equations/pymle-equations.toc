@@ -1,0 +1,189 @@
+\contentsline {chapter}{\numberline {1}Giving Computers the Ability to Learn from Data}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Building intelligent machines to transform data into knowledge}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}The three different types of machine learning}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Making predictions about the future with supervised learning}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Classification for predicting class labels}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Regression for predicting continuous outcomes}{8}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Solving interactive problems with reinforcement learning}{8}{section.1.4}
+\contentsline {section}{\numberline {1.5}Discovering hidden structures with unsupervised learning}{8}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Finding subgroups with clustering}{8}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Dimensionality reduction for data compression}{8}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}An introduction to the basic terminology and notations}{8}{section.1.6}
+\contentsline {section}{\numberline {1.7}A roadmap for building machine learning systems}{10}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Preprocessing -- getting data into shape}{10}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Training and selecting a predictive model}{10}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Evaluating models and predicting unseen data instances}{10}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Using Python for machine learning}{10}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Installing Python packages}{10}{subsection.1.8.1}
+\contentsline {section}{\numberline {1.9}Summary}{10}{section.1.9}
+\contentsline {chapter}{\numberline {2}Training Machine Learning Algorithms for Classification}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Artificial neurons -- a brief glimpse into the early history of machine learning}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Implementing a perceptron learning algorithm in Python}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Training a perceptron model on the Iris dataset}{14}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Adaptive linear neurons and the convergence of learning}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Minimizing cost functions with gradient descent}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Implementing an Adaptive Linear Neuron in Python}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Large scale machine learning and stochastic gradient descent}{16}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Summary}{16}{section.2.4}
+\contentsline {chapter}{\numberline {3}A Tour of Machine Learning Classifiers Using Scikit-learn}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Choosing a classification algorithm}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}First steps with scikit-learn}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Training a perceptron via scikit-learn}{17}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Modeling class probabilities via logistic regression}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Logistic regression intuition and conditional probabilities}{17}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Learning the weights of the logistic cost function}{18}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Training a logistic regression model with scikit-learn}{19}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Tackling overfitting via regularization}{21}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Maximum margin classification with support vector machines}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Maximum margin intuition}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Dealing with the nonlinearly separable case using slack variables}{23}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Alternative implementations in scikit-learn}{23}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Solving nonlinear problems using a kernel SVM}{23}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Using the kernel trick to find separating hyperplanes in higher dimensional space}{23}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Decision tree learning}{24}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Maximizing information gain -- getting the most bang for the buck}{25}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Building a decision tree}{25}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Combining weak to strong learners via random forests}{25}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}K-nearest neighbors -- a lazy learning algorithm}{25}{section.3.7}
+\contentsline {section}{\numberline {3.8}Summary}{25}{section.3.8}
+\contentsline {chapter}{\numberline {4}Building Good Training Sets -- Data Pre-Processing}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dealing with missing data}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Eliminating samples or features with missing values}{26}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Imputing missing values}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Understanding the scikit-learn estimator API}{26}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Handling categorical data}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Mapping ordinal features}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Encoding class labels}{26}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Performing one-hot encoding on nominal features}{26}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Partitioning a dataset in training and test sets}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}Bringing features onto the same scale}{26}{section.4.4}
+\contentsline {section}{\numberline {4.5}Selecting meaningful features}{27}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Sparse solutions with L1 regularization}{27}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Sequential feature selection algorithms}{27}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Assessing feature importance with random forests}{28}{section.4.6}
+\contentsline {section}{\numberline {4.7}Summary}{28}{section.4.7}
+\contentsline {chapter}{\numberline {5}Compressing Data via Dimensionality Reduction}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Unsupervised dimensionality reduction via principal component analysis}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Total and explained variance}{30}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Feature transformation}{30}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Principal component analysis in scikit-learn}{31}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Supervised data compression via linear discriminant analysis}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Computing the scatter matrices}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Selecting linear discriminants for the new feature subspace}{32}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Projecting samples onto the new feature space}{32}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}LDA via scikit-learn}{32}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Using kernel principal component analysis for nonlinear mappings}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kernel functions and the kernel trick}{32}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Implementing a kernel principal component analysis in Python}{34}{subsection.5.3.2}
+\contentsline {subsubsection}{Example 1 -- separating half-moon shapes}{36}{section*.2}
+\contentsline {subsubsection}{Example 2 -- separating concentric circles}{36}{section*.3}
+\contentsline {subsection}{\numberline {5.3.3}Projecting new data points}{36}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Kernel principal component analysis in scikit-learn}{36}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Summary}{36}{section.5.4}
+\contentsline {chapter}{\numberline {6}Learning Best Practices for Model Evaluation and Hyperparameter Tuning}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Streamlining workflows with pipelines}{37}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Loading the Breast Cancer Wisconsin dataset}{37}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Combining transformers and estimators in a pipeline}{37}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Using k-fold cross-validation to assess model performance}{37}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}The holdout method}{37}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}K-fold cross-validation}{37}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Debugging algorithms with learning and validation curves}{37}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Diagnosing bias and variance problems with learning curves}{37}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Addressing overfitting and underfitting with validation curves}{37}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Fine-tuning machine learning models via grid search}{38}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Tuning hyperparameters via grid search}{38}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Algorithm selection with nested cross-validation}{38}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Looking at different performance evaluation metrics}{38}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Reading a confusion matrix}{38}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Optimizing the precision and recall of a classification model}{38}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Plotting a receiver operating characteristic}{39}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}The scoring metrics for multiclass classification}{39}{subsection.6.5.4}
+\contentsline {section}{\numberline {6.6}Summary}{39}{section.6.6}
+\contentsline {chapter}{\numberline {7}Combining Different Models for Ensemble Learning}{40}{chapter.7}
+\contentsline {section}{\numberline {7.1}Learning with ensembles}{40}{section.7.1}
+\contentsline {section}{\numberline {7.2}Implementing a simple majority vote classifier}{41}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Combining different algorithms for classification with majority vote}{42}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Evaluating and tuning the ensemble classifier}{42}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bagging -- building an ensemble of classifiers from bootstrap samples}{42}{section.7.4}
+\contentsline {section}{\numberline {7.5}Leveraging weak learners via adaptive boosting}{42}{section.7.5}
+\contentsline {section}{\numberline {7.6}Summary}{44}{section.7.6}
+\contentsline {chapter}{\numberline {8}Applying Machine Learning to Sentiment Analysis}{45}{chapter.8}
+\contentsline {section}{\numberline {8.1}Obtaining the IMDb movie review dataset}{45}{section.8.1}
+\contentsline {section}{\numberline {8.2}Introducing the bag-of-words model}{45}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Transforming words into feature vectors}{45}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Assessing word relevancy via term frequency-inverse document frequency}{45}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Cleaning text data}{46}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Processing documents into tokens}{46}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Training a logistic regression model for document classification}{46}{section.8.3}
+\contentsline {section}{\numberline {8.4}Working with bigger data - online algorithms and out-of-core learning}{46}{section.8.4}
+\contentsline {section}{\numberline {8.5}Summary}{46}{section.8.5}
+\contentsline {chapter}{\numberline {9}Embedding a Machine Learning Model into a Web Application}{47}{chapter.9}
+\contentsline {section}{\numberline {9.1}Chapter 8 recap - Training a model for movie review classification}{47}{section.9.1}
+\contentsline {section}{\numberline {9.2}Serializing fitted scikit-learn estimators}{47}{section.9.2}
+\contentsline {section}{\numberline {9.3}Setting up a SQLite database for data storage Developing a web application with Flask}{47}{section.9.3}
+\contentsline {section}{\numberline {9.4}Our first Flask web application}{47}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Form validation and rendering}{47}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Turning the movie classifier into a web application}{47}{subsection.9.4.2}
+\contentsline {section}{\numberline {9.5}Deploying the web application to a public server}{47}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Updating the movie review classifier}{47}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.6}Summary}{47}{section.9.6}
+\contentsline {chapter}{\numberline {10}Predicting Continuous Target Variables with Regression Analysis}{48}{chapter.10}
+\contentsline {section}{\numberline {10.1}Introducing a simple linear regression model}{48}{section.10.1}
+\contentsline {section}{\numberline {10.2}Exploring the Housing Dataset}{48}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Visualizing the important characteristics of a dataset}{48}{subsection.10.2.1}
+\contentsline {section}{\numberline {10.3}Implementing an ordinary least squares linear regression model}{50}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Solving regression for regression parameters with gradient descent}{50}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Estimating the coefficient of a regression model via scikit-learn}{50}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}Fitting a robust regression model using RANSAC}{50}{section.10.4}
+\contentsline {section}{\numberline {10.5}Evaluating the performance of linear regression models}{50}{section.10.5}
+\contentsline {section}{\numberline {10.6}Using regularized methods for regression}{51}{section.10.6}
+\contentsline {section}{\numberline {10.7}Turning a linear regression model into a curve - polynomial regression}{52}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Modeling nonlinear relationships in the Housing Dataset}{52}{subsection.10.7.1}
+\contentsline {subsection}{\numberline {10.7.2}Dealing with nonlinear relationships using random forests}{52}{subsection.10.7.2}
+\contentsline {subsubsection}{Decision tree regression}{52}{section*.5}
+\contentsline {subsubsection}{Random forest regression}{53}{section*.6}
+\contentsline {section}{\numberline {10.8}Summary}{53}{section.10.8}
+\contentsline {chapter}{\numberline {11}Working with Unlabeled Data -- Clustering Analysis}{54}{chapter.11}
+\contentsline {section}{\numberline {11.1}Grouping objects by similarity using k-means}{54}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}K-means++}{55}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Hard versus soft clustering}{55}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}Using the elbow method to find the optimal number of clusters}{57}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}Quantifying the quality of clustering via silhouette plots}{57}{subsection.11.1.4}
+\contentsline {section}{\numberline {11.2}Organizing clusters as a hierarchical tree}{57}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Performing hierarchical clustering on a distance matrix}{57}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Attaching dendrograms to a heat map}{57}{subsection.11.2.2}
+\contentsline {subsection}{\numberline {11.2.3}Applying agglomerative clustering via scikit-learn}{57}{subsection.11.2.3}
+\contentsline {section}{\numberline {11.3}Locating regions of high density via DBSCAN}{57}{section.11.3}
+\contentsline {section}{\numberline {11.4}Summary}{58}{section.11.4}
+\contentsline {chapter}{\numberline {12}Training Artificial Neural Networks for Image Recognition}{59}{chapter.12}
+\contentsline {section}{\numberline {12.1}Modeling complex functions with artificial neural networks}{59}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Single-layer neural network recap}{59}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Introducing the multi-layer neural network architecture}{60}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}Activating a neural network via forward propagation}{61}{subsection.12.1.3}
+\contentsline {section}{\numberline {12.2}Classifying handwritten digits}{62}{section.12.2}
+\contentsline {subsection}{\numberline {12.2.1}Obtaining the MNIST dataset}{62}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.2}Implementing a multi-layer perceptron}{62}{subsection.12.2.2}
+\contentsline {section}{\numberline {12.3}Training an artificial neural network}{63}{section.12.3}
+\contentsline {subsection}{\numberline {12.3.1}Computing the logistic cost function}{63}{subsection.12.3.1}
+\contentsline {subsection}{\numberline {12.3.2}Training neural networks via backpropagation}{64}{subsection.12.3.2}
+\contentsline {section}{\numberline {12.4}Developing your intuition for backpropagation}{66}{section.12.4}
+\contentsline {section}{\numberline {12.5}Debugging neural networks with gradient checking}{66}{section.12.5}
+\contentsline {section}{\numberline {12.6}Convergence in neural networks}{68}{section.12.6}
+\contentsline {section}{\numberline {12.7}Other neural network architectures}{68}{section.12.7}
+\contentsline {subsection}{\numberline {12.7.1}Convolutional Neural Networks}{68}{subsection.12.7.1}
+\contentsline {subsection}{\numberline {12.7.2}Recurrent Neural Networks}{68}{subsection.12.7.2}
+\contentsline {section}{\numberline {12.8}A few last words about neural network implementation}{68}{section.12.8}
+\contentsline {section}{\numberline {12.9}Summary}{68}{section.12.9}
+\contentsline {chapter}{\numberline {13}Parallelizing Neural Network Training with Theano}{69}{chapter.13}
+\contentsline {section}{\numberline {13.1}Building, compiling, and running expressions with Theano}{69}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}What is Theano?}{69}{subsection.13.1.1}
+\contentsline {subsection}{\numberline {13.1.2}First steps with Theano}{69}{subsection.13.1.2}
+\contentsline {subsection}{\numberline {13.1.3}Configuring Theano}{69}{subsection.13.1.3}
+\contentsline {subsection}{\numberline {13.1.4}Working with array structures}{69}{subsection.13.1.4}
+\contentsline {subsection}{\numberline {13.1.5}Wrapping things up -- a linear regression example}{69}{subsection.13.1.5}
+\contentsline {section}{\numberline {13.2}Choosing activation functions for feedforward neural networks}{69}{section.13.2}
+\contentsline {subsection}{\numberline {13.2.1}Logistic function recap}{69}{subsection.13.2.1}
+\contentsline {subsection}{\numberline {13.2.2}Estimating probabilities in multi-class classification via the softmax function}{70}{subsection.13.2.2}
+\contentsline {subsection}{\numberline {13.2.3}Broadening the output spectrum by using a hyperbolic tangent}{70}{subsection.13.2.3}
+\contentsline {section}{\numberline {13.3}Training neural networks efficiently using Keras}{70}{section.13.3}
+\contentsline {section}{\numberline {13.4}Summary}{70}{section.13.4}
