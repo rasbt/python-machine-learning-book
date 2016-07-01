@@ -466,7 +466,7 @@ In practice, it is easier to maximize the (natural) log of this equation, which 
 the log-likelihood function:
 
 \[
-l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 Firstly, applying the log function reduces the potential for numerical under ow, which can occur if the likelihoods are very small. Secondly, we can convert the product of factors into a summation of factors, which makes it easier to obtain the derivative of this function via the addition trick, as you may remember
@@ -475,7 +475,7 @@ from calculus.
 Now we could use an optimization algorithm such as gradient ascent to maximize this log-likelihood function. Alternatively, let's rewrite the log-likelihood as a cost function $J(\cdot)$ that can be minimized using gradient descent as in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}:
 
 \[
-J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 To get a better grasp on this cost function, let's take a look at the cost that we
@@ -501,7 +501,7 @@ J \big( \phi(z), y; \mathbf{w} \big)= \begin{cases}
 If we were to implement logistic regression ourselves, we could simply substitute the cost function $J(\cdot)$ in our Adaline implementation from \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, by the new cost function:
 
 \[
-J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 We can show that the weight update in logistic regression via gradient descent is indeed equal to the equation that we used in Adaline in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}. Let's start by calculating the partial derivative of the log-likelihood function with respect to the $j$th weight:
