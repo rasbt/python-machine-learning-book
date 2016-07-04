@@ -216,7 +216,7 @@ Rosenblatt's initial perceptron rule is fairly simple and can be summarized by t
 \end{enumerate}
 \end{enumerate}
 
-Here, the output value is the class label predicted by the unit step function that we de ned earlier, and the simultaneous update of each weight $w_j$ in the weight vector $\mathbf{w}$ can be more formally written as:
+Here, the output value is the class label predicted by the unit step function that we defined earlier, and the simultaneous update of each weight $w_j$ in the weight vector $\mathbf{w}$ can be more formally written as:
 
 \[
 w_j := w_j + \Delta w_j
@@ -450,7 +450,7 @@ If we look at the preceding sigmoid plot, this is equivalent to the following:
 
 \subsection{Learning the weights of the logistic cost function}
 
-In the previous chapter, we de ned the sum-squared-error cost function: 
+In the previous chapter, we defined the sum-squared-error cost function: 
 
 \[
 J(\mathbf{w}) = \frac{1}{2} \sum_i \bigg( \phi \big( z^{(i)} \big) - y^{(i)}  \bigg)^2.
@@ -466,7 +466,7 @@ In practice, it is easier to maximize the (natural) log of this equation, which 
 the log-likelihood function:
 
 \[
-l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+l(\mathbf{w}) = \log L(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) + \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 Firstly, applying the log function reduces the potential for numerical under ow, which can occur if the likelihoods are very small. Secondly, we can convert the product of factors into a summation of factors, which makes it easier to obtain the derivative of this function via the addition trick, as you may remember
@@ -475,7 +475,7 @@ from calculus.
 Now we could use an optimization algorithm such as gradient ascent to maximize this log-likelihood function. Alternatively, let's rewrite the log-likelihood as a cost function $J(\cdot)$ that can be minimized using gradient descent as in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}:
 
 \[
-J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 To get a better grasp on this cost function, let's take a look at the cost that we
@@ -501,7 +501,7 @@ J \big( \phi(z), y; \mathbf{w} \big)= \begin{cases}
 If we were to implement logistic regression ourselves, we could simply substitute the cost function $J(\cdot)$ in our Adaline implementation from \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, by the new cost function:
 
 \[
-J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{i()} \big) \bigg)  \Bigg]
+J(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[- y^{(i)} \log \bigg(\phi \big( z^{(i)} \big) \bigg) - \bigg(1 - y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)  \Bigg]
 \]
 
 We can show that the weight update in logistic regression via gradient descent is indeed equal to the equation that we used in Adaline in \textit{Chapter 2, Training Machine Learning Algorithms for Classification}. Let's start by calculating the partial derivative of the log-likelihood function with respect to the $j$th weight:
@@ -571,13 +571,22 @@ The most common form of regularization is the so-called L2 regularization (somet
 
 Here, $\lambda$ is the so-called regularization parameter.
 
-In order to apply regularization, we just need to add the regularization term to the cost function that we de ned for logistic regression to shrink the weights:
+In order to apply regularization, we just need to add the regularization term to the cost function that we defined for logistic regression to shrink the weights:
 
 \[
-J(\mathbf{w}) = \sum_{i=1}^{n} \bigg[ - y^{(i)} \log \big(  \phi(z^{(i)})  \big)  - \big( 1 - y ^{(i)} \big)  \log \big( 1 - \phi(z^{(i)})   \big)   \bigg] + \frac{\lambda}{2} \lVert \mathbf{w}\rVert^2  
+J(\mathbf{w}) = - \sum_{i=1}^{n} \bigg[  y^{(i)} \log \big(  \phi(z^{(i)})  \big)  - \big( 1 - y ^{(i)} \big)  \log \big( 1 - \phi(z^{(i)})   \big)   \bigg] + \frac{\lambda}{2} \lVert \mathbf{w}\rVert^2  
 \]
 
-Via the regularization parameter $\lambda$, we can then control how well we  t the training data while keeping the weights small. By increasing the value of $\lambda$, we increase the regularization strength. 
+Then, we have the following regularized weight updates for weight $w_j$:
+
+\[
+\Delta w_j  = - \eta \frac{\partial J}{\partial w_j} = \eta \sum_{i=1}^{n} \bigg( y^{(i)} - \phi(z^{(i)}) \bigg)x_{j}^{(i)} - \eta \lambda w_j,
+\] for $j \in \{1, 2, ..., m \}$ (i.e., $j \neq 0 $) since we don't regularize the bias unit $w_0$. \\
+
+
+
+
+Via the regularization parameter $\lambda$, we can then control how well we fit the training data while keeping the weights small. By increasing the value of $\lambda$, we increase the regularization strength. 
 
 The parameter \textit{C} that is implemented for the \textit{LogisticRegression} class in scikit-learn comes from a convention in support vector machines, which will be the topic of the next section. \textit{C} is directly related to the regularization parameter $\lambda$ , which is its inverse:
 
@@ -614,7 +623,7 @@ If we subtract those two linear equations (1) and (2) from each other, we get:
 \Rightarrow \mathbf{w}^T \big(  \mathbf{x}_{pos} - \mathbf{x}_{neg} \big) = 2
 \]
 
-We can normalize this by the length of the vector $\mathbf{w}$, which is de ned as follows:
+We can normalize this by the length of the vector $\mathbf{w}$, which is defined as follows:
 
 \[
 \lVert \mathbf{w} \rVert = \sqrt{\sum_{j=1}^{m} w_{j}^{2}} 
@@ -812,7 +821,7 @@ Here, $\mu_{x}$ is the sample mean of a particular feature column and $\sigma_{x
 \section{Selecting meaningful features}
 \subsection{Sparse solutions with L1 regularization}
 
-We recall from \textit{Chapter 3, A Tour of Machine Learning Classfiers Using Scikit-learn}, that L2 regularization is one approach to reduce the complexity of a model by penalizing large individual weights, where we de ned the L2 norm of our weight vector w as follows:
+We recall from \textit{Chapter 3, A Tour of Machine Learning Classfiers Using Scikit-learn}, that L2 regularization is one approach to reduce the complexity of a model by penalizing large individual weights, where we defined the L2 norm of our weight vector w as follows:
 
 \[
 L2: \lVert \mathbf{w} \rVert^{2}_{2} = \sum_{j=1}^{m} w^{2}_{j}
@@ -1487,7 +1496,7 @@ Thus, each weight that corresponds to a correctly classified sample will be redu
 \subsection{Transforming words into feature vectors}
 \subsection{Assessing word relevancy via term frequency-inverse document frequency}
 
-The \textit{tf-idf} can be de ned as the product of the \textit{term frequency} and the \textit{inverse document frequency}:
+The \textit{tf-idf} can be defined as the product of the \textit{term frequency} and the \textit{inverse document frequency}:
 
 \[
 \text{tf-idf}(t, d) = \text{tf} (t, d) \times \text{idf}(t, d)
@@ -1502,7 +1511,7 @@ and the inverse document frequency $\text{idf}(t, d)$ can be calculated as:
 
 where $n_d$ is the total number of documents, and $\text{df}(d, t)$  is the number of documents $d$ that contain the term $t$. Note that adding the constant 1 to the denominator is optional and serves the purpose of assigning a non-zero value to terms that occur in all training samples; the log is used to ensure that low document frequencies are not given too much weight.
 
-However, if we'd manually calculated the tf-idfs of the individual terms in our feature vectors, we'd have noticed that the \textit{TfidfTransformer} calculates the tf-idfs slightly differently compared to the standard textbook equations that we de ned earlier. The equations for the idf and tf-idf that were implemented in scikit-learn are:
+However, if we'd manually calculated the tf-idfs of the individual terms in our feature vectors, we'd have noticed that the \textit{TfidfTransformer} calculates the tf-idfs slightly differently compared to the standard textbook equations that we defined earlier. The equations for the idf and tf-idf that were implemented in scikit-learn are:
 
 \[
 \text{idf}(t, d) = \log \frac{1 + n_d}{1 + \text{df}(d, t)}
@@ -1618,7 +1627,7 @@ We can simplify it as follows:
 \section{Implementing an ordinary least squares linear regression model}
 \subsection{Solving regression for regression parameters with gradient descent}
 
-Consider our implementation of the \textit{ADAptive LInear NEuron (Adaline)} from \textit{Chapter 2, Training Machine Learning Algorithms for Classifcation}; we remember that the artificial neuron uses a linear activation function and we de ned a cost function $J (\cdot)$, which we minimized to learn the weights via optimization algorithms, such as \textit{Gradient Descent (GD)} and \textit{Stochastic Gradient Descent (SGD)}. This cost function in Adaline is the \textit{Sum of Squared Errors (SSE)}. This is identical to the OLS cost function that we defined:
+Consider our implementation of the \textit{ADAptive LInear NEuron (Adaline)} from \textit{Chapter 2, Training Machine Learning Algorithms for Classifcation}; we remember that the artificial neuron uses a linear activation function and we defined a cost function $J (\cdot)$, which we minimized to learn the weights via optimization algorithms, such as \textit{Gradient Descent (GD)} and \textit{Stochastic Gradient Descent (SGD)}. This cost function in Adaline is the \textit{Sum of Squared Errors (SSE)}. This is identical to the OLS cost function that we defined:
 
 \[
 J(w) = \frac{1}{2} \sum_{i=1}^{n} \big( y^{(i)} -  \hat{y}^{(i)} \big)^2
@@ -1637,7 +1646,7 @@ a closed-form solution for solving OLS involving a system of linear equations th
 \section{Fitting a robust regression model using RANSAC}
 \section{Evaluating the performance of linear regression models}
 
-Another useful quantitative measure of a model's performance is the so-called \textit{Mean Squared Error (MSE)}, which is simply the average value of the SSE cost function that we minimize to  t the linear regression model. The MSE is useful to for comparing different regression models or for tuning their parameters via a grid search and cross-validation:
+Another useful quantitative measure of a model's performance is the so-called \textit{Mean Squared Error (MSE)}, which is simply the average value of the SSE cost function that we minimize to  fit the linear regression model. The MSE is useful to for comparing different regression models or for tuning their parameters via a grid search and cross-validation:
 
 \[
 MSE = \frac{1}{n} \sum_{i=1}^{n} \big( y^{(i)} - \hat{y}^{(i)}  \big)^2
@@ -1716,7 +1725,7 @@ where $d$ denotes the degree of the polynomial.
 \subsection{Dealing with nonlinear relationships using random forests}
 \subsubsection{Decision tree regression}
 
-When we used decision trees for classi cation, we de ned entropy as a measure of impurity to determine which feature split maximizes the \textit{Information Gain (IG)}, which can be de ned as follows for a binary split:
+When we used decision trees for classi cation, we defined entropy as a measure of impurity to determine which feature split maximizes the \textit{Information Gain (IG)}, which can be defined as follows for a binary split:
 
 \[
 IG(D_p, x_i) = I(D_p) - \frac{N_{left}}{N_{p}} I (D_{left}) - \frac{N_{right}}{N_p} I (D_{right})
@@ -1757,7 +1766,7 @@ Thus, our goal is to group the samples based on their feature similarities, whic
 \item Randomly pick $k$ centroids from the sample points as initial cluster centers.
 \item Assign each sample to the nearest centroid $\mu^{(j)}, \quad j \in {1, ..., k}.$
 \item Move the centroids to the center of the samples that were assigned to it.
-\item Repeat steps 2 and 3 until the cluster assignments do not change or a user-de ned tolerance or a maximum number of iterations is reached.
+\item Repeat steps 2 and 3 until the cluster assignments do not change or a user-defined tolerance or a maximum number of iterations is reached.
 \end{enumerate}
 
 Now the next question is \textit{how do we measure similarity between objects?} We can de ne similarity as the opposite of distance, and a commonly used distance for clustering samples with continuous features is the \textit{squared Euclidean distance} between two points $\mathbf{x}$ and $\mathbf{y}$ in $m$-dimensional space:
@@ -1819,7 +1828,7 @@ Here, each value falls in the range $[0, 1]$ and represents a probability of mem
 \item Specify the number of $k$ centroids and randomly assign the cluster memberships for each point.
 \item Compute the cluster centroids $\mathbf{\mu^{(j)}}, j \in \{1, \dots, k \}$.
 \item Update the cluster memberships for each point.
-\item Repeat steps 2 and 3 until the membership coefficients do not change or a user-de ned tolerance or a maximum number of iterations is reached.
+\item Repeat steps 2 and 3 until the membership coefficients do not change or a user-defined tolerance or a maximum number of iterations is reached.
 \end{enumerate}
 
 The objective function of FCM -- we abbreviate it by $J_m$ -- looks very similar to the within cluster sum-squared-error that we minimize in $k$-means:
@@ -1907,7 +1916,7 @@ In \textit{Chapter 2, Training Machine Learning Algorithms for Classification}, 
 
 In other words, we computed the gradient based on the whole training set and updated the weights of the model by taking a step into the opposite direction of the gradient $\nabla J(\mathbf{w})$. In order to find the optimal weights of the model, we optimized an objective function that we defined as the \textit{Sum of Squared Errors (SSE)} cost function $J(\mathbf{w})$. Furthermore, we multiplied the gradient by a factor, the learning rate $\eta$ , which we chose carefully to balance the speed of learning against the risk of overshooting the global minimum of the cost function.
 
-In gradient descent optimization, we updated all weights simultaneously after each epoch, and we de ned the partial derivative for each weight $w_j$ in the weight vector
+In gradient descent optimization, we updated all weights simultaneously after each epoch, and we defined the partial derivative for each weight $w_j$ in the weight vector
 $\mathbf{w}$ as follows:
 
 \[
@@ -2083,7 +2092,7 @@ Here, $a^{(i)}$ is the sigmoid activation of the $i$th unit in one of the layers
 a^{(i)} = \phi \big( z^{(i)} \big).
 \]
 
-Now, let's add a regularization term, which allows us to reduce the degree of over tting. As you will recall from earlier chapters, the L2 and L1 regularization terms are de ned as follows (remember that we don't regularize the bias units):
+Now, let's add a regularization term, which allows us to reduce the degree of over tting. As you will recall from earlier chapters, the L2 and L1 regularization terms are defined as follows (remember that we don't regularize the bias units):
 
 \[
 L2 = \lambda \lVert  \mathbf{w} \rVert^{2}_{2} = \lambda \sum_{j=1}^{m} w_{j}^{2} \text{ and } L1 = \lambda \lVert  \mathbf{w} \rVert_{1} = \lambda \sum_{j=1}^{m} | w_j |.
@@ -2229,8 +2238,8 @@ taking an opposite step towards the gradient:
 \section{Developing your intuition for backpropagation}
 \section{Debugging neural networks with gradient checking}
 
-In the previous sections, we de ned a cost function $J(\mathbf{W})$ where $\mathbf{W}$ is the matrix
-of the weight coefficients of an artificial network. Note that $J(\mathbf{W})$  is -- roughly speaking -- a "stacked" matrix consisting of the matrices $\mathbf{W}^{(1)}	$ and $W^{(2)}$ in a multi-layer perceptron with one hidden unit. We de ned $\mathbf{W}^{(1)}$ as the $h \times [m+1]$-dimensional matrix that connects the input layer to the hidden layer, where $h$ is the number of hidden units and $m$ is the number of features (input units). The matrix $\mathbf{W}^{(2)}$ that connects the hidden layer to the output layer has the dimensions $t \times h$, where $t$ is the number of output units. We then calculated the derivative of the cost function for a weight $w_{i, j}^{l}$ as follows:
+In the previous sections, we defined a cost function $J(\mathbf{W})$ where $\mathbf{W}$ is the matrix
+of the weight coefficients of an artificial network. Note that $J(\mathbf{W})$  is -- roughly speaking -- a "stacked" matrix consisting of the matrices $\mathbf{W}^{(1)}	$ and $W^{(2)}$ in a multi-layer perceptron with one hidden unit. We defined $\mathbf{W}^{(1)}$ as the $h \times [m+1]$-dimensional matrix that connects the input layer to the hidden layer, where $h$ is the number of hidden units and $m$ is the number of features (input units). The matrix $\mathbf{W}^{(2)}$ that connects the hidden layer to the output layer has the dimensions $t \times h$, where $t$ is the number of output units. We then calculated the derivative of the cost function for a weight $w_{i, j}^{l}$ as follows:
 
 \[
 \frac{\partial}{\partial w_{i, j}^{(i)}}
@@ -2294,7 +2303,7 @@ We recall from the section on logistic regression in \textit{Chapter 3, A Tour o
 \phi_{logistic} (z) = \frac{1}{1 + e^{-z}}
 \]
 
-Here, the scalar variable $z$ is de ned as the net input:
+Here, the scalar variable $z$ is defined as the net input:
 
 \[
 z = w_0 x_0 + \dots + w_m x_m = \sum_{j=0}^{m} x_j w_j = \mathbf{w}^T \mathbf{x}
