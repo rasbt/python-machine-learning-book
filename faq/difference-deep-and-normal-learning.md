@@ -26,7 +26,7 @@ In applications of "usual" machine learning, there is typically a strong focus o
 
 
 Let's consider a ConvNet in context of image classification.
-Here, we use so-called "receptive fields" (think of them as "windows") that slide over our image. We then connect those "receptive fields" (for example of the size of 5x5 pixel) with 1 unit in the next layer, this is the so-called "feature map." After this mapping, we have constructed a so-called convolutional layer. Note that our feature detectors are basically replicates of one another -- they share the same weights. The idea is that if a feature detector is useful in one part of the imagine it is likely that it is useful somewhere else, but at the same time it allows each patch of image to be represented in several ways.
+Here, we use so-called "receptive fields" (think of them as "windows") that slide over our image. We then connect those "receptive fields" (for example of the size of 5x5 pixel) with 1 unit in the next layer, this is the so-called "feature map." After this mapping, we have constructed a so-called convolutional layer. Note that our feature detectors are basically replicates of one another -- they share the same weights. The idea is that if a feature detector is useful in one part of the image it is likely that it is useful somewhere else, but at the same time it allows each patch of image to be represented in several ways.
 
 ![](./difference-deep-and-normal-learning/convolution.png)
 
