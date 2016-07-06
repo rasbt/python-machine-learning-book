@@ -13,7 +13,7 @@
 
 \title{Python Machine Learning\\ Equation Reference}
 \author{Sebastian Raschka \\ \texttt{mail@sebastianraschka.com}} 
-\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 06\slash 19\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
+\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 07\slash 06\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
   title=\{Python Machine Learning\},\\
   author=\{Raschka, Sebastian\},\\
   year=\{2015\},\\
@@ -273,13 +273,13 @@ y^{(i)} = +1, \quad \hat{y}^{(i)} = -1, \quad \eta = 1
 Let's assume that $x_{j}^{(i)}=0.5$ and we misclassify this sample as $-1$. In this case, we would increase the corresponding weight by $1$ so that the net input $x_{j}^{i} \times w_{j}^{(i)}$ will be more positive the next time we encounter this sample and thus will be more likely to be above the threshold of the unit step function to classify the sample as  $+1$:
 
 \[
-\Delta w_{j}^{(i)} = (1--1)0.5 = (2)0.5 = 1
+\Delta w_{j} = (1--1)0.5 = (2)0.5 = 1
 \]
 
 The weight update is proportional to the value of $x_{j}^{(i)}$. For example, if we have another sample $x_{j}^{(i)}=2$ that is incorrectly classified as $-1$, we'd push the decision boundary by an even larger extent to classify this sample correctly the next time:
 
 \[
-\Delta w_{j}^{(i)} = (1--1)2 = (2)2 = 4.
+\Delta w_{j} = (1--1)2 = (2)2 = 4.
 \]
 
 
