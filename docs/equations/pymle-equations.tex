@@ -1920,7 +1920,7 @@ In gradient descent optimization, we updated all weights simultaneously after ea
 $\mathbf{w}$ as follows:
 
 \[
-\frac{\partial}{\partial w_j} J(\mathbf{w}) = \sum_i \big( y^{(i)} - a^{(i)} \big) x_{j}^{(i)}
+\frac{\partial}{\partial w_j} J(\mathbf{w}) = - \sum_i \big( y^{(i)} - a^{(i)} \big) x_{j}^{(i)}
 \]
 
 Here $y^{(i)}$ is the target class label of a particular sample $x^{(i)}$ , and $a^{(i)}$ is the \textit{activation} of the neuron, which is a linear function in the special case of Adaline. Furthermore, we defined the \textit{activation function} $\phi(\cdot)$ as follows:
