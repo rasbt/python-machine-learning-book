@@ -69,19 +69,70 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 <br>
 
-1. Machine Learning - Giving Computers the Ability to Learn from Data [[dir](./code/ch01)] [[ipynb](./code/ch01/ch01.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch01/ch01.ipynb)]
-2. Training Machine Learning Algorithms for Classification [[dir](./code/ch02)] [[ipynb](./code/ch02/ch02.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb)]
-3. A Tour of Machine Learning Classifiers Using Scikit-Learn [[dir](./code/ch03)] [[ipynb](./code/ch03/ch03.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)]
-4. Building Good Training Sets – Data Pre-Processing [[dir](./code/ch04)] [[ipynb](./code/ch04/ch04.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch04/ch04.ipynb)]
-5. Compressing Data via Dimensionality Reduction [[dir](./code/ch05)] [[ipynb](./code/ch05/ch05.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch05/ch05.ipynb)]
-6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization [[dir](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
-7. Combining Different Models for Ensemble Learning [[dir](./code/ch07)] [[ipynb](./code/ch07/ch07.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch07/ch07.ipynb)]
-8. Applying Machine Learning to Sentiment Analysis [[dir](./code/ch08)] [[ipynb](./code/ch08/ch08.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch08/ch08.ipynb)]
-9. Embedding a Machine Learning Model into a Web Application [[dir](./code/ch09)] [[ipynb](./code/ch09/ch09.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch09/ch09.ipynb)]
-10. Predicting Continuous Target Variables with Regression Analysis [[dir](./code/ch10)] [[ipynb](./code/ch10/ch10.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb)]
-11. Working with Unlabeled Data – Clustering Analysis [[dir](./code/ch11)] [[ipynb](./code/ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
-12. Training Artificial Neural Networks for Image Recognition [[dir](./code/ch12)] [[ipynb](./code/ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
-13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
+1. Machine Learning - Giving Computers the Ability to Learn from Data
+[[dir](./code/ch01)]
+[ipynb](./code/ch01/ch01.ipynb)]
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch01/ch01.ipynb)]
+
+2. Training Machine Learning Algorithms for Classification
+[[dir](./code/ch02)]
+[[ipynb](./code/ch02/ch02.ipynb)]
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch02/ch02.ipynb)]
+
+3. A Tour of Machine Learning Classifiers Using Scikit-Learn 
+[[dir](./code/ch03)] 
+[[ipynb](./code/ch03/ch03.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch03/ch03.ipynb)]
+
+4. Building Good Training Sets – Data Pre-Processing 
+[[dir](./code/ch04)] 
+[[ipynb](./code/ch04/ch04.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch04/ch04.ipynb)]
+
+5. Compressing Data via Dimensionality Reduction 
+[[dir](./code/ch05)] 
+[[ipynb](./code/ch05/ch05.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch05/ch05.ipynb)]
+
+6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization 
+[[dir](./code/ch06)] 
+[[ipynb](./code/ch06/ch06.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch06/ch06.ipynb)]
+
+7. Combining Different Models for Ensemble Learning 
+[[dir](./code/ch07)] 
+[[ipynb](./code/ch07/ch07.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch07/ch07.ipynb)]
+
+8. Applying Machine Learning to Sentiment Analysis 
+[[dir](./code/ch08)] 
+[[ipynb](./code/ch08/ch08.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch08/ch08.ipynb)]
+
+9. Embedding a Machine Learning Model into a Web Application 
+[[dir](./code/ch09)] 
+[[ipynb](./code/ch09/ch09.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch09/ch09.ipynb)]
+
+10. Predicting Continuous Target Variables with Regression Analysis 
+[[dir](./code/ch10)] 
+[[ipynb](./code/ch10/ch10.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch10/ch10.ipynb)]
+
+11. Working with Unlabeled Data – Clustering Analysis 
+[[dir](./code/ch11)] 
+[[ipynb](./code/ch11/ch11.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch11/ch11.ipynb)]
+
+12. Training Artificial Neural Networks for Image Recognition 
+[[dir](./code/ch12)] 
+[[ipynb](./code/ch12/ch12.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch12/ch12.ipynb)]
+
+13. Parallelizing Neural Network Training via Theano 
+[[dir](./code/ch13)] 
+[[ipynb](./code/ch13/ch13.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/ch13/ch13.ipynb)]
 
 <br>
 
@@ -91,13 +142,36 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 **Bonus Notebooks (not in the book)**
 
-- Logistic Regression Implementation [[dir](./code/bonus)] [[ipynb](./code/bonus/logistic_regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
-- A Basic Pipeline and Grid Search Setup [[dir](./code/bonus)] [[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
-- An Extended Nested Cross-Validation Example [[dir](./code/bonus)] [[ipynb](./code/bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
-- A Simple Barebones Flask Webapp Template [[view directory](./code/bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
-- Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
-- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./code/bonus/scikit-model-to-json.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
-- Multinomial logistic regression / softmax regression [[GitHub ipynb](./code/bonus/softmax-regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/softmax-regression.ipynb)]
+- Logistic Regression Implementation 
+[[dir](./code/bonus)] 
+[[ipynb](./code/bonus/logistic_regression.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/logistic_regression.ipynb)]
+
+- A Basic Pipeline and Grid Search Setup 
+[[dir](./code/bonus)] 
+[[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
+
+- An Extended Nested Cross-Validation Example 
+[[dir](./code/bonus)] 
+[[ipynb](./code/bonus/nested_cross_validation.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/nested_cross_validation.ipynb)]
+
+- A Simple Barebones Flask Webapp Template 
+[[view directory](./code/bonus/flask_webapp_ex01)]
+[[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
+
+- Reading handwritten digits from MNIST into NumPy arrays 
+[[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/reading_mnist.ipynb)]
+
+- Scikit-learn Model Persistence using JSON 
+[[GitHub ipynb](./code/bonus/scikit-model-to-json.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/scikit-model-to-json.ipynb)]
+
+- Multinomial logistic regression / softmax regression 
+[[GitHub ipynb](./code/bonus/softmax-regression.ipynb)] 
+[[nbviewer](http://nbviewer.ipython.org/github/1iyiwei/pyml/blob/master/code/bonus/softmax-regression.ipynb)]
 
 <hr>
 
