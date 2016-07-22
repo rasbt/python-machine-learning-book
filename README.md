@@ -105,7 +105,13 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 - [Model evaluation, model selection, and algorithm selection in machine learning - Part I](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html)
 
+---
 
+We had such a great time at [SciPy 2016](http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930&) in Austin! It was a real pleasure to meet and chat with so many readers of my book. Thanks so much for all the nice words and feedback! And in case you missed it, Andreas Mueller and I gave an **Introduction to Machine Learning with Scikit-learn**; if you are interested, the video recordings of [Part I](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6) and [Part II](https://www.youtube.com/watch?v=Cte8FYCpylk&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&index=90) are now online!
+
+[![](images/scipy2016.jpg)](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6)
+
+---
 
 **Note**
 
