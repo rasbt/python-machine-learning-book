@@ -20,6 +20,31 @@ ISBN-10: 1783555130<br>
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br></div>
 
+#### Citing this Book
+
+You are very welcome to re-use the code snippets or other contents from this book
+in scientific publications and other works;
+in this case, I would appreciate citations to the original source:
+
+**BibTeX**:
+
+```
+@Book{raschka2015python,
+ author = {Raschka, Sebastian},
+ title = {Python Machine Learning},
+ publisher = {Packt Publishing},
+ year = {2015},
+ address = {Birmingham, UK},
+ isbn = {1783555130}
+ }
+```
+
+
+**MLA**:
+
+
+Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing, 2015. Print.
+
 
 ### [Feedback & Reviews](./docs/feedback.md)
 

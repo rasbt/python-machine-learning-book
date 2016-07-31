@@ -2,7 +2,7 @@
 
 Obviously, we are working with a labeled dataset when we are building (typically predictive) models using supervised learning. The goal of unsupervised learning is often of exploratory nature (clustering, compression) while working with unlabeled data.
 
-In semi-supervised learning, we are basically trying to solve a supervised learning approach using labeled data, augmented by (typically a small amount of) unlabeled data. So, our goal is to overcome one of the problems of supervised learning -- having not enough labeled data. Adding cheap and abundant unlabeled data, we are hoping to build a better model than using supervised learning alone.
+In semi-supervised learning, we are trying to solve a supervised learning approach using labeled data augmented by unlabeled data; the number of unlabeled or partially labeled samples is often larger than the number of labeled samples, since the former are less expensive and easier to obtain. So, our goal is to overcome one of the problems of supervised learning -- having not enough labeled data. Adding cheap and abundant unlabeled data, we are hoping to build a better model than using supervised learning alone.
 
 Although semi-supervised learning sounds like a powerful approach, we have to be careful. Semi-supervised learning is not always "the hammer to the nail" that we are looking for -- sometimes it works great, sometimes it doesn't. Here's a great paper on this:
 
