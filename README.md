@@ -174,6 +174,14 @@ In addition, some of you asked me about a platform for readers to discuss the co
 
 ---
 
+## Examples and Applications by Readers
+
+Once again, I have to say (big!) THANKS for all the nice feedback about the book. I've received many emails from readers, who
+put the concepts and examples from this book out into the real world and make good use of them in their projects. In this section, I am
+starting to gather some of these great applications, and I'd be more than happy to add your project to this list -- just shoot me a quick mail!
+
+- [40 scripts on Optical Character Recognition](https://github.com/rrlyman/PythonMachineLearingExamples) by [Richard Lyman](https://github.com/rrlyman)
+- [Code experiments](https://github.com/jeremyn/python-machine-learning-book) by [Jeremy Nation](https://github.com/jeremyn)
 
 ## FAQ
 
