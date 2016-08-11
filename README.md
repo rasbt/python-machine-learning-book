@@ -9,7 +9,7 @@ You are not sure if this book is for you? Please checkout the excerpts from the 
 
 ---
 
-![](./images/pymle_cover_small.jpg)
+[![](./images/pymle_cover_double_small.jpg)](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_1?ie=UTF8&qid=1470882464&sr=8-1&keywords=python+machine+learning)
 
 <div style='font-size:0.6em;'>
 <sup>1st edition, published September 23rd 2015<br>
