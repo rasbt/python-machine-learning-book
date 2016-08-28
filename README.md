@@ -48,7 +48,9 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 
 ### [Feedback & Reviews](./docs/feedback.md)
 
-[ ![](./images/pymle_amzn.png)](./docs/feedback.md)
+#### [Short review snippets](./docs/feedback.md))
+
+[![](./images/pymle_amzn.png)](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_1?ie=UTF8&qid=1472342570&sr=8-1&keywords=sebastian+raschka)
 
 ---
 > *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
@@ -59,6 +61,14 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 
 > *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*    
 – [Jason Wolosonovich](https://www.linkedin.com/pulse/python-machine-learning-sebastian-raschka-review-jason-wolosonovich?trk=prof-post)
+
+
+#### Longer reviews
+
+If you need help to decide whether this book is for you, check out some of the "longer" reviews linked below. (If you wrote a review, please let me know, and I'd be happy to add it to the list).
+
+- [Python Machine Learning Review](http://www.bcs.org/content/conWebDoc/55586) by Patrick Hill at the Chartered Institute for IT
+- [Book Review: Python Machine Learning by Sebastian Raschka](http://whatpixel.com/python-machine-learning-book-review/) by Alex Turner at WhatPixel
 
 
 
