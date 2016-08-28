@@ -1,6 +1,10 @@
 # python-machine-learning-book
 
-*Python Machine Learning* code repository.
+#### Python Machine Learning* code repository.
+
+
+[![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/python-machine-learning-reader-discussion-board)
+
 
 What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! This is not yet just another "this is how scikit-learn works" book. I aim to explain all the underlying concepts, tell you everything you need to know in terms of best practices and caveats, and
 we will put those concepts into action mainly using NumPy, scikit-learn, and Theano.
@@ -150,7 +154,7 @@ We had such a great time at [SciPy 2016](http://scipy2016.scipy.org/ehome/index.
 
 #### PyData Chicago 2016
 
-I attempted the reather challenging task to give introduction to scikit-learn & machine learning in *just* 90 minutes at PyData Chicago 2016. The slides and tutorial material are available at "[Learning scikit-learn -- An Introduction to Machine Learning in Python](https://github.com/rasbt/pydata-chicago2016-ml-tutorial)." 
+I attempted the reather challenging task to give introduction to scikit-learn & machine learning in *just* 90 minutes at PyData Chicago 2016. The slides and tutorial material are available at "[Learning scikit-learn -- An Introduction to Machine Learning in Python](https://github.com/rasbt/pydata-chicago2016-ml-tutorial)."
 
 
 ---
