@@ -48,7 +48,7 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 
 ### [Feedback & Reviews](./docs/feedback.md)
 
-#### [Short review snippets](./docs/feedback.md))
+#### [Short review snippets](./docs/feedback.md)
 
 [![](./images/pymle_amzn.png)](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_1?ie=UTF8&qid=1472342570&sr=8-1&keywords=sebastian+raschka)
 
@@ -142,9 +142,16 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 ---
 
+#### SciPy 2016
+
 We had such a great time at [SciPy 2016](http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930&) in Austin! It was a real pleasure to meet and chat with so many readers of my book. Thanks so much for all the nice words and feedback! And in case you missed it, Andreas Mueller and I gave an **Introduction to Machine Learning with Scikit-learn**; if you are interested, the video recordings of [Part I](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6) and [Part II](https://www.youtube.com/watch?v=Cte8FYCpylk&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&index=90) are now online!
 
 [![](images/scipy2016.jpg)](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6)
+
+#### PyData Chicago 2016
+
+I attempted the reather challenging task to give introduction to scikit-learn & machine learning in *just* 90 minutes at PyData Chicago 2016. The slides and tutorial material are available at "[Learning scikit-learn -- An Introduction to Machine Learning in Python](https://github.com/rasbt/pydata-chicago2016-ml-tutorial)." 
+
 
 ---
 
@@ -353,11 +360,3 @@ I am happy to answer questions! Just write me an [email](mailto:mail@sebastianra
 or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
 
 If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
-
-
----
-
-### What's Next
-
-- [SciPy 2016](http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930&) in Austin, Texas is coming up soon. I am really excited to teach the [scikit-learn tutorial session](https://www.eiseverywhere.com/ehome/146062/332960/) with [Andreas Mueller](http://amueller.github.io/) on July 12th this year! I am looking forward to seeing & meeting you all there!
-- I have received a bunch of emails lately, and YES, I am really looking forward to writing a new book! Deep learning is the topic that excites me most at the moment, but I think that building up the math background in an interesting, engaging way may be time well spent?! I've been brainstorming lately, and a "Think Machine Learning" series may be a cool idea. I am planning to write about calculus, linear algebra, probability theory, statistics, and all the other puzzle pieces to assemble the big picture: Deep learning. So, stay tuned while I am [getting started!](https://leanpub.com/ml-precalc) :)
