@@ -123,6 +123,6 @@ For more information about the Jupyter notebook, I recommend the [Jupyter Beginn
 
 To start a slideshow, just type the following:
 
-    $ jupyter nbconvert --to slides --post serve ch01.ipynb 
+    $ jupyter nbconvert --to slides --post serve --ServePostProcessor.port=8910 ch01.ipynb 
 
 For more information, see [this](http://www.slideviper.oquanta.info/tutorial/slideshow_tutorial_slides.html).
