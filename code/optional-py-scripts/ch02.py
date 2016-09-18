@@ -410,4 +410,4 @@ plt.ylabel('Average Cost')
 # plt.savefig('./adaline_5.png', dpi=300)
 plt.show()
 
-ada.partial_fit(X_std[0, :], y[0])
+ada = ada.partial_fit(X_std[0, :], y[0])
