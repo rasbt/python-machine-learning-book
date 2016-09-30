@@ -15,16 +15,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
-from sklearn.cross_validation import StratifiedKFold
-from sklearn.cross_validation import cross_val_score
-from sklearn.learning_curve import learning_curve
-from sklearn.learning_curve import validation_curve
-from sklearn.grid_search import GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
@@ -37,6 +31,24 @@ from sklearn.metrics import auc
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import accuracy_score
 from scipy import interp
+
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+    from sklearn.cross_validation import StratifiedKFold
+    from sklearn.cross_validation import cross_val_score
+    from sklearn.learning_curve import learning_curve
+    from sklearn.learning_curve import validation_curve
+    from sklearn.grid_search import GridSearchCV
+else:
+    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import StratifiedKFold
+    from sklearn.model_selection import cross_val_score
+    from sklearn.model_selection import learning_curve
+    from sklearn.model_selection import validation_curve
+    from sklearn.model_selection import GridSearchCV
 
 #############################################################################
 print(50 * '=')
@@ -83,31 +95,39 @@ print(50 * '=')
 print('Section: K-fold cross-validation')
 print(50 * '-')
 
-kfold = StratifiedKFold(y=y_train,
-                        n_folds=10,
-                        random_state=1)
+if Version(sklearn_version) < '0.18':
+    kfold = StratifiedKFold(y=y_train,
+                            n_folds=10,
+                            random_state=1)
+else:
+    kfold = StratifiedKFold(n_splits=10,
+                            random_state=1).split(X_train, y_train)
 
 scores = []
 for k, (train, test) in enumerate(kfold):
     pipe_lr.fit(X_train[train], y_train[train])
     score = pipe_lr.score(X_train[test], y_train[test])
     scores.append(score)
-    print('Fold: %s, Class dist.: %s, Acc: %.3f' % (k+1,
+    print('Fold: %s, Class dist.: %s, Acc: %.3f' % (k + 1,
           np.bincount(y_train[train]), score))
 
 print('\nCV accuracy: %.3f +/- %.3f' % (np.mean(scores), np.std(scores)))
 
 print('Using StratifiedKFold')
-kfold = StratifiedKFold(y=y_train,
-                        n_folds=10,
-                        random_state=1)
+if Version(sklearn_version) < '0.18':
+    kfold = StratifiedKFold(y=y_train,
+                            n_folds=10,
+                            random_state=1)
+else:
+    kfold = StratifiedKFold(n_splits=10,
+                            random_state=1).split(X_train, y_train)
 
 scores = []
 for k, (train, test) in enumerate(kfold):
     pipe_lr.fit(X_train[train], y_train[train])
     score = pipe_lr.score(X_train[test], y_train[test])
     scores.append(score)
-    print('Fold: %s, Class dist.: %s, Acc: %.3f' % (k+1,
+    print('Fold: %s, Class dist.: %s, Acc: %.3f' % (k + 1,
           np.bincount(y_train[train]), score))
 
 print('\nCV accuracy: %.3f +/- %.3f' % (np.mean(scores), np.std(scores)))
@@ -134,12 +154,12 @@ pipe_lr = Pipeline([('scl', StandardScaler()),
                     ('clf', LogisticRegression(penalty='l2', random_state=0))])
 
 train_sizes, train_scores, test_scores =\
-                learning_curve(estimator=pipe_lr,
-                               X=X_train,
-                               y=y_train,
-                               train_sizes=np.linspace(0.1, 1.0, 10),
-                               cv=10,
-                               n_jobs=1)
+    learning_curve(estimator=pipe_lr,
+                   X=X_train,
+                   y=y_train,
+                   train_sizes=np.linspace(0.1, 1.0, 10),
+                   cv=10,
+                   n_jobs=1)
 
 train_mean = np.mean(train_scores, axis=1)
 train_std = np.std(train_scores, axis=1)
@@ -182,12 +202,12 @@ print(50 * '-')
 
 param_range = [0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
 train_scores, test_scores = validation_curve(
-                estimator=pipe_lr,
-                X=X_train,
-                y=y_train,
-                param_name='clf__C',
-                param_range=param_range,
-                cv=10)
+    estimator=pipe_lr,
+    X=X_train,
+    y=y_train,
+    param_name='clf__C',
+    param_range=param_range,
+    cv=10)
 
 train_mean = np.mean(train_scores, axis=1)
 train_std = np.std(train_scores, axis=1)
@@ -345,7 +365,14 @@ pipe_lr = Pipeline([('scl', StandardScaler()),
 
 X_train2 = X_train[:, [4, 14]]
 
-cv = StratifiedKFold(y_train, n_folds=3, random_state=1)
+if Version(sklearn_version) < '0.18':
+    cv = StratifiedKFold(y_train,
+                         n_folds=3,
+                         random_state=1)
+
+else:
+    cv = list(StratifiedKFold(n_splits=3,
+                              random_state=1).split(X_train, y_train))
 
 fig = plt.figure(figsize=(7, 5))
 
@@ -367,7 +394,7 @@ for i, (train, test) in enumerate(cv):
              tpr,
              lw=1,
              label='ROC fold %d (area = %0.2f)'
-                   % (i+1, roc_auc))
+                   % (i + 1, roc_auc))
 
 plt.plot([0, 1],
          [0, 1],
