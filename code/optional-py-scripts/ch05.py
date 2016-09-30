@@ -12,7 +12,6 @@
 
 import pandas as pd
 import numpy as np
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
@@ -26,6 +25,17 @@ from scipy.spatial.distance import pdist, squareform
 from scipy import exp
 from scipy.linalg import eigh
 from matplotlib.ticker import FormatStrFormatter
+
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+    from sklearn.lda import LDA
+else:
+    from sklearn.model_selection import train_test_split
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+
 
 #############################################################################
 print(50 * '=')
