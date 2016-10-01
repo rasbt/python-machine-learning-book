@@ -12,7 +12,6 @@
 
 import numpy as np
 from sklearn import datasets
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
@@ -24,6 +23,14 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import export_graphviz
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
+
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+else:
+    from sklearn.model_selection import train_test_split
 
 #############################################################################
 print(50 * '=')
@@ -191,7 +198,8 @@ plt.legend(loc='upper left')
 # plt.savefig('./figures/logistic_regression.png', dpi=300)
 plt.show()
 
-print('Predicted probabilities', lr.predict_proba(X_test_std[0, :]))
+print('Predicted probabilities', lr.predict_proba(X_test_std[0, :]
+                                                  .reshape(1, -1)))
 
 #############################################################################
 print(50 * '=')

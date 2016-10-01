@@ -17,7 +17,6 @@ import re
 import nltk
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.grid_search import GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -26,6 +25,13 @@ from sklearn.linear_model import SGDClassifier
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 
+# Added version check for recent scikit-learn 0.18 checks
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.cross_validation import GridSearchCV
+else:
+    from sklearn.model_selection import GridSearchCV
 
 #############################################################################
 print(50 * '=')
