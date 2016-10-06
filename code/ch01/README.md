@@ -119,3 +119,10 @@ Jupyter will start in our default browser (typically running at [http://localhos
 ![](./images/ipynb_ex2.png)
 
 For more information about the Jupyter notebook, I recommend the [Jupyter Beginner Guide](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html).
+
+
+To start a slideshow, just type the following:
+
+    $ jupyter nbconvert --to slides --post serve --ServePostProcessor.port=8910 ch01.ipynb 
+
+For more information, see [this](http://www.slideviper.oquanta.info/tutorial/slideshow_tutorial_slides.html).
