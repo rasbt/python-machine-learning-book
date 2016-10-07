@@ -66,11 +66,11 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 > *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*    
 – [Jason Wolosonovich](https://www.linkedin.com/pulse/python-machine-learning-sebastian-raschka-review-jason-wolosonovich?trk=prof-post)
 
-> *The best book I've seen to come out of PACKT Publishing. This is a very well written introduction to machine learning with Python. As others have noted, a perfect mixture of theory and application.*  
-- [Josh D.](https://www.amazon.com/gp/customer-reviews/R27WB1GWTNGIR2/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
+> *The best book I've seen to come out of PACKT Publishing. This is a very well written introduction to machine learning with Python. As others have noted, a perfect mixture of theory and application.*    
+– [Josh D.](https://www.amazon.com/gp/customer-reviews/R27WB1GWTNGIR2/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
-> *A book with a blend of qualities that is hard to come by: combines the needed mathematics to control the theory with the applied coding in Python. Also great to see it doesn't waste paper in giving a primer on Python as many other books do just to appeal to the greater audience. You can tell it's been written by knowledgeable writers and not just DIY geeks.*  
-- [Amazon Customer](https://www.amazon.com/gp/customer-reviews/RZWY4TF66Z6V0/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
+> *A book with a blend of qualities that is hard to come by: combines the needed mathematics to control the theory with the applied coding in Python. Also great to see it doesn't waste paper in giving a primer on Python as many other books do just to appeal to the greater audience. You can tell it's been written by knowledgeable writers and not just DIY geeks.*    
+– [Amazon Customer](https://www.amazon.com/gp/customer-reviews/RZWY4TF66Z6V0/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
 
 #### Longer reviews
