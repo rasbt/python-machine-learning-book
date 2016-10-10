@@ -1,0 +1,3 @@
+import theano
+
+theano.test()
