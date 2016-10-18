@@ -160,7 +160,7 @@ We had such a great time at [SciPy 2016](http://scipy2016.scipy.org/ehome/index.
 
 #### PyData Chicago 2016
 
-I attempted the reather challenging task to give introduction to scikit-learn & machine learning in *just* 90 minutes at PyData Chicago 2016. The slides and tutorial material are available at "[Learning scikit-learn -- An Introduction to Machine Learning in Python](https://github.com/rasbt/pydata-chicago2016-ml-tutorial)."
+I attempted the rather challenging task of introducing scikit-learn & machine learning in *just* 90 minutes at PyData Chicago 2016. The slides and tutorial material are available at "[Learning scikit-learn -- An Introduction to Machine Learning in Python](https://github.com/rasbt/pydata-chicago2016-ml-tutorial)."
 
 
 ---
