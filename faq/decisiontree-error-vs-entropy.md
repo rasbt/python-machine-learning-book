@@ -60,7 +60,7 @@ Now, is it possible to learn this hypothesis (i.e., tree model) by minimizing th
 
 ![](./decisiontree-error-vs-entropy/Slide2.png)
 
-As we can see, the Information Gain after the first split is exactly 0, since average classification error of the 2 child nodes is exactly the same as the classification error of the parent node (40/120 = 0.3333333). In this case, splitting the initial training set wouldn't yield any improvement in terms of our classification error criterion, and thus, the tree algorithm would stop at this point.
+As we can see, the Information Gain after the first split is exactly 0, since average classification error of the 2 child nodes is exactly the same as the classification error of the parent node (40/120 = 0.3333333). In this case, splitting the initial training set wouldn't yield any improvement in terms of our classification error criterion, and thus, the tree algorithm would stop at this point (for this statement to be true, we have to make the assumption that neither splitting on feature x2 nor x3 would lead to an Information gain as well).
 
 Next, let's see what happens if we use Entropy as an impurity metric:
 
