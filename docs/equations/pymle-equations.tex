@@ -13,7 +13,7 @@
 
 \title{Python Machine Learning\\ Equation Reference}
 \author{Sebastian Raschka \\ \texttt{mail@sebastianraschka.com}} 
-\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 10\slash 18\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
+\date{ \vspace{2cm} 05\slash 04\slash 2015 (last updated: 11\slash 3\slash 2016) \\\begin{flushleft} \vspace{2cm}  \noindent\rule{10cm}{0.4pt} \\ Code Repository and Resources:: \href{https://github.com/rasbt/python-machine-learning-book}{https://github.com/rasbt/python-machine-learning-book} \vspace{2cm} \endgraf @book\{raschka2015python,\\
   title=\{Python Machine Learning\},\\
   author=\{Raschka, Sebastian\},\\
   year=\{2015\},\\
@@ -432,7 +432,7 @@ The output of the sigmoid function is then interpreted as the probability of par
 \phi(z) = P(y=1 | \mathbf{x}; \mathbf{w})
 \]
 
-given its features $x$ parameterized by the weights $w$. For example, if we compute $\phi(z) = 0.8$ for a particular flower sample, it means that the chance that this sample is an Iris-Versicolor  ower is 80 percent. Similarly, the probability that this  ower is an Iris-Setosa  ower can be calculated as $P(y=0 | \mathbf{x};\mathbf{w})=1 - P (y=1 | \mathbf{x}; \mathbf{w}) = 0.2 or 20 percent.$ The predicted probability can then simply be converted into a binary outcome via a quantizer (unit step function):
+given its features $\mathbf{x}$ parameterized by the weights $\mathbf{w}$. For example, if we compute $\phi(z) = 0.8$ for a particular flower sample, it means that the chance that this sample is an Iris-Versicolor flower is 80 percent. Similarly, the probability that this  ower is an Iris-Setosa  ower can be calculated as $P(y=0 | \mathbf{x};\mathbf{w})=1 - P (y=1 | \mathbf{x}; \mathbf{w}) = 0.2$ or 20 percent. The predicted probability can then simply be converted into a binary outcome via a quantizer (unit step function):
 
 \[ \hat{y}= \begin{cases} 
       1 & \text{ if } \phi(z) \ge 0.5 \\
