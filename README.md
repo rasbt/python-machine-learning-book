@@ -72,6 +72,8 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 > *A book with a blend of qualities that is hard to come by: combines the needed mathematics to control the theory with the applied coding in Python. Also great to see it doesn't waste paper in giving a primer on Python as many other books do just to appeal to the greater audience. You can tell it's been written by knowledgeable writers and not just DIY geeks.*    
 – [Amazon Customer](https://www.amazon.com/gp/customer-reviews/RZWY4TF66Z6V0/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
+> *Sebastian Raschka created an amazing machine learning tutorial which combines theory with practice. The book explains machine learning from a theoretical perspective and has tons of coded examples to show how you would actually use the machine learning technique. It can be read by a beginner or advanced programmer.*
+- William P. Ross, [7 Must Read Python Books](http://williampross.com/7-must-read-python-books/)
 
 #### Longer reviews
 
