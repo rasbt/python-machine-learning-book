@@ -9,6 +9,7 @@
 # License: MIT
 # https://github.com/rasbt/python-machine-learning-book/blob/master/LICENSE.txt
 
+import os
 import theano
 from theano import tensor as T
 import numpy as np
