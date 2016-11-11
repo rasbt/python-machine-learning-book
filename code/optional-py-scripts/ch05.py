@@ -280,7 +280,7 @@ plt.ylabel('"discriminability" ratio')
 plt.xlabel('Linear Discriminants')
 plt.ylim([-0.1, 1.1])
 plt.legend(loc='best')
-plt.tight_layout()
+# plt.tight_layout()
 # plt.savefig('./figures/lda1.png', dpi=300)
 plt.show()
 
