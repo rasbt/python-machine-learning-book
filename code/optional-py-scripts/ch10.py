@@ -120,7 +120,7 @@ y = df['MEDV'].values
 sc_x = StandardScaler()
 sc_y = StandardScaler()
 X_std = sc_x.fit_transform(X)
-y_std = sc_y.fit_transform(y)
+y_std = sc_y.fit_transform(y[:, np.newaxis]).flatten()
 
 lr = LinearRegressionGD()
 lr.fit(X_std, y_std)
@@ -151,7 +151,7 @@ print('Slope: %.3f' % lr.w_[1])
 print('Intercept: %.3f' % lr.w_[0])
 
 
-num_rooms_std = sc_x.transform([5.0])
+num_rooms_std = sc_x.transform(np.array([[5.0]]))
 price_std = lr.predict(num_rooms_std)
 print("Price in $1000's: %.3f" % sc_y.inverse_transform(price_std))
 
