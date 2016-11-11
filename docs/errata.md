@@ -2,21 +2,15 @@ The *Known Errors* Leaderboard
 ========================
 
 
-### Note (2016-04-15)
 
- ~~I am happy to say that layout team recently agreed to fix all the errors listed in the current errata! The fixes have already been applied, and I got a glance at the current version last -- it looks good :). So, based on what I've heard, the revised version will go online on April 19th, 2016 across the various platforms. If you got the book via Packt directly, you just need to log back in to re-download the .pdf, .epub, and/or .mobi files. Also, I was told that the same applies to the Kindle and iBooks versions and so forth. There may be a few delays depending on how fast the servers propagate the changes, but I will check back next week and post another update as soon as I see that the revision's gone life! Also, I want to say that I am really, really happy about all your feedback, and I really appreciate the nice words you are sending me about the book despite the little typos here and there! Thank you!~~
-
-### Note (2016-04-23)
-
-**I just checked the e-book out via my Packt account; I am happy to announce that the revision has gone live! Based on my interpretation of the publisher's feedback, the revision should be available via the other platforms as well. Based on reader feedback, the revised version is also available via O'Reilly, and it's definitely available via Amazon (I've had the chance to look at a recent paperback). Please scroll down to the "Current Errata" section below for more information on the current state of the book.**
-
-
----
 
 I tried my best to cut all the little typos, errors, and formatting bugs that slipped through the copy editing stage. Even so, I think it is just human to have a little typo here and there in a first edition. I know that this can be annoying as a reader, and I was thinking to associate it with something positive. Let's have a little leaderboard (inspired by Donald Knuth's "[Known Errors in My Books](http://www-cs-faculty.stanford.edu/~uno/books.html)").
 
 **Every error that is not listed in the *Errata* yet will be rewarded with $1.**
 The only catch here is that you won't receive any single cent. Instead, I am going to donate the amount to [UNICEF USA](http://www.unicefusa.org), the US branch of the United Nations agency for raising funds to provide emergency food and healthcare for children in developing countries.
+
+
+
 
 I would be happy if you just write me a short [mail](mailto:mail@sebastianraschka.com) including the error and page number, and please let me know if you want to be listed on the public leaderboard.
 
@@ -24,10 +18,13 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $20.00
+- Current amount for the next donation: $00.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
+  - [$50.00 2016-11-10](./2016-11-10-commoncause.png) *
+
+* Although I pledged to donate all money to UNICEF, I decided to make this extra donation to help *Common Cause*, a "nonpartisan organization dedicated to restoring the core values of American democracy, reinventing an open, honest and accountable government that serves the public interest, and empowering ordinary people to make their voices heard in the political process."
 
 ## Leaderboard
 
@@ -95,6 +92,15 @@ This time, the easiest way may be to go to page 6 in chapter 1. Finally, the lab
 
 #### [Language Errata PDF v.3](http://sebastianraschka.com/pdf/books/pymle/errata_3rd_language.pdf)
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Old Errata: Oct 25, 2015 - Apr 22, 2016
 
