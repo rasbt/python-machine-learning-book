@@ -372,7 +372,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 - [Why do you use so many leading and trailing underscores in the code examples?](./faq/underscore-convention.md)
 - [What is the purpose of the `return self` idioms in your code examples?](./faq/return_self_idiom.md)
 - [Are there any prerequisites and recommended pre-readings?](./faq/prerequisites.md)
-
+- [How can I apply SVM to categorical data?](./faq/svm_for_categorical.md)
 
 
 ## Contact
