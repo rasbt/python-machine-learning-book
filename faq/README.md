@@ -133,6 +133,7 @@ Sebastian
 - [What is the difference between filter, wrapper, and embedded methods for feature selection?](./feature_sele_categories.md)
 - [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./dataprep-vs-dataengin.md)
 - [Is a bag of words feature representation for text classification considered as a sparse matrix?](./bag-of-words-sparsity.md)
+- [How can I apply an SVM to categorical data?](./svm_for_categorical_data.md)
 
 ##### Naive Bayes
 
