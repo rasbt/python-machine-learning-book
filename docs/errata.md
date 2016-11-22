@@ -18,13 +18,12 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $00.00
+- Current amount for the next donation: $1.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
-  - [$50.00 2016-11-10](./2016-11-10-commoncause.png) *
+  - [$50.00 2016-11-10](./2016-11-10-commoncause.png)
 
-* Although I pledged to donate all money to UNICEF, I decided to make this extra donation to help *Common Cause*, a "nonpartisan organization dedicated to restoring the core values of American democracy, reinventing an open, honest and accountable government that serves the public interest, and empowering ordinary people to make their voices heard in the political process."
 
 ## Leaderboard
 
@@ -65,6 +64,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 27. Simon C. ($1.00)
 28. Andrew R. ($1.00)
 29. Haesun P. ($1.00)
+30. Raga M. ($1.00)
 
 
 ...
