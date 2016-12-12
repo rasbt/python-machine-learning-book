@@ -2,8 +2,8 @@
 
 Probably, you know me as a big advocate of *open source* and I like to share useful resources wherever and whenever I can! Most of my projects really benefit from resources people shared with me, the community, and the Internet as a whole. I am more than happy to do so likewise, that's one of the reasons why Python is so great, but this is a topic for another story ... :)
 
-I am really passionate about machine learning, and other than using it for my own interests, I am truly excited about sharing knowledge, getting you excited about this field, and helping you on your path of becoming an affluent machine learning practitioner. It would make me really happy to hear if I was successful with my mission, and that you find the contents of my book are beneficial. If you are developing learning resources for other people, that's great, and if figures, code examples, math formulae, or passages are helpful for that, by all means, go for it!
-Unfortunately though, writing a book for a/most publisher/s comes with some restrictions, but I have spoken with the content manager of this book, who in turn talked to the *Copyright Team*.
+I am really passionate about machine learning, and other than using it for my own interests, I am truly excited about sharing knowledge, getting you excited about this field, and helping you on your path of becoming an affluent machine learning practitioner. It would make me really happy to hear if I was successful with my mission, and that you find the contents of my book are beneficial. If you are developing learning resources for other people, that's great, and if figures, code examples, math formulas, or passages are helpful for that, by all means, go for it!
+Unfortunately though, writing a book for most publishers comes with some restrictions, but I have spoken with the content manager of this book, who in turn talked to the *Copyright Team*.
 
 > I hope you don’t mind if ask you a few quick questions about the copyright for the images since I couldn’t find anything specific about the rules on the Packt website.
 For example, if someone wants to use one of the images from the book in
