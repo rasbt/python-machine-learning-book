@@ -238,6 +238,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 
 ### Questions about the Machine Learning Field
 
+- [How are Artificial Intelligence and Machine Learning related?](./faq/ai-and-ml.md)
 - [What are some real-world examples of applications of machine learning in the field?](./faq/ml-examples.md)
 - [What are the different fields of study in data mining?](./faq/datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./faq/datamining-vs-ml.md)
