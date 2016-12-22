@@ -130,9 +130,9 @@ If you need help to decide whether this book is for you, check out some of the "
 
 #### Translations
 
-- [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via “mitp Verlag”
-- [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via “Impress Top Gear”
-
+- [Italian translation](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/) via "Apogeo"
+- [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via "mitp Verlag"
+- [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via "Impress Top Gear"
 
 ---
 
@@ -189,6 +189,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ### Translations
 
+[![](./images/pymle-cover_it.jpg)](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/)
 [![](./images/pymle-cover_de.jpg)](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/)
 [![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
 
