@@ -65,7 +65,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 28. Andrew R. ($1.00)
 29. Haesun P. ($1.00)
 30. Raga M. ($1.00)
-31. Ryszard K. ($1.00)
+31. Ryszard T. Kaleta ($1.00)
 
 
 ...
