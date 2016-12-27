@@ -30,7 +30,7 @@ class Perceptron(object):
     w_ : 1d-array
         Weights after fitting.
     errors_ : list
-        Number of misclassifications in every epoch.
+        Number of misclassifications (updates) in each epoch.
 
     """
     def __init__(self, eta=0.01, n_iter=10):
@@ -188,8 +188,8 @@ class AdalineGD(object):
     -----------
     w_ : 1d-array
         Weights after fitting.
-    errors_ : list
-        Number of misclassifications in every epoch.
+    cost_ : list
+        Sum-of-squares cost function value in each epoch.
 
     """
     def __init__(self, eta=0.01, n_iter=50):
@@ -302,8 +302,9 @@ class AdalineSGD(object):
     -----------
     w_ : 1d-array
         Weights after fitting.
-    errors_ : list
-        Number of misclassifications in every epoch.
+    cost_ : list
+        Sum-of-squares cost function value averaged over all
+        training samples in each epoch.
     shuffle : bool (default: True)
         Shuffles training data every epoch if True to prevent cycles.
     random_state : int (default: None)
