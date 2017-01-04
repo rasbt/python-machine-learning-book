@@ -221,6 +221,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 
 - [40 scripts on Optical Character Recognition](https://github.com/rrlyman/PythonMachineLearingExamples) by [Richard Lyman](https://github.com/rrlyman)
 - [Code experiments](https://github.com/jeremyn/python-machine-learning-book) by [Jeremy Nation](https://github.com/jeremyn)
+- [What I Learned Implementing a Classifier from Scratch in Python](http://www.jeannicholashould.com) by [Jean-Nicholas Hould](http://www.jeannicholashould.com)
 
 ## FAQ
 
