@@ -22,7 +22,13 @@ Publisher: Packt Publishing<br>
 Language: English<br>
 ISBN-10: 1783555130<br>  
 ISBN-13: 978-1783555130<br>
-Kindle ASIN: B00YSILNL0<br></div>
+Kindle ASIN: B00YSILNL0<br>
+<br>
+German ISBN-13: 978-3958454224<br>
+Japanese ISBN-13: 978-4844380603<br>
+Italian ISBN-13: 978-8850333974<br>
+Chinese ISBN-13: 978-9864341405<br>
+</div>
 
 
 ## Table of Contents and Code Notebooks
@@ -133,6 +139,7 @@ If you need help to decide whether this book is for you, check out some of the "
 - [Italian translation](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/) via "Apogeo"
 - [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via "mitp Verlag"
 - [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via "Impress Top Gear"
+- [Chinese translation](https://taiwan.kinokuniya.com/bw/9789864341405)
 
 ---
 
@@ -192,6 +199,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 [![](./images/pymle-cover_it.jpg)](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/)
 [![](./images/pymle-cover_de.jpg)](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/)
 [![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
+[![](./images/pymle-cover_cn.jpg)](https://taiwan.kinokuniya.com/bw/9789864341405)
 
 <hr>
 
