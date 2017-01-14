@@ -32,7 +32,6 @@ Sebastian
 - [What is the Definition of Data Science?](./definition_data-science.md)
 - [How do Data Scientists perform model selection? Is it different from Kaggle?](./model-selection-in-datascience.md)
 
-
 ### Questions about the Machine Learning Field
 
 - [How are Artificial Intelligence and Machine Learning related?](./ai-and-ml.md)
@@ -70,6 +69,7 @@ Sebastian
 ##### Model evaluation
 
 - [What is overfitting?](./overfitting.md)
+- [How can I avoid overfitting?](./avoid-overfitting.md)
 - [Is it always better to have the largest possible number of folds when performing cross validation?](./number-of-kfolds.md)
 - [When training an SVM classifier, is it better to have a large or small number of support vectors?](./num-support-vectors.md)
 - [How do I evaluate a model?](./evaluate-a-model.md)

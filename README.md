@@ -283,6 +283,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 ##### Model evaluation
 
 - [What is overfitting?](./faq/overfitting.md)
+- [How can I avoid overfitting?](./faq/avoid-overfitting.md)
 - [Is it always better to have the largest possible number of folds when performing cross validation?](./faq/number-of-kfolds.md)
 - [When training an SVM classifier, is it better to have a large or small number of support vectors?](./faq/num-support-vectors.md)
 - [How do I evaluate a model?](./faq/evaluate-a-model.md)
