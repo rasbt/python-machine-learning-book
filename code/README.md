@@ -1,6 +1,6 @@
 ## Resources for setting up your coding environment
 
-- [Instructions for setting up Python and the Jupiter Notebook](./ch01/README.md)  
+- [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)  
 
 - A [quick and great NumPy refresher](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html) that covers everything (and more) you'd need for this book
 
