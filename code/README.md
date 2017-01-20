@@ -2,6 +2,8 @@
 
 - [Instructions for setting up Python and the Jupiter Notebook](./ch01/README.md)  
 
+***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running/running_jupyter_nb.pdf) that illustrates this process***
+
 - A [quick and great NumPy refresher](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html) that covers everything (and more) you'd need for this book
 
 - Recommended! To check your coding environment, open the `check_environment.ipynb` (it can be found in this directory) in Jupyter Notebook and execute the code cell:
