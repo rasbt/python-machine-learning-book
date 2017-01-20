@@ -1,6 +1,6 @@
 ## Resources for setting up your coding environment
 
-- [Instructions for setting up Python and the Jupiter Notebook](./ch01/README.md)  
+- [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)  
 
 ***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running/running_jupyter_nb.pdf) that illustrates this process***
 
