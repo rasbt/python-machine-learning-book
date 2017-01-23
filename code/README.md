@@ -2,7 +2,7 @@
 
 - [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)  
 
-***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running/running_jupyter_nb.pdf) that illustrates this process***
+***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running_jupyter_nb.pdf) that illustrates this process***
 
 - A [quick and great NumPy refresher](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html) that covers everything (and more) you'd need for this book
 
