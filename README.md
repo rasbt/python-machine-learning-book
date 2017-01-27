@@ -201,7 +201,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 [![](./images/pymle-cover_de.jpg)](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/)
 [![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
 [![](./images/pymle-cover_cn.jpg)](https://taiwan.kinokuniya.com/bw/9789864341405)
-[![](./images/pymle-cover_kn.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
+[![](./images/pymle-cover_kr.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
 
 <hr>
 
