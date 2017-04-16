@@ -65,6 +65,19 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 - Equation Reference [[PDF](./docs/equations/pymle-equations.pdf)] [[TEX](./docs/equations/pymle-equations.tex)]
 
+#### Additional Math and NumPy Resources
+
+Some readers were asking about Math and NumPy primers, since they were not included due to length limitations. However, I recently put together such resources for another book, but I made these *chapters* freely available online in hope that they also serve as helpful background material for this book:
+
+
+- Algebra Basics [[PDF](https://sebastianraschka.com/pdf/books/dlb/appendix_b_algebra.pdf)] [[EPUB](https://sebastianraschka.com/pdf/books/dlb/appendix_b_algebra.epub)]
+
+- A Calculus and Differentiation Primer [[PDF](https://sebastianraschka.com/pdf/books/dlb/appendix_d_calculus.pdf)] [[EPUB](https://sebastianraschka.com/pdf/books/dlb/appendix_d_calculus.epub)]
+
+- Introduction to NumPy [[PDF](https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf)] [[EPUB](https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.epub)] [[Code Notebook](https://github.com/rasbt/deep-learning-book/blob/master/code/appendix_f_numpy-intro/appendix_f_numpy-intro.ipynb)]
+
+
+
 ---
 
 #### Citing this Book
