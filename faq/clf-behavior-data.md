@@ -4,7 +4,7 @@ The visualization part is a bit tricky since we as humans are limited to 1-3 D g
 
 ![](./clf-behavior-data/iris.png)
 
-(I've implemented this simple function here if you are interested: [mlxtend plot_decision_regions](http://rasbt.github.io/mlxtend/user_guide/evaluate/plot_decision_regions/).)
+(I've implemented this simple function here if you are interested: [mlxtend plot_decision_regions](http://rasbt.github.io/mlxtend/user_guide/plotting/plot_decision_regions/).)
 Other than that, I think that synthetic datasets like "XOR," "half-moons," or concentric circles would be good candidates for evaluating classifier on non-linear problems:
 
 <hr>

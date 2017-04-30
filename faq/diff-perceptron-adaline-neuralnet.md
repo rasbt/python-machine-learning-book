@@ -71,7 +71,7 @@ Let me show you an example :)
 Here's the Python code if you want to reproduce these plots:
 
 ```Python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 from mlxtend.classifier import Perceptron
 from mlxtend.classifier import Adaline
 from mlxtend.classifier import MultiLayerPerceptron

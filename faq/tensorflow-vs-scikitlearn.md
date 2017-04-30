@@ -37,7 +37,7 @@ lr.fit(X, y)
 In addition, I have a little helper function to plot the 2D decision surface:
 
 ```python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 
 plot_decision_regions(X, y, clf=lr)
 plt.title('Softmax Regression in scikit-learn')
@@ -131,7 +131,7 @@ plt.show()
 
 
 ```python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 
 plot_decision_regions(X, y, clf=lr)
 plt.title('Softmax Regression via Gradient Descent in TensorFlow')
