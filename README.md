@@ -1,6 +1,4 @@
-# python-machine-learning-book
-
-#### Python Machine Learning* code repository.
+# The *Python Machine Learning* book code repository.
 
 
 [![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/python-machine-learning-reader-discussion-board)
@@ -64,6 +62,14 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 <a href="https://github.com/rasbt/python-machine-learning-book/tree/master/docs/equations"><img src="images/equation-ref-logo.png" width="200" height="200" /></a>
 
 - Equation Reference [[PDF](./docs/equations/pymle-equations.pdf)] [[TEX](./docs/equations/pymle-equations.tex)]
+
+#### Slides for Teaching
+
+A big thanks to [Dmitriy Dligach](dmitriydligach) for sharing his slides from his machine learning course that is currently offered at [Loyola University Chicago](http://www.luc.edu/cs/). 
+
+- [https://github.com/dmitriydligach/PyMLSlides](https://github.com/dmitriydligach/PyMLSlides)
+
+
 
 #### Additional Math and NumPy Resources
 
