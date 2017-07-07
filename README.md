@@ -22,6 +22,11 @@ ISBN-10: 1783555130<br>
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br>
 <br>
+
+[![](./images/CRBadgeNotableBook.jpg)](http://www.computingreviews.com/recommend/bestof/notableitems.cfm?bestYear=2016)
+
+<br>
+
 German ISBN-13: 978-3958454224<br>
 Japanese ISBN-13: 978-4844380603<br>
 Italian ISBN-13: 978-8850333974<br>
