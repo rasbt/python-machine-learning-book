@@ -13,21 +13,26 @@ You are not sure if this book is for you? Please checkout the excerpts from the 
 
 [![](./images/pymle_cover_double_small.jpg)](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_1?ie=UTF8&qid=1470882464&sr=8-1&keywords=python+machine+learning)
 
-<div style='font-size:0.6em;'>
-<sup>1st edition, published September 23rd 2015<br>
+1st edition, published September 23rd 2015<br>
 Paperback: 454 pages<br>
 Publisher: Packt Publishing<br>  
 Language: English<br>
 ISBN-10: 1783555130<br>  
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br>
+
 <br>
+
+[![](./images/CRBadgeNotableBook.jpg)](http://www.computingreviews.com/recommend/bestof/notableitems.cfm?bestYear=2016)
+
+<br>
+
 German ISBN-13: 978-3958454224<br>
 Japanese ISBN-13: 978-4844380603<br>
 Italian ISBN-13: 978-8850333974<br>
 Chinese ISBN-13: 978-9864341405<br>
 Korean ISBN-13: 979-1187497035<br>
-</div>
+
 
 
 ## Table of Contents and Code Notebooks
