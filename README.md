@@ -32,6 +32,7 @@ Japanese ISBN-13: 978-4844380603<br>
 Italian ISBN-13: 978-8850333974<br>
 Chinese ISBN-13: 978-9864341405<br>
 Korean ISBN-13: 979-1187497035<br>
+Russianan ISBN-13: 978-5970604090<br>
 
 
 
@@ -228,6 +229,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 [![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
 [![](./images/pymle-cover_cn.jpg)](https://taiwan.kinokuniya.com/bw/9789864341405)
 [![](./images/pymle-cover_kr.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
+[![](./images/pymle-cover_ru.jpg)](http://www.ozon.ru/context/detail/id/140152222/)
 
 <hr>
 
