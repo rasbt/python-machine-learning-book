@@ -239,7 +239,7 @@ colors = ['blue', 'green', 'red', 'cyan',
           'gray', 'indigo', 'orange']
 
 weights, params = [], []
-for c in np.arange(-4, 6):
+for c in np.arange(-4.0, 6.0):
     lr = LogisticRegression(penalty='l1', C=10**c, random_state=0)
     lr.fit(X_train_std, y_train)
     weights.append(lr.coef_[1])
