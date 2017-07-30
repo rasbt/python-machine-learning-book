@@ -175,6 +175,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
                     alpha=0.8, c=cmap(idx),
                     marker=markers[idx], label=cl)
 
+
 lr = LogisticRegression()
 lr = lr.fit(X_train_pca, y_train)
 
@@ -595,6 +596,7 @@ def project_x(x_new, X, gamma, alphas, lambdas):
     pair_dist = np.array([np.sum((x_new - row)**2) for row in X])
     k = np.exp(-gamma * pair_dist)
     return k.dot(alphas / lambdas)
+
 
 # projection of the "new" datapoint
 x_reproj = project_x(x_new, X, gamma=15, alphas=alphas, lambdas=lambdas)

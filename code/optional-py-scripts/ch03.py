@@ -20,9 +20,10 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import export_graphviz
+# from sklearn.tree import export_graphviz
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
+import warnings
 
 # for sklearn 0.18's alternative syntax
 from distutils.version import LooseVersion as Version
@@ -108,6 +109,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
                     marker='o',
                     s=55, label='test set')
 
+
 X_combined_std = np.vstack((X_train_std, X_test_std))
 y_combined = np.hstack((y_train, y_test))
 
@@ -129,6 +131,7 @@ print(50 * '-')
 
 def sigmoid(z):
     return 1.0 / (1.0 + np.exp(-z))
+
 
 z = np.arange(-7, 7, 0.1)
 phi_z = sigmoid(z)
@@ -160,6 +163,7 @@ def cost_1(z):
 
 def cost_0(z):
     return - np.log(1 - sigmoid(z))
+
 
 z = np.arange(-10, 10, 0.1)
 phi_z = sigmoid(z)
@@ -330,6 +334,7 @@ def entropy(p):
 
 def error(p):
     return 1 - np.max([p, 1 - p])
+
 
 x = np.arange(0.0, 1.0, 0.01)
 

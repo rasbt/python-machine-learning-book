@@ -139,6 +139,7 @@ def lin_regplot(X, y, model):
     plt.plot(X, model.predict(X), color='red', linewidth=2)
     return
 
+
 lin_regplot(X_std, y_std, lr)
 plt.xlabel('Average number of rooms [RM] (standardized)')
 plt.ylabel('Price in $1000\'s [MEDV] (standardized)')
@@ -196,7 +197,8 @@ if Version(sklearn_version) < '0.18':
     ransac = RANSACRegressor(LinearRegression(),
                              max_trials=100,
                              min_samples=50,
-                             residual_metric=lambda x: np.sum(np.abs(x), axis=1),
+                             residual_metric=lambda x: np.sum(
+                                np.abs(x), axis=1),
                              residual_threshold=5.0,
                              random_state=0)
 else:

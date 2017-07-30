@@ -127,6 +127,7 @@ def preprocessor(text):
         ' '.join(emoticons).replace('-', '')
     return text
 
+
 print('Preprocessor on Excerpt:\n\n', preprocessor(df.loc[0, 'review'][-50:]))
 
 res = preprocessor("</a>This :) is :( a test :-)!")
@@ -245,6 +246,7 @@ def stream_docs(path):
         for line in csv:
             text, label = line[:-3], int(line[-2])
             yield text, label
+
 
 next(stream_docs(path='./movie_data.csv'))
 

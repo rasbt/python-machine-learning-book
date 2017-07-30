@@ -188,6 +188,7 @@ def predict_linreg(X, w):
     predict = theano.function(inputs=[Xt], givens={w: w}, outputs=net_input)
     return predict(X)
 
+
 plt.scatter(X_train, y_train, marker='s', s=50)
 plt.plot(range(X_train.shape[0]),
          predict_linreg(X_train, w),
@@ -228,6 +229,7 @@ def logistic(z):
 def logistic_activation(X, w):
     z = net_input(X, w)
     return logistic(z)
+
 
 print('P(y=1|x) = %.3f' % logistic_activation(X, w)[0])
 
@@ -274,6 +276,7 @@ def softmax_activation(X, w):
     z = net_input(X, w)
     return softmax(z)
 
+
 y_probas = softmax(Z)
 print('Probabilities:\n', y_probas)
 
@@ -293,6 +296,7 @@ def tanh(z):
     e_p = np.exp(z)
     e_m = np.exp(-z)
     return (e_p - e_m) / (e_p + e_m)
+
 
 z = np.arange(-5, 5, 0.005)
 log_act = logistic(z)
@@ -358,6 +362,7 @@ def load_mnist(path, kind='train'):
                              dtype=np.uint8).reshape(len(labels), 784)
 
     return images, labels
+
 
 X_train, y_train = load_mnist('mnist', kind='train')
 print('Training rows: %d, columns: %d' % (X_train.shape[0], X_train.shape[1]))
