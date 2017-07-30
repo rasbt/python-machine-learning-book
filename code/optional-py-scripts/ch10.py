@@ -139,6 +139,7 @@ def lin_regplot(X, y, model):
     plt.plot(X, model.predict(X), color='red', linewidth=2)
     return
 
+
 lin_regplot(X_std, y_std, lr)
 plt.xlabel('Average number of rooms [RM] (standardized)')
 plt.ylabel('Price in $1000\'s [MEDV] (standardized)')
