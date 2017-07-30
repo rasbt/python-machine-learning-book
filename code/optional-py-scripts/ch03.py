@@ -207,7 +207,7 @@ print('Section: Tackling overfitting via regularization')
 print(50 * '-')
 
 weights, params = [], []
-for c in np.arange(-5, 5):
+for c in np.arange(-5.0, 5.0):
     lr = LogisticRegression(C=10**c, random_state=0)
     lr.fit(X_train_std, y_train)
     weights.append(lr.coef_[1])
