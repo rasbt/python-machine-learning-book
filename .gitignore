@@ -2,6 +2,11 @@ docs/equations/*.aux
 docs/equations/*.log
 docs/equations/*.out
 docs/equations/*.synctex.gz
+code/ch12/mnist
+code/datasets/mnist/t10k-images-idx3-ubyte
+code/datasets/mnist/t10k-labels-idx1-ubyte
+code/datasets/mnist/train-images-idx3-ubyte
+code/datasets/mnist/train-labels-idx1-ubyte
 
 .ipynb_checkpoints
 .DS_Store
