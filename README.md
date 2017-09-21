@@ -3,7 +3,13 @@
 
 [![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/python-machine-learning-reader-discussion-board)
 
-**A second, [revised edition](https://github.com/rasbt/python-machine-learning-book-2nd-edition#whats-new-in-the-second-edition-from-the-first-edition) will be available in October 2017.**
+---
+
+#### IMPORTANT NOTE (09/21/2017):
+
+This GitHub repository contains the code examples of the **1st Edition** of Python Machine Learning book. If you are looking for the code examples of the **2nd Edition**, please refer to [this](https://github.com/rasbt/python-machine-learning-book-2nd-edition#whats-new-in-the-second-edition-from-the-first-edition) repository instead. 
+
+---
 
 What you can expect are 400 pages rich in useful material just about everything you need to know to get started with machine learning ... from theory to the actual code that you can directly put into action! This is not yet just another "this is how scikit-learn works" book. I aim to explain all the underlying concepts, tell you everything you need to know in terms of best practices and caveats, and
 we will put those concepts into action mainly using NumPy, scikit-learn, and Theano.
