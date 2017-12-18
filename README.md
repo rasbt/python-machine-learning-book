@@ -177,6 +177,8 @@ If you need help to decide whether this book is for you, check out some of the "
 - [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via "mitp Verlag"
 - [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via "Impress Top Gear"
 - [Chinese translation](https://taiwan.kinokuniya.com/bw/9789864341405)
+- [Korean translation](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791187497035) via "Kyobo"
+- [Polish translation](https://www.amazon.de/Python-Uczenie-maszynowe-Sebastian-Raschka/dp/8328336138/ref=sr_1_11?ie=UTF8&qid=1513601461&sr=8-11&keywords=sebastian+raschka) via "Helion"
 
 ---
 
@@ -239,6 +241,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 [![](./images/pymle-cover_cn.jpg)](https://taiwan.kinokuniya.com/bw/9789864341405)
 [![](./images/pymle-cover_kr.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
 [![](./images/pymle-cover_ru.jpg)](http://www.ozon.ru/context/detail/id/140152222/)
+[![](./images/pymle-cover_pl.jpg)](https://www.amazon.de/Python-Uczenie-maszynowe-Sebastian-Raschka/dp/8328336138/ref=sr_1_11?ie=UTF8&qid=1513601461&sr=8-11&keywords=sebastian+raschka)
 
 <hr>
 
