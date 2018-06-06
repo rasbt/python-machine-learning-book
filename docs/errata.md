@@ -18,7 +18,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 
 ## Donations
 
-- Current amount for the next donation: $5.00
+- Current amount for the next donation: $6.00
 - Amount donated to charity:
   - [$39.00 2016-04-07](./2016-04-07-unicef.pdf)
   - [$76.00 2016-03-03](./2016-03-03-unicef.pdf)
@@ -68,6 +68,7 @@ I would be happy if you just write me a short [mail](mailto:mail@sebastianraschk
 30. Raga M. ($1.00)
 31. Ryszard T. Kaleta ($1.00)
 32. Baiyu Z. ($1.00)
+33. Harry Hummel ($1.00)
 
 
 
