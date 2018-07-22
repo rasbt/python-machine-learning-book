@@ -139,3 +139,7 @@ plt.show()
 ```
 
 ![](./tensorflow-vs-scikitlearn/tf_softmax.png)
+
+**Note**
+
+I've removed the TensorFlow code from mlxtend because it became pretty inconvenient to maintain. The original code should still be available through GitHub. E.g., if you install mlxtend 0.5.1, (`pip install mlxtend=0.5.1`) or browse through the files here: https://github.com/rasbt/mlxtend/tree/86e40d5af5222d78acf219cc8188cfd28a972d9e/mlxtend/tf_classifier
