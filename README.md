@@ -73,8 +73,8 @@ Simply click on the `ipynb`/`nbviewer`/[`Deepnote`](https://beta.deepnote.org) l
 5. Compressing Data via Dimensionality Reduction [[dir](./code/ch05)] [[ipynb](./code/ch05/ch05.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch05/ch05.ipynb)]
  [<img align="right" height="24" src="https://beta.deepnote.org/buttons/launch-in-deepnote.svg">](https://beta.deepnote.org/launch?template=data-science&url=https%3A%2F%2Fgithub.com%2Frasbt%2Fpython-machine-learning-book%2Fblob%2Fmaster%2Fcode%2Fch05%2Fch05.ipynb)
 
-6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization [[dir](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
-[[Deepnote](https://beta.deepnote.org/launch?template=data-science&url=https%3A%2F%2Fgithub.com%2Frasbt%2Fpython-machine-learning-book%2Fblob%2Fmaster%2Fcode%2Fch06%2Fch06.ipynb)]
+6. Learning Best Practices for Model Eval. and Hyperparameter Opt. [[dir](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
+ [<img align="right" height="24" src="https://beta.deepnote.org/buttons/launch-in-deepnote.svg">](https://beta.deepnote.org/launch?template=data-science&url=https%3A%2F%2Fgithub.com%2Frasbt%2Fpython-machine-learning-book%2Fblob%2Fmaster%2Fcode%2Fch06%2Fch06.ipynb)
 
 7. Combining Different Models for Ensemble Learning [[dir](./code/ch07)] [[ipynb](./code/ch07/ch07.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch07/ch07.ipynb)]
  [<img align="right" height="24" src="https://beta.deepnote.org/buttons/launch-in-deepnote.svg">](https://beta.deepnote.org/launch?template=data-science&url=https%3A%2F%2Fgithub.com%2Frasbt%2Fpython-machine-learning-book%2Fblob%2Fmaster%2Fcode%2Fch07%2Fch07.ipynb)
