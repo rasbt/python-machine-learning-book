@@ -1,10 +1,23 @@
-## Table of Contents and Code Notebooks
+## Resources for setting up your coding environment
+
+- [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)  
+
+***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running_jupyter_nb.pdf) that illustrates this process***
+
+- A [quick and great NumPy refresher](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html) that covers everything (and more) you'd need for this book
+
+- Recommended! To check your coding environment, open the `check_environment.ipynb` (it can be found in this directory) in Jupyter Notebook and execute the code cell:
+
+![](../images/check_env.png)
+
+
+## Table of contents and code notebooks
 
 
 Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version).
 **Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
 
-- [Instructions for setting up Python and the Jupiter Notebook](./ch01/README.md)  
+
 
 <br>
 

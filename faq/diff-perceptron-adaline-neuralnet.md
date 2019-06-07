@@ -71,10 +71,10 @@ Let me show you an example :)
 Here's the Python code if you want to reproduce these plots:
 
 ```Python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 from mlxtend.classifier import Perceptron
 from mlxtend.classifier import Adaline
-from mlxtend.classifier import NeuralNetMLP
+from mlxtend.classifier import MultiLayerPerceptron
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_moons
@@ -90,19 +90,19 @@ ppn.fit(X, y)
 ada = Adaline(epochs=50, eta=0.05, random_seed=0)
 ada.fit(X, y)
 
-mlp = NeuralNetMLP(n_output=len(np.unique(y)),
-                   n_features=X.shape[1],
-                   n_hidden=150,
-                   l2=0.0,
-                   l1=0.0,
-                   epochs=500,
-                   eta=0.01,
-                   alpha=0.0,
-                   decrease_const=0.0,
-                   minibatches=1,
-                   shuffle_init=False,
-                   shuffle_epoch=False,
-                   random_seed=0)
+mlp = MultiLayerPerceptron(n_output=len(np.unique(y)),
+                           n_features=X.shape[1],
+                           n_hidden=150,
+                           l2=0.0,
+                           l1=0.0,
+                           epochs=500,
+                           eta=0.01,
+                           alpha=0.0,
+                           decrease_const=0.0,
+                           minibatches=1,
+                           shuffle_init=False,
+                           shuffle_epoch=False,
+                           random_seed=0)
 
 mlp = mlp.fit(X, y)
 

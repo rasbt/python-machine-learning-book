@@ -1,8 +1,3 @@
----
-layout: faq
-title: Machine Learning FAQ
----
-
 # What is the difference between a cost function and a loss function in machine learning?
 
 The terms *cost* and *loss* functions are synonymous (some people also call it error function). The more general scenario is to define an objective function first, which we want to optimize. This objective function could be to

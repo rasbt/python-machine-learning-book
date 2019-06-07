@@ -1,7 +1,4 @@
----
-layout: faq
-title: Machine Learning FAQ
----
+
 
 # What factors should I consider when choosing a predictive model technique?
 

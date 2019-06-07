@@ -12,7 +12,6 @@
 
 import numpy as np
 from sklearn import datasets
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
@@ -21,9 +20,18 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import export_graphviz
+# from sklearn.tree import export_graphviz
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
+import warnings
+
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+else:
+    from sklearn.model_selection import train_test_split
 
 #############################################################################
 print(50 * '=')
@@ -101,6 +109,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
                     marker='o',
                     s=55, label='test set')
 
+
 X_combined_std = np.vstack((X_train_std, X_test_std))
 y_combined = np.hstack((y_train, y_test))
 
@@ -122,6 +131,7 @@ print(50 * '-')
 
 def sigmoid(z):
     return 1.0 / (1.0 + np.exp(-z))
+
 
 z = np.arange(-7, 7, 0.1)
 phi_z = sigmoid(z)
@@ -153,6 +163,7 @@ def cost_1(z):
 
 def cost_0(z):
     return - np.log(1 - sigmoid(z))
+
 
 z = np.arange(-10, 10, 0.1)
 phi_z = sigmoid(z)
@@ -191,7 +202,8 @@ plt.legend(loc='upper left')
 # plt.savefig('./figures/logistic_regression.png', dpi=300)
 plt.show()
 
-print('Predicted probabilities', lr.predict_proba(X_test_std[0, :]))
+print('Predicted probabilities', lr.predict_proba(X_test_std[0, :]
+                                                  .reshape(1, -1)))
 
 #############################################################################
 print(50 * '=')
@@ -199,7 +211,7 @@ print('Section: Tackling overfitting via regularization')
 print(50 * '-')
 
 weights, params = [], []
-for c in np.arange(-5, 5):
+for c in np.arange(-5.0, 5.0):
     lr = LogisticRegression(C=10**c, random_state=0)
     lr.fit(X_train_std, y_train)
     weights.append(lr.coef_[1])
@@ -322,6 +334,7 @@ def entropy(p):
 
 def error(p):
     return 1 - np.max([p, 1 - p])
+
 
 x = np.arange(0.0, 1.0, 0.01)
 

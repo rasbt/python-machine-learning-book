@@ -12,7 +12,9 @@ We know that our goal in an unregularized model is to minimize the cost function
 
 ![](./regularized-logistic-regression-performance/unregularized.png)
 
-Now, if we regularize the cost function (e.g., via L2 regularization), we add an additional to our cost function (J) that increases as the value of your parameter weights (w) increase; keep in mind that the regularization we add a new hyperparameter, lambda, to control the regularization strength.
+
+Now, if we regularize the cost function (e.g., via L2 regularization), we add an additional term to our cost function (J) that increases as the value of your parameter weights (w) increase; keep in mind that the regularization we add a new hyperparameter, lambda, to control the regularization strength.
+
 
 ![](./regularized-logistic-regression-performance/l2-term.png)
 
@@ -20,4 +22,4 @@ Therefore, our new problem is to minimize the cost function given this added con
 
 ![](./regularized-logistic-regression-performance/regularized.png)
 
-Intuitively, we can think of the "sphere" at the coordinate center in the figure above as our "budget." Now, our objective is still the same: we want to minimize the cost function. However, we are now constraint by the regularization term; we want to get as close as possible to the global minimum while staying within our "budget" (i.e., the sphere).
+Intuitively, we can think of the "sphere" at the coordinate center in the figure above as our "budget." Now, our objective is still the same: we want to minimize the cost function. However, we are now constrained by the regularization term; we want to get as close as possible to the global minimum while staying within our "budget" (i.e., the sphere).

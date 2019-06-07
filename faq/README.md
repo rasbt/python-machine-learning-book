@@ -32,9 +32,9 @@ Sebastian
 - [What is the Definition of Data Science?](./definition_data-science.md)
 - [How do Data Scientists perform model selection? Is it different from Kaggle?](./model-selection-in-datascience.md)
 
-
 ### Questions about the Machine Learning Field
 
+- [How are Artificial Intelligence and Machine Learning related?](./ai-and-ml.md)
 - [What are some real-world examples of applications of machine learning in the field?](./ml-examples.md)
 - [What are the different fields of study in data mining?](./datamining-overview.md)
 - [What are differences in research nature between the two fields: machine learning & data mining?](./datamining-vs-ml.md)
@@ -69,6 +69,7 @@ Sebastian
 ##### Model evaluation
 
 - [What is overfitting?](./overfitting.md)
+- [How can I avoid overfitting?](./avoid-overfitting.md)
 - [Is it always better to have the largest possible number of folds when performing cross validation?](./number-of-kfolds.md)
 - [When training an SVM classifier, is it better to have a large or small number of support vectors?](./num-support-vectors.md)
 - [How do I evaluate a model?](./evaluate-a-model.md)
@@ -133,6 +134,7 @@ Sebastian
 - [What is the difference between filter, wrapper, and embedded methods for feature selection?](./feature_sele_categories.md)
 - [Should data preparation/pre-processing step be considered one part of feature engineering? Why or why not?](./dataprep-vs-dataengin.md)
 - [Is a bag of words feature representation for text classification considered as a sparse matrix?](./bag-of-words-sparsity.md)
+- [How can I apply an SVM to categorical data?](./svm_for_categorical_data.md)
 
 ##### Naive Bayes
 

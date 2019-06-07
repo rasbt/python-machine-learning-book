@@ -1,8 +1,3 @@
----
-layout: faq
-title: Machine Learning FAQ
----
-
 # What is the Definition of Data Science?
 
 That's a tricky question. It's particularly challenging because there is no "definition." Unfortunately, this rather novel term has been used ambiguously, and there are many subjective definitions. Anyway, I think the field of Data Science is highly interdisciplinary and influenced by many many other fields ...

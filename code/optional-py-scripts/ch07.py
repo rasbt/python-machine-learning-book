@@ -23,10 +23,8 @@ from sklearn.externals import six
 from sklearn.base import clone
 from sklearn.pipeline import _name_estimators
 from sklearn import datasets
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
-from sklearn.cross_validation import cross_val_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -34,11 +32,21 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import roc_curve
 from sklearn.metrics import auc
 from sklearn.metrics import accuracy_score
-from sklearn.grid_search import GridSearchCV
 from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from itertools import product
 
+# Added version check for recent scikit-learn 0.18 checks
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.cross_validation import train_test_split
+    from sklearn.cross_validation import cross_val_score
+    from sklearn.cross_validation import GridSearchCV
+else:
+    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import cross_val_score
+    from sklearn.model_selection import GridSearchCV
 
 #############################################################################
 print(50 * '=')
@@ -48,7 +56,7 @@ print(50 * '-')
 
 def ensemble_error(n_classifier, error):
     k_start = math.ceil(n_classifier / 2.0)
-    probs = [comb(n_classifier, k) * error**k * (1-error)**(n_classifier - k)
+    probs = [comb(n_classifier, k) * error**k * (1 - error)**(n_classifier - k)
              for k in range(k_start, n_classifier + 1)]
     return sum(probs)
 
@@ -185,11 +193,11 @@ class MajorityVoteClassifier(BaseEstimator,
                                       for clf in self.classifiers_]).T
 
             maj_vote = np.apply_along_axis(
-                                      lambda x:
-                                      np.argmax(np.bincount(x,
-                                                weights=self.weights)),
-                                      axis=1,
-                                      arr=predictions)
+                lambda x:
+                np.argmax(np.bincount(x,
+                                      weights=self.weights)),
+                axis=1,
+                arr=predictions)
         maj_vote = self.lablenc_.inverse_transform(maj_vote)
         return maj_vote
 
@@ -237,9 +245,9 @@ le = LabelEncoder()
 y = le.fit_transform(y)
 
 X_train, X_test, y_train, y_test =\
-       train_test_split(X, y,
-                        test_size=0.5,
-                        random_state=1)
+    train_test_split(X, y,
+                     test_size=0.5,
+                     random_state=1)
 
 clf1 = LogisticRegression(penalty='l2',
                           C=0.001,
@@ -391,9 +399,19 @@ grid = GridSearchCV(estimator=mv_clf,
                     scoring='roc_auc')
 grid.fit(X_train, y_train)
 
-for params, mean_score, scores in grid.grid_scores_:
-    print("%0.3f+/-%0.2f %r"
-          % (mean_score, scores.std() / 2.0, params))
+if Version(sklearn_version) < '0.18':
+    for params, mean_score, scores in grid.grid_scores_:
+        print("%0.3f +/- %0.2f %r"
+              % (mean_score, scores.std() / 2.0, params))
+
+else:
+    cv_keys = ('mean_test_score', 'std_test_score', 'params')
+
+    for r, _ in enumerate(grid.cv_results_['mean_test_score']):
+        print("%0.3f +/- %0.2f %r"
+              % (grid.cv_results_[cv_keys[0]][r],
+                 grid.cv_results_[cv_keys[1]][r] / 2.0,
+                 grid.cv_results_[cv_keys[2]][r]))
 
 print('Best parameters: %s' % grid.best_params_)
 print('Accuracy: %.2f' % grid.best_score_)
@@ -426,9 +444,9 @@ le = LabelEncoder()
 y = le.fit_transform(y)
 
 X_train, X_test, y_train, y_test =\
-            train_test_split(X, y,
-                             test_size=0.40,
-                             random_state=1)
+    train_test_split(X, y,
+                     test_size=0.40,
+                     random_state=1)
 
 tree = DecisionTreeClassifier(criterion='entropy',
                               max_depth=None,

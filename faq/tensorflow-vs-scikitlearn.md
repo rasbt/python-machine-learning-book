@@ -37,7 +37,7 @@ lr.fit(X, y)
 In addition, I have a little helper function to plot the 2D decision surface:
 
 ```python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 
 plot_decision_regions(X, y, clf=lr)
 plt.title('Softmax Regression in scikit-learn')
@@ -131,7 +131,7 @@ plt.show()
 
 
 ```python
-from mlxtend.evaluate import plot_decision_regions
+from mlxtend.plotting import plot_decision_regions
 
 plot_decision_regions(X, y, clf=lr)
 plt.title('Softmax Regression via Gradient Descent in TensorFlow')
@@ -139,3 +139,7 @@ plt.show()
 ```
 
 ![](./tensorflow-vs-scikitlearn/tf_softmax.png)
+
+**Note**
+
+I've removed the TensorFlow code from mlxtend because it became pretty inconvenient to maintain. The original code should still be available through GitHub. E.g., if you install mlxtend 0.5.1, (`pip install mlxtend=0.5.1`) or browse through the files here: https://github.com/rasbt/mlxtend/tree/86e40d5af5222d78acf219cc8188cfd28a972d9e/mlxtend/tf_classifier

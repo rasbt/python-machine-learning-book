@@ -18,7 +18,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
-from sklearn.cross_validation import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -27,6 +26,13 @@ from sklearn.metrics import accuracy_score
 from itertools import combinations
 import matplotlib.pyplot as plt
 
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+else:
+    from sklearn.model_selection import train_test_split
 
 #############################################################################
 print(50 * '=')
@@ -233,7 +239,7 @@ colors = ['blue', 'green', 'red', 'cyan',
           'gray', 'indigo', 'orange']
 
 weights, params = [], []
-for c in np.arange(-4, 6):
+for c in np.arange(-4.0, 6.0):
     lr = LogisticRegression(penalty='l1', C=10**c, random_state=0)
     lr.fit(X_train_std, y_train)
     weights.append(lr.coef_[1])
@@ -382,5 +388,11 @@ plt.xlim([-1, X_train.shape[1]])
 # plt.savefig('./random_forest.png', dpi=300)
 plt.show()
 
-X_selected = forest.transform(X_train, threshold=0.15)
+if Version(sklearn_version) < '0.18':
+    X_selected = forest.transform(X_train, threshold=0.15)
+else:
+    from sklearn.feature_selection import SelectFromModel
+    sfm = SelectFromModel(forest, threshold=0.15, prefit=True)
+    X_selected = sfm.transform(X_train)
+
 X_selected.shape

@@ -12,13 +12,12 @@
 
 import pandas as pd
 import numpy as np
-from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from sklearn.linear_model import LogisticRegression
-from sklearn.lda import LDA
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.datasets import make_moons
 from sklearn.datasets import make_circles
 from sklearn.decomposition import KernelPCA
@@ -26,6 +25,17 @@ from scipy.spatial.distance import pdist, squareform
 from scipy import exp
 from scipy.linalg import eigh
 from matplotlib.ticker import FormatStrFormatter
+
+# for sklearn 0.18's alternative syntax
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.grid_search import train_test_split
+    from sklearn.lda import LDA
+else:
+    from sklearn.model_selection import train_test_split
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+
 
 #############################################################################
 print(50 * '=')
@@ -165,6 +175,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
                     alpha=0.8, c=cmap(idx),
                     marker=markers[idx], label=cl)
 
+
 lr = LogisticRegression()
 lr = lr.fit(X_train_pca, y_train)
 
@@ -270,7 +281,7 @@ plt.ylabel('"discriminability" ratio')
 plt.xlabel('Linear Discriminants')
 plt.ylim([-0.1, 1.1])
 plt.legend(loc='best')
-plt.tight_layout()
+# plt.tight_layout()
 # plt.savefig('./figures/lda1.png', dpi=300)
 plt.show()
 
@@ -585,6 +596,7 @@ def project_x(x_new, X, gamma, alphas, lambdas):
     pair_dist = np.array([np.sum((x_new - row)**2) for row in X])
     k = np.exp(-gamma * pair_dist)
     return k.dot(alphas / lambdas)
+
 
 # projection of the "new" datapoint
 x_reproj = project_x(x_new, X, gamma=15, alphas=alphas, lambdas=lambdas)

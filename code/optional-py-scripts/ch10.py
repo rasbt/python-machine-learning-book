@@ -25,6 +25,14 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 
+# Added version check for recent scikit-learn 0.18 checks
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.cross_validation import train_test_split
+else:
+    from sklearn.model_selection import train_test_split
+
 #############################################################################
 print(50 * '=')
 print('Section: Exploring the Housing dataset')
@@ -112,7 +120,7 @@ y = df['MEDV'].values
 sc_x = StandardScaler()
 sc_y = StandardScaler()
 X_std = sc_x.fit_transform(X)
-y_std = sc_y.fit_transform(y)
+y_std = sc_y.fit_transform(y[:, np.newaxis]).flatten()
 
 lr = LinearRegressionGD()
 lr.fit(X_std, y_std)
@@ -131,6 +139,7 @@ def lin_regplot(X, y, model):
     plt.plot(X, model.predict(X), color='red', linewidth=2)
     return
 
+
 lin_regplot(X_std, y_std, lr)
 plt.xlabel('Average number of rooms [RM] (standardized)')
 plt.ylabel('Price in $1000\'s [MEDV] (standardized)')
@@ -143,7 +152,7 @@ print('Slope: %.3f' % lr.w_[1])
 print('Intercept: %.3f' % lr.w_[0])
 
 
-num_rooms_std = sc_x.transform([5.0])
+num_rooms_std = sc_x.transform(np.array([[5.0]]))
 price_std = lr.predict(num_rooms_std)
 print("Price in $1000's: %.3f" % sc_y.inverse_transform(price_std))
 
@@ -184,12 +193,21 @@ print('Section: Fitting a robust regression model using RANSAC')
 print(50 * '-')
 
 
-ransac = RANSACRegressor(LinearRegression(),
-                         max_trials=100,
-                         min_samples=50,
-                         residual_metric=lambda x: np.sum(np.abs(x), axis=1),
-                         residual_threshold=5.0,
-                         random_state=0)
+if Version(sklearn_version) < '0.18':
+    ransac = RANSACRegressor(LinearRegression(),
+                             max_trials=100,
+                             min_samples=50,
+                             residual_metric=lambda x: np.sum(
+                                np.abs(x), axis=1),
+                             residual_threshold=5.0,
+                             random_state=0)
+else:
+    ransac = RANSACRegressor(LinearRegression(),
+                             max_trials=100,
+                             min_samples=50,
+                             loss='absolute_loss',
+                             residual_threshold=5.0,
+                             random_state=0)
 ransac.fit(X, y)
 inlier_mask = ransac.inlier_mask_
 outlier_mask = np.logical_not(inlier_mask)

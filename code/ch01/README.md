@@ -58,6 +58,9 @@ After we have successfully installed Python, we can execute pip from the command
 
     pip install SomePackage
 
+
+(where `SomePackage` is a placeholder for numpy, pandas, matplotlib, scikit-learn, and so forth).
+
 Already installed packages can be updated via the `--upgrade` flag:
 
     pip install SomePackage --upgrade

@@ -17,7 +17,6 @@ import re
 import nltk
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.grid_search import GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -26,6 +25,13 @@ from sklearn.linear_model import SGDClassifier
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 
+# Added version check for recent scikit-learn 0.18 checks
+from distutils.version import LooseVersion as Version
+from sklearn import __version__ as sklearn_version
+if Version(sklearn_version) < '0.18':
+    from sklearn.cross_validation import GridSearchCV
+else:
+    from sklearn.model_selection import GridSearchCV
 
 #############################################################################
 print(50 * '=')
@@ -120,6 +126,7 @@ def preprocessor(text):
     text = re.sub('[\W]+', ' ', text.lower()) +\
         ' '.join(emoticons).replace('-', '')
     return text
+
 
 print('Preprocessor on Excerpt:\n\n', preprocessor(df.loc[0, 'review'][-50:]))
 
@@ -239,6 +246,7 @@ def stream_docs(path):
         for line in csv:
             text, label = line[:-3], int(line[-2])
             yield text, label
+
 
 next(stream_docs(path='./movie_data.csv'))
 
