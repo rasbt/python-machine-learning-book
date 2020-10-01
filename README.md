@@ -438,3 +438,6 @@ I am happy to answer questions! Just write me an [email](mailto:mail@sebastianra
 or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
 
 If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
+
+
+Thanks for visiting us.
