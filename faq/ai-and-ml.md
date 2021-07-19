@@ -1,6 +1,6 @@
 # How are Artificial Intelligence and Machine Learning related?
 
-Artifical Intellicence (AI) started as a subfield of computer science with the focus on solving tasks that humans can but computers can't do (for instance, image recognition). AI can be approached in many ways, for example, writing a computer program that implements a set of rules devised by domain experts. Now, hand-crafting rules can be very labrorious and time consuming.
+Artifical Intellicence (AI) started as a subfield of computer science with the focus on solving tasks that humans can but computers can't do (for instance, image recognition). AI can be approached in many ways, for example, writing a computer program that implements a set of rules devised by domain experts. Now, hand-crafting rules can be very laborious and time consuming.
 
 The field of machine learning -- originally, we can consider it as a subfield of AI -- was concerned with the development of algorithms so that computers can automatically learn (predictive) models from data.
 
