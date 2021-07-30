@@ -59,7 +59,7 @@ Now, let's say our model has learned the following hypotheses: It classifies sam
 - sample5: 6 cm -> class ?
 - sample6: 7 cm -> class ?
 
-If we look at the "unstandardized “length in cm" values in our training datast, it is intuitive to say that all of these samples are likely belonging to class 2. However, if we standardize these by re-computing the *standard deviation* and and *mean* from the new data, we would get similar values as before (i.e., properties of a standard normal distribtion) in the training set and our classifier would (probably incorrectly) assign the “class 2” label to the samples 4 and 5.
+If we look at the "unstandardized “length in cm" values in our training dataset, it is intuitive to say that all of these samples are likely belonging to class 2. However, if we standardize these by re-computing the *standard deviation* and and *mean* from the new data, we would get similar values as before (i.e., properties of a standard normal distribution) in the training set and our classifier would (probably incorrectly) assign the “class 2” label to the samples 4 and 5.
 
 - sample5: -1.21 -> class 2
 - sample6: 0 -> class 2

@@ -42,7 +42,7 @@ To come back to the original question, let us consider the multi-variate Bernoul
 
 
 We use the Bernoulli distribution to compute the likelihood of a binary variable.
-For example, we could estimate P(x<sub>k</sub>=1 | &omega;<sub>j</sub>) via MLE as the frequency of occurences in the training set:
+For example, we could estimate P(x<sub>k</sub>=1 | &omega;<sub>j</sub>) via MLE as the frequency of occurrences in the training set:
 &theta; = P&#770;(x<sub>k</sub>=1 | &omega;<sub>j</sub>) = N<sub>x<sub>k</sub>, &omega;<sub>j</sub></sub> / N<sub> &omega;<sub>j</sub></sub>  
 which reads "number of training samples in class &omega;<sub>j</sub> that have the property x<sub>k</sub>=1 (N<sub>x<sub>k</sub>, &omega;<sub>j</sub></sub>) divided by by all training samples in &omega;<sub>j</sub></sub> (N<sub> &omega;<sub>j</sub></sub>)." In context of text classification, this is basically the set of documents in class &omega;<sub>j</sub> that contain a particular word divided by all documents in &omega;<sub>j</sub>.
 Now, we can compute the likelihood of the binary feature vector **x** given class &omega;<sub>j</sub> as

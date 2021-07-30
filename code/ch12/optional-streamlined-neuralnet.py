@@ -25,7 +25,7 @@ class NeuralNetMLP(object):
     minibatche_size : int (default: 1)
         Number of training samples per minibatch.
     seed : int (default: None)
-        Random seed for initalizing weights and shuffling.
+        Random seed for initializing weights and shuffling.
 
     Attributes
     -----------
