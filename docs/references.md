@@ -26,6 +26,8 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 
 ##### Additional Resources & Further Reading
 
+- [Python Tutorial](https://www.scaler.com/topics/python)
+
 <br>
 <br>
 
