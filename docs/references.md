@@ -27,6 +27,7 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 ##### Additional Resources & Further Reading
 
 - [Python Tutorial](https://www.scaler.com/topics/python)
+- [Python Cheat Sheet](https://www.interviewbit.com/python-cheat-sheet)
 
 <br>
 <br>
@@ -61,6 +62,10 @@ A BibTeX version for your favorite reference manager is available [here](./pymle
 - UCI Machine Learning Repository: http://archive.ics.uci.edu/ml/
 
 - Iris dataset: https://archive.ics.uci.edu/ml/datasets/Iris
+
+- Machine Learning books: https://www.interviewbit.com/blog/best-machine-learning-books
+
+- Machine Learning courses: https://www.interviewbit.com/blog/best-machine-learning-courses
 
 ##### Additional Resources & Further Reading
 
