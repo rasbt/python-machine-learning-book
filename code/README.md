@@ -1,6 +1,6 @@
 ## Resources for setting up your coding environment
 
-- [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)  
+- [Instructions for setting up Python and the Jupyter Notebook](./ch01/README.md)
 
 ***If you need help with opening the Jupyter notebooks, I made a short [step by step guide](../docs/running_jupyter_nb.pdf) that illustrates this process***
 
@@ -15,7 +15,7 @@
 
 
 Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version).
-**Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
+**Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**
 
 
 
