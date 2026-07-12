@@ -97,7 +97,7 @@ Some readers were wondering about the `.ipynb` of the code files -- these files 
 
 ![](./images/ipynb_ex1.png)
 
-**Side Note:**  
+**Side Note:**
 
 "IPython Notebook" recently became the "[Jupyter Notebook](<http://jupyter.org>)"; Jupyter is an umbrella project that aims to support other languages in addition to Python including Julia, R, and many more. Don't worry, though, for a Python user, there's only a difference in terminology (we say "Jupyter Notebook" now instead of "IPython Notebook").
 

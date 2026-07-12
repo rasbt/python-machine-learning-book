@@ -7,7 +7,7 @@
 
 #### IMPORTANT NOTE (09/21/2017):
 
-This GitHub repository contains the code examples of the **1st Edition** of Python Machine Learning book. If you are looking for the code examples of the **2nd Edition**, please refer to [this](https://github.com/rasbt/python-machine-learning-book-2nd-edition#whats-new-in-the-second-edition-from-the-first-edition) repository instead. 
+This GitHub repository contains the code examples of the **1st Edition** of Python Machine Learning book. If you are looking for the code examples of the **2nd Edition**, please refer to [this](https://github.com/rasbt/python-machine-learning-book-2nd-edition#whats-new-in-the-second-edition-from-the-first-edition) repository instead.
 
 ---
 
@@ -24,9 +24,9 @@ You are not sure if this book is for you? Please checkout the excerpts from the 
 
 1st edition, published September 23rd 2015<br>
 Paperback: 454 pages<br>
-Publisher: Packt Publishing<br>  
+Publisher: Packt Publishing<br>
 Language: English<br>
-ISBN-10: 1783555130<br>  
+ISBN-10: 1783555130<br>
 ISBN-13: 978-1783555130<br>
 Kindle ASIN: B00YSILNL0<br>
 
@@ -50,11 +50,11 @@ Russian ISBN-13: 978-5970604090<br>
 
 
 Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to view the code examples (currently, the internal document links are only supported by the NbViewer version).
-**Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**   
+**Please note that these are just the code examples accompanying the book, which I uploaded for your convenience; be aware that these notebooks may not be useful without the formulae and descriptive text.**
 
 
 - Excerpts from the [Foreword](./docs/foreword_ro.pdf) and [Preface](./docs/preface_sr.pdf)
-- [Instructions for setting up Python and the Jupiter Notebook](./code/ch01/README.md)  
+- [Instructions for setting up Python and the Jupiter Notebook](./code/ch01/README.md)
 
 <br>
 
@@ -82,10 +82,10 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 #### Slides for Teaching
 
-A big thanks to [Dmitriy Dligach](dmitriydligach) for sharing his slides from his machine learning course that is currently offered at [Loyola University Chicago](http://www.luc.edu/cs/). 
+A big thanks to [Dmitriy Dligach](dmitriydligach) for sharing his slides from his machine learning course that is currently offered at [Loyola University Chicago](http://www.luc.edu/cs/).
 
 - [https://github.com/dmitriydligach/PyMLSlides](https://github.com/dmitriydligach/PyMLSlides)
-- 
+-
 
 
 
@@ -138,19 +138,19 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 [![](./images/pymle_amzn.png)](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_1?ie=UTF8&qid=1472342570&sr=8-1&keywords=sebastian+raschka)
 
 ---
-> *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
+> *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*
 – Lon Riesberg at [Data Elixir](http://dataelixir.com/issues/55#start)
 
-> *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*   
+> *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*
 – [Brian Thomas](http://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
 
-> *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*    
+> *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*
 – [Jason Wolosonovich](https://www.linkedin.com/pulse/python-machine-learning-sebastian-raschka-review-jason-wolosonovich?trk=prof-post)
 
-> *The best book I've seen to come out of PACKT Publishing. This is a very well written introduction to machine learning with Python. As others have noted, a perfect mixture of theory and application.*    
+> *The best book I've seen to come out of PACKT Publishing. This is a very well written introduction to machine learning with Python. As others have noted, a perfect mixture of theory and application.*
 – [Josh D.](https://www.amazon.com/gp/customer-reviews/R27WB1GWTNGIR2/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
-> *A book with a blend of qualities that is hard to come by: combines the needed mathematics to control the theory with the applied coding in Python. Also great to see it doesn't waste paper in giving a primer on Python as many other books do just to appeal to the greater audience. You can tell it's been written by knowledgeable writers and not just DIY geeks.*    
+> *A book with a blend of qualities that is hard to come by: combines the needed mathematics to control the theory with the applied coding in Python. Also great to see it doesn't waste paper in giving a primer on Python as many other books do just to appeal to the greater audience. You can tell it's been written by knowledgeable writers and not just DIY geeks.*
 – [Amazon Customer](https://www.amazon.com/gp/customer-reviews/RZWY4TF66Z6V0/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
 > *Sebastian Raschka created an amazing machine learning tutorial which combines theory with practice. The book explains machine learning from a theoretical perspective and has tons of coded examples to show how you would actually use the machine learning technique. It can be read by a beginner or advanced programmer.*
@@ -250,7 +250,7 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 ---
 
-***Dear readers***,  
+***Dear readers***,
 first of all, I want to thank all of you for the great support! I am really happy about all the great feedback you sent me so far, and I am glad that the book has been so useful to a broad audience.
 
 Over the last couple of months, I received hundreds of emails, and I tried to answer as many as possible in the available time I have. To make them useful to other readers as well, I collected many of my answers in the FAQ section (below).
@@ -261,7 +261,7 @@ In addition, some of you asked me about a platform for readers to discuss the co
 
 (And I will try my best to answer questions myself if time allows! :))
 
-> The only thing to do with good advice is to pass it on. It is never of any use to oneself.  
+> The only thing to do with good advice is to pass it on. It is never of any use to oneself.
 — Oscar Wilde
 
 ---
