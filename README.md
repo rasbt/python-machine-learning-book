@@ -32,7 +32,7 @@ Kindle ASIN: B00YSILNL0<br>
 
 <br>
 
-[![](./images/CRBadgeNotableBook.jpg)](http://www.computingreviews.com/recommend/bestof/notableitems.cfm?bestYear=2016)
+[![](./images/CRBadgeNotableBook.jpg)](https://www.computingreviews.com/recommend/bestof/notableitems.cfm?bestYear=2016)
 
 <br>
 
@@ -58,19 +58,19 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 <br>
 
-1. Machine Learning - Giving Computers the Ability to Learn from Data [[dir](./code/ch01)] [[ipynb](./code/ch01/ch01.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch01/ch01.ipynb)]
-2. Training Machine Learning Algorithms for Classification [[dir](./code/ch02)] [[ipynb](./code/ch02/ch02.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb)]
-3. A Tour of Machine Learning Classifiers Using Scikit-Learn [[dir](./code/ch03)] [[ipynb](./code/ch03/ch03.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)]
-4. Building Good Training Sets – Data Pre-Processing [[dir](./code/ch04)] [[ipynb](./code/ch04/ch04.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch04/ch04.ipynb)]
-5. Compressing Data via Dimensionality Reduction [[dir](./code/ch05)] [[ipynb](./code/ch05/ch05.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch05/ch05.ipynb)]
-6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization [[dir](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
-7. Combining Different Models for Ensemble Learning [[dir](./code/ch07)] [[ipynb](./code/ch07/ch07.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch07/ch07.ipynb)]
-8. Applying Machine Learning to Sentiment Analysis [[dir](./code/ch08)] [[ipynb](./code/ch08/ch08.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch08/ch08.ipynb)]
-9. Embedding a Machine Learning Model into a Web Application [[dir](./code/ch09)] [[ipynb](./code/ch09/ch09.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch09/ch09.ipynb)]
-10. Predicting Continuous Target Variables with Regression Analysis [[dir](./code/ch10)] [[ipynb](./code/ch10/ch10.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb)]
-11. Working with Unlabeled Data – Clustering Analysis [[dir](./code/ch11)] [[ipynb](./code/ch11/ch11.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
-12. Training Artificial Neural Networks for Image Recognition [[dir](./code/ch12)] [[ipynb](./code/ch12/ch12.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
-13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
+1. Machine Learning - Giving Computers the Ability to Learn from Data [[dir](./code/ch01)] [[ipynb](./code/ch01/ch01.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch01/ch01.ipynb)]
+2. Training Machine Learning Algorithms for Classification [[dir](./code/ch02)] [[ipynb](./code/ch02/ch02.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb)]
+3. A Tour of Machine Learning Classifiers Using Scikit-Learn [[dir](./code/ch03)] [[ipynb](./code/ch03/ch03.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)]
+4. Building Good Training Sets – Data Pre-Processing [[dir](./code/ch04)] [[ipynb](./code/ch04/ch04.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch04/ch04.ipynb)]
+5. Compressing Data via Dimensionality Reduction [[dir](./code/ch05)] [[ipynb](./code/ch05/ch05.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch05/ch05.ipynb)]
+6. Learning Best Practices for Model Evaluation and Hyperparameter Optimization [[dir](./code/ch06)] [[ipynb](./code/ch06/ch06.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch06/ch06.ipynb)]
+7. Combining Different Models for Ensemble Learning [[dir](./code/ch07)] [[ipynb](./code/ch07/ch07.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch07/ch07.ipynb)]
+8. Applying Machine Learning to Sentiment Analysis [[dir](./code/ch08)] [[ipynb](./code/ch08/ch08.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch08/ch08.ipynb)]
+9. Embedding a Machine Learning Model into a Web Application [[dir](./code/ch09)] [[ipynb](./code/ch09/ch09.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch09/ch09.ipynb)]
+10. Predicting Continuous Target Variables with Regression Analysis [[dir](./code/ch10)] [[ipynb](./code/ch10/ch10.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch10/ch10.ipynb)]
+11. Working with Unlabeled Data – Clustering Analysis [[dir](./code/ch11)] [[ipynb](./code/ch11/ch11.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch11/ch11.ipynb)]
+12. Training Artificial Neural Networks for Image Recognition [[dir](./code/ch12)] [[ipynb](./code/ch12/ch12.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch12/ch12.ipynb)]
+13. Parallelizing Neural Network Training via Theano [[dir](./code/ch13)] [[ipynb](./code/ch13/ch13.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/ch13/ch13.ipynb)]
 
 <br>
 
@@ -82,7 +82,7 @@ Simply click on the `ipynb`/`nbviewer` links next to the chapter headlines to vi
 
 #### Slides for Teaching
 
-A big thanks to [Dmitriy Dligach](dmitriydligach) for sharing his slides from his machine learning course that is currently offered at [Loyola University Chicago](http://www.luc.edu/cs/). 
+A big thanks to [Dmitriy Dligach](dmitriydligach) for sharing his slides from his machine learning course that is currently offered at [Loyola University Chicago](https://www.luc.edu/cs/). 
 
 - [https://github.com/dmitriydligach/PyMLSlides](https://github.com/dmitriydligach/PyMLSlides)
 - 
@@ -139,10 +139,10 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 
 ---
 > *Sebastian Raschka’s new book, Python Machine Learning, has just been released. I got a chance to read a review copy and it’s just as I expected - really great! It’s well organized, super easy to follow, and it not only offers a good foundation for smart, non-experts, practitioners will get some ideas and learn new tricks here as well.*  
-– Lon Riesberg at [Data Elixir](http://dataelixir.com/issues/55#start)
+– Lon Riesberg at [Data Elixir](https://dataelixir.com/issues/55#start)
 
 > *Superb job! Thus far, for me it seems to have hit the right balance of theory and practice…math and code!*   
-– [Brian Thomas](http://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
+– [Brian Thomas](https://sebastianraschka.com/blog/2015/writing-pymle.html#comment-2295668894)
 
 > *I've read (virtually) every Machine Learning title based around Scikit-learn and this is hands-down the best one out there.*    
 – [Jason Wolosonovich](https://www.linkedin.com/pulse/python-machine-learning-sebastian-raschka-review-jason-wolosonovich?trk=prof-post)
@@ -154,32 +154,32 @@ Raschka, Sebastian. *Python machine learning*. Birmingham, UK: Packt Publishing,
 – [Amazon Customer](https://www.amazon.com/gp/customer-reviews/RZWY4TF66Z6V0/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=1783555130)
 
 > *Sebastian Raschka created an amazing machine learning tutorial which combines theory with practice. The book explains machine learning from a theoretical perspective and has tons of coded examples to show how you would actually use the machine learning technique. It can be read by a beginner or advanced programmer.*
-- William P. Ross, [7 Must Read Python Books](http://williampross.com/7-must-read-python-books/)
+- William P. Ross, [7 Must Read Python Books](https://williampross.com/7-must-read-python-books/)
 
 #### Longer reviews
 
 If you need help to decide whether this book is for you, check out some of the "longer" reviews linked below. (If you wrote a review, please let me know, and I'd be happy to add it to the list).
 
-- [Python Machine Learning Review](http://www.bcs.org/content/conWebDoc/55586) by Patrick Hill at the Chartered Institute for IT
-- [Book Review: Python Machine Learning by Sebastian Raschka](http://whatpixel.com/python-machine-learning-book-review/) by Alex Turner at WhatPixel
+- [Python Machine Learning Review](https://www.bcs.org/content/conWebDoc/55586) by Patrick Hill at the Chartered Institute for IT
+- [Book Review: Python Machine Learning by Sebastian Raschka](https://whatpixel.com/python-machine-learning-book-review/) by Alex Turner at WhatPixel
 
 ---
 
 ## Links
 
-- ebook and paperback at [Amazon.com](http://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](http://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](http://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
+- ebook and paperback at [Amazon.com](https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=sr_1_2?ie=UTF8&qid=1437754343&sr=8-2&keywords=python+machine+learning+essentials), [Amazon.co.uk](https://www.amazon.co.uk/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130), [Amazon.de](https://www.amazon.de/s/ref=nb_sb_noss_2?__mk_de_DE=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=python+machine+learning)
 - [ebook and paperback](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning) from Packt (the publisher)
-- at other book stores: [Google Books](https://books.google.com/books?id=GOVOCwAAQBAJ&source=gbs_slider_cls_metadata_7_mylibrary), [O'Reilly](http://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble](http://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
+- at other book stores: [Google Books](https://books.google.com/books?id=GOVOCwAAQBAJ&source=gbs_slider_cls_metadata_7_mylibrary), [O'Reilly](https://shop.oreilly.com/product/9781783555130.do), [Safari](https://www.safaribooksonline.com/library/view/python-machine-learning/9781783555130/), [Barnes & Noble](https://www.barnesandnoble.com/w/python-machine-learning-essentials-sebastian-raschka/1121999969?ean=9781783555130), [Apple iBooks](https://itunes.apple.com/us/book/python-machine-learning/id1028207310?mt=11), ...
 - social platforms: [Goodreads](https://www.goodreads.com/book/show/25545994-python-machine-learning)
 
 #### Translations
 
 - [Italian translation](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/) via "Apogeo"
 - [German translation](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/) via "mitp Verlag"
-- [Japanese translation](http://www.amazon.co.jp/gp/product/4844380605/) via "Impress Top Gear"
+- [Japanese translation](https://www.amazon.co.jp/gp/product/4844380605/) via "Impress Top Gear"
 - [Chinese translation (traditional Chinese)](https://taiwan.kinokuniya.com/bw/9789864341405)
 - [Chinese translation (simple Chinese)](https://book.douban.com/subject/27000110/)
-- [Korean translation](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791187497035) via "Kyobo"
+- [Korean translation](https://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791187497035) via "Kyobo"
 - [Polish translation](https://www.amazon.de/Python-Uczenie-maszynowe-Sebastian-Raschka/dp/8328336138/ref=sr_1_11?ie=UTF8&qid=1513601461&sr=8-11&keywords=sebastian+raschka) via "Helion"
 
 ---
@@ -193,27 +193,27 @@ If you need help to decide whether this book is for you, check out some of the "
 
 ### Bonus Notebooks (not in the book)
 
-- Logistic Regression Implementation [[dir](./code/bonus)] [[ipynb](./code/bonus/logistic_regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
-- A Basic Pipeline and Grid Search Setup [[dir](./code/bonus)] [[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
-- An Extended Nested Cross-Validation Example [[dir](./code/bonus)] [[ipynb](./code/bonus/nested_cross_validation.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
+- Logistic Regression Implementation [[dir](./code/bonus)] [[ipynb](./code/bonus/logistic_regression.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/logistic_regression.ipynb)]
+- A Basic Pipeline and Grid Search Setup [[dir](./code/bonus)] [[ipynb](./code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/svm_iris_pipeline_and_gridsearch.ipynb)]
+- An Extended Nested Cross-Validation Example [[dir](./code/bonus)] [[ipynb](./code/bonus/nested_cross_validation.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/nested_cross_validation.ipynb)]
 - A Simple Barebones Flask Webapp Template [[view directory](./code/bonus/flask_webapp_ex01)][[download as zip-file](https://github.com/rasbt/python-machine-learning-book/raw/master/code/bonus/flask_webapp_ex01/flask_webapp_ex01.zip)]
-- Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
-- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./code/bonus/scikit-model-to-json.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
-- Multinomial logistic regression / softmax regression [[GitHub ipynb](./code/bonus/softmax-regression.ipynb)] [[nbviewer](http://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/softmax-regression.ipynb)]
+- Reading handwritten digits from MNIST into NumPy arrays [[GitHub ipynb](./code/bonus/reading_mnist.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/reading_mnist.ipynb)]
+- Scikit-learn Model Persistence using JSON [[GitHub ipynb](./code/bonus/scikit-model-to-json.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/scikit-model-to-json.ipynb)]
+- Multinomial logistic regression / softmax regression [[GitHub ipynb](./code/bonus/softmax-regression.ipynb)] [[nbviewer](https://nbviewer.ipython.org/github/rasbt/python-machine-learning-book/blob/master/code/bonus/softmax-regression.ipynb)]
 
 <hr>
 
 **"Related Content" (not in the book)**
 
-- [Model evaluation, model selection, and algorithm selection in machine learning - Part I](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html)
-- [Model evaluation, model selection, and algorithm selection in machine learning - Part II](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part2.html)
-- [Model evaluation, model selection, and algorithm selection in machine learning - Part III](http://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html)
+- [Model evaluation, model selection, and algorithm selection in machine learning - Part I](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html)
+- [Model evaluation, model selection, and algorithm selection in machine learning - Part II](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part2.html)
+- [Model evaluation, model selection, and algorithm selection in machine learning - Part III](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html)
 
 ---
 
 #### SciPy 2016
 
-We had such a great time at [SciPy 2016](http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930&) in Austin! It was a real pleasure to meet and chat with so many readers of my book. Thanks so much for all the nice words and feedback! And in case you missed it, Andreas Mueller and I gave an **Introduction to Machine Learning with Scikit-learn**; if you are interested, the video recordings of [Part I](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6) and [Part II](https://www.youtube.com/watch?v=Cte8FYCpylk&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&index=90) are now online!
+We had such a great time at [SciPy 2016](https://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930&) in Austin! It was a real pleasure to meet and chat with so many readers of my book. Thanks so much for all the nice words and feedback! And in case you missed it, Andreas Mueller and I gave an **Introduction to Machine Learning with Scikit-learn**; if you are interested, the video recordings of [Part I](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6) and [Part II](https://www.youtube.com/watch?v=Cte8FYCpylk&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&index=90) are now online!
 
 [![](images/scipy2016.jpg)](https://www.youtube.com/watch?v=OB1reY6IX-o&index=91&list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6)
 
@@ -226,9 +226,9 @@ I attempted the rather challenging task of introducing scikit-learn & machine le
 
 **Note**
 
-I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), containing additional implementations of machine learning (and general "data science") algorithms. I also added implementations from this book (for example, the decision region plot, the artificial neural network, and sequential feature selection algorithms) with additional functionality.
+I have set up a separate library, [`mlxtend`](https://rasbt.github.io/mlxtend/), containing additional implementations of machine learning (and general "data science") algorithms. I also added implementations from this book (for example, the decision region plot, the artificial neural network, and sequential feature selection algorithms) with additional functionality.
 
-[![](./images/mlxtend_logo.png)](http://rasbt.github.io/mlxtend/)
+[![](./images/mlxtend_logo.png)](https://rasbt.github.io/mlxtend/)
 
 
 <br>
@@ -239,11 +239,11 @@ I have set up a separate library, [`mlxtend`](http://rasbt.github.io/mlxtend/), 
 
 [![](./images/pymle-cover_it.jpg)](https://www.amazon.it/learning-Costruire-algoritmi-generare-conoscenza/dp/8850333978/)
 [![](./images/pymle-cover_de.jpg)](https://www.amazon.de/Machine-Learning-Python-mitp-Professional/dp/3958454224/)
-[![](./images/pymle-cover_jp.jpg)](http://www.amazon.co.jp/gp/product/4844380605/)
+[![](./images/pymle-cover_jp.jpg)](https://www.amazon.co.jp/gp/product/4844380605/)
 [![](./images/pymle-cover_cn.jpg)](https://taiwan.kinokuniya.com/bw/9789864341405)
 [![](./images/pymle-cover_cn_mainland.jpg)](https://book.douban.com/subject/27000110/)
-[![](./images/pymle-cover_kr.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
-[![](./images/pymle-cover_ru.jpg)](http://www.ozon.ru/context/detail/id/140152222/)
+[![](./images/pymle-cover_kr.jpg)](https://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187497035&orderClick=LEA&Kc=)
+[![](./images/pymle-cover_ru.jpg)](https://www.ozon.ru/context/detail/id/140152222/)
 [![](./images/pymle-cover_pl.jpg)](https://www.amazon.de/Python-Uczenie-maszynowe-Sebastian-Raschka/dp/8328336138/ref=sr_1_11?ie=UTF8&qid=1513601461&sr=8-11&keywords=sebastian+raschka)
 
 <hr>
@@ -274,7 +274,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 
 - [40 scripts on Optical Character Recognition](https://github.com/rrlyman/PythonMachineLearingExamples) by [Richard Lyman](https://github.com/rrlyman)
 - [Code experiments](https://github.com/jeremyn/python-machine-learning-book) by [Jeremy Nation](https://github.com/jeremyn)
-- [What I Learned Implementing a Classifier from Scratch in Python](http://www.jeannicholashould.com) by [Jean-Nicholas Hould](http://www.jeannicholashould.com)
+- [What I Learned Implementing a Classifier from Scratch in Python](https://www.jeannicholashould.com) by [Jean-Nicholas Hould](https://www.jeannicholashould.com)
 
 ## FAQ
 
@@ -437,4 +437,4 @@ starting to gather some of these great applications, and I'd be more than happy 
 I am happy to answer questions! Just write me an [email](mailto:mail@sebastianraschka.com)
 or consider asking the question on the [Google Groups Email List](https://groups.google.com/forum/#!forum/python-machine-learning-book).
 
-If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](http://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
+If you are interested in keeping in touch, I have quite a lively twitter stream ([@rasbt](https://twitter.com/rasbt)) all about data science and machine learning. I also maintain a [blog](https://sebastianraschka.com/articles.html) where I post all of the things I am particularly excited about.
