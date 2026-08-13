@@ -290,6 +290,7 @@ starting to gather some of these great applications, and I'd be more than happy 
 - [How would your curriculum for a machine learning beginner look like?](./faq/ml-curriculum.md)
 - [What is the Definition of Data Science?](./faq/definition_data-science.md)
 - [How do Data Scientists perform model selection? Is it different from Kaggle?](./faq/model-selection-in-datascience.md)
+- [What key steps comprise an effective roadmap to mastering machine learning?](https://www.scaler.com/blog/machine-learning-roadmap/)
 
 ### Questions about the Machine Learning Field
 
