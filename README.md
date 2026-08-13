@@ -1,4 +1,4 @@
-# Python Machine Learning book code repository
+# Python Machine Learning book code repository with teachable machine
 
 
 [![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/python-machine-learning-reader-discussion-board)
